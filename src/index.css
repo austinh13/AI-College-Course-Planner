@@ -1,0 +1,55 @@
+@import "@fontsource/barlow-condensed/600.css";
+@import "@fontsource/barlow-condensed/700.css";
+@import "@fontsource/public-sans/400.css";
+@import "@fontsource/public-sans/500.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
+:root {
+  /* Palette — UT Dallas official brand colors (brand.utdallas.edu/graphics-visual-identity/color-palette) */
+  --ink-900: #081712;      /* near-black green, page base */
+  --panel-700: #154734;    /* UT Dallas Green (PMS 3435) */
+  --panel-600: #1f5c43;    /* lighter green, hover/border */
+  --mint-400: #5fe0b7;     /* UT Dallas Secondary Green (PMS 3375) */
+  --amber-500: #e87500;    /* UT Dallas Orange (PMS 158) — primary accent */
+  --steel-400: #8a8d8f;    /* Silverleaf (Pantone 877 C), muted text & rules */
+  --paper-100: #f2f5f3;    /* primary text on dark */
+
+  --font-display: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--ink-900);
+  color: var(--paper-100);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
