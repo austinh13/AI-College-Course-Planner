@@ -1,43 +1,40 @@
-// Signature visual: a tilted timetable grid. The whole product is about
-// slicing a week into blocks, so the backdrop is literally that grid,
-// rotated off-axis and pushed to one side rather than centered.
+// Ambient backdrop: a scatter of stars, nodding to UT Dallas' origin as
+// a space-geophysics research center. The comet itself only appears in
+// the periodic CometFlyby animation, not as a static fixture here.
+//
+// Stars are small 4-point sparkle shapes (not plain circles) so they
+// actually read as stars. Uses a wide viewBox with "slice" (crop, not
+// stretch) so the sparkle shapes stay proportional on any screen size
+// instead of getting skewed into ellipses.
+const SPARKLE_PATH =
+  "M0 -5 Q0.9 -0.9 5 0 Q0.9 0.9 0 5 Q-0.9 0.9 -5 0 Q-0.9 -0.9 0 -5 Z";
+
 export default function ScheduleGridBackdrop() {
-  const rows = 6;
-  const cols = 5;
+  const stars = [
+    [60, 60, 0.6, 0.4], [180, 140, 0.5, 0.35], [320, 80, 0.9, 0.6],
+    [420, 220, 0.55, 0.4], [560, 60, 1.1, 0.75], [700, 160, 0.6, 0.45],
+    [80, 260, 0.5, 0.35], [220, 320, 0.8, 0.55], [380, 380, 0.6, 0.4],
+    [500, 300, 1.0, 0.7], [640, 380, 0.55, 0.4], [740, 420, 0.7, 0.5],
+    [140, 420, 0.5, 0.35], [300, 460, 0.6, 0.4], [460, 440, 0.5, 0.35],
+    [620, 460, 0.85, 0.55], [40, 180, 0.5, 0.3],
+  ];
 
   return (
     <svg
       className="grid-backdrop"
-      viewBox="0 0 400 600"
+      viewBox="0 0 800 500"
       preserveAspectRatio="xMidYMid slice"
       aria-hidden="true"
     >
-      <g transform="rotate(-8 200 300)">
-        {Array.from({ length: rows + 1 }).map((_, i) => (
-          <line
-            key={`h-${i}`}
-            x1={-40}
-            x2={440}
-            y1={40 + i * 90}
-            y2={40 + i * 90}
-            stroke="var(--panel-600)"
-            strokeWidth="1"
-          />
-        ))}
-        {Array.from({ length: cols + 1 }).map((_, i) => (
-          <line
-            key={`v-${i}`}
-            x1={20 + i * 80}
-            x2={20 + i * 80}
-            y1={-20}
-            y2={620}
-            stroke="var(--panel-600)"
-            strokeWidth="1"
-          />
-        ))}
-        <rect x={100} y={220} width={80} height={90} fill="var(--mint-400)" opacity="0.16" />
-        <rect x={260} y={130} width={80} height={90} fill="var(--amber-500)" opacity="0.14" />
-      </g>
+      {stars.map(([x, y, scale, opacity], i) => (
+        <path
+          key={i}
+          d={SPARKLE_PATH}
+          transform={`translate(${x} ${y}) scale(${scale})`}
+          fill="var(--paper-100)"
+          opacity={opacity}
+        />
+      ))}
     </svg>
   );
 }

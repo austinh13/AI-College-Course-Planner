@@ -1,0 +1,809 @@
+{
+  "": {
+    "schools": [
+      "Academics",
+      "The University of Texas at Dallas"
+    ],
+    "levels": []
+  },
+  "Accounting": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "BS52.0301.00"
+    ]
+  },
+  "Accounting and Analytics": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MS30.7104.00STEM-Designated"
+    ]
+  },
+  "Actuarial Science": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "BS52.1304.00STEM-Designated",
+      "MS52.1304.00STEM-Designated"
+    ]
+  },
+  "American Studies": {
+    "schools": [
+      "School of Interdisciplinary Studies"
+    ],
+    "levels": [
+      "BA05.0102.00"
+    ]
+  },
+  "Animation": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "MFA10.0304.00STEM-designated"
+    ]
+  },
+  "Animation and Games": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "BA10.0304.00STEM-designated"
+    ]
+  },
+  "Applied Cognition and Neuroscience": {
+    "schools": [
+      "School of Behavioral and Brain Sciences"
+    ],
+    "levels": [
+      "MS26.1501.00STEM-Designated"
+    ]
+  },
+  "Applied Sociology": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "MS45.1102.00"
+    ]
+  },
+  "Art History": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "MA50.0703.00"
+    ]
+  },
+  "Artificial Intelligence for Biomedical Sciences": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "MS26.0102.00STEM-designatedNot currently eligible for UT Dallas I-20 issuance."
+    ]
+  },
+  "Arts, Technology, and Emerging Communication": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "MA50.0102.00",
+      "MFA50.0102.00",
+      "PHD50.0102.00"
+    ]
+  },
+  "Audiology": {
+    "schools": [
+      "School of Behavioral and Brain Sciences"
+    ],
+    "levels": [
+      "AUD51.0202.00"
+    ]
+  },
+  "Biochemistry": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "BS26.0202.00STEM-Designated"
+    ]
+  },
+  "Bioinformatics and Computational Biology": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "MS26.1103.00STEM-Designated"
+    ]
+  },
+  "Biology": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "BS26.0101.00STEM-Designated"
+    ]
+  },
+  "Biomedical Engineering": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science"
+    ],
+    "levels": [
+      "BS14.0501.00STEM-Designated",
+      "MS14.0501.00STEM-Designated",
+      "PHD14.0501.00STEM-Designated"
+    ]
+  },
+  "Biomedical Sciences": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "BS26.0102.00STEM-DesignatedNot currently eligible for UT Dallas I-20 issuance."
+    ]
+  },
+  "Biotechnology": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "MS26.1201.00STEM-Designated"
+    ]
+  },
+  "Business Administration": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "BS52.0201.00",
+      "DBA52.1301.00STEM-Designated",
+      "MBA52.0201.00"
+    ]
+  },
+  "Business Analytics and Artificial Intelligence": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "BS30.7102.00STEM-Designated",
+      "MS30.7102.00STEM-Designated"
+    ]
+  },
+  "Chemistry": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "BS40.0501.00STEM-Designated",
+      "MS40.0501.00STEM-Designated",
+      "PHD40.0501.00STEM-Designated"
+    ]
+  },
+  "Child Learning and Development": {
+    "schools": [
+      "School of Behavioral and Brain Sciences"
+    ],
+    "levels": [
+      "BS42.2703.00STEM-Designated"
+    ]
+  },
+  "Cognition and Neuroscience": {
+    "schools": [
+      "School of Behavioral and Brain Sciences"
+    ],
+    "levels": [
+      "PHD26.1501.00STEM-Designated"
+    ]
+  },
+  "Cognitive Science": {
+    "schools": [
+      "School of Behavioral and Brain Sciences"
+    ],
+    "levels": [
+      "BS30.2501.00STEM-Designated"
+    ]
+  },
+  "Computational and Geospatial Science": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science"
+    ],
+    "levels": [
+      "BS11.0101.00STEM-designatedJoint ProgramNot currently eligible for UT Dallas I-20 issuance."
+    ]
+  },
+  "Computer Engineering": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science"
+    ],
+    "levels": [
+      "BS14.0901.00STEM-Designated",
+      "MS14.0901.00STEM-Designated",
+      "PHD14.0901.00STEM-Designated"
+    ]
+  },
+  "Computer Information Systems and Technology": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "BS11.0103.00STEM-Designated"
+    ]
+  },
+  "Computer Science": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science"
+    ],
+    "levels": [
+      "BS11.0101.00STEM-Designated",
+      "MS11.0101.00STEM-Designated",
+      "PHD11.0101.00STEM-Designated"
+    ]
+  },
+  "Criminology": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "BA45.0401.00",
+      "MS45.0401.00",
+      "PHD45.0401.00"
+    ]
+  },
+  "Cyber Security, Technology, and Policy": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science",
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "MS11.1003.00Joint ProgramSTEM-Designated"
+    ]
+  },
+  "Cybersecurity and Risk Management": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "BS11.1003.00STEM-designatedNot currently eligible for UT Dallas I-20 issuance."
+    ]
+  },
+  "Cybersecurity Technology and Policy": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science"
+    ],
+    "levels": [
+      "BS11.1003.00STEM-designatedJoint ProgramNot currently eligible for UT Dallas I-20 issuance."
+    ]
+  },
+  "Data Science": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science",
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "BS30.7001.00Joint ProgramSTEM-Designated"
+    ]
+  },
+  "Data Science and Statistics": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "MS27.0501.00STEM-Designated",
+      "PHD27.0501.00STEM-Designated"
+    ]
+  },
+  "Economics": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "BA45.0601.00",
+      "BS45.0603.00STEM-Designated",
+      "MS45.0603.00STEM-Designated",
+      "PHD45.0603.00STEM-Designated"
+    ]
+  },
+  "Education": {
+    "schools": [
+      "School of Interdisciplinary Studies"
+    ],
+    "levels": [
+      "BS13.0101.00"
+    ]
+  },
+  "Electrical Engineering": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science"
+    ],
+    "levels": [
+      "BSEE14.1001.00STEM-Designated",
+      "MSEE14.1001.00STEM-Designated",
+      "PHD14.1001.00STEM-Designated"
+    ]
+  },
+  "Energy Management": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MS52.1301.00STEM-Designated"
+    ]
+  },
+  "Engineering": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science"
+    ],
+    "levels": [
+      "BA14.0101.00STEM-designatedNot currently eligible for UT Dallas I-20 issuance."
+    ]
+  },
+  "Finance": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "BS52.0801.00",
+      "MS27.0305.01STEM-Designated"
+    ]
+  },
+  "Financial Technology and Analytics": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MS27.0305.00STEM-Designated"
+    ]
+  },
+  "Game Development": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "MFA11.0204.00"
+    ]
+  },
+  "Geosciences": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "BS40.0601.00STEM-Designated",
+      "MS40.0601.00STEM-Designated",
+      "PHD40.0601.00STEM-Designated"
+    ]
+  },
+  "Geospatial Information Sciences": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "BS45.0702.00STEM-Designated",
+      "MS45.0702.00STEM-Designated",
+      "PHD45.0702.00STEM-Designated"
+    ]
+  },
+  "Global Business": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "BS52.1101.00"
+    ]
+  },
+  "Healthcare Administration and Leadership": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MBA51.0701.00Program restricted to University of Texas Southwestern Medical Center medical leaders and healthcare institutional partners."
+    ]
+  },
+  "Healthcare Leadership and Management": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MS51.0701.00"
+    ]
+  },
+  "Healthcare Management": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "BS51.0701.00"
+    ]
+  },
+  "Healthcare Studies": {
+    "schools": [
+      "School of Interdisciplinary Studies"
+    ],
+    "levels": [
+      "BS51.0000.00"
+    ]
+  },
+  "History": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "BA54.0101.00",
+      "MA54.0101.00",
+      "PHD54.0101.00"
+    ]
+  },
+  "Human Development and Early Childhood Disorders": {
+    "schools": [
+      "School of Behavioral and Brain Sciences"
+    ],
+    "levels": [
+      "MS42.2703.00STEM-Designated"
+    ]
+  },
+  "Human Resource Management": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "BS52.1001.00"
+    ]
+  },
+  "Humanities": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "MA24.0103.00",
+      "PHD24.0103.00"
+    ]
+  },
+  "Information Technology and Management": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MS11.0401.00STEM-Designated"
+    ]
+  },
+  "Innovation and Entrepreneurship": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MS52.0701.00"
+    ]
+  },
+  "Interdisciplinary Studies": {
+    "schools": [
+      "School of Interdisciplinary Studies"
+    ],
+    "levels": [
+      "BS30.9999.01",
+      "MA30.9999.01"
+    ]
+  },
+  "International Management Studies": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MS52.1101.00",
+      "PHD52.1101.00"
+    ]
+  },
+  "International Political Economy": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "BS44.0504.00",
+      "MS44.0504.00"
+    ]
+  },
+  "Latin American Studies": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "BA05.0107.00",
+      "MA05.0107.00"
+    ]
+  },
+  "Leadership and Organizational Development": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MS52.0213.00"
+    ]
+  },
+  "Literature": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "BA16.0104.00",
+      "MA16.0104.00",
+      "PHD16.0104.00"
+    ]
+  },
+  "Management Science": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MS52.1301.00STEM-Designated",
+      "PHD52.1301.00STEM-Designated"
+    ]
+  },
+  "Marketing": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "BS52.1401.00",
+      "MS30.7102.00STEM-Designated"
+    ]
+  },
+  "Materials Science and Engineering": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science"
+    ],
+    "levels": [
+      "BS14.1801.00STEM-designatedNot currently eligible for UT Dallas I-20 issuance.",
+      "MS14.1801.00STEM-Designated",
+      "PHD14.1801.00STEM-Designated"
+    ]
+  },
+  "Mathematics": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "BS27.0101.00STEM-Designated",
+      "MS27.0101.00STEM-Designated",
+      "PHD27.0101.00STEM-Designated"
+    ]
+  },
+  "Mathematics Education": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "MAT13.1311.00"
+    ]
+  },
+  "Mechanical Engineering": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science"
+    ],
+    "levels": [
+      "BS14.1901.00STEM-Designated",
+      "MS14.1901.00STEM-Designated",
+      "PHD14.1901.00STEM-Designated"
+    ]
+  },
+  "Media Arts and Design": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "BA50.0102.00"
+    ]
+  },
+  "Molecular and Cell Biology": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "MS26.0406.00STEM-Designated",
+      "PHD26.0406.00STEM-Designated"
+    ]
+  },
+  "Molecular Biology": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "BS26.0204.00STEM-Designated"
+    ]
+  },
+  "Neuroscience": {
+    "schools": [
+      "School of Behavioral and Brain Sciences"
+    ],
+    "levels": [
+      "BS26.1501.00STEM-Designated"
+    ]
+  },
+  "Philosophy": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "BA38.0101.00",
+      "MA38.0101.00"
+    ]
+  },
+  "Physics": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "BS40.0801.00STEM-Designated",
+      "MS40.0801.00STEM-Designated",
+      "PHD40.0801.00STEM-Designated"
+    ]
+  },
+  "Political Science": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "BA45.1001.00",
+      "MA45.1001.00",
+      "PHD45.1001.00"
+    ]
+  },
+  "Professional Communication and Digital Media Studies": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "BA09.0100.00Not currently eligible for UT Dallas I-20 issuance."
+    ]
+  },
+  "Psychology": {
+    "schools": [
+      "School of Behavioral and Brain Sciences"
+    ],
+    "levels": [
+      "BS42.0101.00",
+      "MS42.2704.00STEM-Designated",
+      "PHD42.2704.00STEM-Designated"
+    ]
+  },
+  "Public Affairs": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "BS44.0401.00",
+      "MPA44.0401.00",
+      "PHD44.0401.00"
+    ]
+  },
+  "Public Health": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "BA51.2201.00Not currently eligible for UT Dallas I-20 issuance."
+    ]
+  },
+  "Public Policy": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "BS44.0501.00",
+      "MPP44.0501.00"
+    ]
+  },
+  "Public Policy and Political Economy": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "PHD44.0501.00"
+    ]
+  },
+  "Science Education": {
+    "schools": [
+      "School of Natural Sciences and Mathematics"
+    ],
+    "levels": [
+      "MAT30.0101.00STEM-Designated"
+    ]
+  },
+  "Social Data Analytics and Research": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "MS45.0102.00STEM-Designated"
+    ]
+  },
+  "Sociology": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "BA45.1101.00"
+    ]
+  },
+  "Software Engineering": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science"
+    ],
+    "levels": [
+      "BS14.0903.00STEM-Designated",
+      "MS14.0903.00STEM-Designated",
+      "PHD14.0903.00STEM-Designated"
+    ]
+  },
+  "Speech, Language, and Hearing Sciences": {
+    "schools": [
+      "School of Behavioral and Brain Sciences"
+    ],
+    "levels": [
+      "BS51.0204.00",
+      "PHD51.0201.00"
+    ]
+  },
+  "Speech-Language Pathology": {
+    "schools": [
+      "School of Behavioral and Brain Sciences"
+    ],
+    "levels": [
+      "MS51.0201.00"
+    ]
+  },
+  "Supply Chain Management": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MS52.1301.00STEM-Designated"
+    ]
+  },
+  "Supply Chain Management and Analytics": {
+    "schools": [
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "BS52.1301.00"
+    ]
+  },
+  "Sustainability Planning and Policy": {
+    "schools": [
+      "School of Economic, Political and Policy Sciences"
+    ],
+    "levels": [
+      "BS30.3301.00STEM-designatedNot currently eligible for UT Dallas I-20 issuance.",
+      "MS30.3301.00STEM-designatedNot currently eligible for UT Dallas I-20 issuance."
+    ]
+  },
+  "Systems Engineering": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science"
+    ],
+    "levels": [
+      "BS14.2701.00STEM-DesignatedNot currently eligible for UT Dallas I-20 issuance."
+    ]
+  },
+  "Systems Engineering and Management": {
+    "schools": [
+      "Erik Jonsson School of Engineering and Computer Science",
+      "Naveen Jindal School of Management"
+    ],
+    "levels": [
+      "MS14.2701.00Joint ProgramSTEM-Designated"
+    ]
+  },
+  "Visual and Performing Arts": {
+    "schools": [
+      "Harry W. Bass Jr. School of Arts, Humanities, and Technology"
+    ],
+    "levels": [
+      "BA50.0101.00",
+      "MA50.0101.00",
+      "PHD50.0101.00"
+    ]
+  }
+}

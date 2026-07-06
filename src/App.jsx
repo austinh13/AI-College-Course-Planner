@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import ScheduleGridBackdrop from "./components/ScheduleGridBackdrop";
+import CometFlyby from "./components/CometFlyby";
 import StepIndicator from "./components/StepIndicator";
 import QuestionnaireStep from "./steps/QuestionnaireStep";
 import TimeConstraintsStep from "./steps/TimeConstraintsStep";
@@ -36,6 +37,7 @@ export default function App() {
   return (
     <div className="app-shell">
       <ScheduleGridBackdrop />
+      <CometFlyby />
 
       <header className="app-shell__header">
         <span className="app-shell__mark">Comet Planner</span>

@@ -1,7 +1,36 @@
+import { useMemo, useState } from "react";
+import utdDegrees from "../data/utd_degrees.json";
+
+const majors = Object.keys(utdDegrees).sort();
 const YEARS = ["Freshman", "Sophomore", "Junior", "Senior", "5th year+"];
+const MAX_SUGGESTIONS = 8;
 
 export default function QuestionnaireStep({ data, onChange, onNext }) {
+  const [showSuggestions, setShowSuggestions] = useState(false);
   const canContinue = data.major.trim().length > 0 && data.year !== "";
+
+  const suggestions = useMemo(() => {
+    const query = data.major.trim().toLowerCase();
+    if (!query) return [];
+    return majors.filter((m) => m.toLowerCase().includes(query)).slice(0, MAX_SUGGESTIONS);
+  }, [data.major]);
+
+  function selectMajor(name) {
+    onChange({ ...data, major: name });
+    setShowSuggestions(false);
+  }
+
+  function handleMajorKeyDown(e) {
+    if (e.key === "Enter" && showSuggestions && suggestions.length > 0) {
+      // Without this, Enter would submit the form instead of picking
+      // the top suggestion while the dropdown is open.
+      e.preventDefault();
+      selectMajor(suggestions[0]);
+    }
+    if (e.key === "Escape") {
+      setShowSuggestions(false);
+    }
+  }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -20,16 +49,38 @@ export default function QuestionnaireStep({ data, onChange, onNext }) {
         Your major and year decide which requirements we check against.
       </p>
 
-      <label className="field">
+      <label className="field field--autocomplete">
         <span className="field__label">Major</span>
         <input
           type="text"
           className="field__input"
           placeholder="e.g. Computer Science"
           value={data.major}
-          onChange={(e) => onChange({ ...data, major: e.target.value })}
+          onChange={(e) => {
+            onChange({ ...data, major: e.target.value });
+            setShowSuggestions(true);
+          }}
+          onFocus={() => setShowSuggestions(true)}
+          onBlur={() => setTimeout(() => setShowSuggestions(false), 120)}
+          onKeyDown={handleMajorKeyDown}
+          autoComplete="off"
           required
         />
+        {showSuggestions && suggestions.length > 0 && (
+          <ul className="autocomplete-list">
+            {suggestions.map((name) => (
+              <li key={name}>
+                <button
+                  type="button"
+                  className="autocomplete-option"
+                  onMouseDown={() => selectMajor(name)}
+                >
+                  {name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
       </label>
 
       <fieldset className="field">
