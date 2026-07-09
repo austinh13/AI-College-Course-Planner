@@ -1,0 +1,1343 @@
+{
+  "major": "Finance (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+        "And select 3 semester credit hours from Component Area Option Core courses",
+        "Or select any 6 semester credit hours from Component Area Option Core courses"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "73",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ACCT 2301",
+              "title": "Introductory Financial Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 2302",
+              "title": "Introductory Management Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 2301",
+              "title": "Business and Public Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3333",
+              "title": "Quantitative Business Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3360",
+              "title": "Managerial Methods in Decision Making Under Uncertainty",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Complete the following courses if not already completed as part of the Core Curriculum Requirements",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I (Required for all JSOM undergraduate students. May elect to substitute",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose two of the following if not completed in Core Curriculum:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "25",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1105",
+              "title": "Professional Development (JSOM first-time-in-college freshmen are required to take",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BA 3105",
+                  "title": "Professional Development (Transfer students and students new to JSOM are required to take",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BCOM 3300",
+              "title": "Business Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 3301",
+              "title": "AI in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3320",
+              "title": "Business Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IMS 3310",
+              "title": "International Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 3300",
+              "title": "Information Technology for Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "OBHR 3330",
+                  "title": "Human Resource Management in Business",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "OPRE 3310",
+              "title": "Supply Chain and Operations Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Experiential Learning",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 4V80",
+              "title": "and",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4380",
+              "title": ".",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4080",
+              "title": "Finance Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Students are required to complete 100 hours of community engagement experience:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 4095",
+              "title": "Social Sector Engagement and Community Outreach Practicum",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "9",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 3390",
+              "title": "Introduction to Financial Modeling",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4300",
+              "title": "Investment Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4310",
+              "title": "Intermediate Financial Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Concentrations",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "A. Financial Management Concentration (flexible option)",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Complete one of the following to satisfy the Capstone requirement:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BPS 4395",
+              "title": "Capstone Senior Project - Business",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "FIN 4395",
+                  "title": "Capstone Senior Project - Finance",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4328",
+                  "title": "Real Estate Valuation",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4333",
+                  "title": "Enterprise Risk Management",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4381",
+                  "title": "Fund Management II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "elsewhere on the student's degree plan. FIN courses include but are not limited to:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 3300",
+              "title": "Personal Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3305",
+              "title": "Real Estate Principles",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3340",
+              "title": "Regulation of Business and Financial Markets",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3350",
+              "title": "Financial Markets and Institutions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3358",
+              "title": "Real Estate Markets and Investments",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3360",
+              "title": "Entrepreneurial Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3365",
+              "title": "Real Estate Finance and Principles",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3370",
+              "title": "Principles of Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3375",
+              "title": "Life and Estate Planning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3380",
+              "title": "International Financial Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3395",
+              "title": "Financial Modeling and Valuation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4303",
+              "title": "Investment Strategies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4305",
+              "title": "Fixed Income Securities Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4307",
+              "title": "Private Equity",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4314",
+              "title": "Energy Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4315",
+              "title": "Behavioral Economics and Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4321",
+              "title": "Real Estate Law and Contracts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4322",
+              "title": "FinTech Markets",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4330",
+              "title": "Estate Planning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4331",
+              "title": "Business Liability Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4332",
+              "title": "Commercial Property Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4334",
+              "title": "Insurance Law and Contracts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4335",
+              "title": "Financial Aspects of Retirement, Compensation, and Employee Benefits",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4336",
+              "title": "Risk Systems and Theories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4337",
+              "title": "Business Valuation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4338",
+              "title": "Foundations of Risk Analytics and Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4340",
+              "title": "Options and Futures Markets",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4345",
+              "title": "Financial Information and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4346",
+              "title": "Applied Machine Learning in Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4347",
+              "title": "Applied Machine Learning using Excel",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4351",
+              "title": "Operational Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4352",
+              "title": "Financial Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4353",
+              "title": "Principles of Information Security",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4354",
+              "title": "Cybersecurity Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4390",
+              "title": "Seminar for Professional Program in Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 3340",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 3350",
+              "title": ", and up to 3 SCH of an Individual Study based on the major to satisfy JURS",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "B. FinTech Concentration",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Complete one of the following to satisfy the Capstone requirement:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BPS 4395",
+              "title": "Capstone Senior Project - Business",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "FIN 4395",
+                  "title": "Capstone Senior Project - Finance",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4328",
+                  "title": "Real Estate Valuation",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4333",
+                  "title": "Enterprise Risk Management",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4381",
+                  "title": "Fund Management II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Complete 18 semester credit hours from the following courses. These courses are required for this concentration and no substitution is allowed:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ITSS 3311",
+              "title": "Introduction to Programming",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 3312",
+              "title": "Object-Oriented Programming",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ITSS 3390",
+                  "title": "Web Design and Development for Business Applications",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ITSS 4381",
+                  "title": "Object Oriented Programming with Python",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ITSS 4300",
+              "title": "Database Fundamentals",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "FIN 4345",
+                  "title": "Financial Information and Analysis",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "FIN 3350",
+              "title": "Financial Markets and Institutions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4322",
+              "title": "FinTech Markets",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4346",
+              "title": "Applied Machine Learning in Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "FIN 4347",
+                  "title": "Applied Machine Learning using Excel",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "C. Corporate Finance Concentration",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Complete one of the following to satisfy the Capstone requirement:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BPS 4395",
+              "title": "Capstone Senior Project - Business",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "FIN 4395",
+                  "title": "Capstone Senior Project - Finance",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4328",
+                  "title": "Real Estate Valuation",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4333",
+                  "title": "Enterprise Risk Management",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4381",
+                  "title": "Fund Management II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Complete 9 semester credit hours from the following courses. These courses are required for this concentration, and no substitution is allowed:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 3380",
+              "title": "International Financial Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3395",
+              "title": "Financial Modeling and Valuation",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "FIN 4345",
+                  "title": "Financial Information and Analysis",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "FIN 4307",
+              "title": "Private Equity",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ACCT 4336",
+                  "title": "Financial Statement Analysis",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4337",
+                  "title": "Business Valuation",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "D. Investment Concentration",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Complete one of the following to satisfy the Capstone requirement:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BPS 4395",
+              "title": "Capstone Senior Project - Business",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "FIN 4395",
+                  "title": "Capstone Senior Project - Finance",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4328",
+                  "title": "Real Estate Valuation",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4333",
+                  "title": "Enterprise Risk Management",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4381",
+                  "title": "Fund Management II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Complete 9 semester credit hours from the following courses. These courses are required",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 3350",
+              "title": "Financial Markets and Institutions",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "FIN 4305",
+                  "title": "Fixed Income Securities Analysis",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "FIN 4303",
+              "title": "Investment Strategies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4340",
+              "title": "Options and Futures Markets",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "E. Real Estate Finance Concentration",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Complete the following to satisfy the Capstone requirement:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "REAL 4328",
+              "title": "Real Estate Valuation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Complete 12 semester credit hours from the following courses. These courses are required for this concentration and no substitution is allowed:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "REAL 3305",
+              "title": "Real Estate Principles",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "REAL 3358",
+              "title": "Real Estate Markets and Investments",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "REAL 3365",
+              "title": "Real Estate Finance and Principles",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "REAL 4321",
+              "title": "Real Estate Law and Contracts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Complete any 9 semester credit hours of upper-division courses not used elsewhere on",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "RMIS 4332",
+              "title": "and",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3390",
+              "title": "are recommended but not required.",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "F. Risk Management and Insurance Technology Concentration",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 3370",
+              "title": "Principles of Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Complete the following to satisfy the Capstone requirement:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 4333",
+              "title": "Enterprise Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select 18 semester credit hours from the following. These courses are required for this concentration and no substitution is allowed:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 4322",
+              "title": "FinTech Markets",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4331",
+              "title": "Business Liability Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4332",
+              "title": "Commercial Property Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4334",
+              "title": "Insurance Law and Contracts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4336",
+              "title": "Risk Systems and Theories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4338",
+              "title": "Foundations of Risk Analytics and Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4345",
+              "title": "Financial Information and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4346",
+              "title": "Applied Machine Learning in Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4351",
+              "title": "Operational Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4352",
+              "title": "Financial Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4353",
+              "title": "Principles of Information Security",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4354",
+              "title": "Cybersecurity Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "A capstone course is required for all undergraduate JSOM students and must be selected",
+        "based on the chosen concentration.",
+        "A practicum experience of at least 160 working hours is required, with registration in one of",
+        "the courses below. Depending on the internship and preference for additional electives, the",
+        "student may qualify for a zero to 3 semester credit hours course. Credit cannot be received",
+        "Students pursuing a Bachelor of Science in Finance degree will be best prepared for certain",
+        "career paths as they complete the course work required for each of the following",
+        "concentrations. The Financial Management Concentration is designed for students, who",
+        "wish to choose guided elective courses flexibly.",
+        "Students, who wish to choose guided elective courses flexibly, should select the Financial",
+        "Management Concentration.",
+        "Students must complete 21 semester credit hours with any FIN courses not used",
+        "Students in the Financial Management Concentration may also substitute up to 6",
+        "semester credit hours with ACCT, ITSS, MATH, MECO, or STAT courses that are not used",
+        "elsewhere on the student's degree plan. A student's request will be formally reviewed for",
+        "approval or denial.",
+        "program requirements. These credits may be applied to the financial management",
+        "concentration.",
+        "Students may focus on the FinTech (Financial Technology) concentration, combining",
+        "finance, risk management, or real estate knowledge with programming and data analytics",
+        "as demanded by the marketplace.",
+        "Students must complete 3 semester credit hours with any FIN courses not used elsewhere",
+        "on the student's degree plan. Students may also take an ITSS course in place of one of",
+        "these FIN courses if it is not used elsewhere on the student's degree plan. A student's",
+        "request must be formally reviewed for approval or denial.",
+        "Students who choose this concentration will focus on the skills necessary to manage the",
+        "financial problems of a firm. Students completing this concentration pursue careers as",
+        "corporate financial officers, private equity capitalists, and investment bankers.",
+        "Students must complete 12 semester credit hours with any FIN courses not used",
+        "elsewhere on the student's degree plan. Students in the Corporate Finance Concentration",
+        "may also substitute up to 6 semester credit hours with ACCT courses that are not used",
+        "elsewhere on the student's degree plan. A student's request must be formally reviewed",
+        "for approval or denial.",
+        "Students who choose the Investment concentration study to become investment analysts",
+        "and investment advisors. Careers in this field include security analysts, portfolio",
+        "managers, etc. Students who complete this concentration should be prepared to take the",
+        "CFA\u00ae level 1 exam.",
+        "And students must complete 12 semester credit hours with any FIN courses not used",
+        "elsewhere on the student's degree plan. Students in the Investment Concentration may",
+        "also substitute up to 6 semester credit hours with MATH or STAT courses that are not",
+        "used elsewhere on the student's degree plan. A student's request must be formally",
+        "reviewed for approval or denial.",
+        "for this concentration, and no substitution is allowed.",
+        "Students who choose this concentration will learn both the qualitative and quantitative",
+        "tools necessary to enter one of the many different areas within real estate, including",
+        "investment analysis, consulting, brokerage, appraisal, development, and corporate asset",
+        "management.",
+        "Students who choose this concentration will learn both the qualitative and quantitative",
+        "tools necessary to enter one of the many different areas within the risk management and",
+        "insurance industries."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "5",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "5",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both lower- and upper-division courses may count as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester"
+      ]
+    }
+  ]
+}

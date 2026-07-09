@@ -1,0 +1,357 @@
+{
+  "ACCT 2301": {
+    "name": "Introductory Financial Accounting",
+    "code": "ACCT 2301",
+    "prereq": "ACCT 2301 Repeat Restriction"
+  },
+  "ACCT 2302": {
+    "name": "Introductory Management Accounting",
+    "code": "ACCT 2302",
+    "prereq": "ACCT 2301. Repeat Restriction"
+  },
+  "ACCT 3312": {
+    "name": "Introduction to Accounting Analytics",
+    "code": "ACCT 3312",
+    "prereq": "(ACCT 2301 with a minimum grade of C) and (ACCT 2302 with a minimum grade of C)"
+  },
+  "ACCT 3322": {
+    "name": "Integrated Accounting Information Systems",
+    "code": "ACCT 3322",
+    "prereq": "(ACCT 2301 with a minimum grade of C) and (ACCT 2302 with a minimum grade of C)"
+  },
+  "ACCT 3331": {
+    "name": "Intermediate Financial Accounting I",
+    "code": "ACCT 3331",
+    "prereq": "(MATH 1325 or MATH 2413 or MATH 2417) and (ACCT 2301 with a minimum grade of C) and (ACCT 2302 with a minimum grade of C). Repeat Restriction"
+  },
+  "ACCT 3332": {
+    "name": "Intermediate Financial Accounting II",
+    "code": "ACCT 3332",
+    "prereq": "ACCT 3331 with a minimum grade of C"
+  },
+  "ACCT 3341": {
+    "name": "Cost Management Systems",
+    "code": "ACCT 3341",
+    "prereq": "(ACCT 2301 with a minimum grade of C) and (ACCT 2302 with a minimum grade of C)"
+  },
+  "ACCT 3350": {
+    "name": "Fundamentals of Taxation",
+    "code": "ACCT 3350",
+    "prereq": "BLAW 2301 and (ACCT 2301 with a minimum grade of C) and (ACCT 2302 with a minimum grade of C). Repeat Restriction"
+  },
+  "ACCT 4070": {
+    "name": "Accounting Internship",
+    "code": "ACCT 4070",
+    "prereq": null
+  },
+  "ACCT 4301": {
+    "name": "Database Systems",
+    "code": "ACCT 4301",
+    "prereq": "(ACCT 2301 with a minimum grade of C) and (ACCT 2302 with a minimum grade of C) and ITSS 3300 and (MATH 1325 or MATH 2413 or MATH 2417). May not be used to satisfy BS INTS degree requirements"
+  },
+  "ACCT 4334": {
+    "name": "Auditing",
+    "code": "ACCT 4334",
+    "prereq": "ACCT 3331 with a minimum grade of C. Repeat Restriction"
+  },
+  "ACCT 4336": {
+    "name": "Financial Statement Analysis",
+    "code": "ACCT 4336",
+    "prereq": "ACCT 3331 with a minimum grade of C"
+  },
+  "ACCT 4337": {
+    "name": "Business Valuation",
+    "code": "ACCT 4337",
+    "prereq": "(ACCT 3331 with a minimum grade of C) and FIN 3320"
+  },
+  "ACCT 4340": {
+    "name": "Survey of Accounting Software",
+    "code": "ACCT 4340",
+    "prereq": "ACCT 3331 with a minimum grade of C"
+  },
+  "ACCT 4342": {
+    "name": "Analysis and Design of Accounting Systems",
+    "code": "ACCT 4342",
+    "prereq": "ACCT 3312 and (ACCT 3331 with a minimum grade of C). Prerequisite or Corequisite: ACCT 3332"
+  },
+  "ACCT 6202": {
+    "name": "Managerial Accounting",
+    "code": "ACCT 6202",
+    "prereq": null
+  },
+  "ACCT 6292": {
+    "name": "Professional Accounting - Audit",
+    "code": "ACCT 6292",
+    "prereq": "(ACCT 6334 or an undergraduate degree in Accounting and adequate foundation/academic performance in a corresponding area), and ACCT 6335"
+  },
+  "ACCT 6301": {
+    "name": "Financial Accounting",
+    "code": "ACCT 6301",
+    "prereq": null
+  },
+  "ACCT 6305": {
+    "name": "Accounting for Managers",
+    "code": "ACCT 6305",
+    "prereq": "Credit cannot be received for both courses, (ACCT 6301 or ACCT 6202) and ACCT 6305"
+  },
+  "ACCT 6309": {
+    "name": "Business Data Warehousing",
+    "code": "ACCT 6309",
+    "prereq": "GPA Repeat Restriction - MIS 6309 and Academic Plan Not Equal to BSANMSNF"
+  },
+  "ACCT 6313": {
+    "name": "Cybersecurity Fundamentals",
+    "code": "ACCT 6313",
+    "prereq": null
+  },
+  "ACCT 6320": {
+    "name": "Database Foundations",
+    "code": "ACCT 6320",
+    "prereq": "Credit cannot be received for more than one of the following: (ACCT 6320 or MIS 6320 or OPRE 6393) and (BUAN 6320 or ACCT 6321) and MIS 6326. May not be used to fulfill degree requirements in MS Information Technology and Management"
+  },
+  "ACCT 6330": {
+    "name": "Intermediate Financial Accounting I",
+    "code": "ACCT 6330",
+    "prereq": null
+  },
+  "ACCT 6331": {
+    "name": "Cost Accounting",
+    "code": "ACCT 6331",
+    "prereq": null
+  },
+  "ACCT 6332": {
+    "name": "Intermediate Financial Accounting II",
+    "code": "ACCT 6332",
+    "prereq": "ACCT 6330 or an undergraduate degree in Accounting and adequate foundation/academic performance in a corresponding area"
+  },
+  "ACCT 6334": {
+    "name": "Auditing",
+    "code": "ACCT 6334",
+    "prereq": "ACCT 6330 or an undergraduate degree in Accounting and adequate foundation/academic performance in a corresponding area"
+  },
+  "ACCT 6335": {
+    "name": "Ethics for Professional Accountants",
+    "code": "ACCT 6335",
+    "prereq": null
+  },
+  "ACCT 6336": {
+    "name": "Information Technology Audit and Risk Management",
+    "code": "ACCT 6336",
+    "prereq": null
+  },
+  "ACCT 6340": {
+    "name": "System Analysis and Project Management",
+    "code": "ACCT 6340",
+    "prereq": "Prerequisite or Corequisite: MIS 6326 or BUAN 6320 or MIS 6320"
+  },
+  "ACCT 6341": {
+    "name": "Planning  Control and Performance Evaluation",
+    "code": "ACCT 6341",
+    "prereq": "ACCT 6202 or ACCT 6305 or ACCT 6331 or (an undergraduate degree in Accounting and adequate foundation/academic performance in a corresponding area)"
+  },
+  "ACCT 6344": {
+    "name": "Financial Statement Analysis",
+    "code": "ACCT 6344",
+    "prereq": "ACCT 6301 or ACCT 6305 or ACCT 6330 or an undergraduate degree in Accounting and adequate foundation/academic performance in a corresponding area"
+  },
+  "ACCT 6350": {
+    "name": "Fundamentals of Taxation I",
+    "code": "ACCT 6350",
+    "prereq": "Prerequisite or Corequisite: ACCT 6301 or ACCT 6330 or an undergraduate degree in Accounting and adequate foundation/academic performance in a corresponding area"
+  },
+  "ACCT 6353": {
+    "name": "Fundamentals of Taxation II",
+    "code": "ACCT 6353",
+    "prereq": "ACCT 6350 or an undergraduate degree in Accounting and adequate foundation/academic performance in a corresponding area"
+  },
+  "ACCT 6354": {
+    "name": "Partnership Taxation",
+    "code": "ACCT 6354",
+    "prereq": "ACCT 6350 or an undergraduate degree in Accounting and adequate foundation/academic performance in a corresponding area"
+  },
+  "ACCT 6374": {
+    "name": "Data Analytics for Accountants and Auditors",
+    "code": "ACCT 6374",
+    "prereq": "((ACCT 6301 or equivalent) and (ACCT 6202 or equivalent)) or ACCT 6305 or (ACCT 6330 and ACCT 6331) or BUAN 6359 or OPRE 6359 or (an undergraduate degree in Accounting and adequate foundation/academic performance in a corresponding area)"
+  },
+  "ACCT 6380": {
+    "name": "Internal Audit",
+    "code": "ACCT 6380",
+    "prereq": null
+  },
+  "ACCT 6383": {
+    "name": "Fraud Examination",
+    "code": "ACCT 6383",
+    "prereq": "ACCT 6330 or an undergraduate degree in Accounting and adequate foundation/academic performance in a corresponding area"
+  },
+  "ACCT 6386": {
+    "name": "Governance  Risk Management and Compliance",
+    "code": "ACCT 6386",
+    "prereq": null
+  },
+  "ACCT 6392": {
+    "name": "Advanced Auditing",
+    "code": "ACCT 6392",
+    "prereq": "ACCT 6334 or (an undergraduate degree in Accounting and adequate foundation/academic performance in a corresponding area) or ACCT 6380 or HMGT 6380"
+  },
+  "ACCT 7323": {
+    "name": "Empirical Research in Accounting and Economics",
+    "code": "ACCT 7323",
+    "prereq": "Repeat Limit - ACCT 7323 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "ACN 5312": {
+    "name": "Introductory Research Methods in Behavioral and Brain Sciences - Part I",
+    "code": "ACN 5312",
+    "prereq": "BBSC GRAD majors only"
+  },
+  "ACN 6312": {
+    "name": "Research Methods in Behavioral and Brain Sciences - Part I",
+    "code": "ACN 6312",
+    "prereq": "BBSC majors only"
+  },
+  "ACN 6323": {
+    "name": "Neurophysiology",
+    "code": "ACN 6323",
+    "prereq": "ACN 6340 or HCS 6340"
+  },
+  "ACN 6328": {
+    "name": "Computational Neuroscience",
+    "code": "ACN 6328",
+    "prereq": null
+  },
+  "ACN 6330": {
+    "name": "Cognitive Science",
+    "code": "ACN 6330",
+    "prereq": "BBSC majors only"
+  },
+  "ACN 6338": {
+    "name": "Functional Neuroanatomy",
+    "code": "ACN 6338",
+    "prereq": "BBSC majors only"
+  },
+  "ACN 6340": {
+    "name": "Cellular Neuroscience",
+    "code": "ACN 6340",
+    "prereq": "BBSC majors only"
+  },
+  "ACN 6341": {
+    "name": "Human Computer Interactions I",
+    "code": "ACN 6341",
+    "prereq": null
+  },
+  "ACN 6345": {
+    "name": "Neurobiology of Learning and Memory",
+    "code": "ACN 6345",
+    "prereq": "ACN 6346 or HCS 6346 or PSYC 6346"
+  },
+  "ACN 6346": {
+    "name": "Systems Neuroscience",
+    "code": "ACN 6346",
+    "prereq": "BBSC majors only"
+  },
+  "ACN 6348": {
+    "name": "Neural Net Mathematics",
+    "code": "ACN 6348",
+    "prereq": "BBSC majors only"
+  },
+  "ACN 6372": {
+    "name": "The Neuroscience of Pain",
+    "code": "ACN 6372",
+    "prereq": "BBSC majors only"
+  },
+  "ACN 6373": {
+    "name": "Intraoperative Neurophysiological Monitoring",
+    "code": "ACN 6373",
+    "prereq": "BBSC majors only"
+  },
+  "ACN 6375": {
+    "name": "IONM Special Topics  - Mapping of the Brain",
+    "code": "ACN 6375",
+    "prereq": "(ACN 6373 or HCS 6373 or ACN 6374 or HCS 6374) and BBSC majors only"
+  },
+  "ACN 6388": {
+    "name": "MATLAB for Brain Sciences",
+    "code": "ACN 6388",
+    "prereq": "BBSC majors only"
+  },
+  "ACN 6v81": {
+    "name": null,
+    "code": "ACN 6v81",
+    "prereq": null
+  },
+  "ACN 7310": {
+    "name": "Advanced Research Methods",
+    "code": "ACN 7310",
+    "prereq": "ACN 6313 or HCS 6313 or PSYC 6313.  Repeat Limit - ACN 7310 may only be repeated for a maximum of 12 semester credit hours"
+  },
+  "ACN 7324": {
+    "name": "Seminar in Cochlear Implants and Technology for Persons with Hearing Impairments",
+    "code": "ACN 7324",
+    "prereq": "BBSC majors only"
+  },
+  "ACN 7338": {
+    "name": "Brain Connectivity",
+    "code": "ACN 7338",
+    "prereq": "HCS 6346 or HCS 6338"
+  },
+  "ACN 7343": {
+    "name": "Neuropharmacology",
+    "code": "ACN 7343",
+    "prereq": "(ACN 6340 or HCS 6340) or (ACN 6346 or HCS 6346 or PSYC 6346)"
+  },
+  "ACN 7351": {
+    "name": "Aging and the Nervous System",
+    "code": "ACN 7351",
+    "prereq": "BBSC majors only"
+  },
+  "ACN 7364": {
+    "name": "Cognitive Neuroscience of Human Memory",
+    "code": "ACN 7364",
+    "prereq": "Bachelor's or Master's degree in psychology or computer science or neuroscience"
+  },
+  "ACN 7372": {
+    "name": "Seminar in Neuroscience  - Psychology of Reasoning",
+    "code": "ACN 7372",
+    "prereq": "BBSC majors only.  Repeat Limit - ACN 7372 may only be repeated for a maximum of 12 semester credit hours"
+  },
+  "ACTS 4302": {
+    "name": "Investment and Financial Markets I",
+    "code": "ACTS 4302",
+    "prereq": "STAT 4351 with a grade C- or higher and ACTS 4308 with a grade C- or higher"
+  },
+  "ACTS 4303": {
+    "name": "Long Term Actuarial Mathematics II",
+    "code": "ACTS 4303",
+    "prereq": "ACTS 4301 with a grade C- or higher"
+  },
+  "ACTS 4304": {
+    "name": "Short Term Actuarial Mathematics I",
+    "code": "ACTS 4304",
+    "prereq": "STAT 4352 with the grade C- or higher"
+  },
+  "ACTS 4307": {
+    "name": "Statistics for Risk Modeling",
+    "code": "ACTS 4307",
+    "prereq": "STAT 3355 and STAT 4352. Repeat Limit - ACTS 4307 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ACTS 4308": {
+    "name": "Actuarial Financial Mathematics",
+    "code": "ACTS 4308",
+    "prereq": "MATH 3351 with a grade of C- or higher"
+  },
+  "ACTS 6301": {
+    "name": "Theory of Actuarial Models  Life Contingencies I",
+    "code": "ACTS 6301",
+    "prereq": "STAT 5351 and ACTS 6308"
+  },
+  "ACTS 6304": {
+    "name": "Construction and Evaluation of Actuarial Models I",
+    "code": "ACTS 6304",
+    "prereq": "STAT 5352"
+  },
+  "ACTS 6307": {
+    "name": "Advanced Statistics for Risk Modeling",
+    "code": "ACTS 6307",
+    "prereq": "STAT 5352"
+  }
+}

@@ -5,22 +5,31 @@ import os
 import pdfplumber
 
 CATALOG_FOLDER = "Major_Catalogs"
-OUTPUT_FILE = "majors_requirements.json"
+OUTPUT_FOLDER = "Major_Catalogs_Parsed"
 
 TOTAL_HOURS_RE = re.compile(r"Degree Requirements\s*\((\d+)\s*semester credit hours\)")
+# Section markers must start at a line boundary and the label must be short
+# (bounded to 60 chars). Without both constraints, a roman numeral appearing
+# mid-text -- a faculty initial like "Dan I. Moldovan," or a nested "I./II."
+# sub-choice inside a requirement description -- gets misread as a section
+# start, and the lazy DOTALL match then swallows everything up to the next
+# real ": N semester credit hours" (e.g. an entire faculty roster).
 SECTION_RE = re.compile(
-    r"(I{1,3}V?|IV)\.\s*(.+?):\s*(\d+)(?:[-\u2013](\d+))?\s*semester\s+credit\s+hours",
+    r"(?:^|\n)(I{1,3}V?|IV)\.\s{0,3}(.{1,60}?)\s*[:\-\u2013]\s*(\d+)(?:\s*(?:[-\u2013]|or)\s*(\d+))?\s*(?:upper-division\s+)?semester\s+credit\s+hours",
     re.DOTALL,
 )
 CREDIT_LABEL_RE = re.compile(
-    r"^(.+?):\s*(\d+)(?:[-\u2013](\d+))?\s*semester credit hours"
+    r"^(.+?):\s*(\d+)(?:[-\u2013](\d+))?\s*(?:upper-division\s+)?semester credit hours"
 )
 COURSE_RE = re.compile(r"\b([A-Z]{2,4}) (\d[0-9V]{3})\b")
 CONNECTOR_RE = re.compile(r"^(or|and)\b", re.IGNORECASE)
 CHOOSE_RE = re.compile(r"^(Choose|Select|Complete)\b", re.IGNORECASE)
 TRAILING_MARKERS = re.compile(r"^(NOTE:|Minors\s*$|\d+\.\s|Updated:)")
-MAJOR_HEADING_RE = re.compile(r"^Bachelor of (Arts|Science) in (.+)$")
-DEGREE_ABBR = {"Arts": "BA", "Science": "BS"}
+MAJOR_HEADING_RE = re.compile(r"^Bachelor of (Arts|Sciences?) in (.+)$")
+DEGREE_ABBR = {"Arts": "BA", "Science": "BS", "Sciences": "BS"}
+# A parenthetical qualifier like "(Double Major)" sometimes wraps onto its
+# own line right after the heading (e.g. Economics and Finance).
+HEADING_CONTINUATION_RE = re.compile(r"^\(.+\)$")
 
 
 def merge_wrapped_parens(lines):
@@ -45,7 +54,7 @@ def merge_wrapped_parens(lines):
     return merged
 
 
-FOOTNOTE_RE = re.compile(r"(?<=[a-zA-Z])(\d+(?:,\s*\d+)*)(?=\s*\(|\s*$)")
+FOOTNOTE_RE = re.compile(r"(?<=[^\d\s])(\d+(?:,\s*\d+)*)(?=\s*\(|\s*$)")
 
 
 def strip_footnotes(text):
@@ -59,9 +68,12 @@ def strip_footnotes(text):
 def extract_courses(line):
     """Find real course codes in a line, excluding X000-style level
     markers (e.g. 'ANGM 3000' meaning 'any 3000-level course', not an
-    actual course)."""
+    actual course), and excluding codes that are only *mentioned* inside
+    a parenthetical aside (e.g. 'MATH 1325 ... (may substitute MATH 2413
+    or MATH 2417 for MATH 1325)') rather than actually required."""
+    masked = re.sub(r"\([^()]*\)", lambda m: " " * len(m.group(0)), line)
     courses = []
-    for subject, number in COURSE_RE.findall(line):
+    for subject, number in COURSE_RE.findall(masked):
         if number.endswith("000"):
             continue
         code = f"{subject} {number}"
@@ -87,7 +99,7 @@ def merge_label_descriptions(groups):
        one group's 'description' field.
     2. An empty choice-trigger fragment - happens when a multi-line
        instruction wraps and BOTH halves end up looking like triggers
-       (e.g. 'Complete 18 SCH from the following. These courses are' /
+       (e.g. 'Complete 18 SCH from the following. These courses are'
        'required for this concentration:') - merges its label forward
        into the next group, which actually holds the courses.
     """
@@ -142,6 +154,9 @@ def parse_section(name, hours_text, body_lines):
     current_hours = None
     current_choice = False
     current_courses = []
+    # Points at the option (a top-level course, or an "or" alternative to
+    # one) that a following "and" line should attach to as a co-requisite.
+    current_focus = None
 
     def flush():
         if current_courses or current_label:
@@ -160,6 +175,25 @@ def parse_section(name, hours_text, body_lines):
         if not line:
             continue
 
+        # A stray "or"/"and" with no course on its own line -- e.g. a nested
+        # "I. ...\nand ...\nor\nII. ...\nand ..." sub-choice -- isn't a label
+        # and isn't a course; skip it rather than let it become a phantom
+        # one-word group.
+        if line.lower() in ("or", "and"):
+            continue
+
+        # A bare footnote marker (e.g. the "2" left over when a section
+        # header like "...45 or 53 semester credit hours2" is split right
+        # after "hours", stranding the glued footnote digit on its own).
+        if re.fullmatch(r"\d+(,\s*\d+)*", line):
+            continue
+
+        # A wrapped continuation of the previous section header (e.g.
+        # "Major Requirements: 54-57 semester credit hours" / "beyond Core
+        # Curriculum" on the next line) -- not a real group.
+        if line.lower() == "beyond core curriculum":
+            continue
+
         courses_found = extract_courses(line)
 
         if courses_found:
@@ -167,8 +201,27 @@ def parse_section(name, hours_text, body_lines):
             connector = connector_match.group(1).lower() if connector_match else None
             for c in courses_found:
                 c["connector"] = connector
-            current_courses.extend(courses_found)
+                c["with"] = []
+                c["alternatives"] = []
+                if connector == "and" and current_focus is not None:
+                    # Co-requisite of the option currently being built
+                    # (e.g. the lab course paired with its lecture course).
+                    current_focus["with"].append({"code": c["code"], "title": c["title"]})
+                elif connector == "or" and current_courses:
+                    # A full alternative option to the last top-level
+                    # option (which may itself gain "and" co-requisites
+                    # on subsequent lines, so it becomes the new focus).
+                    current_courses[-1]["alternatives"].append(c)
+                    current_focus = c
+                else:
+                    current_courses.append(c)
+                    current_focus = c
             continue
+
+        # A footnote digit can be glued directly onto a label line's
+        # trailing punctuation (e.g. "...career track):2"), which would
+        # otherwise hide the ':' that marks it as a group trigger.
+        line = strip_footnotes(line)
 
         label_match = CREDIT_LABEL_RE.match(line)
         if label_match:
@@ -178,6 +231,7 @@ def parse_section(name, hours_text, body_lines):
             current_hours = f"{lo}-{hi}" if hi else lo
             current_choice = False
             current_courses = []
+            current_focus = None
             continue
 
         if CHOOSE_RE.match(line):
@@ -186,6 +240,7 @@ def parse_section(name, hours_text, body_lines):
             current_hours = None
             current_choice = True
             current_courses = []
+            current_focus = None
             continue
 
         if line.endswith(":"):
@@ -194,15 +249,17 @@ def parse_section(name, hours_text, body_lines):
             current_hours = None
             current_choice = True
             current_courses = []
+            current_focus = None
             continue
 
         # Short bare label (e.g. "Foundations", "Fundamentals") vs. prose
         if len(line) < 45 and not line.endswith(".") and "credit hours" not in line:
             flush()
-            current_label = line
+            current_label = strip_footnotes(line)
             current_hours = None
             current_choice = False
             current_courses = []
+            current_focus = None
             continue
 
         # Leftover descriptive/disclaimer prose
@@ -215,6 +272,12 @@ def parse_section(name, hours_text, body_lines):
         "groups": merge_label_descriptions(groups),
         "notes": notes,
     }
+
+
+def sanitize_filename(name):
+    """Turn a major name into a safe filename, e.g. 'Economics and Finance
+    (Double Major) (BS)' -> 'Economics_and_Finance_Double_Major_BS.json'."""
+    return re.sub(r"[^A-Za-z0-9]+", "_", name).strip("_") + ".json"
 
 
 def parse_catalog_pdf(path):
@@ -240,12 +303,31 @@ def parse_catalog_pdf(path):
         if not hours_match:
             continue
         degree = DEGREE_ABBR.get(m.group(1), m.group(1))
-        major_starts.append((i, f"{m.group(2).strip()} ({degree})", hours_match.group(1)))
+        name = m.group(2).strip()
+        # Pick up a wrapped qualifier like "(Double Major)" on the next line.
+        if i + 1 < len(raw_lines) and HEADING_CONTINUATION_RE.match(raw_lines[i + 1].strip()):
+            name = f"{name} {raw_lines[i + 1].strip()}"
+        major_starts.append((i, f"{name} ({degree})", hours_match.group(1)))
 
     majors = []
     for idx, (start_line, major_name, total_hours) in enumerate(major_starts):
         end_line = major_starts[idx + 1][0] if idx + 1 < len(major_starts) else len(raw_lines)
         block_lines = raw_lines[start_line:end_line]
+
+        # Every degree plan ends with a stock sentence ("...sufficient
+        # upper-division courses to total 45 upper-division semester
+        # credit hours."). Everything after the LAST occurrence of it
+        # (Fast Track programs, Minors, Certificates, UTeach Option,
+        # policy notes, footnote definitions, etc.) isn't part of the
+        # degree plan itself, so drop it before section-splitting --
+        # otherwise it gets misread as bogus trailing groups.
+        plan_end = None
+        for j, bl in enumerate(block_lines):
+            if "sufficient upper-division courses" in bl:
+                plan_end = j
+        if plan_end is not None:
+            block_lines = block_lines[: plan_end + 1]
+
         full_text = "\n".join(block_lines)
 
         section_matches = list(SECTION_RE.finditer(full_text))
@@ -280,9 +362,9 @@ def parse_catalog_pdf(path):
 
 
 if __name__ == "__main__":
-    results = {}
     pdf_paths = sorted(glob.glob(os.path.join(CATALOG_FOLDER, "*.pdf")))
     print(f"Found {len(pdf_paths)} PDFs in {CATALOG_FOLDER}/")
+    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
     for path in pdf_paths:
         majors = parse_catalog_pdf(path)
@@ -291,10 +373,10 @@ if __name__ == "__main__":
             continue
         for data in majors:
             key = data["major"]
-            results[key] = data
             n_courses = sum(len(g["courses"]) for s in data["sections"] for g in s["groups"])
             print(f"  {key}: {len(data['sections'])} sections, {n_courses} courses found")
+            out_path = os.path.join(OUTPUT_FOLDER, sanitize_filename(key))
+            with open(out_path, "w") as f:
+                json.dump(data, f, indent=2)
 
-    with open(OUTPUT_FILE, "w") as f:
-        json.dump(results, f, indent=2)
-    print(f"\nSaved to {OUTPUT_FILE}")
+    print(f"\nSaved to {OUTPUT_FOLDER}/")
