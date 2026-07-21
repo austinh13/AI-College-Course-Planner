@@ -5,11 +5,12 @@ import CometFlyby from "./components/CometFlyby";
 import StepIndicator from "./components/StepIndicator";
 import QuestionnaireStep from "./steps/QuestionnaireStep";
 import TimeConstraintsStep from "./steps/TimeConstraintsStep";
+import AcademicHistory from "./components/AcademicHistory";
 import ReviewStep from "./steps/ReviewStep";
 import { wakeBackend } from "./lib/api";
 import "./App.css";
 
-const STAGE = { PROFILE: 0, CONSTRAINTS: 1, REVIEW: 2 };
+const STAGE = { PROFILE: 0, CONSTRAINTS: 1, ACADEMIC_HISTORY: 2, REVIEW: 3 };
 
 const initialProfile = { major: "", year: "" };
 const initialConstraints = {
@@ -22,11 +23,20 @@ const initialConstraints = {
   maxHoursPerDay: "",
   unlimitedDailyHours: false,
 };
+const initialAcademicHistory = {
+  completed: new Set(),
+  manualEntries: {},
+  completedCodes: [],
+  hoursEarned: 0,
+  hoursLeft: null,
+  totalHours: null,
+};
 
 export default function App() {
   const [stage, setStage] = useState(STAGE.PROFILE);
   const [profile, setProfile] = useState(initialProfile);
   const [constraints, setConstraints] = useState(initialConstraints);
+  const [academicHistory, setAcademicHistory] = useState(initialAcademicHistory);
 
   // Fire the moment the app mounts (start of the questionnaire) so a
   // free-tier Render backend has the whole flow to finish waking up.
@@ -36,8 +46,8 @@ export default function App() {
 
   return (
     <div className="app-shell">
-      <ScheduleGridBackdrop />
-      <CometFlyby />
+      {stage <= STAGE.CONSTRAINTS && <ScheduleGridBackdrop />}
+      {stage === STAGE.PROFILE && <CometFlyby />}
 
       <header className="app-shell__header">
         <span className="app-shell__mark">Comet Planner</span>
@@ -48,6 +58,7 @@ export default function App() {
         <AnimatePresence mode="wait">
           <motion.div
             key={stage}
+            className={stage === STAGE.ACADEMIC_HISTORY ? "app-shell__stage--fill" : undefined}
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -16 }}
@@ -66,7 +77,21 @@ export default function App() {
                 data={constraints}
                 onChange={setConstraints}
                 onBack={() => setStage(STAGE.PROFILE)}
-                onSubmit={() => setStage(STAGE.REVIEW)}
+                onSubmit={() => setStage(STAGE.ACADEMIC_HISTORY)}
+              />
+            )}
+
+            {stage === STAGE.ACADEMIC_HISTORY && (
+              <AcademicHistory
+                major={profile.major}
+                completed={academicHistory.completed}
+                manualEntries={academicHistory.manualEntries}
+                onChange={(next) => setAcademicHistory((prev) => ({ ...prev, ...next }))}
+                onBack={() => setStage(STAGE.CONSTRAINTS)}
+                onContinue={(summary) => {
+                  setAcademicHistory((prev) => ({ ...prev, ...summary }));
+                  setStage(STAGE.REVIEW);
+                }}
               />
             )}
 
@@ -74,7 +99,8 @@ export default function App() {
               <ReviewStep
                 profile={profile}
                 constraints={constraints}
-                onEdit={() => setStage(STAGE.CONSTRAINTS)}
+                academicHistory={academicHistory}
+                onEdit={() => setStage(STAGE.ACADEMIC_HISTORY)}
               />
             )}
           </motion.div>

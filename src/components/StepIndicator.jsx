@@ -1,6 +1,7 @@
 const STEPS = [
   { n: "01", label: "About you" },
   { n: "02", label: "Time constraints" },
+  { n: "03", label: "Academic history" },
 ];
 
 export default function StepIndicator({ current }) {

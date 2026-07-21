@@ -140,7 +140,7 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
           Back
         </button>
         <button type="submit" className="btn btn--primary" disabled={!canSubmit}>
-          Generate schedule
+          Continue
         </button>
       </div>
     </form>

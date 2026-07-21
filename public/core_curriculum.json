@@ -1,0 +1,860 @@
+[
+  {
+    "code": "010",
+    "name": "Communication",
+    "credit_hours": 6,
+    "courses": [
+      {
+        "code": "ATCM 2340",
+        "name": "Visual Communication",
+        "has_asterisk": true
+      },
+      {
+        "code": "COMM 1311",
+        "name": "Introduction to Communication Studies",
+        "has_asterisk": true
+      },
+      {
+        "code": "COMM 1315",
+        "name": "Public Speaking",
+        "has_asterisk": true
+      },
+      {
+        "code": "COMM 2320",
+        "name": "Scientific Communication",
+        "has_asterisk": true
+      },
+      {
+        "code": "ECS 2390",
+        "name": "Professional and Technical Communication",
+        "has_asterisk": false
+      },
+      {
+        "code": "EPPS 2307",
+        "name": "Digital Earth",
+        "has_asterisk": true
+      },
+      {
+        "code": "GEOS 2307",
+        "name": "Digital Earth",
+        "has_asterisk": true
+      },
+      {
+        "code": "GISC 2307",
+        "name": "Digital Earth",
+        "has_asterisk": true
+      },
+      {
+        "code": "RHET 1301",
+        "name": "Rhetoric I",
+        "has_asterisk": false
+      },
+      {
+        "code": "RHET 1302",
+        "name": "Rhetoric II",
+        "has_asterisk": true
+      },
+      {
+        "code": "RHET 2302",
+        "name": "Intermediate Composition and Rhetoric",
+        "has_asterisk": false
+      }
+    ]
+  },
+  {
+    "code": "020",
+    "name": "Mathematics",
+    "credit_hours": 3,
+    "courses": [
+      {
+        "code": "MATH 1306",
+        "name": "College Algebra for the Non-Scientist",
+        "has_asterisk": true
+      },
+      {
+        "code": "MATH 1314",
+        "name": "College Algebra",
+        "has_asterisk": true
+      },
+      {
+        "code": "MATH 1316",
+        "name": "Trigonometry",
+        "has_asterisk": true
+      },
+      {
+        "code": "MATH 1325",
+        "name": "Applied Calculus I",
+        "has_asterisk": true
+      },
+      {
+        "code": "MATH 2306",
+        "name": "Analytic Geometry",
+        "has_asterisk": true
+      },
+      {
+        "code": "MATH 2312",
+        "name": "Precalculus",
+        "has_asterisk": true
+      },
+      {
+        "code": "MATH 2413",
+        "name": "Differential Calculus",
+        "has_asterisk": true
+      },
+      {
+        "code": "MATH 2414",
+        "name": "Integral Calculus",
+        "has_asterisk": true
+      },
+      {
+        "code": "MATH 2415",
+        "name": "Calculus of Several Variables",
+        "has_asterisk": true
+      },
+      {
+        "code": "MATH 2417",
+        "name": "Calculus I",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHIL 2303",
+        "name": "Introduction to Logic",
+        "has_asterisk": true
+      },
+      {
+        "code": "PSY 2317",
+        "name": "Statistics for Psychology",
+        "has_asterisk": true
+      },
+      {
+        "code": "STAT 1342",
+        "name": "Statistical Decision Making",
+        "has_asterisk": true
+      },
+      {
+        "code": "STAT 2332",
+        "name": "Introductory Statistics for Life Sciences",
+        "has_asterisk": true
+      }
+    ]
+  },
+  {
+    "code": "030",
+    "name": "Life and Physical Sciences",
+    "credit_hours": 6,
+    "courses": [
+      {
+        "code": "BIOL 1318",
+        "name": "Human Genetics",
+        "has_asterisk": true
+      },
+      {
+        "code": "BIOL 2311",
+        "name": "Introduction to Modern Biology I",
+        "has_asterisk": true
+      },
+      {
+        "code": "BIOL 2312",
+        "name": "Introduction to Modern Biology II",
+        "has_asterisk": true
+      },
+      {
+        "code": "BIOL 2350",
+        "name": "Biological Basis of Health and Disease",
+        "has_asterisk": true
+      },
+      {
+        "code": "CGS 2301",
+        "name": "Cognitive Science",
+        "has_asterisk": true
+      },
+      {
+        "code": "CHEM 1311",
+        "name": "General Chemistry I",
+        "has_asterisk": true
+      },
+      {
+        "code": "CHEM 1312",
+        "name": "General Chemistry II",
+        "has_asterisk": true
+      },
+      {
+        "code": "CHEM 1315",
+        "name": "Honors Freshman Chemistry I",
+        "has_asterisk": true
+      },
+      {
+        "code": "CHEM 1316",
+        "name": "Honors Freshman Chemistry II",
+        "has_asterisk": true
+      },
+      {
+        "code": "ENVR 2302",
+        "name": "The Global Environment",
+        "has_asterisk": true
+      },
+      {
+        "code": "GEOG 2302",
+        "name": "The Global Environment",
+        "has_asterisk": true
+      },
+      {
+        "code": "GEOS 1303",
+        "name": "Physical Geology",
+        "has_asterisk": true
+      },
+      {
+        "code": "GEOS 1304",
+        "name": "History of Earth and Life",
+        "has_asterisk": true
+      },
+      {
+        "code": "GEOS 2302",
+        "name": "The Global Environment",
+        "has_asterisk": true
+      },
+      {
+        "code": "GEOS 2310",
+        "name": "Environmental Geology",
+        "has_asterisk": true
+      },
+      {
+        "code": "GEOS 2321",
+        "name": "Geology, Resources, and Environment of Latin America",
+        "has_asterisk": true
+      },
+      {
+        "code": "GEOS 2340",
+        "name": "Comets Love Meteorites",
+        "has_asterisk": true
+      },
+      {
+        "code": "GEOS 2409",
+        "name": "Rocks and Minerals",
+        "has_asterisk": true
+      },
+      {
+        "code": "ISNS 2359",
+        "name": "Earthquakes and Volcanoes",
+        "has_asterisk": true
+      },
+      {
+        "code": "ISNS 2367",
+        "name": "The Oceans",
+        "has_asterisk": true
+      },
+      {
+        "code": "ISNS 2368",
+        "name": "Weather and Climate",
+        "has_asterisk": true
+      },
+      {
+        "code": "NATS 1311",
+        "name": "The Universe, and Everything Else",
+        "has_asterisk": true
+      },
+      {
+        "code": "NATS 2330",
+        "name": "The Basis of Evolution",
+        "has_asterisk": true
+      },
+      {
+        "code": "NATS 2333",
+        "name": "Energy, Water, and the Environment",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHIL 2304",
+        "name": "Understanding Scientific Inquiry",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHYS 1101",
+        "name": "College Physics Laboratory I",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHYS 1301",
+        "name": "College Physics I",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHYS 1302",
+        "name": "College Physics II",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHYS 2125",
+        "name": "Physics Laboratory I",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHYS 2325",
+        "name": "Mechanics",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHYS 2326",
+        "name": "Electromagnetism and Waves",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHYS 2421",
+        "name": "Honors Physics I - Mechanics and Heat",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHYS 2422",
+        "name": "Honors Physics II - Electromagnetism and Waves",
+        "has_asterisk": true
+      },
+      {
+        "code": "PSY 2364",
+        "name": "Animal Communication",
+        "has_asterisk": true
+      }
+    ]
+  },
+  {
+    "code": "040",
+    "name": "Language, Philosophy and Culture",
+    "credit_hours": 3,
+    "courses": [
+      {
+        "code": "AMS 2300",
+        "name": "American Popular Culture",
+        "has_asterisk": false
+      },
+      {
+        "code": "AMS 2341",
+        "name": "American Studies for the Twenty-First Century",
+        "has_asterisk": false
+      },
+      {
+        "code": "ATCM 2300",
+        "name": "Introduction to TechnoCulture",
+        "has_asterisk": true
+      },
+      {
+        "code": "ATCM 2322",
+        "name": "Media Histories",
+        "has_asterisk": true
+      },
+      {
+        "code": "ATCM 2325",
+        "name": "Introduction to Ethnic Studies",
+        "has_asterisk": true
+      },
+      {
+        "code": "COMM 1320",
+        "name": "Interpersonal Communication",
+        "has_asterisk": true
+      },
+      {
+        "code": "COMM 2314",
+        "name": "Oral Interpretation",
+        "has_asterisk": true
+      },
+      {
+        "code": "FILM 1303",
+        "name": "Transnational Film and Video",
+        "has_asterisk": true
+      },
+      {
+        "code": "HIST 2340",
+        "name": "Middle East Civilizations",
+        "has_asterisk": true
+      },
+      {
+        "code": "HIST 2341",
+        "name": "East Asian Civilizations",
+        "has_asterisk": true
+      },
+      {
+        "code": "HIST 2350",
+        "name": "Latin American Civilizations",
+        "has_asterisk": true
+      },
+      {
+        "code": "HIST 2360",
+        "name": "European Civilizations",
+        "has_asterisk": true
+      },
+      {
+        "code": "HIST 2370",
+        "name": "The Holocaust",
+        "has_asterisk": true
+      },
+      {
+        "code": "HUMA 1301",
+        "name": "Exploration of the Humanities",
+        "has_asterisk": true
+      },
+      {
+        "code": "LIT 1301",
+        "name": "Introduction to Literature",
+        "has_asterisk": true
+      },
+      {
+        "code": "LIT 2322",
+        "name": "Survey of African-American and African Diaspora Literatures",
+        "has_asterisk": true
+      },
+      {
+        "code": "LIT 2329",
+        "name": "Introduction to Ethnic American Literature",
+        "has_asterisk": true
+      },
+      {
+        "code": "LIT 2331",
+        "name": "Introduction to World Literature",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHIL 1301",
+        "name": "Introduction to Philosophy",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHIL 1305",
+        "name": "Introduction to Philosophy of Religion",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHIL 1306",
+        "name": "Introduction to Ethics",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHIL 2316",
+        "name": "History of Philosophy I",
+        "has_asterisk": true
+      },
+      {
+        "code": "PHIL 2317",
+        "name": "History of Philosophy II",
+        "has_asterisk": true
+      },
+      {
+        "code": "RELS 1325",
+        "name": "Introduction to Philosophy of Religion",
+        "has_asterisk": true
+      }
+    ]
+  },
+  {
+    "code": "050",
+    "name": "Creative Arts",
+    "credit_hours": 3,
+    "courses": [
+      {
+        "code": "AHST 1303",
+        "name": "Survey of Western Art History: Ancient to Medieval",
+        "has_asterisk": true
+      },
+      {
+        "code": "AHST 1304",
+        "name": "Survey of Western Art History: Renaissance to Modern",
+        "has_asterisk": true
+      },
+      {
+        "code": "AHST 2331",
+        "name": "Understanding Art",
+        "has_asterisk": true
+      },
+      {
+        "code": "ARTS 1301",
+        "name": "Exploration of the Arts",
+        "has_asterisk": true
+      },
+      {
+        "code": "ATCM 2321",
+        "name": "Reading Media Critically",
+        "has_asterisk": true
+      },
+      {
+        "code": "CRWT 2301",
+        "name": "Introduction to Creative Writing",
+        "has_asterisk": true
+      },
+      {
+        "code": "DANC 1305",
+        "name": "Introduction to World Dance Forms",
+        "has_asterisk": true
+      },
+      {
+        "code": "DANC 1310",
+        "name": "Understanding Dance",
+        "has_asterisk": true
+      },
+      {
+        "code": "FILM 2332",
+        "name": "Understanding Film",
+        "has_asterisk": true
+      },
+      {
+        "code": "LIT 1311",
+        "name": "The Art of Fiction",
+        "has_asterisk": true
+      },
+      {
+        "code": "LIT 1315",
+        "name": "The Art of Poetry",
+        "has_asterisk": true
+      },
+      {
+        "code": "MUSI 1306",
+        "name": "Understanding Music",
+        "has_asterisk": true
+      },
+      {
+        "code": "MUSI 2321",
+        "name": "Music Cultures of the World",
+        "has_asterisk": true
+      },
+      {
+        "code": "MUSI 2322",
+        "name": "Music in Western Civilization",
+        "has_asterisk": false
+      },
+      {
+        "code": "PHIL 1307",
+        "name": "Introduction to Philosophy of Art",
+        "has_asterisk": true
+      },
+      {
+        "code": "THEA 1310",
+        "name": "Understanding Theatre",
+        "has_asterisk": true
+      }
+    ]
+  },
+  {
+    "code": "060",
+    "name": "American History",
+    "credit_hours": 6,
+    "courses": [
+      {
+        "code": "HIST 1301",
+        "name": "U.S. History Survey to Civil War",
+        "has_asterisk": true
+      },
+      {
+        "code": "HIST 1302",
+        "name": "U.S. History Survey from Civil War",
+        "has_asterisk": true
+      },
+      {
+        "code": "HIST 2301",
+        "name": "History of Texas",
+        "has_asterisk": true
+      },
+      {
+        "code": "HIST 2330",
+        "name": "Themes and Ideas in American History",
+        "has_asterisk": true
+      },
+      {
+        "code": "HIST 2381",
+        "name": "African-American History",
+        "has_asterisk": true
+      },
+      {
+        "code": "HIST 2384",
+        "name": "U.S. Women from Settlement to Present",
+        "has_asterisk": true
+      }
+    ]
+  },
+  {
+    "code": "070",
+    "name": "Government/Political Science",
+    "credit_hours": 6,
+    "courses": [
+      {
+        "code": "GOVT 2107",
+        "name": "Federal and Texas Constitutions",
+        "has_asterisk": false
+      },
+      {
+        "code": "GOVT 2305",
+        "name": "American National Government",
+        "has_asterisk": false
+      },
+      {
+        "code": "GOVT 2306",
+        "name": "State and Local Government",
+        "has_asterisk": false
+      }
+    ]
+  },
+  {
+    "code": "080",
+    "name": "Social and Behavioral Sciences",
+    "credit_hours": 3,
+    "courses": [
+      {
+        "code": "BA 1310",
+        "name": "Making Choices in Free Market Systems",
+        "has_asterisk": true
+      },
+      {
+        "code": "BA 1320",
+        "name": "Business in a Global World",
+        "has_asterisk": true
+      },
+      {
+        "code": "CLDP 2314",
+        "name": "Lifespan Development",
+        "has_asterisk": true
+      },
+      {
+        "code": "CRIM 1301",
+        "name": "Introduction to Criminal Justice",
+        "has_asterisk": false
+      },
+      {
+        "code": "CRIM 1307",
+        "name": "Introduction to Crime and Criminology",
+        "has_asterisk": false
+      },
+      {
+        "code": "ECON 2301",
+        "name": "Principles of Macroeconomics",
+        "has_asterisk": true
+      },
+      {
+        "code": "ECON 2302",
+        "name": "Principles of Microeconomics",
+        "has_asterisk": true
+      },
+      {
+        "code": "GEOG 2303",
+        "name": "World Regional Geography",
+        "has_asterisk": false
+      },
+      {
+        "code": "GST 2300",
+        "name": "Introduction to Gender Studies",
+        "has_asterisk": false
+      },
+      {
+        "code": "LIT 1331",
+        "name": "Literature and Anthropology",
+        "has_asterisk": true
+      },
+      {
+        "code": "PA 2325",
+        "name": "Introduction to Public and Nonprofit Management",
+        "has_asterisk": false
+      },
+      {
+        "code": "PSY 2301",
+        "name": "Introduction to Psychology",
+        "has_asterisk": true
+      },
+      {
+        "code": "PSY 2314",
+        "name": "Lifespan Development",
+        "has_asterisk": true
+      },
+      {
+        "code": "SOC 1301",
+        "name": "Introduction to Sociology",
+        "has_asterisk": false
+      },
+      {
+        "code": "SOC 1306",
+        "name": "Contemporary Social Issues",
+        "has_asterisk": false
+      },
+      {
+        "code": "SOC 2300",
+        "name": "Introduction to Gender Studies",
+        "has_asterisk": false
+      }
+    ]
+  },
+  {
+    "code": "090",
+    "name": "Component Area Option",
+    "credit_hours": 6,
+    "courses": [
+      {
+        "code": "ARAB 1311",
+        "name": "Beginning Arabic I",
+        "has_asterisk": false
+      },
+      {
+        "code": "ARAB 1312",
+        "name": "Beginning Arabic II",
+        "has_asterisk": false
+      },
+      {
+        "code": "ARAB 2311",
+        "name": "Intermediate Arabic I",
+        "has_asterisk": false
+      },
+      {
+        "code": "ARAB 2312",
+        "name": "Intermediate Arabic II",
+        "has_asterisk": false
+      },
+      {
+        "code": "ARHM 2340",
+        "name": "Creativity",
+        "has_asterisk": false
+      },
+      {
+        "code": "ARHM 2342",
+        "name": "Connections in the Arts and Humanities",
+        "has_asterisk": false
+      },
+      {
+        "code": "ARHM 2343",
+        "name": "Science and the Humanities",
+        "has_asterisk": false
+      },
+      {
+        "code": "ARHM 2344",
+        "name": "World Cultures",
+        "has_asterisk": false
+      },
+      {
+        "code": "CHEM 1111",
+        "name": "General Chemistry Laboratory I",
+        "has_asterisk": false
+      },
+      {
+        "code": "CHEM 1115",
+        "name": "Honors Freshman Chemistry Laboratory I",
+        "has_asterisk": false
+      },
+      {
+        "code": "CHIN 2311",
+        "name": "Intermediate Chinese I",
+        "has_asterisk": false
+      },
+      {
+        "code": "CHIN 2312",
+        "name": "Intermediate Chinese II",
+        "has_asterisk": false
+      },
+      {
+        "code": "EPPS 2301",
+        "name": "Research Design in the Social and Policy Sciences",
+        "has_asterisk": false
+      },
+      {
+        "code": "EPPS 2302",
+        "name": "Methods of Quantitative Analysis in the Social and Policy Sciences",
+        "has_asterisk": false
+      },
+      {
+        "code": "FREN 1311",
+        "name": "Beginning French I",
+        "has_asterisk": false
+      },
+      {
+        "code": "FREN 1312",
+        "name": "Beginning French II",
+        "has_asterisk": false
+      },
+      {
+        "code": "FREN 2311",
+        "name": "Intermediate French I",
+        "has_asterisk": false
+      },
+      {
+        "code": "FREN 2312",
+        "name": "Intermediate French II",
+        "has_asterisk": false
+      },
+      {
+        "code": "GERM 1311",
+        "name": "Beginning German I",
+        "has_asterisk": false
+      },
+      {
+        "code": "GERM 1312",
+        "name": "Beginning German II",
+        "has_asterisk": false
+      },
+      {
+        "code": "GERM 2311",
+        "name": "Intermediate German I",
+        "has_asterisk": false
+      },
+      {
+        "code": "GERM 2312",
+        "name": "Intermediate German II",
+        "has_asterisk": false
+      },
+      {
+        "code": "JAPN 1311",
+        "name": "Beginning Japanese I",
+        "has_asterisk": false
+      },
+      {
+        "code": "JAPN 1312",
+        "name": "Beginning Japanese II",
+        "has_asterisk": false
+      },
+      {
+        "code": "JAPN 2311",
+        "name": "Intermediate Japanese I",
+        "has_asterisk": false
+      },
+      {
+        "code": "JAPN 2312",
+        "name": "Intermediate Japanese II",
+        "has_asterisk": false
+      },
+      {
+        "code": "KORE 2311",
+        "name": "Intermediate Korean I",
+        "has_asterisk": false
+      },
+      {
+        "code": "KORE 2312",
+        "name": "Intermediate Korean II",
+        "has_asterisk": false
+      },
+      {
+        "code": "MATH 1326",
+        "name": "Applied Calculus II",
+        "has_asterisk": false
+      },
+      {
+        "code": "MATH 2419",
+        "name": "Calculus II",
+        "has_asterisk": false
+      },
+      {
+        "code": "SPAN 1311",
+        "name": "Beginning Spanish I",
+        "has_asterisk": false
+      },
+      {
+        "code": "SPAN 1312",
+        "name": "Beginning Spanish II",
+        "has_asterisk": false
+      },
+      {
+        "code": "SPAN 2310",
+        "name": "Spanish for Heritage Speakers",
+        "has_asterisk": false
+      },
+      {
+        "code": "SPAN 2311",
+        "name": "Intermediate Spanish I",
+        "has_asterisk": false
+      },
+      {
+        "code": "SPAN 2312",
+        "name": "Intermediate Spanish II",
+        "has_asterisk": false
+      }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-export default function ReviewStep({ profile, constraints, onEdit }) {
+export default function ReviewStep({ profile, constraints, academicHistory, onEdit }) {
   return (
     <div className="step-panel">
       <p className="step-panel__eyebrow">Captured</p>
@@ -40,6 +40,14 @@ export default function ReviewStep({ profile, constraints, onEdit }) {
         <div className="summary__row">
           <dt>Daily max</dt>
           <dd>{constraints.unlimitedDailyHours ? "No limit" : `${constraints.maxHoursPerDay} hrs`}</dd>
+        </div>
+        <div className="summary__row">
+          <dt>Courses completed</dt>
+          <dd>{academicHistory.completedCodes.length}</dd>
+        </div>
+        <div className="summary__row">
+          <dt>Hours left to graduate</dt>
+          <dd>{academicHistory.hoursLeft != null ? `${academicHistory.hoursLeft} SCH` : "Unknown"}</dd>
         </div>
       </dl>
 
