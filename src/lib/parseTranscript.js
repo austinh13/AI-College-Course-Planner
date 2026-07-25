@@ -1,28 +1,32 @@
 /**
  * parseTranscript.js
  * ---------------------------------------------------------------------
- * Extracts completed courses from a UTD "Online Student Degree Audit"
- * PDF entirely in the browser, using pdf.js — no backend involved.
+ * Extracts completed courses from a UTD "Unofficial Transcript" PDF
+ * entirely in the browser, using pdf.js — no backend involved.
  *
- * This mirrors server/parse_transcript.py's extraction logic (verified
- * against a real degree audit: same 36/36 completed courses, same
- * grades/terms). The two differ only in *how* they get table structure:
- * the Python version uses pdfplumber's ruled-line table detection; this
- * version reconstructs rows from pdf.js's raw positioned text items
- * (group by Y-coordinate into visual rows, then pattern-match the
- * token sequence), since browsers don't have pdfplumber available.
+ * DOCUMENT SHAPE
+ *   Three source blocks carry course rows: "Transfer Credits", "Test
+ *   Credits", and "Beginning of Undergraduate Record" (each broken into
+ *   per-term sub-blocks, e.g. "2024 Fall"). "Academic Program History"
+ *   and "Non-Course Milestones" carry no course data and are skipped.
  *
- * The audit repeats each course under every requirement it satisfies
- * via ruled "Courses Identified for This Requirement" tables. We scan
- * every such row across every page and de-duplicate by course code —
- * same approach as the Python script, and for the same reason: it's
- * more robust than parsing the borderless "Course History" summary
- * block at the end of the document.
+ *   A course row is: Subject CatalogNbr Description... Attempted Earned
+ *   [Grade] Points — Grade is omitted for in-progress rows (blank grade
+ *   column). Beginning-of-Record rows are optionally followed by a
+ *   "Req Designation: Core - 0XX ..." line (which Core Curriculum
+ *   category the course satisfies) and one or more "Instructor:" lines
+ *   (name, plus bare continuation lines for co-instructors). Neither
+ *   wraps to a second line in this document, so unlike the old
+ *   Degree-Audit parser this version doesn't need continuation-line
+ *   stitching for course titles.
  *
- * WHAT COUNTS AS "COMPLETED"
- *   Type EN (enrolled/earned), TE (transfer equivalent), or TR
- *   (transfer) with a real, passing grade. Type IP (in progress, blank
- *   grade — e.g. the student's current-term courses) is excluded.
+ * COMPLETED VS. IN-PROGRESS
+ *   There's no Type column (EN/TE/TR/IP) in this format. A course
+ *   counts as completed if its Grade is present and isn't a
+ *   withdrawal/incomplete grade. Transfer Credits and Test Credits rows
+ *   always carry a grade (letter grade or "CR") and are always
+ *   completed; only Beginning-of-Record rows can be in-progress (blank
+ *   grade, 0 hours earned — e.g. the student's current-term courses).
  *
  * REQUIRES: pdfjs-dist (`npm install pdfjs-dist`). Not bundled with the
  * rest of this project since it's a sizeable dependency (~2-3MB) only
@@ -49,19 +53,16 @@ import * as pdfjsLib from "pdfjs-dist";
 // manually and lags behind for less-common packages).
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
 
-const TERM_RE = /^\d{4}\s+(Fall|Spr|Sum\w*)$/i;
-const TYPE_RE = /^(EN|TE|TR|IP)$/;
-const UNITS_RE = /^\d+\.\d{2}$/;
+const TERM_HEADER_RE = /^\d{4}\s+(Fall|Spring|Summer\w*)$/i;
+const SUBJECT_RE = /^[A-Z]{2,5}$/; // real subject codes are all-caps; summary-line labels ("Term GPA", "Cum Totals", ...) are Title/mixed case, so this alone filters them out
+const CATALOG_NBR_RE = /^\d[\d-]{2,3}$/; // matches normal 4-digit numbers ("2305") and the odd placeholder ("2---")
+const NUM_RE = /^\d+\.\d{3}$/; // Attempted/Earned/Points are always X.XXX in this document
 const GRADE_RE = /^(A\+|A|A-|B\+|B|B-|C\+|C|C-|D\+|D|D-|F|CR|W|WF|WP|I|NC|AU)$/;
-const COMPLETED_TYPES = new Set(["EN", "TE", "TR"]);
 const NON_PASSING_GRADES = new Set(["F", "W", "WF", "WP", "I", "NC", "AU"]);
+const CORE_CODE_RE = /\b0[1-9]0\b/g; // 010-090
 
-// Same-row items land within ~2pt of each other in Y; a wrapped title's
-// continuation line sits one line-height (~9-10pt in this document)
-// below its row, so 15pt safely separates "still this row's wrapped
-// title" from "a new, unrelated line".
+// Same-row items land within ~2pt of each other in Y.
 const ROW_Y_TOLERANCE = 2;
-const CONTINUATION_Y_GAP = 15;
 
 function groupIntoRows(items) {
   const rows = [];
@@ -83,87 +84,179 @@ function groupIntoRows(items) {
   return rows;
 }
 
-// A data row looks like: Term ~ Subject ~ CatalogNbr ~ Title... ~ [Grade] ~ Units ~ Type
-// (Grade is absent for in-progress/IP rows.) Returns null if this row
-// doesn't match that shape, e.g. it's a header, a section label, or a
-// wrapped title continuation line.
-function parseRow(tokens) {
-  if (tokens.length < 5) return null;
-  const type = tokens[tokens.length - 1];
-  if (!TYPE_RE.test(type)) return null;
-  const units = tokens[tokens.length - 2];
-  if (!UNITS_RE.test(units)) return null;
+// A course row looks like: Subject ~ CatalogNbr ~ Description... ~
+// Attempted ~ Earned ~ [Grade] ~ Points. Returns null for anything else
+// (table headers, GPA summary lines, institution/term sub-headers,
+// "Instructor:"/"Req Designation:" lines) — those all fail one of the
+// checks below (most fail on Subject not being all-caps, since summary
+// labels like "Term GPA" or "Cum Totals" are Title Case).
+function parseDataRow(tokens) {
+  if (tokens.length < 6) return null;
+  let idx = tokens.length - 1;
 
-  let idx = tokens.length - 3;
+  const points = tokens[idx];
+  if (!NUM_RE.test(points)) return null;
+  idx -= 1;
+
   let grade = "";
-  if (idx >= 3 && GRADE_RE.test(tokens[idx])) {
+  if (idx >= 0 && GRADE_RE.test(tokens[idx])) {
     grade = tokens[idx];
     idx -= 1;
   }
-  if (!TERM_RE.test(tokens[0])) return null;
-  const subject = tokens[1];
-  const catalogNbr = tokens[2];
-  if (!subject || !catalogNbr) return null;
-  const title = tokens.slice(3, idx + 1).join(" ");
 
-  return { term: tokens[0], subject, catalogNbr, title, grade, units, type };
+  if (idx < 0 || !NUM_RE.test(tokens[idx])) return null;
+  const earned = tokens[idx];
+  idx -= 1;
+
+  if (idx < 0 || !NUM_RE.test(tokens[idx])) return null;
+  idx -= 1; // attempted, unused beyond validating the row shape
+
+  if (idx < 2) return null; // need Subject + CatalogNbr + at least 1 description word left
+  const subject = tokens[0];
+  if (!SUBJECT_RE.test(subject)) return null;
+  const catalogNbr = tokens[1];
+  if (!CATALOG_NBR_RE.test(catalogNbr)) return null;
+  const description = tokens.slice(2, idx + 1).join(" ");
+  if (!description) return null;
+
+  return { subject, catalogNbr, description, earned, grade, points };
+}
+
+// Extracts Core Curriculum category codes ("070", or ["020","090"] for a
+// Component-Area-eligible course) from a "Req Designation: Core - ..."
+// line. Returns null if this row isn't a Req Designation line at all
+// (so the caller can tell "not one of these" apart from "one of these,
+// but no codes found in it").
+function extractReqDesignationCodes(rowText) {
+  if (!/^Req\s*Designation:?/i.test(rowText)) return null;
+  const codes = rowText.match(CORE_CODE_RE);
+  return codes ? [...new Set(codes)] : [];
 }
 
 /**
- * Parses a transcript PDF File and returns a Map of course code
- * ("CS 3345") -> { term, title, grade, units, type, completed }.
- * Only completed courses are returned as `completed: true`; the
- * caller decides what to do with anything else.
+ * Parses already-loaded pdf.js page content into a Map of course code
+ * ("CS 3345") -> course record. Split out from extractCompletedCourses()
+ * so it's testable without a browser File object.
  */
-export async function extractCompletedCourses(file) {
-  const buffer = await file.arrayBuffer();
-  const doc = await pdfjsLib.getDocument({ data: new Uint8Array(buffer) }).promise;
+export async function extractFromDocument(doc) {
   const courses = new Map();
+
+  // These persist across pages, not just within one — sections (esp.
+  // "Beginning of Undergraduate Record") span multiple pages but their
+  // heading only appears once, on the page where the section starts.
+  let currentSection = null; // 'transfer' | 'test' | 'record' | null
+  let currentTerm = null;
+  let lastCourseCode = null;
 
   for (let p = 1; p <= doc.numPages; p++) {
     const page = await doc.getPage(p);
     const content = await page.getTextContent();
     const rows = groupIntoRows(content.items);
 
-    let lastDataRow = null;
     for (const row of rows) {
       const tokens = row.items.map((i) => i.str.trim()).filter(Boolean);
-      const parsed = parseRow(tokens);
+      if (!tokens.length) continue;
+      const rowText = tokens.join(" ");
 
-      if (parsed) {
-        const code = `${parsed.subject} ${parsed.catalogNbr}`;
-        const isCompleted =
-          COMPLETED_TYPES.has(parsed.type) && parsed.grade && !NON_PASSING_GRADES.has(parsed.grade);
-        const existing = courses.get(code);
-        // Keep the first sighting, but upgrade to a completed record if
-        // a later duplicate (same course under a different requirement
-        // table) turns out to be the completed one.
-        if (!existing || (isCompleted && !existing.completed)) {
-          courses.set(code, { ...parsed, code, completed: isCompleted });
-        }
-        lastDataRow = { code, y: row.y };
-      } else if (lastDataRow && row.y > lastDataRow.y - CONTINUATION_Y_GAP && tokens.length <= 4) {
-        // Wrapped title continuation — cosmetic only, doesn't affect
-        // completion status. Guard against re-appending the same
-        // continuation when this course also appears in a later table.
-        const entry = courses.get(lastDataRow.code);
-        const suffix = tokens.join(" ");
-        if (entry && !entry.title.includes(suffix)) {
-          entry.title = `${entry.title} ${suffix}`.trim();
-        }
-        lastDataRow = { code: lastDataRow.code, y: row.y };
-      } else {
-        lastDataRow = null;
+      if (/^Transfer Credits$/i.test(rowText)) {
+        currentSection = "transfer";
+        lastCourseCode = null;
+        continue;
       }
+      if (/^Test Credits$/i.test(rowText)) {
+        currentSection = "test";
+        lastCourseCode = null;
+        continue;
+      }
+      if (/^Beginning of Undergraduate Record$/i.test(rowText)) {
+        currentSection = "record";
+        lastCourseCode = null;
+        continue;
+      }
+      if (/^(Academic Program History|Non-Course Milestones|Undergraduate Career Totals)$/i.test(rowText)) {
+        currentSection = null;
+        lastCourseCode = null;
+        continue;
+      }
+      if (TERM_HEADER_RE.test(rowText)) {
+        currentTerm = rowText;
+        continue;
+      }
+      if (!currentSection) continue; // header/bio block above Transfer Credits, or a skipped section
+
+      const reqCodes = extractReqDesignationCodes(rowText);
+      if (reqCodes !== null) {
+        if (reqCodes.length && lastCourseCode && courses.has(lastCourseCode)) {
+          courses.get(lastCourseCode).reqDesignationCodes = reqCodes;
+        }
+        continue;
+      }
+
+      const parsed = parseDataRow(tokens);
+      if (!parsed) continue; // "Instructor:" lines, GPA/term summary rows, etc.
+
+      const code = `${parsed.subject} ${parsed.catalogNbr}`;
+      const completed = !!parsed.grade && !NON_PASSING_GRADES.has(parsed.grade);
+      const record = {
+        code,
+        subject: parsed.subject,
+        catalogNbr: parsed.catalogNbr,
+        title: parsed.description,
+        term: currentTerm,
+        grade: parsed.grade,
+        earned: Number(parsed.earned),
+        completed,
+        source: currentSection, // 'transfer' | 'test' | 'record'
+        reqDesignationCodes: [],
+      };
+
+      // Keep the first sighting, but upgrade to a completed record if a
+      // later duplicate turns out to be the completed one.
+      const existing = courses.get(code);
+      if (!existing || (completed && !existing.completed)) {
+        courses.set(code, record);
+      }
+      lastCourseCode = code;
     }
   }
 
+  logParsedCourses(courses);
   return courses;
+}
+
+// Every course pdf.js found, straight out of the parser — independent of
+// whatever the caller does with it afterward.
+function logParsedCourses(courses) {
+  const rows = [...courses.values()]
+    .sort((a, b) => a.code.localeCompare(b.code))
+    .map((c) => ({
+      code: c.code,
+      title: c.title,
+      term: c.term,
+      source: c.source,
+      grade: c.grade || "(blank)",
+      earned: c.earned,
+      completed: c.completed,
+    }));
+  console.log(`[parseTranscript] parsed ${rows.length} course rows:`);
+  console.table(rows);
+  const completedHours = rows.filter((r) => r.completed).reduce((s, r) => s + r.earned, 0);
+  const inProgressHours = rows.filter((r) => !r.completed).reduce((s, r) => s + r.earned, 0);
+  console.log(
+    `[parseTranscript] ${rows.filter((r) => r.completed).length} completed (${completedHours} hrs), ` +
+      `${rows.filter((r) => !r.completed).length} in-progress (${inProgressHours} hrs)`
+  );
+}
+
+export async function extractCompletedCourses(file) {
+  const buffer = await file.arrayBuffer();
+  const doc = await pdfjsLib.getDocument({ data: new Uint8Array(buffer) }).promise;
+  return extractFromDocument(doc);
 }
 
 // Adjust if core_curriculum.json ends up served from a different path
 // (mirrors the public/major-catalogs/ convention for degree catalogs).
-export const CORE_CURRICULUM_URL = "/core-curriculum.json";
+export const CORE_CURRICULUM_URL = "/core_curriculum.json";
 
 export async function loadCoreCurriculum(url = CORE_CURRICULUM_URL) {
   const res = await fetch(url);
@@ -182,10 +275,19 @@ export async function loadCoreCurriculum(url = CORE_CURRICULUM_URL) {
  * primary category is already filled by a *different* completed
  * course — i.e. it's not needed there.
  *
+ * When a course record carries `reqDesignationCodes` (parsed straight
+ * off the transcript's own "Req Designation: Core - 0XX" line), that's
+ * trusted as the primary category instead of the course-code lookup —
+ * it's the registrar's own answer for that specific enrollment, so it
+ * takes priority. The lookup/quota-approximation below is a fallback
+ * for courses without one (Transfer Credits and Test Credits rows never
+ * carry a Req Designation, and some Beginning-of-Record rows don't
+ * either — e.g. courses that aren't core requirements at all).
+ *
  * Courses that only ever appear in 090's own list (no asterisk, no
  * other category) are assigned to 090 directly.
  *
- * @param {Map} courses - output of extractCompletedCourses()
+ * @param {Map} courses - output of extractFromDocument()/extractCompletedCourses()
  * @param {Array} coreCurriculum - parsed core_curriculum.json
  * @returns {{ assignment: Map<string,string>, byCategory: Object<string, Array> }}
  *   assignment: courseCode -> categoryCode ("010".."090")
@@ -219,10 +321,15 @@ export function assignCoreCategories(courses, coreCurriculum) {
   const ninety = coreCurriculum.find((c) => c.code === "090");
   const ninetyOwnCodes = new Set((ninety?.courses ?? []).map((c) => c.code));
 
-  // Pass 1: assign every completed course to its primary category.
+  // Pass 1: assign every completed course to its primary category —
+  // the transcript's own Req Designation when present, else the
+  // course-code lookup.
   const assignment = new Map();
   for (const code of completedCodes) {
-    if (primaryCategoryByCourse.has(code)) {
+    const course = courses.get(code);
+    if (course.reqDesignationCodes?.length) {
+      assignment.set(code, course.reqDesignationCodes[0]);
+    } else if (primaryCategoryByCourse.has(code)) {
       assignment.set(code, primaryCategoryByCourse.get(code));
     } else if (ninetyOwnCodes.has(code)) {
       assignment.set(code, "090");
@@ -231,22 +338,26 @@ export function assignCoreCategories(courses, coreCurriculum) {
 
   // Pass 2: within each primary category, keep only as many courses as
   // its SCH quota needs. Once a category's quota is met, any further
-  // asterisk-eligible course in it is surplus and gets freed up for
-  // 090 instead. Earliest-encountered courses fill the quota first.
+  // 090-eligible course in it (via Req Designation or the asterisk
+  // flag) is surplus and gets freed up for 090 instead. Earliest-
+  // encountered courses fill the quota first.
   const countSoFarByCategory = new Map();
   for (const code of completedCodes) {
     const category = assignment.get(code);
     if (!category || category === "090") continue;
+    const course = courses.get(code);
+    const eligibleForNinety =
+      course.reqDesignationCodes?.includes("090") || asteriskEligibleForNinety.has(code);
     const needed = neededCountByCategory.get(category) ?? Infinity;
     const soFar = countSoFarByCategory.get(category) ?? 0;
     if (soFar < needed) {
       countSoFarByCategory.set(category, soFar + 1);
-    } else if (asteriskEligibleForNinety.has(code)) {
+    } else if (eligibleForNinety) {
       assignment.set(code, "090");
     }
     // If the category is already full and this course isn't
-    // asterisk-eligible, it just stays in its primary category —
-    // there's nowhere else for it to go.
+    // 090-eligible, it just stays in its primary category — there's
+    // nowhere else for it to go.
   }
 
   const byCategory = {};

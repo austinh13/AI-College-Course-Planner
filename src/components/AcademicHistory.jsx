@@ -1,94 +1,10 @@
-/**
- * Step3AcademicHistory
- * ---------------------------------------------------------------------
- * Third screen in the Comet Planner flow. After the general-info screen
- * (major, catalog year, etc.), this screen lets the student either
- * upload a transcript or manually check off courses they've completed,
- * against the full graduation requirement list for their major.
- *
- * INTEGRATION
- *   Props (controlled — state is lifted to the parent, same pattern as
- *   QuestionnaireStep/TimeConstraintsStep, so progress survives Back
- *   navigation):
- *     major          (string, required) - bare major name matching a key
- *                    in utd_degrees.json, e.g. "Computer Science" (NOT
- *                    "Computer Science (BS)"). The component looks up
- *                    that major's undergrad degree type(s) (BA/BS) from
- *                    utd_degrees.json's "levels" field, appends it, then
- *                    slugifies the same way scrape_major_pdfs.py names
- *                    its output files ("Computer_Science_BS.json") to
- *                    fetch the right catalog. If a major has more than
- *                    one undergrad type on file (e.g. Economics: BA and
- *                    BS), the user is asked to pick one on this screen.
- *                    Known gap: utd_degrees.json currently lists only a
- *                    BS level for Biology even though both
- *                    Biology_BA.json and Biology_BS.json exist — the BA
- *                    catalog can't be auto-resolved until that entry is
- *                    corrected upstream.
- *     completed      (Set<string>)   - checked course codes.
- *     manualEntries  (object)        - { "<sectionIndex>-<groupIndex>":
- *                    [{ id, code, hours }] } for requirement groups with
- *                    no explicit course list.
- *     onChange       (function({completed, manualEntries})) - called on
- *                    every checkbox toggle or manual add/remove.
- *     onBack         (function)      - called when Back is pressed.
- *     onContinue     (function({completedCodes, hoursEarned, hoursLeft,
- *                    totalHours})) - called when Continue is pressed.
- *
- *   Backend requirement:
- *     Major_Catalogs_Parsed/ must be statically served at CATALOG_BASE_URL
- *     below. Example (Express):
- *       app.use("/major-catalogs", express.static(
- *         path.join(__dirname, "Major_Catalogs_Parsed")
- *       ));
- *     Adjust CATALOG_BASE_URL if your static path differs.
- *
- *   Transcript parsing:
- *     Uploaded PDFs are parsed entirely in the browser via pdf.js (see
- *     ../lib/parseTranscript.js) — no backend involved. It only
- *     recognizes UTD's own "Online Student Degree Audit" export format
- *     (Academic Requirements > Degree Audit in the student portal), not
- *     arbitrary transcripts. Non-PDF uploads (image formats are still
- *     accepted by the file picker) and PDFs that don't match that
- *     format fall back to the old "please confirm manually" message
- *     rather than failing silently.
- *
- *   Requirement groups with no explicit course list (e.g. "Free
- *   Electives", "Major Technical Electives") get a manual entry form
- *   instead of checkboxes, since the parsed catalog has no course list
- *   to check off. Users add one class at a time (code + credit hours)
- *   until the group's listed SCH target is met.
- *
- *   "Hours left" is computed at the requirement-group level, not per
- *   course, because the parsed catalogs only carry an aggregate SCH
- *   value per group, never per individual course. A group counts
- *   toward "hours earned" once satisfied (all its listed courses
- *   checked, or manual entries reaching its SCH target). Groups whose
- *   credit_hours is null (target not present in the catalog data, most
- *   often "choice: true" elective pools whose real SCH lives on a
- *   sibling group) are excluded from the hours math entirely so they
- *   can't silently under- or over-count.
- * ---------------------------------------------------------------------
- */
 import { useEffect, useMemo, useState } from "react";
 import utdDegrees from "../data/utd_degrees.json";
-import { extractCompletedCourses } from "../lib/parseTranscript";
+import { extractCompletedCourses, loadCoreCurriculum, assignCoreCategories } from "../lib/parseTranscript";
 import "./AcademicHistory.css";
 
 const CATALOG_BASE_URL = "/Major_Catalogs_Parsed";
 
-// utd_degrees.json (the Step 1 major dropdown) stores bare major names,
-// e.g. "Computer Science" — but the parsed catalogs are keyed by name
-// *and* degree type, e.g. "Computer Science (BS)" -> Computer_Science_BS.json.
-// This derives the undergrad degree type(s) (BA/BS) on file for a given
-// major so we can build the right catalog filename instead of guessing.
-//
-// The Step 1 major field is free-text — the user can type anything and
-// hit Continue without picking an autocomplete suggestion, so what lands
-// in `major` here isn't guaranteed to byte-for-byte match a
-// utd_degrees.json key (case, stray whitespace, etc.). We resolve
-// case-insensitively/trimmed against the known keys instead of doing an
-// exact lookup, so a typed "computer science " still finds "Computer Science".
 const NORMALIZED_MAJOR_KEYS = Object.keys(utdDegrees).reduce((map, key) => {
   map[key.trim().toLowerCase().replace(/\s+/g, " ")] = key;
   return map;
@@ -111,10 +27,6 @@ function undergradDegreeTypes(majorName) {
   return [...types];
 }
 
-// Parsed credit_hours values are strings and are sometimes a range
-// ("19-22") or null. We use the low end of a range so "hours left"
-// never under-counts remaining work, and null means "unknown target"
-// (excluded from the hours math, see doc comment above).
 function parseHours(value) {
   if (value == null) return null;
   const match = String(value).match(/\d+/);
@@ -122,7 +34,6 @@ function parseHours(value) {
 }
 
 function slugify(majorName) {
-  // Mirrors sanitize_filename() in scrape_major_pdfs.py
   return majorName.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
 }
 
@@ -136,9 +47,6 @@ function groupSatisfied(group, completed) {
   const satisfiesSlot = (opt) =>
     optionSatisfied(opt, completed) ||
     opt.alternatives.some((alt) => optionSatisfied(alt, completed));
-  // choice: true groups are a pool to pick some number of courses from
-  // (any one counts as progress). choice: false groups list every
-  // course actually required, so all of them must be checked off.
   return group.choice
     ? group.courses.some(satisfiesSlot)
     : group.courses.every(satisfiesSlot);
@@ -159,6 +67,197 @@ function collectAllCodes(catalog) {
     )
   );
   return codes;
+}
+
+function normalizeLabel(s) {
+  return (s || "").trim().toLowerCase().replace(/[^a-z]+/g, " ").trim();
+}
+
+const TECH_ELECTIVE_SUBJECTS = new Set(["CS", "SE", "EE"]);
+
+// 4000+ CS/SE/EE courses not already in the catalog's explicit list are
+// closer to "Major Technical Electives" than "Free Electives" — there's
+// no stronger signal available than subject + level for this split.
+function isTechnicalElectiveCandidate(subject, catalogNbr) {
+  const num = parseInt(catalogNbr, 10);
+  return TECH_ELECTIVE_SUBJECTS.has(subject) && Number.isFinite(num) && num >= 4000;
+}
+
+// Core Curriculum groups with no explicit course list (e.g. "American
+// History" — the catalog just says "see advisor") are the only ones an
+// unlisted course can land in automatically; groups that already have
+// their own explicit course list only accept checkbox matches, never
+// manual entries (see classifyUnlistedCourses doc comment below).
+function findOpenCoreGroups(catalog) {
+  const groups = [];
+  catalog.sections.forEach((section, si) => {
+    if (section.title !== "Core Curriculum Requirements") return;
+    section.groups.forEach((group, gi) => {
+      if (group.courses.length === 0) groups.push({ si, gi, group });
+    });
+  });
+  return groups;
+}
+
+function findGroupByLabel(catalog, label) {
+  for (let si = 0; si < catalog.sections.length; si++) {
+    const gi = catalog.sections[si].groups.findIndex((g) => g.label === label);
+    if (gi !== -1) return { si, gi };
+  }
+  return null;
+}
+
+/**
+ * For completed transcript courses that aren't explicitly listed
+ * anywhere in the major catalog: match them to a Core Curriculum
+ * category (via the transcript's own Req Designation, falling back to
+ * core_curriculum.json) and route them into that category's manual-
+ * entry group — but only when the catalog leaves that category open
+ * (no explicit course list of its own). A matched category whose
+ * catalog group already has explicit courses (even an incomplete list —
+ * e.g. Government/Political Science here only lists GOVT 2305, not
+ * GOVT 2306, so a student who took 2306 instead won't get credited
+ * toward that group by this function) isn't touched, since the UI
+ * doesn't support mixing checkboxes and manual entries in one group.
+ * Those courses — and anything with no category match at all — fall
+ * through to elective.
+ *
+ * Returns a flat list of { si, gi, code, hours } to merge into
+ * manualEntries; doesn't mutate anything itself.
+ */
+function classifyUnlistedCourses(courses, allCodes, catalog, coreCurriculum) {
+  const { assignment } = assignCoreCategories(courses, coreCurriculum);
+  const openGroups = findOpenCoreGroups(catalog);
+  const techElectiveGroup = findGroupByLabel(catalog, "Major Technical Electives");
+  const freeElectiveGroup = findGroupByLabel(catalog, "Free Electives");
+
+  const additions = [];
+  for (const course of courses.values()) {
+    if (!course.completed || allCodes.has(course.code)) continue;
+
+    const categoryCode = assignment.get(course.code);
+    const categoryName = categoryCode
+      ? coreCurriculum.find((c) => c.code === categoryCode)?.name
+      : null;
+    const openGroup = categoryName
+      ? openGroups.find((g) => normalizeLabel(g.group.label) === normalizeLabel(categoryName))
+      : null;
+
+    if (openGroup) {
+      additions.push({ si: openGroup.si, gi: openGroup.gi, code: course.code, hours: course.earned });
+      continue;
+    }
+
+    const target = isTechnicalElectiveCandidate(course.subject, course.catalogNbr)
+      ? techElectiveGroup
+      : freeElectiveGroup;
+    if (target) {
+      additions.push({ si: target.si, gi: target.gi, code: course.code, hours: course.earned });
+    }
+  }
+  return additions;
+}
+
+function optionContainsCode(opt, code) {
+  if (opt.code === code) return true;
+  if (opt.with?.some((w) => w.code === code)) return true;
+  if (opt.alternatives?.some((alt) => optionContainsCode(alt, code))) return true;
+  return false;
+}
+
+function findExplicitGroupsForCode(catalog, code) {
+  const hits = [];
+  catalog.sections.forEach((section) => {
+    section.groups.forEach((group) => {
+      if (group.courses.some((opt) => optionContainsCode(opt, code))) {
+        hits.push(`${section.title} → ${group.label}`);
+      }
+    });
+  });
+  return hits;
+}
+
+// Prints one row per course pdf.js actually found, and which bucket it
+// ended up in — explicit catalog match, an auto-routed core/elective
+// group, "in progress" (excluded on purpose), or NOT PLACED (a real bug
+// if it shows up, since every completed course should land somewhere).
+function logTranscriptDebugReport(courses, allCodes, catalog, additions) {
+  const additionsByCode = new Map(additions.map((a) => [a.code, a]));
+  const rows = [...courses.values()]
+    .sort((a, b) => a.code.localeCompare(b.code))
+    .map((c) => {
+      let destination;
+      if (!c.completed) {
+        destination = "— in progress, not counted —";
+      } else if (allCodes.has(c.code)) {
+        destination = findExplicitGroupsForCode(catalog, c.code).join(" | ") || "explicit match (group not found?)";
+      } else if (additionsByCode.has(c.code)) {
+        const a = additionsByCode.get(c.code);
+        destination = `${catalog.sections[a.si].title} → ${catalog.sections[a.si].groups[a.gi].label} (auto-routed)`;
+      } else {
+        destination = "*** NOT PLACED — these earned hours are being lost ***";
+      }
+      return {
+        code: c.code,
+        title: c.title,
+        term: c.term,
+        source: c.source,
+        earned: c.earned,
+        completed: c.completed,
+        destination,
+      };
+    });
+
+  console.group(`Transcript parse debug — ${rows.length} course rows found`);
+  console.table(rows);
+  const earnedTotal = rows.filter((r) => r.completed).reduce((s, r) => s + r.earned, 0);
+  const unplacedTotal = rows
+    .filter((r) => r.completed && r.destination.startsWith("*** NOT PLACED"))
+    .reduce((s, r) => s + r.earned, 0);
+  console.log(`Total earned hours across all completed courses: ${earnedTotal}`);
+  if (unplacedTotal > 0) {
+    console.warn(`${unplacedTotal} of those hours are NOT PLACED anywhere — see rows above.`);
+  }
+  console.groupEnd();
+}
+
+// Prints target vs. counted SCH for every group with a credit_hours
+// target, so a low hoursEarned total can be traced to a specific
+// group — capped manual entries, or an explicit-course group that
+// isn't 100% checked off yet (which contributes 0, not partial credit).
+function logRequirementGroupDebug(catalog, completedCodes, manualEntriesNext) {
+  console.group("Requirement group hours breakdown");
+  let totalEarned = 0;
+  catalog.sections.forEach((section, si) => {
+    section.groups.forEach((group, gi) => {
+      const target = parseHours(group.credit_hours);
+      if (target == null) {
+        console.log(`(excluded — no SCH target in catalog data) ${section.title} → ${group.label}`);
+        return;
+      }
+      const key = `${si}-${gi}`;
+      if (group.courses.length > 0) {
+        const ok = groupSatisfied(group, completedCodes);
+        const counted = ok ? target : 0;
+        console.log(
+          `${ok ? "DONE" : "    "}  ${section.title} → ${group.label}: ${counted}/${target} SCH` +
+            (ok ? "" : "  (needs every listed course checked — partial credit isn't given)")
+        );
+        totalEarned += counted;
+      } else {
+        const entries = manualEntriesNext[key] || [];
+        const rawTotal = entries.reduce((s, e) => s + e.hours, 0);
+        const counted = Math.min(rawTotal, target);
+        console.log(
+          `${counted >= target ? "DONE" : "    "}  ${section.title} → ${group.label}: ${counted}/${target} SCH` +
+            (rawTotal > target ? `  (capped — ${rawTotal} SCH logged here, only ${target} counts)` : "")
+        );
+        totalEarned += counted;
+      }
+    });
+  });
+  console.log(`hoursEarned total: ${totalEarned}`);
+  console.groupEnd();
 }
 
 function matchesSearch(option, query) {
@@ -385,8 +484,6 @@ export default function Step3AcademicHistory({
   const degreeTypes = useMemo(() => (major ? undergradDegreeTypes(major) : []), [major]);
   const [selectedDegreeType, setSelectedDegreeType] = useState(null);
 
-  // Reset the manual pick whenever the major changes so a leftover
-  // selection from a previous major can't get applied to this one.
   useEffect(() => {
     setSelectedDegreeType(null);
   }, [major]);
@@ -402,7 +499,6 @@ export default function Step3AcademicHistory({
       return;
     }
     if (!resolvedDegreeType) {
-      // Ambiguous (e.g. a major with both BA and BS) — wait for the picker below.
       setCatalog(null);
       setLoadError(null);
       return;
@@ -412,8 +508,6 @@ export default function Step3AcademicHistory({
     setCatalog(null);
     setLoadError(null);
 
-    // Use canonicalMajor (correct case from utd_degrees.json), not the raw
-    // `major` prop, since static file paths are case-sensitive on Linux/Render.
     const slug = slugify(`${canonicalMajor} (${resolvedDegreeType})`);
     fetch(`${CATALOG_BASE_URL}/${slug}.json`)
       .then((res) => {
@@ -436,11 +530,6 @@ export default function Step3AcademicHistory({
 
   const totalHours = catalog ? parseHours(catalog.total_credit_hours) : null;
 
-  // Hours earned only counts groups whose SCH target is knowable: either
-  // a choice:false group where every listed course is checked, or a
-  // no-course group whose manual entries reach its credit_hours target.
-  // See the doc comment at the top of this file for why per-course
-  // tracking isn't possible with the data we have.
   const hoursEarned = useMemo(() => {
     if (!catalog) return 0;
     let earned = 0;
@@ -517,11 +606,51 @@ export default function Step3AcademicHistory({
       const newlyChecked = foundCodes.length - alreadyChecked;
       const next = new Set(completed);
       foundCodes.forEach((code) => next.add(code));
-      onChange({ completed: next, manualEntries });
+
+      // Courses that aren't explicitly listed anywhere in the catalog
+      // (Core Curriculum electives like American History, or general
+      // electives) don't have a checkbox to check — log them as manual
+      // entries instead, best-effort. If this fails for any reason
+      // (e.g. core-curriculum.json isn't deployed yet), the checkbox
+      // update above still goes through on its own.
+      let manualEntriesNext = manualEntries;
+      let loggedCount = 0;
+      let additions = [];
+      if (catalog) {
+        try {
+          const coreCurriculum = await loadCoreCurriculum();
+          additions = classifyUnlistedCourses(extracted, allCodes, catalog, coreCurriculum);
+          if (additions.length) {
+            manualEntriesNext = { ...manualEntries };
+            for (const { si, gi, code, hours } of additions) {
+              const key = `${si}-${gi}`;
+              const list = manualEntriesNext[key] || manualEntries[key] || [];
+              if (list.some((entry) => entry.code === code)) continue; // already logged from a prior upload
+              manualEntriesNext[key] = [...list, { id: crypto.randomUUID(), code, hours }];
+              loggedCount += 1;
+            }
+          }
+        } catch (classifyErr) {
+          // Best-effort — the checkbox update still goes through even if
+          // this fails — but log it, since a silent failure here just
+          // looks like "my hours are too low" with no clue why.
+          console.warn("Core curriculum categorization skipped:", classifyErr);
+        }
+      } else {
+        console.warn("Core curriculum categorization skipped: major catalog hasn't loaded yet.");
+      }
+
+      if (catalog) {
+        logTranscriptDebugReport(extracted, allCodes, catalog, additions);
+        logRequirementGroupDebug(catalog, next, manualEntriesNext);
+      }
+
+      onChange({ completed: next, manualEntries: manualEntriesNext });
 
       setTranscriptNote(
         `Found ${foundCodes.length} completed courses in your transcript` +
           (newlyChecked > 0 ? ` — checked ${newlyChecked} new ones below.` : ", all already checked below.") +
+          (loggedCount > 0 ? ` Logged ${loggedCount} more toward electives/open requirements.` : "") +
           " Review the list to make sure it looks right."
       );
     } catch (err) {
