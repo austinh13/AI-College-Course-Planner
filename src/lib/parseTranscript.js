@@ -279,8 +279,8 @@ export async function loadCoreCurriculum(url = CORE_CURRICULUM_URL) {
  * off the transcript's own "Req Designation: Core - 0XX" line), that's
  * trusted as the primary category instead of the course-code lookup —
  * it's the registrar's own answer for that specific enrollment, so it
- * takes priority. The lookup/quota-approximation below is a fallback
- * for courses without one (Transfer Credits and Test Credits rows never
+ * takes priority. The lookup/SCH-quota logic below is a fallback for
+ * courses without one (Transfer Credits and Test Credits rows never
  * carry a Req Designation, and some Beginning-of-Record rows don't
  * either — e.g. courses that aren't core requirements at all).
  *
@@ -300,16 +300,10 @@ export function assignCoreCategories(courses, coreCurriculum) {
 
   const primaryCategoryByCourse = new Map();
   const asteriskEligibleForNinety = new Set();
-  // Approximation: most core courses are 3 SCH, so a category's course
-  // quota is credit_hours / 3. core_curriculum.json only carries hours
-  // at the category level (not per course), so this is wrong for the
-  // few categories mixing course sizes — e.g. 070 Government needs 6
-  // SCH via GOVT 2107 (1 SCH) plus 3-hour courses, not two 3-hour
-  // courses. Fixing that needs per-course SCH data we don't have yet.
-  const neededCountByCategory = new Map();
+  const targetHoursByCategory = new Map();
   for (const category of coreCurriculum) {
     if (category.code === "090") continue;
-    neededCountByCategory.set(category.code, Math.max(1, Math.round(category.credit_hours / 3)));
+    targetHoursByCategory.set(category.code, category.credit_hours);
     for (const course of category.courses) {
       if (!primaryCategoryByCourse.has(course.code)) {
         primaryCategoryByCourse.set(course.code, category.code);
@@ -336,22 +330,26 @@ export function assignCoreCategories(courses, coreCurriculum) {
     }
   }
 
-  // Pass 2: within each primary category, keep only as many courses as
-  // its SCH quota needs. Once a category's quota is met, any further
-  // 090-eligible course in it (via Req Designation or the asterisk
-  // flag) is surplus and gets freed up for 090 instead. Earliest-
-  // encountered courses fill the quota first.
-  const countSoFarByCategory = new Map();
+  // Pass 2: within each primary category, keep courses only up to its
+  // real SCH target — using each course's actual earned hours from the
+  // transcript, not an assumed average course size, so categories that
+  // mix course sizes (e.g. 070 Government: GOVT 2107 at 1 SCH plus
+  // 3-hour courses) are handled correctly rather than approximated.
+  // Once a category's target is met, any further 090-eligible course in
+  // it (via Req Designation or the asterisk flag) is surplus and gets
+  // freed up for 090 instead. Earliest-encountered courses fill the
+  // target first.
+  const filledHoursByCategory = new Map();
   for (const code of completedCodes) {
     const category = assignment.get(code);
     if (!category || category === "090") continue;
     const course = courses.get(code);
     const eligibleForNinety =
       course.reqDesignationCodes?.includes("090") || asteriskEligibleForNinety.has(code);
-    const needed = neededCountByCategory.get(category) ?? Infinity;
-    const soFar = countSoFarByCategory.get(category) ?? 0;
-    if (soFar < needed) {
-      countSoFarByCategory.set(category, soFar + 1);
+    const target = targetHoursByCategory.get(category) ?? Infinity;
+    const filledSoFar = filledHoursByCategory.get(category) ?? 0;
+    if (filledSoFar < target) {
+      filledHoursByCategory.set(category, filledSoFar + course.earned);
     } else if (eligibleForNinety) {
       assignment.set(code, "090");
     }

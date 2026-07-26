@@ -464,6 +464,7 @@
 
 .s3-manual-form {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 8px 0 6px;
 }
@@ -483,9 +484,48 @@
 }
 .s3-manual-input--code {
   flex: 1;
+  min-width: 0;
 }
 .s3-manual-input--hours {
   width: 56px;
+  flex-shrink: 0;
+}
+
+/* select.s3-manual-input — the course dropdown for Core Curriculum
+   categories with a known course list (American History, Creative
+   Arts, etc.). A plain <select> ignores background/border-bottom
+   styling in every browser and falls back to a default white/gray OS
+   control, which breaks badly against this dark theme — so it needs
+   its own reset: drop the native appearance entirely, redraw it as the
+   same flat underline as the text/number inputs, and add a small
+   custom chevron since removing native appearance also removes the
+   default dropdown arrow. */
+select.s3-manual-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  padding-right: 22px;
+  background-image: linear-gradient(45deg, transparent 50%, var(--green-secondary) 50%),
+    linear-gradient(135deg, var(--green-secondary) 50%, transparent 50%);
+  background-position: calc(100% - 12px) center, calc(100% - 7px) center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+select.s3-manual-input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/* The dropdown's own popup list is a native OS element outside the
+   page's normal styling reach — background/color are the only
+   properties browsers reliably let you set on <option>, but that's
+   enough to stop it rendering as unreadable white-on-white. */
+select.s3-manual-input option {
+  background: #0d211a;
+  color: #eef1ef;
+}
+select.s3-manual-input option[value=""] {
+  color: rgba(238, 241, 239, 0.5);
 }
 
 .s3-manual-add {
@@ -499,11 +539,17 @@
   border-radius: 6px;
   padding: 6px 14px;
   cursor: pointer;
+  flex-shrink: 0;
+  white-space: nowrap;
   transition: background 0.15s ease, color 0.15s ease;
 }
 .s3-manual-add:hover {
   background: var(--green-secondary);
   color: #06110d;
+}
+.s3-manual-add:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .s3-manual-progress {

@@ -98,15 +98,8 @@
           "label": "Government/Political Science",
           "credit_hours": "6",
           "choice": false,
-          "description": null,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
           "courses": [
-            {
-              "code": "GOVT 2305",
-              "title": "American National Government",
-              "connector": null,
-              "with": [],
-              "alternatives": []
-            }
           ]
         },
         {
@@ -192,7 +185,7 @@
               "alternatives": []
             },
             {
-              "code": "ECS 1210",
+              "code": "ECS 1200",
               "title": "Foundations in Engineering and Computer Science I",
               "connector": null,
               "with": [],

@@ -52,6 +52,45 @@ function groupSatisfied(group, completed) {
     : group.courses.every(satisfiesSlot);
 }
 
+// UTD catalog numbers encode credit hours in the 2nd digit of the
+// 4-digit number (ECS 1100 -> 1, MATH 2418 -> 4, PHYS 2125 -> 1,
+// PHYS 2325 -> 3) — verified against every course in a real transcript.
+// Falls back to 3 (the most common UTD course size) for anything that
+// doesn't fit the pattern (shouldn't happen for real catalog codes).
+function creditHoursFromCode(code) {
+  const match = code.match(/(\d[\d-]{2,3})$/);
+  const digit = match?.[1]?.[1];
+  return digit && /\d/.test(digit) ? Number(digit) : 3;
+}
+
+// Partial credit for an explicit-course, choice:false group, weighted by
+// each course's real SCH instead of treating every course slot equally.
+// This is a ratio against the group's own total course-hours, not a raw
+// sum capped at target — several Major Prep courses (RHET 1302,
+// GOVT 2305, PHYS 2125/2325/2326) are *also* separately required by
+// their own Core Curriculum groups, and this group's stated target
+// already nets that overlap out. Summing real hours and capping at
+// target would let a handful of high-hour courses satisfy the group
+// while lower-hour ones are still missing; scaling proportionally keeps
+// "every course checked" mapping to exactly `target`, same as before,
+// while weighting partial progress correctly in between. Choice:true
+// groups (pick-any-one pools) stay all-or-nothing via groupSatisfied,
+// but in this catalog those already have credit_hours: null and are
+// excluded from the hours math entirely, so this only actually applies
+// to choice:false groups in practice.
+function explicitGroupHoursEarned(group, completed, target) {
+  if (group.choice) return groupSatisfied(group, completed) ? target : 0;
+  const satisfiesSlot = (opt) =>
+    optionSatisfied(opt, completed) || opt.alternatives.some((alt) => optionSatisfied(alt, completed));
+  const courseHours = group.courses.map((opt) => creditHoursFromCode(opt.code));
+  const totalWeight = courseHours.reduce((sum, h) => sum + h, 0) || group.courses.length;
+  const satisfiedWeight = group.courses.reduce(
+    (sum, opt, i) => sum + (satisfiesSlot(opt) ? courseHours[i] : 0),
+    0
+  );
+  return Math.round((satisfiedWeight / totalWeight) * target);
+}
+
 function collectAllCodes(catalog) {
   const codes = new Set();
   catalog.sections.forEach((s) =>
@@ -105,6 +144,26 @@ function findGroupByLabel(catalog, label) {
     if (gi !== -1) return { si, gi };
   }
   return null;
+}
+
+// For every open Core Curriculum group (empty course list — American
+// History, Creative Arts, etc.), looks up the matching category in
+// core_curriculum.json (same label-matching used for auto-routing
+// parsed transcript courses) and returns its course list, so the
+// manual-entry form can offer a dropdown instead of free text. Groups
+// with no matching category (Free Electives, Major Technical
+// Electives — there's no bounded course list for those) are simply
+// absent from the returned map, and the form falls back to free text.
+function buildOpenGroupCourseOptions(catalog, coreCurriculum) {
+  const options = {};
+  for (const { si, gi, group } of findOpenCoreGroups(catalog)) {
+    const category = coreCurriculum.find((c) => normalizeLabel(c.name) === normalizeLabel(group.label));
+    if (!category) continue;
+    options[`${si}-${gi}`] = category.courses
+      .map((c) => ({ code: c.code, name: c.name }))
+      .sort((a, b) => a.code.localeCompare(b.code));
+  }
+  return options;
 }
 
 /**
@@ -238,10 +297,17 @@ function logRequirementGroupDebug(catalog, completedCodes, manualEntriesNext) {
       const key = `${si}-${gi}`;
       if (group.courses.length > 0) {
         const ok = groupSatisfied(group, completedCodes);
-        const counted = ok ? target : 0;
+        const counted = explicitGroupHoursEarned(group, completedCodes, target);
+        const satisfiesSlot = (opt) =>
+          optionSatisfied(opt, completedCodes) || opt.alternatives.some((alt) => optionSatisfied(alt, completedCodes));
+        const satisfiedCount = group.courses.filter(satisfiesSlot).length;
         console.log(
           `${ok ? "DONE" : "    "}  ${section.title} → ${group.label}: ${counted}/${target} SCH` +
-            (ok ? "" : "  (needs every listed course checked — partial credit isn't given)")
+            (ok
+              ? ""
+              : group.choice
+                ? "  (choice group, none of the options fully satisfied — no partial credit for these)"
+                : `  (${satisfiedCount}/${group.courses.length} course slots checked, ~${counted} SCH approximated)`)
         );
         totalEarned += counted;
       } else {
@@ -334,18 +400,33 @@ function RequirementGroup({ group, completed, onToggle, query }) {
   );
 }
 
-function ManualEntryGroup({ group, entries, onAdd, onRemove }) {
+function ManualEntryGroup({ group, entries, onAdd, onRemove, courseOptions }) {
+  const hasDropdown = Array.isArray(courseOptions) && courseOptions.length > 0;
   const [code, setCode] = useState("");
+  const [selectedOption, setSelectedOption] = useState("");
   const [hours, setHours] = useState(3);
   const target = parseHours(group.credit_hours);
   const total = entries.reduce((sum, e) => sum + e.hours, 0);
   const satisfied = target != null && total >= target;
 
+  // Don't offer a course a second time once it's already logged here.
+  const availableOptions = hasDropdown
+    ? courseOptions.filter((opt) => !entries.some((e) => e.code === opt.code))
+    : [];
+
+  function handleSelectChange(e) {
+    const value = e.target.value;
+    setSelectedOption(value);
+    if (value) setHours(creditHoursFromCode(value)); // pre-fill, still editable below
+  }
+
   function handleAdd(e) {
     e.preventDefault();
-    if (!code.trim() || Number(hours) <= 0) return;
-    onAdd(code.trim().toUpperCase(), Number(hours));
+    const finalCode = hasDropdown ? selectedOption : code.trim().toUpperCase();
+    if (!finalCode || Number(hours) <= 0) return;
+    onAdd(finalCode, Number(hours));
     setCode("");
+    setSelectedOption("");
   }
 
   return (
@@ -377,13 +458,28 @@ function ManualEntryGroup({ group, entries, onAdd, onRemove }) {
       )}
 
       <form className="s3-manual-form" onSubmit={handleAdd}>
-        <input
-          type="text"
-          className="s3-manual-input s3-manual-input--code"
-          placeholder="e.g. CS 4348"
-          value={code}
-          onChange={(e) => setCode(e.target.value)}
-        />
+        {hasDropdown ? (
+          <select
+            className="s3-manual-input s3-manual-input--code"
+            value={selectedOption}
+            onChange={handleSelectChange}
+          >
+            <option value="">Select a course…</option>
+            {availableOptions.map((opt) => (
+              <option key={opt.code} value={opt.code}>
+                {opt.code} — {opt.name}
+              </option>
+            ))}
+          </select>
+        ) : (
+          <input
+            type="text"
+            className="s3-manual-input s3-manual-input--code"
+            placeholder="e.g. CS 4348"
+            value={code}
+            onChange={(e) => setCode(e.target.value)}
+          />
+        )}
         <input
           type="number"
           className="s3-manual-input s3-manual-input--hours"
@@ -392,7 +488,7 @@ function ManualEntryGroup({ group, entries, onAdd, onRemove }) {
           value={hours}
           onChange={(e) => setHours(e.target.value)}
         />
-        <button type="submit" className="s3-manual-add">
+        <button type="submit" className="s3-manual-add" disabled={hasDropdown && !selectedOption}>
           Add
         </button>
       </form>
@@ -420,6 +516,7 @@ function RequirementSection({
   manualEntries,
   onManualAdd,
   onManualRemove,
+  courseOptionsByGroup,
 }) {
   const [open, setOpen] = useState(true);
   const indexedGroups = section.groups.map((g, gi) => ({ g, gi }));
@@ -447,6 +544,7 @@ function RequirementSection({
                   entries={manualEntries[key] || []}
                   onAdd={(code, hours) => onManualAdd(key, code, hours)}
                   onRemove={(id) => onManualRemove(key, id)}
+                  courseOptions={courseOptionsByGroup[key]}
                 />
               );
             }
@@ -476,10 +574,33 @@ export default function Step3AcademicHistory({
 }) {
   const [catalog, setCatalog] = useState(null);
   const [loadError, setLoadError] = useState(null);
+  const [coreCurriculum, setCoreCurriculum] = useState(null);
   const [query, setQuery] = useState("");
   const [transcriptFile, setTranscriptFile] = useState(null);
   const [transcriptNote, setTranscriptNote] = useState("");
   const [transcriptParsing, setTranscriptParsing] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    loadCoreCurriculum()
+      .then((data) => {
+        if (!cancelled) setCoreCurriculum(data);
+      })
+      .catch((err) => {
+        // Best-effort — the manual-entry dropdown just falls back to
+        // free text if this isn't available, same as the transcript
+        // upload's auto-routing does.
+        console.warn("Couldn't load core_curriculum.json — manual entry will use free text:", err);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const courseOptionsByGroup = useMemo(
+    () => (catalog && coreCurriculum ? buildOpenGroupCourseOptions(catalog, coreCurriculum) : {}),
+    [catalog, coreCurriculum]
+  );
 
   const degreeTypes = useMemo(() => (major ? undergradDegreeTypes(major) : []), [major]);
   const [selectedDegreeType, setSelectedDegreeType] = useState(null);
@@ -538,7 +659,7 @@ export default function Step3AcademicHistory({
         const target = parseHours(group.credit_hours);
         if (target == null) return;
         if (group.courses.length > 0) {
-          if (groupSatisfied(group, completed)) earned += target;
+          earned += explicitGroupHoursEarned(group, completed, target);
         } else {
           const key = `${si}-${gi}`;
           const manualTotal = (manualEntries[key] || []).reduce((sum, e) => sum + e.hours, 0);
@@ -618,8 +739,10 @@ export default function Step3AcademicHistory({
       let additions = [];
       if (catalog) {
         try {
-          const coreCurriculum = await loadCoreCurriculum();
-          additions = classifyUnlistedCourses(extracted, allCodes, catalog, coreCurriculum);
+          // Reuse what's already loaded at mount; only fetch fresh if
+          // someone manages to upload before that resolves.
+          const curriculum = coreCurriculum ?? (await loadCoreCurriculum());
+          additions = classifyUnlistedCourses(extracted, allCodes, catalog, curriculum);
           if (additions.length) {
             manualEntriesNext = { ...manualEntries };
             for (const { si, gi, code, hours } of additions) {
@@ -752,6 +875,7 @@ export default function Step3AcademicHistory({
                 manualEntries={manualEntries}
                 onManualAdd={addManualEntry}
                 onManualRemove={removeManualEntry}
+                courseOptionsByGroup={courseOptionsByGroup}
               />
             ))}
           </div>
