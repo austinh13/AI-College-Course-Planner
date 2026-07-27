@@ -1,0 +1,556 @@
+{
+  "major": "Accounting (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I1 , 2 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Option courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/accounting (2026-07-26 18:29:19) 1/",
+        "Or select any 3 semester credit hours from Mathematics Core courses",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/accounting (2026-07-26 18:29:19) 2/",
+        "And select any 3 semester credit hours from Component Area Option Core",
+        "Or select any 6 semester credit hours from Component Area Option Core courses"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "76",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ACCT 2301",
+              "title": "Introductory Financial Accounting  (Minimum grade of C or better required)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 2302",
+              "title": "Introductory Management Accounting  (Minimum grade of C or better required)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 2301",
+              "title": "Business and Public Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3333",
+              "title": "Quantitative Business Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3360",
+              "title": "Managerial Methods in Decision Making Under Uncertainty",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Complete the following course if not already completed as part of the Core Curriculum Requirements",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I1 , 2  (Required for all JSOM undergraduate students. May elect to substitute",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Curriculum",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "28",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1105",
+              "title": "Professional Development (JSOM first-time-in-college freshmen are required to take",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BA 3105",
+                  "title": "Professional Development (Transfer students and students new to JSOM are required to take",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BCOM 3300",
+              "title": "Business Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 3301",
+              "title": "AI in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3320",
+              "title": "Business Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IMS 3310",
+              "title": "International Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 3300",
+              "title": "Information Technology for Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "OBHR 3330",
+                  "title": "Human Resource Management in Business",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "OPRE 3310",
+              "title": "Supply Chain and Operations Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Experiential Learning",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BPS 4395",
+              "title": "Capstone Senior Project - Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 4V80",
+              "title": "will also",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 4070",
+              "title": "Accounting Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 4095",
+              "title": "Social Sector Engagement and Community Outreach Practicum",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "21",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ACCT 3312",
+              "title": "Fundamentals of Accounting Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 3331",
+              "title": "Intermediate Financial Accounting I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 3332",
+              "title": "Intermediate Financial Accounting II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 3341",
+              "title": "Cost Management Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 3350",
+              "title": "Fundamentals of Taxation I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 4334",
+              "title": "Auditing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 4342",
+              "title": "Accounting Information Systems and Financial Reporting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Guided Electives",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose from the following to fulfill Guided Elective semester credit hours:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ACCT 3322",
+              "title": "Accounting Transaction Processing and Control",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 4301",
+              "title": "Database Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 4336",
+              "title": "Financial Statement Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 4337",
+              "title": "Business Valuation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 4340",
+              "title": "Survey of Accounting Software",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 4V80",
+              "title": "Professional Internship in Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3390",
+              "title": "Introduction to Financial Modeling",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 3340",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 3350",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "And select two of the following to satisfy Major Preparatory requirements if not completed in Core",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/accounting (2026-07-26 18:29:19) 3/",
+        "A capstone course is required for all undergraduate JSOM students.",
+        "A practicum experience of at least 160 working hours is required, with registration in one of the",
+        "courses below. Depending on the internship and preference for additional electives, the student",
+        "may qualify for a zero to 3 semester credit hours course with the BS ACCT Program Director's",
+        "satisfy a Guided Elective requirement.",
+        "Students are required to complete 100 hours of community engagement experience with",
+        "registration in one of the courses below.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/accounting (2026-07-26 18:29:19) 4/",
+        "Students who intend to take the CPA Examination should meet with a CPA Advisor to ensure",
+        "selection of guided electives that will best prepare them for success on the CPA Examination.",
+        "Students who expect to continue with the MS Accounting and Analytics Degree should utilize",
+        "the pre-approved fast-track courses for up to two guided electives, assuming fast-track",
+        "eligibility requirements are met.",
+        "and up to 3 SCH of an Individual Study based on the major to satisfy JURS program requirements.",
+        "These credits may be applied to the Guided Electives. Please note that these courses do not apply",
+        "to the CPA requirements."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "2",
+      "groups": [],
+      "notes": [
+        "Students admitted to the Professional Program in Accounting will be required to register for ACCT",
+        "3101 (one semester credit hour elective) in the fall semester of program admittance.",
+        "Free electives may be used to fulfill the remaining Elective semester credit hours",
+        "Both lower- and upper-division courses may count as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

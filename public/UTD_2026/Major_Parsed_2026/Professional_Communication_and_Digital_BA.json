@@ -1,0 +1,728 @@
+{
+  "major": "Professional Communication and Digital (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 1311",
+              "title": "Introduction to Communication Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 1315",
+              "title": "Public Speaking",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/professional-communication-and-digital-media-studies (2026-07-26 18:26:32) 1/",
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "43",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "19",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AHTC 1100",
+              "title": "First Year Seminar (First-time-in-college freshmen are required to take in their first semester)",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "AHTC 2100",
+                  "title": "Student Success Seminar (Transfer students are required to take in their first semester)",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "COMM 2301",
+              "title": "Communication Technology Skills",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 1311",
+              "title": "Introduction to Communication Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "COMM 1315",
+                  "title": "Public Speaking",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "COMM 1320",
+              "title": "Interpersonal Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "COMM 2314",
+                  "title": "Oral Interpretation",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "COMM 2310",
+              "title": "Introduction to Professional Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 2315",
+              "title": "Argumentation and Debate",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 2351",
+              "title": "History and Theory of Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "21",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 3340",
+              "title": "Team Dynamics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3350",
+              "title": "Intercultural Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3352",
+              "title": "Media and Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3353",
+              "title": "Nonverbal Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4314",
+              "title": "Persuasion and Interpersonal Influence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4360",
+              "title": "Communication Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ATCM 4384",
+                  "title": "Ethics in New Media, Technology, and Communication",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "COMM 4370",
+              "title": "Communication and Leadership",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "COMM 4371",
+                  "title": "Communication and Professionalism",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Advanced Research Requirement",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 3310",
+              "title": "Research Methods in Communication Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Internship or Capstone Requirement",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 4398",
+              "title": "Capstone",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "COMM 4399",
+                  "title": "Communication Internship",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/professional-communication-and-digital-media-studies (2026-07-26 18:26:32) 2/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "35",
+      "groups": [
+        {
+          "label": "Major Prescribed Electives",
+          "credit_hours": "18",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 3350",
+              "title": "Crisis Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3323",
+              "title": "Reading in a Networked Era",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3325",
+              "title": "Global Media Cultures",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3388",
+              "title": "Social Influence and Persuasive Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 4304",
+              "title": "Communication in America",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4386",
+              "title": "Journalism in the Networked Age",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4388",
+              "title": "Political Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 2335",
+              "title": "Communication and Popular Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3302",
+              "title": "Graphics and Images in Professional Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3303",
+              "title": "Professional Communication in the Career Fields",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3320",
+              "title": "Readers' Theater",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3321",
+              "title": "Professional and Technical Presentations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3322",
+              "title": "Relational Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3325",
+              "title": "Advanced Oral Interpretation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3330",
+              "title": "Public Address and the American Presidency",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3360",
+              "title": "TV and Radio Announcing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3342",
+              "title": "Advanced Topics in Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4303",
+              "title": "Advanced Editing",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "RHET 4303",
+                  "title": "Advanced Editing",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "COMM 4305",
+              "title": "Communication and Media Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4320",
+              "title": "Communicating for the World Wide Web",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4330",
+              "title": "Digital Media and the 21st Century",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4341",
+              "title": "Information Design and Usability",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4352",
+              "title": "Digital Advocacy: Strategies for Influence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4353",
+              "title": "Political Discourse in a Digital Era",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4355",
+              "title": "Organizational Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4362",
+              "title": "Communicating in the World of AI",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4365",
+              "title": "Storytelling in Professional Contexts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4375",
+              "title": "Professional Communication in Medicine",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4395",
+              "title": "Communication in International Contexts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4380",
+              "title": "Communication in Japan",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FILM 2332",
+              "title": "Understanding Film",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FILM 3321",
+              "title": "Film in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FILM 3325",
+              "title": "Film Authorship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FILM 3326",
+              "title": "World Cinema",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 4302",
+              "title": "Advanced Writing and Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 4310",
+              "title": "Topics in Editing and Publishing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "VPAS 4310",
+              "title": "Entertainment Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Free Electives",
+          "credit_hours": "17",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Professional and Technical Communication Concentration",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 3302",
+              "title": "Graphics and Images in Professional Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3303",
+              "title": "Professional Communication in the Career Fields",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "COMM 3321",
+                  "title": "Professional and Technical Presentations",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "COMM 4303",
+              "title": "Advanced Editing",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "RHET 4303",
+                  "title": "Advanced Editing",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "RHET 4302",
+                  "title": "Advanced Writing and Research",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "COMM 4341",
+              "title": "Information Design and Usability",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4355",
+              "title": "Organizational Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Digital Media Studies Concentration",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 2335",
+              "title": "Communication and Popular Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3360",
+              "title": "TV and Radio Announcing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4320",
+              "title": "Communicating for the World Wide Web",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "COMM 4330",
+                  "title": "Digital Media and the 21st Century",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "COMM 4353",
+              "title": "Political Discourse in a Digital Era",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "COMM 4352",
+                  "title": "Digital Advocacy: Strategies for Influence",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "COMM 4362",
+              "title": "Communicating in the World of AI",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "COMM 4365",
+                  "title": "Storytelling in Professional Contexts",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/professional-communication-and-digital-media-studies (2026-07-26 18:26:32) 3/",
+        "Students may choose 18 semester credit hours from any of the following courses.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/professional-communication-and-digital-media-studies (2026-07-26 18:26:32) 4/",
+        "Both upper- and lower-division courses may be used as electives.",
+        "Concentration Option (15 semester credit hours and 2 semester credit hours in Free Electives)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/professional-communication-and-digital-media-studies (2026-07-26 18:26:32) 5/",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

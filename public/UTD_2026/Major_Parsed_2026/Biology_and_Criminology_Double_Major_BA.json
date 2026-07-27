@@ -1,0 +1,767 @@
+{
+  "major": "Biology and Criminology (Double Major) (BA)",
+  "total_credit_hours": "134-137",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus2 , 3 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1315",
+                  "title": "Honors Freshman Chemistry I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1316",
+                  "title": "Honors Freshman Chemistry II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 1301",
+              "title": "Introduction to Criminal Justice2 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 1307",
+              "title": "Introduction to Crime and Criminology2 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 1301",
+              "title": "Introduction to Sociology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus2 , 3 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 3332",
+                  "title": "Statistics for Life Sciences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "EPPS 2302",
+                  "title": "Methods of Quantitative Analysis in the Social and Policy Sciences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from accredited institutions",
+        "of higher education. The courses listed are recommended as the most efficient way to satisfy both",
+        "Core Curriculum and Major requirements at UT Dallas",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/epps/criminology-biology (2026-07-26 18:27:57) 2/",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "78-81",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EPPS 1110",
+              "title": "Critical Issues in the Social Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "NATS 1101",
+                  "title": "Natural Sciences and Mathematics Freshman Seminar",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Biology Major Preparatory Courses",
+          "credit_hours": "18-21",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 1111",
+              "title": "General Chemistry Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1115",
+                  "title": "Honors Freshman Chemistry Laboratory I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1112",
+              "title": "General Chemistry Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1116",
+                  "title": "Honors Freshman Chemistry Laboratory II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1315",
+                  "title": "Honors Freshman Chemistry I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1316",
+                  "title": "Honors Freshman Chemistry II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 2323",
+              "title": "Introductory Organic Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 2327",
+                  "title": "Honors Organic Chemistry I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 2325",
+              "title": "Introductory Organic Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 2328",
+                  "title": "Honors Organic Chemistry II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 2233",
+              "title": "Introductory Organic Chemistry Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 2237",
+                  "title": "Honors Organic Chemistry Laboratory",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus2 , 3 , 4",
+              "connector": null,
+              "with": [
+                {
+                  "code": "MATH 2414",
+                  "title": "Integral Calculus2 , 3 , 4"
+                }
+              ],
+              "alternatives": [
+                {
+                  "code": "MATH 1325",
+                  "title": "Applied Calculus I",
+                  "connector": "or",
+                  "with": [
+                    {
+                      "code": "STAT 3332",
+                      "title": "Statistics for Life Sciences"
+                    }
+                  ],
+                  "alternatives": []
+                },
+                {
+                  "code": "EPPS 2302",
+                  "title": "Methods of Quantitative Analysis in the Social and Policy Sciences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [
+                {
+                  "code": "PHYS 2125",
+                  "title": "Physics Laboratory I"
+                }
+              ],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "PHYS 1301",
+                  "title": "College Physics I",
+                  "connector": "or",
+                  "with": [
+                    {
+                      "code": "PHYS 1101",
+                      "title": "College Physics Laboratory I"
+                    }
+                  ],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [
+                {
+                  "code": "PHYS 2126",
+                  "title": "Physics Laboratory II"
+                }
+              ],
+              "alternatives": [
+                {
+                  "code": "PHYS 2422",
+                  "title": "Honors Physics II - Electromagnetism and Waves",
+                  "connector": "or",
+                  "with": [
+                    {
+                      "code": "PHYS 2126",
+                      "title": "Physics Laboratory II"
+                    }
+                  ],
+                  "alternatives": []
+                },
+                {
+                  "code": "PHYS 1302",
+                  "title": "College Physics II",
+                  "connector": "or",
+                  "with": [
+                    {
+                      "code": "PHYS 1102",
+                      "title": "College Physics Laboratory II"
+                    }
+                  ],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Biology Major Core Courses",
+          "credit_hours": "32",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIOL 2111",
+              "title": "Introduction to Modern Biology Workshop I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2112",
+              "title": "Introduction to Modern Biology Workshop II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2281",
+              "title": "Introductory Biology Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BIOL 2V81",
+                  "title": "Course-based Undergraduate Research Experience in Biology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BIOL 2311",
+              "title": "Introduction to Modern Biology I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2312",
+              "title": "Introduction to Modern Biology II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3318",
+              "title": "Forensic Biology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3401",
+              "title": "Genetics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3402",
+              "title": "Molecular and Cell Biology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3461",
+              "title": "Biochemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 3461",
+                  "title": "Biochemistry I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BIOL 3462",
+              "title": "Biochemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 3462",
+                  "title": "Biochemistry II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "BIOL 3335",
+                  "title": "Microbial Physiology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BIOL 3380",
+              "title": "Biochemistry Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Criminology Major Preparatory Courses",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 1301",
+              "title": "Introduction to Criminal Justice2 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 1307",
+              "title": "Introduction to Crime and Criminology2 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ECON 2302",
+                  "title": "Principles of Microeconomics",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Criminology Core Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 3300",
+              "title": "Crime and Civil Liberties",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3302",
+              "title": "Advanced Criminology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3303",
+              "title": "Advanced Criminal Justice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3304",
+              "title": "Research Methods in Crime and Justice Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 4311",
+              "title": "Crime and Justice Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 4322",
+              "title": "Senior Research Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Distributive Justice Focus",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following (3 semester credit hours):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 3301",
+              "title": "Theories of Justice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4330",
+              "title": "Law and Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4302",
+              "title": "Class, Status, and Power",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "International or Comparative Focus",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following (3 semester credit hours):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 3319",
+              "title": "Comparative Justice Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4360",
+              "title": "International Trade",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3350",
+              "title": "Comparative Politics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/epps/criminology-biology (2026-07-26 18:27:57) 3/",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/epps/criminology-biology (2026-07-26 18:27:57) 4/",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/epps/criminology-biology (2026-07-26 18:27:57) 5/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "14",
+      "groups": [
+        {
+          "label": "Guided Electives",
+          "credit_hours": "14",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Biology (6 semester credit hours):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIOL 4380",
+              "title": "Cell and Molecular Biology Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Criminology Related Electives",
+          "credit_hours": "8",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/epps/criminology-biology (2026-07-26 18:27:57) 6/",
+        "3 semester credit hours approved upper-division BIOL elective",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

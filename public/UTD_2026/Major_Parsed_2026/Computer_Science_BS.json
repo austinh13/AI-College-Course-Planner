@@ -1,0 +1,680 @@
+{
+  "major": "Computer Science (BS)",
+  "total_credit_hours": "124",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "RHET 1302",
+              "title": "College Writing II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 2390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses. The courses listed are",
+        "recommended as the most efficient way to satisfy both Core Curriculum and Major Requirements",
+        "at UT Dallas.",
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/computer-science (2026-07-26 18:27:26) 3/",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "and a 3 semester credit hour Government/Political Science Core course",
+        "Or select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/computer-science (2026-07-26 18:27:26) 4/",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "69",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECS 1100",
+              "title": "Introduction to Engineering and Computer Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 1210",
+              "title": "Foundations in Engineering and Computer Science I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1436",
+              "title": "Programming Fundamentals",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1337",
+              "title": "Computer Science I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 2305",
+              "title": "Discrete Mathematics for Computing I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 2336",
+              "title": "Computer Science II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 2340",
+              "title": "Computer Architecture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2418",
+              "title": "Linear Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 1302",
+              "title": "College Writing II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "MATH Sequence - Students may choose one of the following sequences:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus",
+              "connector": null,
+              "with": [
+                {
+                  "code": "MATH 2414",
+                  "title": "Integral Calculus"
+                }
+              ],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I",
+              "connector": null,
+              "with": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II"
+                }
+              ],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "36",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECS 2390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 3162",
+              "title": "Professional Responsibility in Computer Science and Software Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 3341",
+              "title": "Probability and Statistics in Computer Science and Software Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 3345",
+              "title": "Data Structures and Foundations of Algorithmic Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 3354",
+              "title": "Software Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 3377",
+              "title": "Systems Programming in UNIX and Other Environments",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4141",
+              "title": "Digital Systems Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4337",
+              "title": "Programming Language Paradigms",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4341",
+              "title": "Digital Logic and Computer Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4347",
+              "title": "Database Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4348",
+              "title": "Operating Systems Concepts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4349",
+              "title": "Advanced Algorithm Design and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4384",
+              "title": "Automata Theory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4485",
+              "title": "Computer Science Project",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Technical Electives",
+          "credit_hours": "9",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "electives without the explicit approval of an advisor:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CS 4314",
+              "title": "Intelligent Systems Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4315",
+              "title": "Intelligent Systems Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4332",
+              "title": "Foundations of Programming Video Games",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4334",
+              "title": "Numerical Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4336",
+              "title": "Advanced Java",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4339",
+              "title": "Web Programming Languages",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4352",
+              "title": "Foundations of Human-Computer Interaction",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4361",
+              "title": "Computer Graphics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4365",
+              "title": "Artificial Intelligence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4375",
+              "title": "Foundations of Machine Learning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4376",
+              "title": "Object-Oriented Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4386",
+              "title": "Compiler Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4389",
+              "title": "Data and Applications Security",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4390",
+              "title": "Computer Networks",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4391",
+              "title": "Foundations of Computer Vision",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4392",
+              "title": "Computer Animation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4393",
+              "title": "Computer and Network Security",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4394",
+              "title": "Implementation of Modern Operating Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4395",
+              "title": "Human Language Technologies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4396",
+              "title": "Networking Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4397",
+              "title": "Embedded Computer Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4398",
+              "title": "Digital Forensics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4399",
+              "title": "Thesis Research in Computer Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4459",
+              "title": "Cyber Attack and Defense Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4325",
+              "title": "Introduction to VLSI Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SE 4351",
+              "title": "Requirements Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SE 4352",
+              "title": "Software Architecture and Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SE 4367",
+              "title": "Software Testing, Verification, Validation and Quality Assurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SE 4381",
+              "title": "Software Project Planning and Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Any other organized CS 4000-level course",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/computer-science (2026-07-26 18:27:26) 5/",
+        "PCS technical electives are 4000 level courses in computer science or closely related areas",
+        "approved by the student's academic advisor. The following courses may be used as technical",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/computer-science (2026-07-26 18:27:26) 6/",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/computer-science (2026-07-26 18:27:26) 7/",
+        "If eligible, graduate courses may also be used to satisfy CS technical elective requirements."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "13",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "13",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both lower- and upper-division courses may count as free electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

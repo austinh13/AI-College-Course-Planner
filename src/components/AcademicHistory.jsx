@@ -3,7 +3,13 @@ import utdDegrees from "../data/utd_degrees.json";
 import { extractCompletedCourses, loadCoreCurriculum, assignCoreCategories } from "../lib/parseTranscript";
 import "./AcademicHistory.css";
 
-const CATALOG_BASE_URL = "/Major_Catalogs_Parsed";
+function catalogBaseUrl(startYear) {
+  return `/UTD_${startYear}/Major_Parsed_${startYear}`;
+}
+
+function coreCurriculumUrl(startYear) {
+  return `/UTD_${startYear}/Core_${startYear}.json`;
+}
 
 const NORMALIZED_MAJOR_KEYS = Object.keys(utdDegrees).reduce((map, key) => {
   map[key.trim().toLowerCase().replace(/\s+/g, " ")] = key;
@@ -566,6 +572,7 @@ function RequirementSection({
 
 export default function Step3AcademicHistory({
   major,
+  startYear,
   completed,
   manualEntries,
   onChange,
@@ -581,8 +588,9 @@ export default function Step3AcademicHistory({
   const [transcriptParsing, setTranscriptParsing] = useState(false);
 
   useEffect(() => {
+    if (!startYear) return;
     let cancelled = false;
-    loadCoreCurriculum()
+    loadCoreCurriculum(coreCurriculumUrl(startYear))
       .then((data) => {
         if (!cancelled) setCoreCurriculum(data);
       })
@@ -590,12 +598,12 @@ export default function Step3AcademicHistory({
         // Best-effort — the manual-entry dropdown just falls back to
         // free text if this isn't available, same as the transcript
         // upload's auto-routing does.
-        console.warn("Couldn't load core_curriculum.json — manual entry will use free text:", err);
+        console.warn("Couldn't load core curriculum — manual entry will use free text:", err);
       });
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [startYear]);
 
   const courseOptionsByGroup = useMemo(
     () => (catalog && coreCurriculum ? buildOpenGroupCourseOptions(catalog, coreCurriculum) : {}),
@@ -613,7 +621,7 @@ export default function Step3AcademicHistory({
   const canonicalMajor = resolveMajorKey(major);
 
   useEffect(() => {
-    if (!major) return;
+    if (!major || !startYear) return;
     if (degreeTypes.length === 0) {
       setCatalog(null);
       setLoadError(`We don't have degree requirements on file for "${major}" yet.`);
@@ -630,9 +638,12 @@ export default function Step3AcademicHistory({
     setLoadError(null);
 
     const slug = slugify(`${canonicalMajor} (${resolvedDegreeType})`);
-    fetch(`${CATALOG_BASE_URL}/${slug}.json`)
+    fetch(`${catalogBaseUrl(startYear)}/${slug}.json`)
       .then((res) => {
-        if (!res.ok) throw new Error(`Couldn't load requirements for "${major} (${resolvedDegreeType})"`);
+        if (!res.ok)
+          throw new Error(
+            `Couldn't load ${startYear} requirements for "${major} (${resolvedDegreeType})" — catalog not available yet.`
+          );
         return res.json();
       })
       .then((data) => {
@@ -645,7 +656,7 @@ export default function Step3AcademicHistory({
     return () => {
       cancelled = true;
     };
-  }, [major, degreeTypes.length, resolvedDegreeType]);
+  }, [major, startYear, degreeTypes.length, resolvedDegreeType]);
 
   const allCodes = useMemo(() => (catalog ? collectAllCodes(catalog) : new Set()), [catalog]);
 

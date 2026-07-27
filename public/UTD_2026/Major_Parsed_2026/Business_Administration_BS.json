@@ -1,0 +1,980 @@
+{
+  "major": "Business Administration (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Option courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/business-administration (2026-07-26 18:29:22) 2/",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+        "And select 3 semester credit hours from Component Area Option Core",
+        "Or select any 6 semester credit hours from Component Area Option Core courses",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/business-administration (2026-07-26 18:29:22) 3/"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "67",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ACCT 2301",
+              "title": "Introductory Financial Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 2302",
+              "title": "Introductory Management Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 2301",
+              "title": "Business and Public Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3360",
+              "title": "Managerial Methods in Decision Making Under Uncertainty",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Complete the following courses if not already completed as part of the Core Curriculum Requirements",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I1 , 2  (Required for all JSOM undergraduate students. May elect to substitute",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose two of the following if not completed in Core Curriculum:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "40",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1105",
+              "title": "Professional Development (JSOM first-time-in-college freshmen are required to take",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BA 3105",
+                  "title": "Professional Development (Transfer students and students new to JSOM are required to take",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BA 3300",
+              "title": "Advanced Topics in Capitalism: Ideas and Challenges That Shape Our World",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BCOM 3300",
+              "title": "Business Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BPS 4305",
+              "title": "Strategic Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 3301",
+              "title": "AI in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 3301",
+              "title": "Innovation and Entrepreneurship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3320",
+              "title": "Business Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IMS 3310",
+              "title": "International Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 3300",
+              "title": "Information Technology for Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "OBHR 3330",
+                  "title": "Human Resource Management in Business",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "OPRE 3310",
+              "title": "Supply Chain and Operations Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3330",
+              "title": "Project Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Experiential Learning",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "be fulfilled with enrollment in one of the following courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BPS 4395",
+              "title": "Capstone Senior Project - Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "requirement:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 4333",
+              "title": "Enterprise Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 4398",
+              "title": "Venture Capital Seed Fund",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "The following fulfills the Real Estate Finance Concentration capstone requirement:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "REAL 4328",
+              "title": "Real Estate Valuation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "below:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 4090",
+              "title": "Management Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 4095",
+              "title": "Social Sector Engagement and Community Outreach Practicum",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "15",
+          "choice": false,
+          "description": "instead choose a concentration from the following:",
+          "courses": []
+        },
+        {
+          "label": "General Business Option",
+          "credit_hours": "15",
+          "choice": false,
+          "description": "Choose the remaining upper-division courses not used elsewhere on the degree plan from the",
+          "courses": []
+        },
+        {
+          "label": "Group 1: Management - ENTP or OBHR prefixes",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Group 2: Marketing - MKT prefix",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Group 6: Operations Management - OPRE prefix",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 3340",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 3350",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Business Economics Concentration",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 3350",
+              "title": "Financial Markets and Institutions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECO 4303",
+              "title": "Decisions, Behavior, and Business Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECO 4351",
+              "title": "Market Structure and Corporate Strategy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECO 4352",
+              "title": "Statistical Data Science for Business Decisions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose 3 semester credit hours from the following: Any MECO upper-division course",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MKT 3340",
+              "title": "Marketing Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3305",
+              "title": "Real Estate Principles",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3370",
+              "title": "Principles of Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Energy Management Concentration",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Select 15 semester credit hours from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ENGY 3300",
+              "title": "Introduction to Energy Technology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGY 3301",
+              "title": "Managing Carbon Assets: Oil, Gas, and Coal",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGY 3302",
+              "title": "Managing Power and Renewable Energy Assets; Sustainability",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGY 3330",
+              "title": "Energy Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGY 3340",
+              "title": "Energy Law and Contracts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGY 4300",
+              "title": "Energy Land Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGY 4313",
+              "title": "Energy Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Innovation and Entrepreneurship Concentration",
+          "credit_hours": "15",
+          "choice": false,
+          "description": "Select 15 semester credit hours of ENTP prefix courses not used elsewhere on the degree sheet.",
+          "courses": []
+        },
+        {
+          "label": "Real Estate Finance Concentration",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "REAL 3305",
+              "title": "Real Estate Principles",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "REAL 3358",
+              "title": "Real Estate Markets and Investments",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "REAL 3365",
+              "title": "Real Estate Finance and Principles",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "REAL 4321",
+              "title": "Real Estate Law and Contracts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Complete 3 semester credit hours of upper-division JSOM courses not used elsewhere on the",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "REAL 4328",
+              "title": "is required for this concentration and satisfies a capstone",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Risk Management and Insurance Technology Concentration",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 3370",
+              "title": "Principles of Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select 12 semester credit hours from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 4331",
+              "title": "Business Liability Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4332",
+              "title": "Commercial Property Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4334",
+              "title": "Insurance Law and Contracts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4336",
+              "title": "Risk Systems and Theories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4338",
+              "title": "Foundations of Risk Analytics and Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4345",
+              "title": "Financial Information and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4346",
+              "title": "Applied Machine Learning in Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4351",
+              "title": "Operational Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4352",
+              "title": "Financial Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4353",
+              "title": "Principles of Information Security",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4354",
+              "title": "Cybersecurity Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4333",
+              "title": "is required for this concentration and satisfies a capstone",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Sales Concentration",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MKT 3330",
+              "title": "Fundamentals of Professional Selling",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3343",
+              "title": "Fundamentals of Negotiation in Sales and Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4332",
+              "title": "Advanced Professional Sales",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MKT 4331",
+                  "title": "Digital Prospecting",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "And choose 6 semester credit hours from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 3305",
+              "title": "Real Estate Principles",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3300",
+              "title": "Personal Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HMGT 3301",
+              "title": "Healthcare Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3320",
+              "title": "Product and Brand Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3331",
+              "title": "Principles of Category Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3341",
+              "title": "AI Within the Sales Technology Landscape",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4332",
+              "title": "Advanced Professional Sales",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4333",
+              "title": "Retail Operations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4310",
+              "title": "Business Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "(depending on the general or specific concentration plan)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/business-administration (2026-07-26 18:29:22) 4/",
+        "A capstone course is required for all undergraduate JSOM students. The capstone requirement can",
+        "The following fulfills the Risk Management and Insurance Technology Concentration capstone",
+        "The following fulfills the Innovation and Entrepreneurship Concentration capstone requirement",
+        "A practicum experience of at least 160 working hours is required, with registration in the course",
+        "A community engagement experience is required, with registration in one of the courses below.",
+        "Depending on the service and preference for additional electives, the student has the option of",
+        "zero or 3 semester credit hours.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/business-administration (2026-07-26 18:29:22) 5/",
+        "Students may follow a general Business Administration degree plan (General Business Option) or",
+        "Students who select the general business concentration learn how to make business decisions",
+        "taking into consideration key functional areas of the firm. Students understand how the firm",
+        "operates as a holistic business entity and the impact that functional areas of business have on",
+        "each other, including the firm's key stakeholders.",
+        "groups below. Students choosing this option must select their courses from at least 3 different",
+        "groups.",
+        "Group 3: Finance and Accounting - ACCT, ENGY, FIN, MECO, REAL, or RMIS prefixes",
+        "Group 4: Information Systems - BUAN, CYBR, or ITSS prefixes",
+        "Group 5: Business Environment - BA, BCOM, BPS, BLAW, HMGT, or IMS prefixes",
+        "Or any 3 semester credit hour faculty-led international trip course.",
+        "and up to 3 SCH of Individual Study based on the major to satisfy JURS program requirements.",
+        "These credits may be applied to the general option if no free electives are available.",
+        "Students who select this concentration will see how Business economics relates to every aspect of",
+        "their lives, from the decisions they make as individuals to structures created by governments and",
+        "firms. Business economics helps us make better business decisions and choices for the firm and its",
+        "stakeholders.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/business-administration (2026-07-26 18:29:22) 6/",
+        "Any upper-division courses listed below can satisfy guided elective requirements in prior BS BA",
+        "catalogs for Business Economics concentration if hours are not used elsewhere on the student's",
+        "degree plan. With advanced written permission from the Business Economics Program Director, 3",
+        "semester credit hours of equivalent or similar upper-level courses not used elsewhere on the",
+        "degree plan may fulfill one guided elective.",
+        "Students gain a broad survey of core energy matters that are critical in today's energy space,",
+        "namely, hydrocarbons and alternative energy sources including law, economics, policy,",
+        "management, finance, marketing, and environmental matters",
+        "The Concentration in Innovation and Entrepreneurship equips students with a wide range of skills",
+        "and knowledge, enabling them to identify opportunities, create innovative solutions, and",
+        "successfully bring their ideas to the market while managing the complexities of running a business.",
+        "It fosters a mindset of adaptability, creativity, and ethical responsibility in the dynamic world.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/business-administration (2026-07-26 18:29:22) 7/",
+        "Students who choose this concentration will develop analytical and financial modeling skills using",
+        "the latest real estate technologies to compete in the marketplace.",
+        "student's degree plan.",
+        "requirement.",
+        "Students who choose this concentration will learn both the qualitative and quantitative tools",
+        "necessary to enter one of the many different areas within the risk management and insurance",
+        "industries.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/business-administration (2026-07-26 18:29:22) 8/",
+        "requirement.",
+        "Students who select the sales concentration become sales experts by developing practical, tangible",
+        "skills associated with all facets of sales. Students learn the fundamentals of sales as well as cutting",
+        "edge models, techniques, practices, and applications."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "11",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "11",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "(depending on the general or specific concentration plan)",
+        "Both lower- and upper-division courses may count as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

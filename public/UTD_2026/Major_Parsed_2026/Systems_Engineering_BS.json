@@ -1,0 +1,486 @@
+{
+  "major": "Systems Engineering (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "RHET 1302",
+              "title": "College Writing II1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 2390",
+              "title": "Professional and Technical Communication1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I1 , 3",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics1 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves1 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2415",
+              "title": "Calculus of Several Variables1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II1 , 3",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I1 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/systems-engineering (2026-07-26 18:27:51) 1/",
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/systems-engineering (2026-07-26 18:27:51) 2/",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "78",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "23",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECS 1100",
+              "title": "Introduction to Engineering and Computer Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 1210",
+              "title": "Foundations in Engineering and Computer Science I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 1220",
+              "title": "Foundations in Engineering and Computer Science II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 2390",
+              "title": "Professional and Technical Communication1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SYSE 1101",
+              "title": "Introduction to Systems Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 2300",
+              "title": "Linear Algebra for Engineers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 3300",
+              "title": "Advanced Engineering Mathematics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 3341",
+              "title": "Probability Theory and Statistics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2420",
+              "title": "Differential Equations with Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics1 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I1 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves1 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I1 , 3",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2415",
+              "title": "Calculus of Several Variables1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II1 , 3",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 3315",
+              "title": "Discrete Mathematics and Combinatorics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CS 2305",
+                  "title": "Discrete Mathematics for Computing I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "34",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "SYSE 2300",
+              "title": "Project Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SYSE 2310",
+              "title": "Systems Architecture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SYSE 3300",
+              "title": "Systems Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 3161",
+              "title": "Social Issues and Ethics in Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 3302",
+              "title": "Signals and Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SYSE 3355",
+              "title": "Data Science for Engineers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SYSE 4302",
+              "title": "Complex Networks for Engineers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SYSE 4305",
+              "title": "Optimization",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SYSE 4306",
+              "title": "Modeling and Simulation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4310",
+              "title": "Systems and Controls",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4331",
+              "title": "Applied Machine Learning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SYSE 4380",
+              "title": "Capstone Design Project",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Technical Electives",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Secondary Field requirement",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Examples Secondary Fields",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Data Science",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Robotics and Mechatronics",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Business and Financial Engineering",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Energy Systems",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Healthcare Systems",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Public Policy",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Students must pass each of the major requirement courses listed in this degree plan and each of",
+        "their prerequisites, with a grade of C or better.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/systems-engineering (2026-07-26 18:27:51) 3/",
+        "Any six hours of upper division engineering courses.",
+        "The Secondary Field consists of 15 semester credit hours, at least 9 of which must be upper-",
+        "division courses. Students may choose from the list of pre-approved application areas or design",
+        "their own program in consultation with their advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/systems-engineering (2026-07-26 18:27:51) 4/",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

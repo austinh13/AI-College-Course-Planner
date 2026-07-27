@@ -84,6 +84,7 @@ export default function App() {
             {stage === STAGE.ACADEMIC_HISTORY && (
               <AcademicHistory
                 major={profile.major}
+                startYear={profile.year}
                 completed={academicHistory.completed}
                 manualEntries={academicHistory.manualEntries}
                 onChange={(next) => setAcademicHistory((prev) => ({ ...prev, ...next }))}

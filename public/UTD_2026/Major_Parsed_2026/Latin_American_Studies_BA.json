@@ -1,0 +1,425 @@
+{
+  "major": "Latin American Studies (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor and degree requirements)",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 2350",
+              "title": "Latin American Civilizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GEOG 2303",
+              "title": "World Regional Geography",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses (see advisor)",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/latin-american-studies (2026-07-26 18:26:05) 1/",
+        "Or select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "30-46",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AHTC 1100",
+              "title": "First Year Seminar (First-time-in-college freshmen are required to take in their first semester)",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "AHTC 2100",
+                  "title": "Student Success Seminar (Transfer students are required to take in their first semester)",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Introduction to Latin America Preparatory Requirement",
+          "credit_hours": "3-9",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Core Curriculum",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 2350",
+              "title": "Latin American Civilizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose 6 semester credit hours from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "LIT 2350",
+              "title": "Close Reading",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 3301",
+              "title": "Historical Inquiry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 2303",
+              "title": "World Regional Geography",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Foreign Language Requirement",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Latin American Studies Major Core Courses",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "LATS 3301",
+              "title": "Latin American Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose 3 semester credit hours from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 3398",
+              "title": "Colonial Latin American History",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 3399",
+              "title": "Modern Latin American History",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Latin American Studies Major Electives",
+          "credit_hours": "18",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "History Electives",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 3391",
+              "title": "Modern Mexico",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 3398",
+              "title": "Colonial Latin American History",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 3399",
+              "title": "Modern Latin American History",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 4369",
+              "title": "Topics in Borderlands History",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 4359",
+              "title": "Topics in Latin American History",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 3397",
+              "title": "Study Abroad in Latin America (may be repeated as topics vary)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social Sciences Electives",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 3319",
+              "title": "Comparative Justice Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 2302",
+              "title": "The Global Environment",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 2309",
+              "title": "Principles of Geospatial Information Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3359",
+              "title": "Human Migration and Mobility",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOS 2321",
+              "title": "Geology, Resources, and Environment of Latin America",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4348",
+              "title": "Terrorism",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Literature, and Culture Electives",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "LATS 3301",
+              "title": "Latin American Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LATS 3302",
+              "title": "Latin American Film",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LATS 3303",
+              "title": "Latin Social Dance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LATS 4329",
+              "title": "Major Authors",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LANG 4348",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3319",
+              "title": ", and",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3337",
+              "title": "with Latin American related subtitles will be allowed.",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "3000 or 4000-level SPAN courses",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/latin-american-studies (2026-07-26 18:26:05) 2/",
+        "The language requirement is 12 semester credit hours, or equivalent, of the same language,",
+        "usually Spanish, or another approved language of relevance to Latin American Studies. Students",
+        "can petition the Program Head for exceptions. If the language credit is obtained without taking",
+        "classes, twelve additional semester credit hours of Free Electives (upper-division or lower-division)",
+        "can be taken by student.",
+        "Students must complete courses from the following list in at least two disciplinary areas. Students",
+        "must complete at least 9 semester credit hours in a single disciplinary area.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/latin-american-studies (2026-07-26 18:26:05) 3/",
+        "Other HIST courses with emphasis on Latin America may be considered.",
+        "Other geographical, political, and economic courses with emphasis on Latin America may be",
+        "considered."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "32-38",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "33",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both upper-and lower-division courses may be used as electives",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

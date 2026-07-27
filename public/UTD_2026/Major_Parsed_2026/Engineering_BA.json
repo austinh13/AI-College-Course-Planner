@@ -1,0 +1,676 @@
+{
+  "major": "Engineering (BA)",
+  "total_credit_hours": "123",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "RHET 1302",
+              "title": "College Writing II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 2390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses. The courses listed are",
+        "recommended as the most efficient way to satisfy both Core Curriculum and Major Requirements",
+        "at UT Dallas.",
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/engineering (2026-07-26 18:27:39) 1/",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "78",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "14",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECS 2390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 1302",
+              "title": "College Writing II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose 4 semester credit hours from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECS 1100",
+              "title": "Introduction to Engineering and Computer Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 1210",
+              "title": "Foundations in Engineering and Computer Science I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BMEN 1100",
+              "title": "Introduction to Bioengineering I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1200",
+              "title": "Introduction to Computer Science and Software Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 1100",
+              "title": "Introduction to Electrical and Computer Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 1100",
+              "title": "Introduction to Mechanical Engineering I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 1220",
+              "title": "Foundations in Engineering and Computer Science II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BMEN 1208",
+              "title": "Introduction to Bioengineering II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 1202",
+              "title": "Introduction to Electrical and Computer Engineering II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 1208",
+              "title": "Introduction to Mechanical Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 3341",
+              "title": "Probability Theory and Statistics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Math (3 semester credit hours):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ENGR 2300",
+              "title": "Linear Algebra for Engineers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2420",
+              "title": "Differential Equations with Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 3300",
+              "title": "Advanced Engineering Mathematics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Science (3 semester credit hours):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1111",
+              "title": "General Chemistry Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2311",
+              "title": "Introduction to Modern Biology I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2111",
+              "title": "Introduction to Modern Biology Workshop I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "27",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BMEN 3200",
+              "title": "Biomedical Engineering Fundamentals and Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 3354",
+              "title": "Software Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 2310",
+              "title": "Introduction to Digital Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3305",
+              "title": "Computer Aided Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3105",
+              "title": "Computer Aided Design Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BMEN 1300",
+              "title": "Introduction to Biomedical Engineering Computing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1436",
+              "title": "Programming Fundamentals",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1325",
+              "title": "Introduction to Programming",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select courses from the list below: RIDE",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECS 1192",
+              "title": "RIDE Experience (may be repeatable twice)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 2192",
+              "title": "Research, Inquiry, Design Experience (to be repeatable twice)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 3292",
+              "title": "Research, Inquiry, Design Experience (to be repeatable twice)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 4392",
+              "title": "Research, Inquiry, Design Experience (to be repeatable twice)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "EPICS",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EPCS 2200",
+              "title": "Engineering Projects in Community Service",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPCS 3200",
+              "title": "Engineering Projects in Community Service II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "ENTP",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ENTP 3301",
+              "title": "Innovation and Entrepreneurship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 3320",
+              "title": "Start-up Launch I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 4350",
+              "title": "Corporate Entrepreneurship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 4360",
+              "title": "Innovation and Creativity",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Depth Field Requirement",
+          "credit_hours": "18",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Business Focus",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 3300",
+              "title": "Advanced Topics in Capitalism: Ideas and Challenges That Shape Our World",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 4301",
+              "title": "International Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 4305",
+              "title": "Introduction to Patent Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BPS 4307",
+              "title": "Corporations, Politics and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGY 3300",
+              "title": "Introduction to Energy Technology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGY 3301",
+              "title": "Managing Carbon Assets: Oil, Gas, and Coal",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3300",
+              "title": "Personal Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3311",
+              "title": "Principles of Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3310",
+              "title": "Supply Chain and Operations Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3330",
+              "title": "Project Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select 9 semester credit hours with a common theme (e.g., certificate, minor, foreign language) Breadth Field Requirement",
+          "credit_hours": "19",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Select 9 semester credit hours from at least three different schools (outside of ECS) Select 10 semester credit hours of elective courses",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/engineering (2026-07-26 18:27:39) 2/",
+        "Additional Math/Science (9 semester credit hours minimum)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/engineering (2026-07-26 18:27:39) 3/",
+        "Design/Experimental Methods (2 semester credit hours)",
+        "CS Programming (3 semester credit hours)",
+        "Project Experience (6 semester credit hours)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/engineering (2026-07-26 18:27:39) 4/",
+        "And select any 16 semester credit hours from ECS at 2000 level or higher",
+        "Note: some major core courses may require the completion of additional prerequisites prior to",
+        "enrollment.",
+        "Business Breadth (9 semester credit hours)",
+        "Thematic Focus (9 semester credit hours)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/engineering (2026-07-26 18:27:39) 5/"
+      ]
+    }
+  ]
+}

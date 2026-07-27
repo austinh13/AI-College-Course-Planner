@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import utdDegrees from "../data/utd_degrees.json";
 
 const majors = Object.keys(utdDegrees).sort();
-const YEARS = ["Freshman", "Sophomore", "Junior", "Senior", "5th year+"];
+const YEARS = ["2022", "2023", "2024", "2025", "2026"];
 const MAX_SUGGESTIONS = 8;
 
 export default function QuestionnaireStep({ data, onChange, onNext }) {
@@ -84,7 +84,7 @@ export default function QuestionnaireStep({ data, onChange, onNext }) {
       </label>
 
       <fieldset className="field">
-        <legend className="field__label">Year</legend>
+        <legend className="field__label">Start year</legend>
         <div className="pill-group">
           {YEARS.map((year) => (
             <button

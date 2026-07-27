@@ -1,0 +1,504 @@
+{
+  "major": "Education with 4-8 Science (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2413",
+                  "title": "Differential Calculus1 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I1 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIOL 2311",
+              "title": "Introduction to Modern Biology I1 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2312",
+              "title": "Introduction to Modern Biology II1 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses. (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I1 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NATS 1311",
+              "title": "The Universe, and Everything Else",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 1301",
+                  "title": "College Physics I1 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/education-48-science-ba (2026-07-26 18:28:46) 2/",
+        "Or select any 6 semester credit hours from Component Area Option Core courses. (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "61",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 1100",
+              "title": "Interdisciplinary Studies First Year Experience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2311",
+              "title": "Introduction to Modern Biology I1 ,",
+              "connector": null,
+              "with": [
+                {
+                  "code": "BIOL 2111",
+                  "title": "Introduction to Modern Biology Workshop I"
+                }
+              ],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2312",
+              "title": "Introduction to Modern Biology II1 ,",
+              "connector": null,
+              "with": [
+                {
+                  "code": "BIOL 2112",
+                  "title": "Introduction to Modern Biology Workshop II"
+                }
+              ],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I1 ,",
+              "connector": null,
+              "with": [
+                {
+                  "code": "CHEM 1111",
+                  "title": "General Chemistry Laboratory I1 ,"
+                }
+              ],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2413",
+                  "title": "Differential Calculus1 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I1 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "NATS 1311",
+              "title": "The Universe, and Everything Else",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 1301",
+                  "title": "College Physics I1 ,",
+                  "connector": "or",
+                  "with": [
+                    {
+                      "code": "PHYS 1101",
+                      "title": "College Physics Laboratory I1 ,"
+                    }
+                  ],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BIS 3320",
+              "title": "The Nature of Intellectual Inquiry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4694",
+              "title": "Student Teaching Secondary",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ED 4394",
+                  "title": "Residency 1- Secondary",
+                  "connector": "or",
+                  "with": [
+                    {
+                      "code": "ED 4395",
+                      "title": "Residency 2- Secondary"
+                    }
+                  ],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ISNS 3373",
+              "title": "Our Nearest Neighbors in the Sky",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 4V01",
+              "title": "",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 3361",
+              "title": "Introduction to Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "And choose one from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "GEOS 1303",
+              "title": "Physical Geology1 ,",
+              "connector": null,
+              "with": [
+                {
+                  "code": "GEOS 1103",
+                  "title": "Earth Science Laboratory"
+                }
+              ],
+              "alternatives": []
+            },
+            {
+              "code": "GEOS 1304",
+              "title": "History of Earth and Life1 ,",
+              "connector": null,
+              "with": [
+                {
+                  "code": "GEOS 1104",
+                  "title": "History of Earth and Life Laboratory"
+                }
+              ],
+              "alternatives": []
+            },
+            {
+              "code": "GEOS 2310",
+              "title": "Environmental Geosciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3314",
+              "title": "The American Public School",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3339",
+              "title": "Educational Psychology for Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 3339",
+                  "title": "Educational Psychology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ED 4351",
+              "title": "ESL for K-12 Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4353",
+              "title": "Reading in Secondary Content",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 4300",
+              "title": "Oral and Written Communication for the Classroom",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3371",
+              "title": "Curriculum and Instruction in the Natural Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4361",
+              "title": "Classroom Management Secondary",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4372",
+              "title": "Educational Technology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose two from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ISNS 2367",
+              "title": "The Oceans",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ISNS 2359",
+                  "title": "Earthquakes and Volcanoes",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ISNS 2368",
+              "title": "Weather and Climate",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ISNS 2366",
+                  "title": "Global Climate Change",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Major Preparatory Courses (1 semester credit hours beyond Core Curriculum)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/education-48-science-ba (2026-07-26 18:28:46) 3/",
+        "Major Related Courses (18 semester credit hours)",
+        "3 semester credit hour lower- or upper-level ISIS course",
+        "Foundation I: Natural Science and Mathematics (12 semester credit hours)",
+        "6 semester credit hours of upper-level BIOL courses",
+        "Foundation II: Education (12 semester credit hours)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/education-48-science-ba (2026-07-26 18:28:46) 4/",
+        "Teaching Techniques (18 semester credit hours)"
+      ]
+    },
+    {
+      "title": "Certification Requirements and Recommendations",
+      "credit_hours": "17",
+      "groups": [
+        {
+          "label": "beyond Core",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Curriculum",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 4306",
+              "title": "Strategies for Diversity in Education",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II1 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1112",
+              "title": "General Chemistry Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4301",
+              "title": "Exceptional Populations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Guided Electives",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "7 semester credit hours of lower- or upper-level courses (see advisor)",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

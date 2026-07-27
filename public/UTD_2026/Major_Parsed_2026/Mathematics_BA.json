@@ -1,0 +1,367 @@
+{
+  "major": "Mathematics (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I1 , 2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2422",
+                  "title": "Honors Physics II - Electromagnetism and Waves",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses(see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I1 , 2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2419",
+              "title": "Calculus II1 , 2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I1 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat5 , 6",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/nsm/mathematics (2026-07-26 18:30:47) 3/",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "49-50",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "16-17",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "NATS 1101",
+              "title": "Natural Sciences and Mathematics Freshman Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics1 , 4",
+              "connector": null,
+              "with": [
+                {
+                  "code": "PHYS 2125",
+                  "title": "Physics Laboratory I1 , 4"
+                }
+              ],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat1 , 6 , 7",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves1 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2422",
+                  "title": "Honors Physics II - Electromagnetism and Waves1 , 4",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2306",
+              "title": "Analytic Geometry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2370",
+              "title": "Introduction to Programming with MATLAB",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CS 1325",
+                  "title": "Introduction to Programming",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "CS 1337",
+                  "title": "Computer Science I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I1 , 2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2418",
+              "title": "Linear Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2419",
+              "title": "Calculus II1 , 2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2420",
+              "title": "Differential Equations with Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 3310",
+              "title": "Theoretical Concepts of Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3311",
+              "title": "Abstract Algebra I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3380",
+              "title": "Differential Geometry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3323",
+              "title": "Elementary Number Theory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3379",
+              "title": "Complex Variables",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3351",
+              "title": "Advanced Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 4351",
+              "title": "Probability",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 4352",
+              "title": "Mathematical Statistics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "9",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/nsm/mathematics (2026-07-26 18:30:47) 4/",
+        "Nine semester credit hours of upper-division MATH, STAT or ACTS courses, at least six of which",
+        "must be MATH courses at the 4000-level. These courses cannot include those for which the catalog",
+        "entry states: May not be used to satisfy mathematics requirements by students in Mathematics."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "28-29",
+      "groups": [
+        {
+          "label": "Electives",
+          "credit_hours": "28-29",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both lower- and upper-division courses may count as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

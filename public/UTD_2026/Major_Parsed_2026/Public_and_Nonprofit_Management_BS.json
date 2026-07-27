@@ -1,0 +1,247 @@
+{
+  "major": "Public and Nonprofit Management (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PA 2325",
+              "title": "Introduction to Public and Nonprofit Management1 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EPPS 2301",
+              "title": "Research Design in the Social and Policy Sciences1 ,2 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2302",
+              "title": "Methods of Quantitative Analysis in the Social and Policy Sciences1 ,2 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/epps/public-and-nonprofit-management (2026-07-26 18:28:19) 2/",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "58",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "4",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ECON 2302",
+                  "title": "Principles of Microeconomics",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "EPPS 1110",
+              "title": "Critical Issues in the Social Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2301",
+              "title": "Research Design in the Social and Policy Sciences1 ,2 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2302",
+              "title": "Methods of Quantitative Analysis in the Social and Policy Sciences1 ,2 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 2325",
+              "title": "Introduction to Public and Nonprofit Management1 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PA 3306",
+              "title": "Advanced Research and Writing for the Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3310",
+              "title": "Managing Government Organizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3333",
+              "title": "Human Resources Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3378",
+              "title": "Public Finance and Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3380",
+              "title": "Organizations: Theory and Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3355",
+              "title": "Introduction to the Nonprofit Sector",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 4370",
+              "title": "Leadership, Democracy, and Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 4390",
+              "title": "Capstone - Public Affairs",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "30",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "30 semester credit hours of Major and Related electives",
+        "18 semester credit hours of which must come from upper level PA prefix courses."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "20",
+      "groups": [],
+      "notes": [
+        "This requirement may be satisfied with lower- and upper-division courses from any field of study.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

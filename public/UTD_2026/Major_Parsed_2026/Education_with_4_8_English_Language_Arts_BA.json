@@ -1,0 +1,329 @@
+{
+  "major": "Education with 4-8 English, Language Arts (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1314",
+              "title": "College Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 2341",
+              "title": "American Studies for the Twenty-First Century",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "AMS 2300",
+                  "title": "American Popular Culture",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses. (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses. (see advisor)",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/education-48-elar (2026-07-26 18:28:40) 2/"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "61",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 1100",
+              "title": "Interdisciplinary Studies First Year Experience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 3320",
+              "title": "The Nature of Intellectual Inquiry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4694",
+              "title": "Student Teaching Secondary",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ED 4394",
+                  "title": "Residency 1- Secondary",
+                  "connector": "or",
+                  "with": [
+                    {
+                      "code": "ED 4395",
+                      "title": "Residency 2- Secondary"
+                    }
+                  ],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BIS 4V01",
+              "title": "",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3339",
+              "title": "Writing Literary Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "THEA",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ED 3314",
+              "title": "The American Public School",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3315",
+              "title": "Children's Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3339",
+              "title": "Educational Psychology for Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 3339",
+                  "title": "Educational Psychology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ED 4351",
+              "title": "ESL for K-12 Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 4300",
+              "title": "Oral and Written Communication for the Classroom",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4352",
+              "title": "Reading I: Learning to Read",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4363",
+              "title": "Reading II/ELAR Methods",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2350",
+              "title": "Close Reading",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3330",
+              "title": "Linguistics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BIS 4306",
+                  "title": "Strategies for Diversity in Education",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Major Related Courses (18 semester credit hours)",
+        "3 semester credit hour lower- or upper-level ISIS course",
+        "3 semester credit hour lower- or upper-level ISIS or ISNS course",
+        "Foundation I: Arts and Humanities (12 semester credit hours)",
+        "3 semester credit hour upper-level HIST course",
+        "3 semester credit hour upper-level LIT course",
+        "3 semester credit hour upper-level course from AHST, ARTS, COMM, CRWT, DANC, FILM. MUSI, or",
+        "Foundation II: Education (12 semester credit hours)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/education-48-elar (2026-07-26 18:28:40) 3/",
+        "Teaching Techniques (18 semester credit hours)",
+        "3 semester credit hour lower- or upper-level LIT course"
+      ]
+    },
+    {
+      "title": "Certification Requirements and Recommendations",
+      "credit_hours": "17",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ED 3380",
+              "title": "Curriculum and Instruction in English",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4357",
+              "title": "Diagnostic Reading",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4361",
+              "title": "Classroom Management Secondary",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4372",
+              "title": "Educational Technology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4301",
+              "title": "Exceptional Populations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Guided Electives",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "2 semester credit hours of lower- or upper-level courses (see advisor)",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

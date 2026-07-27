@@ -1,0 +1,691 @@
+{
+  "major": "Media Arts and Design with Emerging (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas."
+      ]
+    },
+    {
+      "title": "Major Requirements, Lower-Division",
+      "credit_hours": "22",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AHTC 1100",
+              "title": "First Year Seminar (First-time-in-college freshmen are required to take in their first semester)",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "AHTC 2100",
+                  "title": "Student Success Seminar (Transfer students are required to take in their first semester)",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Foundations",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 2300",
+              "title": "Introduction to TechnoCulture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2301",
+              "title": "Digital Art and Design Foundations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2302",
+              "title": "Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 2324",
+              "title": "Code Plus Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2335",
+              "title": "Internet Studio I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3335",
+              "title": "Internet Studio II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 2305",
+              "title": "Programming for Digital Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Fundamentals",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose two courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 2340",
+              "title": "Visual Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2345",
+              "title": "Introduction to Audio Production",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2350",
+              "title": "Time-Based Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2355",
+              "title": "Survey of Digital Fabrication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 2322",
+              "title": "Media Histories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2343",
+              "title": "Emerging Media Art Histories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/mad-emerging-media-arts (2026-07-26 18:26:26) 2/"
+      ]
+    },
+    {
+      "title": "Major Requirements, Upper-Division",
+      "credit_hours": "24",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 3301",
+              "title": "Writing for Media Arts and Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4384",
+              "title": "Ethics in New Media, Technology, and Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose three courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 3345",
+              "title": "Sound Art",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3346",
+              "title": "Audio Post-Production I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3350",
+              "title": "Digital Video Production I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3355",
+              "title": "Computer Modeling for Digital Fabrication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3356",
+              "title": "Projection Mapping Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3357",
+              "title": "Digital Fabrication Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose two courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 4330",
+              "title": "Culture Jamming",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4346",
+              "title": "Audio Post-Production II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4350",
+              "title": "Digital Video Production II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4351",
+              "title": "New Media Performance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4357",
+              "title": "Digital Fabrication Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 4397",
+              "title": "Senior Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4398",
+              "title": "Capstone Project",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4399",
+              "title": "Senior Honors in Media Arts and Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4317",
+              "title": "Animation Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4329",
+              "title": "Advanced Emerging Media Art",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4339",
+              "title": "Motion Design Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4341",
+              "title": "Applied Experience Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4357",
+              "title": "Digital Fabrication Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/mad-emerging-media-arts (2026-07-26 18:26:26) 3/",
+        "To complete this requirement, students must take one of these classes in their last two long",
+        "semesters."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "32",
+      "groups": [
+        {
+          "label": "Prescribed Electives",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 3305",
+              "title": "Computer Animation I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3306",
+              "title": "Modeling and Texturing I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3315",
+              "title": "Animation Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3320",
+              "title": "Critical Media Theories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3326",
+              "title": "Emerging Media Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3331",
+              "title": "Critical Making",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3336",
+              "title": "Design Research Methods",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3338",
+              "title": "Motion Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3346",
+              "title": "Audio Post-Production I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3350",
+              "title": "Digital Video Production I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3355",
+              "title": "Computer Modeling for Digital Fabrication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3356",
+              "title": "Projection Mapping Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3357",
+              "title": "Digital Fabrication Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3310",
+              "title": "Introduction to Proceduralism",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3365",
+              "title": "Game Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3366",
+              "title": "Game Studies I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3370",
+              "title": "Virtual Environments I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3372",
+              "title": "Sound Design for Games",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4326",
+              "title": "Multimedia Storytelling",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4330",
+              "title": "Culture Jamming",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4313",
+              "title": "Digital Effects",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4338",
+              "title": "Motion Design II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4339",
+              "title": "Motion Design Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4345",
+              "title": "Sound Synthesis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4350",
+              "title": "Digital Video Production II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4351",
+              "title": "New Media Performance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4357",
+              "title": "Digital Fabrication Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4363",
+              "title": "Topics in Emerging Media Art",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4364",
+              "title": "Topics in Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 3377",
+              "title": "Photography: Altered Image",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 3379",
+              "title": "Photography: New Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 4372",
+              "title": "Advanced Photography",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 4305",
+              "title": "The Art of Graphic Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Free Electives",
+          "credit_hours": "17",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/mad-emerging-media-arts (2026-07-26 18:26:26) 4/",
+        "At least two prescribed electives must be at the 4000-level.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/mad-emerging-media-arts (2026-07-26 18:26:26) 5/",
+        "Both upper- and lower-division courses may be uses as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

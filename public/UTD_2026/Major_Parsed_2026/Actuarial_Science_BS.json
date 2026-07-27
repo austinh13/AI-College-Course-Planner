@@ -1,0 +1,567 @@
+{
+  "major": "Actuarial Science (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I1 ,2 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat5 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "CHEM 1311",
+                  "title": "General Chemistry I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "CHEM 1315",
+                  "title": "Honors Freshman Chemistry I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2422",
+                  "title": "Honors Physics II - Electromagnetism and Waves",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "CHEM 1312",
+                  "title": "General Chemistry II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "CHEM 1316",
+                  "title": "Honors Freshman Chemistry II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I1 ,2 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2419",
+              "title": "Calculus II1 ,2 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I1 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat5 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "CHEM 1111",
+                  "title": "General Chemistry Laboratory I1 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/nsm/actuarial-science (2026-07-26 18:30:20) 2/",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "77-78",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "29-30",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "NATS 1101",
+              "title": "Natural Sciences and Mathematics Freshman Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 2301",
+              "title": "Introductory Financial Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 2302",
+              "title": "Introductory Management Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 2320",
+              "title": "Scientific Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1436",
+              "title": "Programming Fundamentals",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1337",
+              "title": "Computer Science I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2370",
+                  "title": "Introduction to Programming with MATLAB",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I1 ,2 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2418",
+              "title": "Linear Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2419",
+              "title": "Calculus II1 ,2 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2420",
+              "title": "Differential Equations with Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics1 ,",
+              "connector": null,
+              "with": [
+                {
+                  "code": "PHYS 2125",
+                  "title": "Physics Laboratory I1 ,"
+                }
+              ],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat1 ,5 ,6 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "CHEM 1311",
+                  "title": "General Chemistry I1 ,",
+                  "connector": "or",
+                  "with": [
+                    {
+                      "code": "CHEM 1111",
+                      "title": "General Chemistry Laboratory I1 ,"
+                    }
+                  ],
+                  "alternatives": []
+                },
+                {
+                  "code": "CHEM 1315",
+                  "title": "Honors Freshman Chemistry I1 ,",
+                  "connector": "or",
+                  "with": [
+                    {
+                      "code": "CHEM 1115",
+                      "title": "Honors Freshman Chemistry Laboratory I"
+                    }
+                  ],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves1 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2422",
+                  "title": "Honors Physics II - Electromagnetism and Waves1 ,4 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "CHEM 1312",
+                  "title": "General Chemistry II1 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "CHEM 1316",
+                  "title": "Honors Freshman Chemistry II1 ,",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1112",
+                  "title": "General Chemistry Laboratory II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "CHEM 1116",
+                  "title": "Honors Freshman Chemistry Laboratory II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "48",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ACTS 4301",
+              "title": "Long Term Actuarial Mathematics I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACTS 4302",
+              "title": "Investment and Financial Markets",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACTS 4303",
+              "title": "Long Term Actuarial Mathematics II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACTS 4304",
+              "title": "Short Term Actuarial Mathematics I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACTS 4305",
+              "title": "Short Term Actuarial Mathematics II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACTS 4307",
+              "title": "Statistics for Risk Modeling",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACTS 4308",
+              "title": "Actuarial Financial Mathematics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACTS 4310",
+              "title": "Predictive Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACTS 4311",
+              "title": "Theory of Credibility",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3351",
+              "title": "Advanced Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 3300",
+              "title": "Information Technology for Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 4301",
+              "title": "Database Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 3355",
+              "title": "Introduction to Data Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 4351",
+              "title": "Probability",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 4352",
+              "title": "Mathematical Statistics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 4382",
+              "title": "Stochastic Processes",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RMIS 3370",
+              "title": "Principles of Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RMIS 4331",
+              "title": "Business Liability Risk Management and Insurance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3310",
+              "title": "Theoretical Concepts of Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3311",
+              "title": "Abstract Algebra I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3379",
+              "title": "Complex Variables",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 4334",
+              "title": "Numerical Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/nsm/actuarial-science (2026-07-26 18:30:20) 3/",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/nsm/actuarial-science (2026-07-26 18:30:20) 4/",
+        "III. Elective Requirements: 0-1 semester credit hour",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/nsm/actuarial-science (2026-07-26 18:30:20) 5/",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

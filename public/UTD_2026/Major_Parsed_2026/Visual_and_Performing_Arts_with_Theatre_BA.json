@@ -1,0 +1,299 @@
+{
+  "major": "Visual and Performing Arts with Theatre (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "THEA 1310",
+              "title": "Understanding Theatre",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/visual-and-performing-arts-theatre (2026-07-26 18:26:56) 1/",
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Creative Arts Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements, Lower-Division",
+      "credit_hours": "7",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AHTC 1100",
+              "title": "First Year Seminar (First-time-in-college freshmen are required to take in their first semester)",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "AHTC 2100",
+                  "title": "Student Success Seminar (Transfer students are required to take in their first https://catalog.utdallas.edu/2026/undergraduate/programs/aht/visual-and-performing-arts-theatre (2026-07-26 18:26:56) 2/5 semester)",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "THEA 1310",
+              "title": "Understanding Theatre",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "3 semester credit hours from a THEA studio course, including:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "THEA 1351",
+              "title": "Acting 1",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 1352",
+              "title": "Acting 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 2311",
+              "title": "Topics in Theatre",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 2364",
+              "title": "Musical Theatre Workshop",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 2371",
+              "title": "Technical Theatre 1",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 2372",
+              "title": "Improvisation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 2373",
+              "title": "Languages of the Body",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 2V71",
+              "title": "Independent Study in Theatre",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 2350",
+              "title": "Voice for the Actor",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "3 semester credit hours from a THEA/DANC/MUSI studio ensemble course"
+      ]
+    },
+    {
+      "title": "Major Requirements, Upper-Division",
+      "credit_hours": "36",
+      "groups": [
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "VPAS 3340",
+              "title": "Writing in the Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "VPAS 4389",
+              "title": "Theory and Practice of the Visual and Performing Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "VPAS 4390",
+              "title": "Senior Capstone",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "VPAS 4V99",
+                  "title": "Senior Honors in Visual and Performing Art",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Theatre Concentration Requirements",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "THEA 3323",
+              "title": "Performance in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 3310",
+              "title": "Theatre/Performance Ensemble",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "THEA 3V10",
+                  "title": "Technical Theatre Practicum (3 semester credit hours)",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "3 semester credit hours of upper-level Related Courses from the Harry W. Bass Jr. School of Arts,",
+        "Humanities, and Technology (excluding the THEA prefix)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/visual-and-performing-arts-theatre (2026-07-26 18:26:56) 3/",
+        "12 semester credit hours of upper-level THEA courses",
+        "3 semester credit hours of upper-division THEA/DANC/MUSI courses",
+        "3 semester credit hours of upper-division Visual and Performing Arts elective"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "35",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "35",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both upper- and lower-division courses may be used as electives. Students are encouraged to",
+        "enroll in courses in other performance areas, such as dance and music.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

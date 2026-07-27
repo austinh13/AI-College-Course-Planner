@@ -1,0 +1,304 @@
+{
+  "major": "American Studies (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1306",
+              "title": "College Algebra for the Non-Scientist",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 1314",
+              "title": "College Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 2300",
+              "title": "American Popular Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 2341",
+              "title": "American Studies for the Twenty-First Century",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "GST 2300",
+              "title": "Introduction to Gender Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 1301",
+              "title": "Introduction to Sociology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses.",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/american-studies (2026-07-26 18:28:34) 1/",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/american-studies (2026-07-26 18:28:34) 2/",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses.  (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "49",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 1100",
+              "title": "Interdisciplinary Studies First Year Experience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 3327",
+              "title": "American Studies: Histories, Theories, Methodologies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 2341",
+              "title": "American Studies for the Twenty-First Century1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "AMS 2300",
+                  "title": "American Popular Culture1 , 3",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "AMS 3302",
+              "title": "American Cultures",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 3320",
+              "title": "The Nature of Intellectual Inquiry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "American Medicine and Healthcare",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "American Popular Culture",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Communication in 21st Century America",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Environment and Community",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Law, Legality, and Culture",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Race and Ethnicity in American Society",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "The U. S. and the World",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Women and the Workplace",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Major Related Courses: Two Options 36 semester credit hours",
+        "In addition to the major core courses, students will take 18 semester credit hours of coursework in",
+        "two of the following subject options, for a total of 36 semester credit hours. Each subject field must",
+        "be interdisciplinary in nature and must include at least one course providing a historical focus.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/american-studies (2026-07-26 18:28:34) 3/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "29",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "29",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Students must complete a minimum of 45 semester credit hours at UT Dallas. In the final",
+        "semester, all the coursework should be taken at UT Dallas.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

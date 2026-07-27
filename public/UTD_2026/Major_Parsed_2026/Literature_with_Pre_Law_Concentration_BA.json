@@ -1,0 +1,410 @@
+{
+  "major": "Literature with Pre-Law Concentration (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "RHET 1302",
+              "title": "College Writing II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 2302",
+              "title": "Intermediate Composition and Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "LIT 2331",
+              "title": "Introduction to World Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/literature-pre-law (2026-07-26 18:26:14) 2/"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "46-49",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "7-10",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AHTC 1100",
+              "title": "First Year Seminar (First-time-in-college freshmen are required to take in their first semester)",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "AHTC 2100",
+                  "title": "Student Success Seminar (Transfer students are required to take in their first semester)",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "LIT 2350",
+              "title": "Close Reading",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select 6 semester credit hours from the following four:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "LIT 2320",
+              "title": "Survey A: Literature in English",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2321",
+              "title": "Survey B: Literature in Translation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2322",
+              "title": "Survey of African-American and African Diaspora Literatures",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2331",
+              "title": "Introduction to World Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "LIT 3300",
+              "title": "Western Literary Tradition",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3339",
+              "title": "Writing Literary Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 4329",
+              "title": "Single Author",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 4390",
+              "title": "Capstone",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Distribution and Elective Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "3 semester credit hours from the following \"Research and Writing\" courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARHM 3342",
+              "title": "Advanced Interdisciplinary Studies in the Arts and Humanities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3338",
+              "title": "Literary Theory and Aesthetic Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "6 semester credit hours from the following \"Contexts\" course:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "LIT 3319",
+              "title": "Contexts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "3 semester credit hours from the following \"Comparisons\" courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRWT 3330",
+              "title": "Translation Workshop",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3337",
+              "title": "Comparisons",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Pre-Law Concentration Requirements",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSCI 3303",
+              "title": "Civil Liberties",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3322",
+              "title": "Constitutional Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 4320",
+              "title": "Legal Research and Writing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4304",
+              "title": "Trials in American Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select 3 semester credit hours from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 4342",
+              "title": "Islamic Law and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4303",
+              "title": "Business, Law and Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4301",
+              "title": "Law, Science, and Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PPOL 4301",
+                  "title": "Law, Science, and Policy",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSCI 4310",
+              "title": "Law and Terrorism",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4363",
+              "title": "International Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4364",
+              "title": "Civil Rights Law and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4V66",
+              "title": "Mock Trial",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4V67",
+              "title": "Moot Court",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/literature-pre-law (2026-07-26 18:26:14) 3/",
+        "Any upper-division creative writing workshop (prefix CRWT)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/aht/literature-pre-law (2026-07-26 18:26:14) 4/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "29-32",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "29-32",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both upper-division and lower-division courses may be used as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

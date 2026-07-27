@@ -1,0 +1,3264 @@
+{
+  "major": "Interdisciplinary Studies (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1306",
+              "title": "College Algebra for the Non-Scientist",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 1314",
+              "title": "College Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose two courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ISNS 2359",
+              "title": "Earthquakes and Volcanoes",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISNS 2367",
+              "title": "The Oceans",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISNS 2368",
+              "title": "Weather and Climate",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 2300",
+              "title": "American Popular Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 2341",
+              "title": "American Studies for the Twenty-First Century",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "GST 2300",
+              "title": "Introduction to Gender Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 1301",
+              "title": "Introduction to Sociology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses.",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 2/",
+        "Or select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses.  (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "62",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 1100",
+              "title": "Interdisciplinary Studies First Year Experience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "19",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 2190",
+              "title": "Library Research Skills",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 3320",
+              "title": "The Nature of Intellectual Inquiry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Two 3 semester credit hour ISIS courses",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 4V04",
+              "title": "",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "42",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Two Foundations",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "One Concentration",
+          "credit_hours": "18",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 2300",
+              "title": "American Popular Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 3302",
+              "title": "American Cultures",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 2315",
+              "title": "Topics in Visual Art",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 4310",
+              "title": "Essentials of Leadership in the VIsual Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 4V04",
+              "title": "Internship (if relevant to concentration)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "DANC 3340",
+              "title": "Dance in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FILM 2332",
+              "title": "Understanding Film",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FILM 3321",
+              "title": "Film in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FILM 3342",
+              "title": "Topics in Film",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FILM 3325",
+              "title": "Film Authorship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 3312",
+              "title": "Women in Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4V89",
+              "title": "Special Topics in Interdisciplinary Studies (when topic is Film and Popular Culture)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4330",
+              "title": "Digital and Internet Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4334",
+              "title": "Social Media Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 1306",
+              "title": "Understanding Music",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 2322",
+              "title": "Music in Western Civilization",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 3322",
+              "title": "Music in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3330",
+              "title": "Human Resource Management in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4300",
+              "title": "Management of Non-Profit Organizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4310",
+              "title": "Business Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 1310",
+              "title": "Understanding Theatre",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 3323",
+              "title": "Performance in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "VPAS 3300",
+              "title": "Elements of Art and Performance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "VPAS 4310",
+              "title": "Entertainment Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "or Any AHST course",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Business Communication Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 3316",
+              "title": "Interpersonal Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 3350",
+              "title": "Crisis Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4320",
+              "title": "Political Economy of Digital Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BCOM 3300",
+              "title": "Business Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BCOM 4300",
+              "title": "Advanced Professional Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 4V04",
+              "title": "Internship (if relevant to concentration)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 1311",
+              "title": "Introduction to Communication Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3342",
+              "title": "Advanced Topics in Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3321",
+              "title": "Professional and Technical Presentations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4314",
+              "title": "Persuasion and Interpersonal Influence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3340",
+              "title": "Team Dynamics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3350",
+              "title": "Intercultural Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3353",
+              "title": "Nonverbal Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4305",
+              "title": "Communication and Media Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4314",
+              "title": "Persuasion and Interpersonal Influence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4360",
+              "title": "Communication Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4330",
+              "title": "Digital and Internet Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4334",
+              "title": "Social Media Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4352",
+              "title": "Negotiation and Dispute Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 4345",
+              "title": "Negotiation and Conflict Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3331",
+              "title": "Social Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Business Issues Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 3350",
+              "title": "Crisis Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 4V04",
+              "title": "Internship (if relevant to concentration)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 2301",
+              "title": "Business and Public Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 3301",
+              "title": "Employment Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3312",
+              "title": "Money and Banking",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3315",
+              "title": "Sports Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4310",
+              "title": "Managerial Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4382",
+              "title": "International Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 3301",
+              "title": "Innovation and Entrepreneurship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 3360",
+              "title": "Entrepreneurial Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 4330",
+              "title": "Entrepreneurial Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 4335",
+              "title": "Digital and Internet Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 4350",
+              "title": "Corporate Entrepreneurship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 4360",
+              "title": "Innovation and Creativity",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 3312",
+              "title": "Women in Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4303",
+              "title": "Business, Law and Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4330",
+              "title": "Digital and Internet Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4334",
+              "title": "Social Media Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3330",
+              "title": "Human Resource Management in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4300",
+              "title": "Management of Non-Profit Organizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4352",
+              "title": "Negotiation and Dispute Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3333",
+              "title": "Human Resources Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 4345",
+              "title": "Negotiation and Conflict Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 4350",
+              "title": "Public and Nonprofit Agencies, Management and Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4302",
+              "title": "Class, Status, and Power",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Communications Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 2300",
+              "title": "American Popular Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 3316",
+              "title": "Interpersonal Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 3350",
+              "title": "Crisis Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2300",
+              "title": "Introduction to TechnoCulture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2321",
+              "title": "Reading Media Critically",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2322",
+              "title": "Media Histories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2340",
+              "title": "Visual Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3320",
+              "title": "Critical Media Theories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3321",
+              "title": "Networked Identities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3325",
+              "title": "Global Media Cultures",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4384",
+              "title": "Ethics in New Media, Technology, and Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BCOM 3300",
+              "title": "Business Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 4V04",
+              "title": "Internship (if relevant to concentration)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 1311",
+              "title": "Introduction to Communication Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3342",
+              "title": "Advanced Topics in Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3321",
+              "title": "Professional and Technical Presentations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4314",
+              "title": "Persuasion and Interpersonal Influence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3340",
+              "title": "Team Dynamics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3350",
+              "title": "Intercultural Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4305",
+              "title": "Communication and Media Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4314",
+              "title": "Persuasion and Interpersonal Influence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4360",
+              "title": "Communication Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4375",
+              "title": "Professional Communication in Medicine",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3309",
+              "title": "Media and Crime",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4352",
+              "title": "Negotiation and Dispute Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 4345",
+              "title": "Negotiation and Conflict Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3331",
+              "title": "Social Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4377",
+              "title": "Conflict Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Counseling Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 3316",
+              "title": "Interpersonal Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 3350",
+              "title": "Crisis Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CLDP 2314",
+              "title": "Lifespan Development",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 2314",
+                  "title": "Lifespan Development",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CLDP 3310",
+              "title": "Child Development",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 3310",
+                  "title": "Child Development",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CLDP 4344",
+              "title": "Child Psychopathology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 4344",
+                  "title": "Child Psychopathology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CLDP 4347",
+              "title": "Marriage and Family Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 4347",
+                  "title": "Marriage and Family Psychology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CRIM 3310",
+              "title": "Youth Crime and Justice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GST 2300",
+              "title": "Introduction to Gender Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "SOC 2300",
+                  "title": "Introduction to Gender Studies",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ISIS 3310",
+              "title": "Childhood Sexual Abuse: A Multidisciplinary Investigation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3331",
+              "title": "Social Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3332",
+              "title": "Social and Personality Development",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CLDP 3332",
+                  "title": "Social and Personality Development",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 3333",
+              "title": "Clinical Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3338",
+              "title": "Adolescence",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CLDP 3338",
+                  "title": "Adolescence",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 3350",
+              "title": "Psychology of Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3362",
+              "title": "Cognitive Development",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CLDP 3362",
+                  "title": "Cognitive Development",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 4328",
+              "title": "Health Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4331",
+              "title": "Personality and Individual Differences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4343",
+              "title": "Adult Psychopathology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4346",
+              "title": "Human Sexuality",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4352",
+              "title": "Emerging Adulthood Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4377",
+              "title": "Conflict Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4386",
+              "title": "Adult Development and Aging",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3321",
+              "title": "Deviance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3342",
+              "title": "The Life Cycle",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3392",
+              "title": "Women's Health Issues",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4371",
+              "title": "Mental Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4372",
+              "title": "Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Diversity Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 2341",
+              "title": "American Studies for the Twenty-First Century",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 3302",
+              "title": "American Cultures",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 3316",
+              "title": "Interpersonal Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 3322",
+              "title": "American Ethnic Experience: Immigrants After 1945",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3321",
+              "title": "Networked Identities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4323",
+              "title": "Feminism, Technology, and Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 4306",
+              "title": "Strategies for Diversity in Education",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3350",
+              "title": "Intercultural Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GST 2300",
+              "title": "Introduction to Gender Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GST 3302",
+              "title": "Gender in Western Thought",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 3312",
+              "title": "Women in Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 3335",
+              "title": "United States and East Asia",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4310",
+              "title": "Health Strategy for Multicultural Populations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2329",
+              "title": "Introduction to Ethnic American Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3303",
+              "title": "Civil Liberties",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4357",
+              "title": "Human Rights",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4364",
+              "title": "Civil Rights Law and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4377",
+              "title": "Women and Politics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4323",
+              "title": "Cultural Diversity and Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4324",
+              "title": "The Psychology of Prejudice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4386",
+              "title": "Adult Development and Aging",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 2319",
+              "title": "Race and Ethnicity",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3363",
+              "title": "Immigrants and Immigration in U.S. Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3390",
+              "title": "Community Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3392",
+              "title": "Women's Health Issues",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4302",
+              "title": "Class, Status, and Power",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4371",
+              "title": "Mental Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4372",
+              "title": "Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Environmental Studies Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 4379",
+              "title": "Special Topics in American Studies (when topic is Environmental Justice)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 4379",
+              "title": "Special Topics in American Studies (when topic is The Politics of Place-making: Building Sustainable Communities)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3388",
+              "title": "Honey Bee Biology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 4V04",
+              "title": "Internship (if relevant to the concentration)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4333",
+              "title": "Environmental Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4336",
+              "title": "Environmental Economic Theory and Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGY 3330",
+              "title": "Energy Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MECO 3330",
+                  "title": "Energy Economics",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ENGY 3340",
+              "title": "Energy Law and Contracts",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MECO 3340",
+                  "title": "Energy Law and Contracts",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ENVR 2302",
+              "title": "The Global Environment",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "GEOG 2302",
+                  "title": "The Global Environment",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ENVR 3331",
+              "title": "Smart and Sustainable Cities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOS 2310",
+              "title": "Environmental Geosciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 4384",
+              "title": "Health and Environmental GIS",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "IPEC 4384",
+                  "title": "Health and Environmental Policy: A Global Perspective",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GISC 4386",
+              "title": "Climate Change and Sustainable Solutions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 3368",
+              "title": "North American Environmental History",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IPEC 3349",
+              "title": "World Resources and Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 3334",
+              "title": "Environment in America",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISNS 2366",
+              "title": "Global Climate Change",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISNS 2367",
+              "title": "The Oceans",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISNS 2368",
+              "title": "Weather and Climate",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4V95",
+              "title": "Topics in Mechanical Engineering (when topic is relevant to concentration)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NATS 2333",
+              "title": "Energy, Water, and the Environment",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3382",
+              "title": "Sustainable Communities",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "SOC 3382",
+                  "title": "Sustainable Communities",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Gender Studies/Women's Studies Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 2300",
+              "title": "American Popular Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 4327",
+              "title": "The Culture of Bullying in America",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3321",
+              "title": "Networked Identities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GST 2300",
+              "title": "Introduction to Gender Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "SOC 2300",
+                  "title": "Introduction to Gender Studies",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GST 3302",
+              "title": "Gender in Western Thought",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "HIST 3302",
+                  "title": "Gender in Western Thought",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "HIST 2384",
+              "title": "U.S. Women from Settlement to Present",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 4379",
+              "title": "Topics in Women's and Gender History",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 3310",
+              "title": "Childhood Sexual Abuse: A Multidisciplinary Investigation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 3312",
+              "title": "Women in Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 4329",
+              "title": "Single Author (if topic is relevant)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 4333",
+              "title": "Feminist Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4357",
+              "title": "Human Rights",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4377",
+              "title": "Women and Politics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3338",
+              "title": "Adolescence",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CLDP 3338",
+                  "title": "Adolescence",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 4324",
+              "title": "The Psychology of Prejudice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4346",
+              "title": "Human Sexuality",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4347",
+              "title": "Marriage and Family Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CLDP 4347",
+                  "title": "Marriage and Family Psychology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "SOC 3392",
+              "title": "Women's Health Issues",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Health and Wellness Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIOL 3370",
+              "title": "Exercise Physiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3330",
+              "title": "Economics of Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 3328",
+              "title": "History and Philosophy of Science and Medicine",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHIL 3328",
+                  "title": "History and Philosophy of Science and Medicine",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "HLTH 1301",
+              "title": "Introduction to Kinesiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 1322",
+              "title": "Human Nutrition",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 3101",
+              "title": "Medical Terminology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 3305",
+              "title": "The U.S. Healthcare System",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 3315",
+              "title": "Issues in Patient Education",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 4305",
+              "title": "Public Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 4306",
+              "title": "Health and Sport",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 4380",
+              "title": "Special Topics in Healthcare (when topic is Information Literacy and Resources for Healthcare)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 3310",
+              "title": "Childhood Sexual Abuse: A Multidisciplinary Investigation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 3361",
+              "title": "Introduction to Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4351",
+              "title": "Medical Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2314",
+              "title": "Lifespan Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3310",
+              "title": "Child Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4328",
+              "title": "Health Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4343",
+              "title": "Adult Psychopathology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4346",
+              "title": "Human Sexuality",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4386",
+              "title": "Adult Development and Aging",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3390",
+              "title": "Community Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3392",
+              "title": "Women's Health Issues",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3342",
+              "title": "The Life Cycle",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4369",
+              "title": "Public Health and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4371",
+              "title": "Mental Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4372",
+              "title": "Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4384",
+              "title": "Social Epidemiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4385",
+              "title": "Global Health and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4386",
+              "title": "Health and Social Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Human Resources Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 3316",
+              "title": "Interpersonal Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 3350",
+              "title": "Crisis Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 3301",
+              "title": "Employment Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3340",
+              "title": "Team Dynamics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3350",
+              "title": "Intercultural Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3330",
+              "title": "Economics of Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4340",
+              "title": "Labor Economics and Human Resources",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 3312",
+              "title": "Women in Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4303",
+              "title": "Business, Law and Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3330",
+              "title": "Human Resource Management in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4310",
+              "title": "Business Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4331",
+              "title": "Compensation and Benefits Administration",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4333",
+              "title": "Performance Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4334",
+              "title": "Talent Acquisition and Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4335",
+              "title": "Training and Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4352",
+              "title": "Negotiation and Dispute Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4323",
+              "title": "Cultural Diversity and Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4302",
+              "title": "Class, Status, and Power",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4371",
+              "title": "Mental Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4372",
+              "title": "Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "International Relations Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BLAW 4301",
+              "title": "International Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4360",
+              "title": "International Trade",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4382",
+              "title": "International Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3357",
+              "title": "Spatial Dimensions of Health and Disease",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IMS 3310",
+              "title": "International Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IMS 4320",
+              "title": "International Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IMS 4330",
+              "title": "Global Human Resource Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 3335",
+              "title": "United States and East Asia",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4303",
+              "title": "Business, Law and Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3328",
+              "title": "International Relations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3350",
+              "title": "Comparative Politics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4307",
+              "title": "Predicting Politics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4356",
+              "title": "International Political Economy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4329",
+              "title": "Global Politics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4348",
+              "title": "Terrorism",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4357",
+              "title": "Human Rights",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4359",
+              "title": "International Conflict",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4363",
+              "title": "International Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4376",
+              "title": "Foreign Policy and Public Opinion",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4385",
+              "title": "Global Health and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Pre-Law Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 3350",
+              "title": "Crisis Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 2301",
+              "title": "Business and Public Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 3301",
+              "title": "Employment Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 4301",
+              "title": "International Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 2306",
+              "title": "Criminal Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 2317",
+              "title": "Criminal Prosecution and Court Process",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3300",
+              "title": "Crime and Civil Liberties",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3301",
+              "title": "Theories of Justice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3309",
+              "title": "Media and Crime",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3310",
+              "title": "Youth Crime and Justice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3312",
+              "title": "Drugs and Crime",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3319",
+              "title": "Comparative Justice Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 4315",
+              "title": "Race, Ethnicity, and Justice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4330",
+              "title": "Law and Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4303",
+              "title": "Business, Law and Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4304",
+              "title": "Trials in American Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3303",
+              "title": "Civil Liberties",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3322",
+              "title": "Constitutional Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4341",
+              "title": "Politics of the Judicial Process",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4357",
+              "title": "Human Rights",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4364",
+              "title": "Civil Rights Law and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4V66",
+              "title": "Mock Trial",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4V67",
+              "title": "Moot Court (Collegium V Honors)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3321",
+              "title": "Deviance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Public Relations Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 3350",
+              "title": "Crisis Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2321",
+              "title": "Reading Media Critically",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3321",
+              "title": "Networked Identities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3325",
+              "title": "Global Media Cultures",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BCOM 3300",
+              "title": "Business Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3321",
+              "title": "Professional and Technical Presentations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3350",
+              "title": "Intercultural Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4314",
+              "title": "Persuasion and Interpersonal Influence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4360",
+              "title": "Communication Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3340",
+              "title": "Marketing Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4330",
+              "title": "Digital and Internet Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4334",
+              "title": "Social Media Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4360",
+              "title": "Social Impact Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4352",
+              "title": "Negotiation and Dispute Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 4345",
+              "title": "Negotiation and Conflict Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3331",
+              "title": "Social Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4302",
+              "title": "Class, Status, and Power",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Sports Management Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 2300",
+              "title": "American Popular Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 2390",
+              "title": "Topics in American Studies (when topic is Sport and Culture)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 3350",
+              "title": "Crisis Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3370",
+              "title": "Exercise Physiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3455",
+              "title": "Human Anatomy and Physiology with Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3456",
+              "title": "Human Anatomy and Physiology with Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 3301",
+              "title": "Employment Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3350",
+              "title": "Intercultural Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3315",
+              "title": "Sports Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3330",
+              "title": "Economics of Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 1301",
+              "title": "Introduction to Kinesiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 1322",
+              "title": "Human Nutrition",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 3101",
+              "title": "Medical Terminology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 4306",
+              "title": "Health and Sport",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4303",
+              "title": "Business, Law and Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3320",
+              "title": "Product and Brand Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4330",
+              "title": "Digital and Internet Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4334",
+              "title": "Social Media Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4310",
+              "title": "Business Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4333",
+              "title": "Performance Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4334",
+              "title": "Talent Acquisition and Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4352",
+              "title": "Negotiation and Dispute Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4328",
+              "title": "Health Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4352",
+              "title": "Emerging Adulthood Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4371",
+              "title": "Mental Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4372",
+              "title": "Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Urban Studies Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 3302",
+              "title": "American Cultures",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 3350",
+              "title": "Crisis Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 4379",
+              "title": "Special Topics in American Studies (when topic is The Politics of Place-making)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3350",
+              "title": "Intercultural Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3330",
+              "title": "Economics of Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4302",
+              "title": "Urban and Regional Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4320",
+              "title": "Public Sector Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4333",
+              "title": "Environmental Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3331",
+              "title": "Smart and Sustainable Cities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3357",
+              "title": "Spatial Dimensions of Health and Disease",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3372",
+              "title": "Population and Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3377",
+              "title": "Urban Planning and Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PA 3377",
+                  "title": "Urban Planning and Policy",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "HIST 3366",
+              "title": "Themes in the Social History of the United States (if relevant)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 4305",
+              "title": "Public Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4310",
+              "title": "Health Strategy for Multicultural Populations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3310",
+              "title": "Managing Government Organizations",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSCI 3310",
+                  "title": "Managing Government Organizations",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 3331",
+              "title": "Social Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4323",
+              "title": "Cultural Diversity and Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4324",
+              "title": "The Psychology of Prejudice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3382",
+              "title": "Sustainable Communities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3390",
+              "title": "Community Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4302",
+              "title": "Class, Status, and Power",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4369",
+              "title": "Public Health and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 3/",
+        "One 3 semester credit hour ISIS course or one ISNS course",
+        "The two foundations are drawn from Harry W. Bass Jr. School of Arts, Humanities, and Technology,",
+        "School of Behavioral and Brain Sciences, Erik Jonsson School of Engineering and Computer Science,",
+        "School of Economic, Political and Policy Sciences, School of Interdisciplinary Studies, Naveen Jindal",
+        "School of Management, and School of Natural Sciences and Mathematics.",
+        "Each student devises, in consultation with his/her advisor, the topic for the Concentration and",
+        "selects 18 semester credit hours of coursework related to the topic, drawn from at least three",
+        "academic disciplines. Appropriate IS coursework may be selected.",
+        "Arts Administration and Management Concentration",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 4/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 5/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 6/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 7/",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 8/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 9/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 10/",
+        "Any HIST that is relevant to the concentration.",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 11/",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 12/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 13/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 14/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 15/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 16/",
+        "Any HIST that is relevant to the concentration.",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 17/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 18/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 19/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 20/",
+        "Other courses relevant to a student's concentration may be approved by the IS academic advisor."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "16",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "16",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "A minimum of 45 semester credit hours must be taken at UT Dallas. All the coursework in the final",
+        "semester must be taken at UT Dallas.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/is/interdisciplinary-studies-ba (2026-07-26 18:29:13) 21/",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

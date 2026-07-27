@@ -1,0 +1,552 @@
+{
+  "major": "Psychology (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1306",
+              "title": "College Algebra for the Non-Scientist",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 1314",
+              "title": "College Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from Government/Political Science Core courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2317",
+              "title": "Statistics for Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 1342",
+                  "title": "Statistical Decision Making",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "STAT 2332",
+                  "title": "Introductory Statistics for Life Sciences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "AND one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2314",
+              "title": "Lifespan Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2364",
+              "title": "Animal Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CGS 2301",
+              "title": "Cognitive Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from accredited institutions",
+        "of higher education. The courses listed are recommended as the most efficient way to satisfy both",
+        "Core Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/bbs/psychology (2026-07-26 18:27:11) 2/",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "37",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "7",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BBSU 1100",
+              "title": "First Year Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2317",
+              "title": "Statistics for Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 1342",
+                  "title": "Statistical Decision Making",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "STAT 2332",
+                  "title": "Introductory Statistics for Life Sciences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "21",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 3380",
+              "title": "Writing in Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CLDP 3394",
+                  "title": "Communicating About Research in Child Development",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 3392",
+              "title": "Research Design and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 3361",
+              "title": "Introduction to Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 3352",
+                  "title": "Biological Psychology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 3361",
+              "title": "Cognitive Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 4359",
+                  "title": "Cognitive Neuroscience",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 3331",
+              "title": "Social Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 4331",
+                  "title": "Personality and Individual Differences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 3310",
+              "title": "Child Development",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 4386",
+                  "title": "Adult Development and Aging",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 4343",
+              "title": "Adult Psychopathology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 4344",
+                  "title": "Child Psychopathology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "PSY 4328",
+                  "title": "Health Psychology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Major Advanced Course",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 3393",
+              "title": "Experimental Projects in Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 4389",
+                  "title": "Developmental Cognitive Neuroscience",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "PSY 4348",
+                  "title": "Sleep and Mental Health",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "PSY 4326",
+                  "title": "Clinical Psychological Science",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "PSY 4329",
+                  "title": "Capstone Seminar in Psychology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "SPAU 3301",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3303",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3304",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3340",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3343",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3344",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3345",
+              "title": ", SPAU",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BBSU 3310",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "UNIV 3310",
+              "title": ".",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "One of the following is highly recommended as one of the upper-division course options:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BBSU 3310",
+              "title": "Community-Based Service Learning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4392",
+              "title": "Teaching and Professional Skills Practicum",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4390",
+              "title": "Directed Research and Writing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4391",
+              "title": "Individual Study and Writing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4394",
+              "title": "Internship in Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4V96",
+              "title": "Teaching Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4397",
+              "title": "Thesis Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4V98",
+              "title": "Directed Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4V99",
+              "title": "Individual Study",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "UNIV 3310",
+              "title": "Community-Engaged Service Learning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/bbs/psychology (2026-07-26 18:27:11) 3/",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/bbs/psychology (2026-07-26 18:27:11) 4/",
+        "Any 12 semester credit hours of courses with PSY or CGS or CLDP or NSC prefixes or the following"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "41",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "41",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Electives are selected by students to explore areas of concentration in Psychology as well as",
+        "explore interests outside the field. Both lower- and upper-division courses may count as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

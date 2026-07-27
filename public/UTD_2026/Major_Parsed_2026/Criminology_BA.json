@@ -1,0 +1,383 @@
+{
+  "major": "Criminology (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1306",
+              "title": "College Algebra for the Non-Scientist",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 1314",
+              "title": "College Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 1301",
+              "title": "Introduction to Criminal Justice1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 1307",
+              "title": "Introduction to Crime and Criminology1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 1301",
+              "title": "Introduction to Sociology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EPPS 2301",
+              "title": "Research Design in the Social and Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2302",
+              "title": "Methods of Quantitative Analysis in the Social and Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/epps/criminology (2026-07-26 18:27:54) 2/",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "61",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "16",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EPPS 1110",
+              "title": "Critical Issues in the Social Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 1301",
+              "title": "Introduction to Criminal Justice1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 1307",
+              "title": "Introduction to Crime and Criminology1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 2306",
+              "title": "Criminal Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 2313",
+              "title": "Police and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 2316",
+              "title": "Corrections",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 2317",
+              "title": "Criminal Prosecution and Court Process",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2301",
+              "title": "Research Design in the Social and Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2302",
+              "title": "Methods of Quantitative Analysis in the Social and Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 3300",
+              "title": "Crime and Civil Liberties",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3302",
+              "title": "Advanced Criminology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3303",
+              "title": "Advanced Criminal Justice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 3304",
+              "title": "Research Methods in Crime and Justice Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 4311",
+              "title": "Crime and Justice Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 4322",
+              "title": "Senior Research Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "And Distributive Justice Focus",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following (3 semester credit hours):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 3301",
+              "title": "Theories of Justice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4369",
+              "title": "Public Health and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4302",
+              "title": "Class, Status, and Power",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4333",
+              "title": "Environmental Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "And International or Comparative Focus",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following (3 semester credit hours):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 3319",
+              "title": "Comparative Justice Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3369",
+              "title": "Political Economy of Terrorism",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Upper-Division Elective Courses",
+          "credit_hours": "21",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/epps/criminology (2026-07-26 18:27:54) 3/",
+        "21 semester credit hours of CRIM upper-division courses or related to CRIM"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "17",
+      "groups": [],
+      "notes": [
+        "This requirement may be satisfied with lower-and upper-division courses from any field of study.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

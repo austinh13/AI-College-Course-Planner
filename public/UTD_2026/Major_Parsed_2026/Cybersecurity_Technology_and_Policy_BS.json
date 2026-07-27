@@ -1,0 +1,429 @@
+{
+  "major": "Cybersecurity Technology and Policy (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "RHET 1302",
+              "title": "College Writing II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 2390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses(see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/cybersecurity-technology-and-policy (2026-07-26 18:27:29) 1/",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "and a 3 semster semester credit hour Government/Political Science Core course",
+        "Or select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/cybersecurity-technology-and-policy (2026-07-26 18:27:29) 2/",
+        "Or select any 6 semester credit hours from Component Area Option courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "69",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECS 1100",
+              "title": "Introduction to Engineering and Computer Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 1210",
+              "title": "Foundations in Engineering and Computer Science I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1436",
+              "title": "Programming Fundamentals",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1337",
+              "title": "Computer Science I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 2305",
+              "title": "Discrete Mathematics for Computing I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 2336",
+              "title": "Computer Science II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 2340",
+              "title": "Computer Architecture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 2390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2418",
+              "title": "Linear Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves1 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 1302",
+              "title": "College Writing II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "33",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CS 3341",
+              "title": "Probability and Statistics in Computer Science and Software Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 3345",
+              "title": "Data Structures and Foundations of Algorithmic Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4311",
+              "title": "Foundations of Cybersecurity",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4322",
+              "title": "Fundamentals of Data and Application Security",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4344",
+              "title": "Trustworthy and Secure AI/ML",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4355",
+              "title": "Foundations of Digital Forensics and Incidence Response",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4326",
+              "title": "Cyber Security Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4327",
+              "title": "Violence in Cyber Space",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4328",
+              "title": "Governance and Auditing for Cyber Security",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4329",
+              "title": "Cybersecurity Law and Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4330",
+              "title": "Open-Source Intelligence for Cyber Security",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Technical Electives",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/cybersecurity-technology-and-policy (2026-07-26 18:27:29) 3/",
+        "Upper division courses offered by the Department of Computer Science in the Erik Jonsson School",
+        "of Engineering or the School of Economic, Political and Policy Sciences with advisor approval."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "9",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "9",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Although both lower- and upper-division courses may count as free electives, they must be",
+        "approved by the advisor.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

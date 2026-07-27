@@ -1,0 +1,526 @@
+{
+  "major": "Human Resource Management (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BA 1320",
+                  "title": "Business in a Global World1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ECON 2301",
+                  "title": "Principles of Macroeconomics1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ECON 2302",
+                  "title": "Principles of Microeconomics1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BA 1320",
+                  "title": "Business in a Global World1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ECON 2301",
+                  "title": "Principles of Macroeconomics1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ECON 2302",
+                  "title": "Principles of Microeconomics1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/human-resource-management (2026-07-26 18:30:08) 2/",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+        "And select 3 semester credit hours from Component Area Option Core courses",
+        "Or select any 6 semester credit hours from Component Area Option Core courses"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "73",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ACCT 2301",
+              "title": "Introductory Financial Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 2302",
+              "title": "Introductory Management Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 2301",
+              "title": "Business and Public Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3360",
+              "title": "Managerial Methods in Decision Making Under Uncertainty",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Complete the following courses if not already completed as part of the Core Curriculum Requirements",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I1 , 2  (Required for all JSOM undergraduate students. May elect to substitute",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose two of the following if not completed in Core Curriculum:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "28",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1105",
+              "title": "Professional Development (JSOM first-time-in-college freshmen are required to take",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BA 3105",
+                  "title": "Professional Development (Transfer students and students new to JSOM are required to take",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BCOM 3300",
+              "title": "Business Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 3301",
+              "title": "AI in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3320",
+              "title": "Business Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IMS 3310",
+              "title": "International Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 3300",
+              "title": "Information Technology for Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3330",
+              "title": "Human Resource Management in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3310",
+              "title": "Supply Chain and Operations Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Experiential Learning",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "OBHR 4395",
+              "title": "Capstone Senior Project - Human Resource Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4090",
+              "title": "Management Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 4095",
+              "title": "Social Sector Engagement and Community Outreach Practicum",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BLAW 3301",
+              "title": "Employment Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4331",
+              "title": "Compensation and Benefits Administration",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4334",
+              "title": "Talent Acquisition and Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4335",
+              "title": "Training and Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4337",
+              "title": "HR Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4339",
+              "title": "People Technology Leadership and Artificial Intelligence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4342",
+              "title": "People Relations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4354",
+              "title": "Leading Organizational Change",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Guided Electives",
+          "credit_hours": "9",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 9 semester credit hours from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "IMS 4330",
+              "title": "Global Human Resource Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4336",
+              "title": "Labor and Employee Relations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4352",
+              "title": "Negotiation and Dispute Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4361",
+              "title": "The Human Resource Professional",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4353",
+              "title": "Business Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BUAN 4353",
+                  "title": "Business Analytics",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BA 3340",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 3350",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/human-resource-management (2026-07-26 18:30:08) 3/",
+        "A capstone course is required for all undergraduate JSOM students.",
+        "A practicum experience of at least 160 working hours is required, with registration in the course",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/human-resource-management (2026-07-26 18:30:08) 4/",
+        "below.",
+        "Students are required to complete 100 hours of community engagement. Depending on the",
+        "service and preference for additional electives, the student has the option of zero or 3 semester",
+        "credit hours.",
+        "and up to 3 SCH of an Individual Study based on the major to satisfy JURS program requirements.",
+        "These credits may be applied to the general concentration.",
+        "https://catalog.utdallas.edu/2026/undergraduate/programs/jsom/human-resource-management (2026-07-26 18:30:08) 5/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "5",
+      "groups": [],
+      "notes": [
+        "Both lower- and upper-division courses may count as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}
