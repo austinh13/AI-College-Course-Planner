@@ -1,0 +1,404 @@
+{
+  "major": "Visual and Performing Arts with Visual (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "RHET 1302",
+              "title": "Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "And choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 1311",
+              "title": "Survey of Oral and Technology-based Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 1315",
+              "title": "Public Speaking",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AHST 1303",
+              "title": "Survey of Western Art History: Ancient to Medieval",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AHST 1304",
+              "title": "Survey of Western Art History: Renaissance to Modern",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AHST 2331",
+              "title": "Understanding Art",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FILM 2332",
+              "title": "Understanding Film",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2306",
+              "title": "State and Local Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2023/undergraduate/programs/aht/visual-and-performing-arts-visual-arts (2026-07-27 20:34:39) 2/",
+        "Or select any 6 semester credit hours from Government/Political Science Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements, Lower-Division",
+      "credit_hours": "12",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARTS 2380",
+              "title": "Visual Design Foundations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select any 3 semester credit hours from the following history/theory courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AHST 1303",
+              "title": "Survey of Western Art History: Ancient to Medieval",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AHST 1304",
+              "title": "Survey of Western Art History: Renaissance to Modern",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AHST 2331",
+              "title": "Understanding Art",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FILM 2332",
+              "title": "Understanding Film",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select any 9 semester credit hours from the following studio courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARTS 1316",
+              "title": "Drawing Foundations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 2315",
+              "title": "Topics in Visual Art",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 2316",
+              "title": "Painting Foundations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 2350",
+              "title": "Photography: Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 2381",
+              "title": "Introduction to Sculpture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "title": "Major Requirements, Upper-Division",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "VPAS 3340",
+              "title": "Writing in the Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "VPAS 4389",
+              "title": "Theory and Practice of the Visual and Performing Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "VPAS 4390",
+              "title": "Senior Capstone",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "VPAS 4V99",
+                  "title": "Senior Honors in Visual and Performing Art",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Technology (excluding the ARTS prefix)",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Select 3 semester credit hours of Professional Development Courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARTS 3311",
+              "title": "Contemporary Art Practices",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 4310",
+              "title": "Studies in Contemporary Exhibitions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Visual Arts Concentration",
+          "credit_hours": "27",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Select any 3 semester credit hours from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "AHST 3318",
+              "title": "Contemporary Art",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AHST 3319",
+              "title": "Twentieth Century European Art: Avant-Garde and Aftermath",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AHST 3324",
+              "title": "History of Photography",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "or upper-level FILM course",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2023/undergraduate/programs/aht/visual-and-performing-arts-visual-arts (2026-07-27 20:34:39) 3/",
+        "3 semester credit hours of upper-level Related Courses from the School of Arts, Humanities, and",
+        "3 semester credit hours of upper-level AHST or FILM course",
+        "6 semester credit hours of 3000-level courses from Visual Arts studios",
+        "3 semester credit hours of upper-courses from Visual Arts studios",
+        "6 semester credit hours of 4000-level courses from Visual Arts studios",
+        "6 semester credit hours of upper-level Visual and Performing Arts electives"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "24",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both upper- and lower-division courses may be used as electives",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1016 @@
+{
+  "major": "Arts, Technology, and Emerging (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1306",
+              "title": "College Algebra for the Non-Scientist",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 1314",
+              "title": "College Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements, Lower-Division",
+      "credit_hours": "24",
+      "groups": [
+        {
+          "label": "Foundations",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 2300",
+              "title": "Introduction to TechnoCulture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2301",
+              "title": "Digital Art and Design Foundations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2302",
+              "title": "Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1335",
+              "title": "Computer Science I for Non-majors",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Fundamentals",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose three courses from across both groups: Group A",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 2330",
+              "title": "Digital Art and Social Practice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2321",
+              "title": "Reading Media Critically",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2340",
+              "title": "Visual Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2350",
+              "title": "Time-Based Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Group B",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 2303",
+              "title": "Project Management for Arts, Technology, and Emerging Communication I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 2310",
+              "title": "Animation and Game Fundamentals",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2320",
+              "title": "Critical Media Research Foundations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 2345",
+              "title": "Introduction to Audio Production",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2355",
+              "title": "Survey of Digital Fabrication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "ATEC Histories Course",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 2315",
+              "title": "Animation Origins and Techniques",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2322",
+              "title": "Media Histories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2343",
+              "title": "Emerging Media Art Histories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2360",
+              "title": "Design Histories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 2375",
+              "title": "History of Games",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/atec (2026-07-27 15:50:34) 2/",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/atec (2026-07-27 15:50:34) 3/"
+      ]
+    },
+    {
+      "title": "Major Requirements, Upper-Division",
+      "credit_hours": "24",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 3301",
+              "title": "Writing for ATEC",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4384",
+              "title": "Ethics in New Media, Technology, and Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose five courses from at least two areas: Animation and Games",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 3305",
+              "title": "Computer Animation I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3306",
+              "title": "Modeling and Texturing I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3307",
+              "title": "Lighting and Composition I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3308",
+              "title": "Rigging I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3365",
+              "title": "Game Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3367",
+              "title": "Level Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Critical Media Studies",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 3315",
+              "title": "Animation Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3320",
+              "title": "Critical Media Theories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3321",
+              "title": "Networked Identities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3325",
+              "title": "Global Media Cultures",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3366",
+              "title": "Game Studies I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Design",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 3336",
+              "title": "Design Research Methods",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3337",
+              "title": "Interaction Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3338",
+              "title": "Motion Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Emerging Media Art",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 3346",
+              "title": "Audio Productions Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3350",
+              "title": "Digital Video Production I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3355",
+              "title": "Computer Modeling for Digital Fabrication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4326",
+              "title": "Mediated Textuality",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4330",
+              "title": "Culture Jamming",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 4397",
+              "title": "Senior Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4398",
+              "title": "Capstone Project",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4399",
+              "title": "Senior Honors in Arts, Technology, and Emerging Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/atec (2026-07-27 15:50:34) 4/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "30",
+      "groups": [
+        {
+          "label": "Prescribed Electives",
+          "credit_hours": "15",
+          "choice": false,
+          "description": "Choose any five courses from the following. At least two courses must be at the 4000-level, and the",
+          "courses": []
+        },
+        {
+          "label": "Animation and Games",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 3305",
+              "title": "Computer Animation I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3306",
+              "title": "Modeling and Texturing I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3307",
+              "title": "Lighting and Composition I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3308",
+              "title": "Rigging I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3310",
+              "title": "Introduction to Proceduralism",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3312",
+              "title": "Surfacing and Shading",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3315",
+              "title": "Animation Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3365",
+              "title": "Game Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3366",
+              "title": "Game Studies I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3367",
+              "title": "Level Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3368",
+              "title": "Scripting for Games I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3369",
+              "title": "Games and Narrative I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3370",
+              "title": "Virtual Environments I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4310",
+              "title": "Motion Capture Animation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4316",
+              "title": "Animation Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4317",
+              "title": "Animation Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4366",
+              "title": "Game Studies II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4376",
+              "title": "Game Production Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4377",
+              "title": "Game Production Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Critical Media Studies",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 3320",
+              "title": "Critical Media Theories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3321",
+              "title": "Networked Identities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3325",
+              "title": "Global Media Cultures",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3331",
+              "title": "Critical Making",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4320",
+              "title": "Political Economy of Digital Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4322",
+              "title": "Disability, Technology, and Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4323",
+              "title": "Feminism, Technology, and Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4325",
+              "title": "Race, Technology, and Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4326",
+              "title": "Mediated Textuality",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4327",
+              "title": "Privacy and Surveillance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4330",
+              "title": "Culture Jamming",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Design",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 3336",
+              "title": "Design Research Methods",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3337",
+              "title": "Interaction Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3338",
+              "title": "Motion Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3340",
+              "title": "Design II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4337",
+              "title": "Interaction Design II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4338",
+              "title": "Motion Design II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4340",
+              "title": "Strategic Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4364",
+              "title": "Topics in Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4352",
+              "title": "Introduction to Human-Computer Interaction",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Emerging Communication",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 3338",
+              "title": "Motion Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3382",
+              "title": "Communicating Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3388",
+              "title": "Social Influence and Persuasive Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4326",
+              "title": "Mediated Textuality",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4330",
+              "title": "Culture Jamming",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4386",
+              "title": "Journalism in the Networked Age",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Emerging Media Art",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 3345",
+              "title": "Audio Technologies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3346",
+              "title": "Audio Productions Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3350",
+              "title": "Digital Video Production I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3355",
+              "title": "Computer Modeling for Digital Fabrication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3356",
+              "title": "Projection Mapping Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3357",
+              "title": "Digital Fabrication Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3372",
+              "title": "Sound Design for Games",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4330",
+              "title": "Culture Jamming",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4345",
+              "title": "Digital Audio Processing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4346",
+              "title": "Audio Productions Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4350",
+              "title": "Digital Video Production II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4357",
+              "title": "Digital Fabrication Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4364",
+              "title": "Topics in Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 3371",
+              "title": "Photography: Black/White",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 3372",
+              "title": "Photography: Color Concepts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 3377",
+              "title": "Photography: Altered Image",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 3379",
+              "title": "Photography: New Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARTS 4372",
+              "title": "Advanced Photography",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Free Electives",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "courses must come from at least two of the categories.",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/atec (2026-07-27 15:50:34) 5/",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/atec (2026-07-27 15:50:34) 6/",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/atec (2026-07-27 15:50:34) 7/",
+        "Both upper-and lower-division courses may be used as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

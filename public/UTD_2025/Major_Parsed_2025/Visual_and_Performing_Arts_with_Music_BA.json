@@ -1,0 +1,327 @@
+{
+  "major": "Visual and Performing Arts with Music (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Mathematics Core courses",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MUSI 2322",
+              "title": "Music in Western Civilization",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MUSI 2321",
+              "title": "Music Cultures of the World",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/aht/visual-and-performing-arts-music (2026-07-27 13:37:46) 2/",
+        "Or select any 6 semester credit hours from Component Area Option Core courses"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "61-67",
+      "groups": [
+        {
+          "label": "Lower-Division Preparatory Music History/Theory Courses",
+          "credit_hours": "10-16",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Core Curriculum",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AHTC 1100",
+              "title": "First Year Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 2321",
+              "title": "Music Cultures of the World",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 2322",
+              "title": "Music in Western Civilization",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 2328",
+              "title": "Music Theory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 2329",
+              "title": "Music Theory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 2330",
+              "title": "Music Theory III",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Upper-Division Required Music History/Theory Courses",
+          "credit_hours": "9",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MUSI 3328",
+              "title": "Advanced Theory and Keyboard Skills",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 3330",
+              "title": "Music Literature: Romantic to Modern",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 3331",
+              "title": "Music Literature: Baroque and Classic Eras",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Upper-Division Music History/Theory Elective Courses",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Select 6 semester credit hours of upper-division Music History/Theory elective courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MUSI 3322",
+              "title": "Music in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 3324",
+              "title": "Jazz History: Roots to Swing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 3325",
+              "title": "Jazz History: Modern Jazz since BeBop",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 3327",
+              "title": "Music in Modern Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 3342",
+              "title": "Topics in Music",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 3389",
+              "title": "Digital Music II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 4348",
+              "title": "Creating Music",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Applied Music and Ensemble Required Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Visual and Performing Art Requirements",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "VPAS 3340",
+              "title": "Writing in the Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "VPAS 4389",
+              "title": "Theory and Practice of the Visual and Performing Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "VPAS 4390",
+              "title": "Senior Capstone",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "VPAS 4V99",
+                  "title": "Senior Honors in Visual and Performing Art",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/aht/visual-and-performing-arts-music (2026-07-27 13:37:46) 3/",
+        "16 semester credit hours of Applied Music courses in primary instrument or voice (at least 8 semester credit hours must be upper-division)",
+        "8 semester credit hours of any 1 semester credit hour upper-division MUSI ensemble participation.",
+        "Placement by audition.",
+        "3 semester credit hours of upper-division Related Courses from the Harry W. Bass Jr. School of",
+        "Arts, Humanities, and Technology (excluding the MUSI prefix)"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "11-17",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "11-17",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both upper- and lower-division courses may be used as electives. Students may enroll in courses in",
+        "other performance areas, such as dance and theatre, complete a minor of their choice, or select",
+        "additional music courses such as training in a second instrument/voice focus, or additional training",
+        "in music history or music theory.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

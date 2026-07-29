@@ -1,0 +1,518 @@
+{
+  "major": "Geospatial Information Sciences (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose two courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ENVR 2302",
+              "title": "The Global Environment",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "GEOG 2302",
+                  "title": "The Global Environment",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "GEOS 2302",
+                  "title": "The Global Environment",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GEOS 1303",
+              "title": "Physical Geology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NATS 1311",
+              "title": "The Universe, and Everything Else",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NATS 2333",
+              "title": "Energy, Water, and the Environment",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 1301",
+              "title": "College Physics I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor).",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 1301",
+              "title": "Introduction to Criminal Justice",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CRIM 1307",
+              "title": "Introduction to Crime and Criminology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 2303",
+              "title": "World Regional Geography",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 1301",
+              "title": "Introduction to Sociology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EPPS 2301",
+              "title": "Research Design in the Social and Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2302",
+              "title": "Methods of Quantitative Analysis in the Social and Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/epps/geospatial-information-science (2026-07-27 15:52:31) 2/",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see https://catalog.utdallas.edu/2024/undergraduate/programs/epps/geospatial-information-science (2026-07-27 15:52:31) 3/7 advisor)",
+        "Or select any 6 semester credit hours from Component Area Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "39",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ENVR 2302",
+              "title": "The Global Environment",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "GEOG 2302",
+                  "title": "The Global Environment",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "GEOS 2302",
+                  "title": "The Global Environment",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "EPPS 2302",
+              "title": "Methods of Quantitative Analysis in the Social and Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 2303",
+              "title": "World Regional Geography",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 2305",
+              "title": "Spatial Thinking and Data Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "GEOS 2305",
+                  "title": "Spatial Thinking and Data Analytics",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "GISC 2307",
+                  "title": "Digital Earth",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "GEOS 2307",
+                  "title": "Digital Earth",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GISC 2309",
+              "title": "Principles of Geospatial Information Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "GEOG 2309",
+                  "title": "Principles of Geospatial Information Sciences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "GEOS 2309",
+                  "title": "Principles of Geospatial Information Sciences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GISC 2326",
+              "title": "Computer Mapping and Geovisualization",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 4381",
+              "title": "Spatial Data Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 4325",
+              "title": "Introduction to Remote Sensing",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "GEOS 4325",
+                  "title": "Introduction to Remote Sensing",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GISC 4382",
+              "title": "Applied Geographic Information Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 4386",
+              "title": "Climate Change and Sustainable Solutions",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ENVR 4386",
+                  "title": "Climate Change and Sustainable Solutions",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Major Related Course",
+          "credit_hours": "18",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose 6 courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "GISC 4317",
+              "title": "Python Programming for Social Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 4328",
+              "title": "Drone and Remote Sensing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 4363",
+              "title": "Internet Mapping and Information Processing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 4384",
+              "title": "Health and Environmental GIS",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 4385",
+              "title": "Advanced Applications in GIS",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3331",
+              "title": "Smart and Sustainable Cities",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ENVR 3331",
+                  "title": "Smart and Sustainable Cities",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GEOG 3357",
+              "title": "Spatial Dimensions of Health and Disease",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3359",
+              "title": "Human Migration and Mobility",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3370",
+              "title": "The Global Economy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3372",
+              "title": "Population and Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3377",
+              "title": "Urban Planning and Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PA 3377",
+                  "title": "Urban Planning and Policy",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/epps/geospatial-information-science (2026-07-27 15:52:31) 4/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "39",
+      "groups": [
+        {
+          "label": "Prescribed Electives",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Free Electives",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "All students are required to take at least fifteen semester credit hours of prescribed upper-division",
+        "elective courses.",
+        "This requirement may be satisfied with lower- and upper-division courses from any field of study.",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/epps/geospatial-information-science (2026-07-27 15:52:31) 5/",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

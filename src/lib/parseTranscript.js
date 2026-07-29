@@ -254,11 +254,14 @@ export async function extractCompletedCourses(file) {
   return extractFromDocument(doc);
 }
 
-// Adjust if core_curriculum.json ends up served from a different path
-// (mirrors the public/major-catalogs/ convention for degree catalogs).
-export const CORE_CURRICULUM_URL = "/core_curriculum.json";
+// UTD_YEAR/Core_YEAR.json — mirrors the UTD_YEAR/Major_Parsed_YEAR/
+// convention for degree catalogs, so it's still fetched via a path
+// under public/ that Vite serves statically.
+export function coreCurriculumUrl(startYear) {
+  return `/UTD_${startYear}/Core_${startYear}.json`;
+}
 
-export async function loadCoreCurriculum(url = CORE_CURRICULUM_URL) {
+export async function loadCoreCurriculum(url) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Failed to load core curriculum: ${res.status}`);
   return res.json();

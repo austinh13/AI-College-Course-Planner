@@ -1,0 +1,508 @@
+{
+  "major": "Public Policy (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses (at or above the level of MATH 1325 Applied Calculus I)",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2306",
+              "title": "State and Local Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics3 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EPPS 2301",
+              "title": "Research Design in the Social and Policy Sciences3 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2302",
+              "title": "Methods of Quantitative Analysis in the Social and Policy Sciences3 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2023/undergraduate/programs/epps/public-policy (2026-07-27 20:35:49) 1/",
+        "Or select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "54",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "12-13",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I3 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2413",
+                  "title": "Differential Calculus3 , 4",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I3 , 4",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics3 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2301",
+              "title": "Research Design in the Social and Policy Sciences3 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2302",
+              "title": "Methods of Quantitative Analysis in the Social and Policy Sciences3 , 4",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "30",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3310",
+              "title": "Intermediate Microeconomic Theory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3311",
+              "title": "Intermediate Macroeconomic Theory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3304",
+              "title": "Principles of Geospatial Information Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3325",
+              "title": "American Public Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3322",
+              "title": "Constitutional Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4343",
+              "title": "Congress and Public Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3362",
+              "title": "The American Political Institutions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4300",
+              "title": "Capstone in Public Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4398",
+              "title": "Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PPOL 4V91",
+                  "title": "Undergraduate Research in Public Policy",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Public Policy Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose eight courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRIM 4311",
+              "title": "Crime and Justice Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3315",
+              "title": "Sports Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3330",
+              "title": "Economics of Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3336",
+              "title": "Economics of Education",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4320",
+              "title": "Public Sector Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4336",
+              "title": "Environmental Economic Theory and Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4332",
+              "title": "Energy and Natural Resources Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3377",
+              "title": "Urban Planning and Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 4384",
+              "title": "Health and Environmental GIS",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IPEC 4301",
+              "title": "Political Economy of Industrialized Countries",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IPEC 4305",
+              "title": "Topics in Science, Technology and Institutions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IPEC 4309",
+              "title": "Urban Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IPEC 4310",
+              "title": "Environmental and Health Policy in East Asia",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IPEC 4384",
+              "title": "Health and Environmental Policy: A Global Perspective",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3310",
+              "title": "Managing Government Organizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3326",
+              "title": "Politics and Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3323",
+              "title": "American Federalism",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4304",
+              "title": "Energy and Environmental Politics and Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4305",
+              "title": "Political Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4307",
+              "title": "Predicting Politics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4370",
+              "title": "Policy Making Process",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4386",
+              "title": "Health and Social Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4396",
+              "title": "Topics in Public Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4398",
+              "title": "Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4V91",
+              "title": "Undergraduate Research in Public Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4V96",
+              "title": "Independent Study",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4V99",
+              "title": "Senior Honors in Public Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3380",
+              "title": "Organizations: Theory and Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 4351",
+              "title": "Managing the Urban Environment",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3355",
+              "title": "Introduction to the Nonprofit Sector",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Other Classes as approved by Program Head",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2023/undergraduate/programs/epps/public-policy (2026-07-27 20:35:49) 3/",
+        "https://catalog.utdallas.edu/2023/undergraduate/programs/epps/public-policy (2026-07-27 20:35:49) 4/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "24",
+      "groups": [],
+      "notes": [
+        "Students must complete a minor within these elective hours",
+        "This requirement may be satisfied with lower- and upper-division courses from any field of study.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "major": "Molecular Biology (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 1311",
+              "title": "Survey of Oral and Technology-based Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 1302",
+              "title": "Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I3 , 4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1315",
+                  "title": "Honors Freshman Chemistry I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1316",
+                  "title": "Honors Freshman Chemistry II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2306",
+              "title": "State and Local Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIOL 2311",
+              "title": "Introduction to Modern Biology I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2419",
+              "title": "Calculus II3 , 4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/nsm/molecular-biology (2026-07-28 14:21:52) 2/",
+        "Or select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "69-70",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "24-25",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 1111",
+              "title": "General Chemistry Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1115",
+                  "title": "Honors Freshman Chemistry Laboratory I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1112",
+              "title": "General Chemistry Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1116",
+                  "title": "Honors Freshman Chemistry Laboratory II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1315",
+                  "title": "Honors Freshman Chemistry I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1316",
+                  "title": "Honors Freshman Chemistry II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 2323",
+              "title": "Introductory Organic Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 2327",
+                  "title": "Honors Organic Chemistry I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 2325",
+              "title": "Introductory Organic Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 2328",
+                  "title": "Honors Organic Chemistry II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 2233",
+              "title": "Introductory Organic Chemistry Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 2237",
+                  "title": "Honors Organic Chemistry Laboratory",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I3 , 4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2419",
+              "title": "Calculus II3 , 4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2418",
+              "title": "Linear Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics and",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2422",
+                  "title": "Honors Physics II - Electromagnetism and Waves",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "33",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIOL 2111",
+              "title": "Introduction to Modern Biology Workshop I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2112",
+              "title": "Introduction to Modern Biology Workshop II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2281",
+              "title": "Introductory Biology Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2311",
+              "title": "Introduction to Modern Biology I3 , 6",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2312",
+              "title": "Introduction to Modern Biology II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3101",
+              "title": "Classical and Molecular Genetics Workshop",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3102",
+              "title": "Eukaryotic Molecular and Cell Biology Workshop",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3161",
+              "title": "Biochemistry Workshop I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3162",
+              "title": "Biochemistry Workshop II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3301",
+              "title": "Classical and Molecular Genetics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3302",
+              "title": "Eukaryotic Molecular and Cell Biology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3361",
+              "title": "Biochemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3362",
+              "title": "Biochemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BIOL 3335",
+                  "title": "Microbial Physiology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BIOL 3380",
+              "title": "Biochemistry Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 4380",
+              "title": "Cell and Molecular Biology Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BIOL 3V96",
+                  "title": "Undergraduate Research in Molecular and Cell Biology  (3 semester credit hours)",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "BIOL 4399",
+                  "title": "Senior Honors Research for Thesis in Molecular and Cell Biology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "BIOL 4391",
+                  "title": "Senior Research in Molecular and Cell Biology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BIOL 4461",
+              "title": "Biophysical Chemistry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "electives",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/nsm/molecular-biology (2026-07-28 14:21:52) 3/",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/nsm/molecular-biology (2026-07-28 14:21:52) 4/",
+        "12 semester credit hours upper-division approved molecular biology-related BIOL or CHEM"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "8-9",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "8-9",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Fast Track Baccalaureate/Master's Degrees",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Degree Planning",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "All students must complete at least 51 semester credit hours of upper-division courses to",
+        "graduate.",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/nsm/molecular-biology (2026-07-28 14:21:52) 5/",
+        "UT Dallas undergraduate students with strong academic records, including at least 15 semester",
+        "credit hours of upper-division Biology core courses, who intend to pursue graduate work in Biology",
+        "at UT Dallas, may apply for the Fast Track which involves taking selected graduate courses as an",
+        "upper-division student. After Fast Track admission to the graduate program, 15 semester credit",
+        "hours of graduate courses with an earned grade of B or better can be used toward completion of",
+        "the BS and to satisfy requirements for those courses at the graduate level. Graduate courses must",
+        "be approved by the graduate advisor. This program provides an opportunity to obtain the BS",
+        "degree in Biology after 120 semester credit hours of work and an MS degree in Molecular and Cell",
+        "Biology after an additional 21 semester credit hours of graduate course and research work.",
+        "Interested students should contact the Biology undergraduate advisor well in advance of the",
+        "senior year to prepare a degree plan taking maximal advantage of this Fast Track program.",
+        "Upper-division biology courses taken at other institutions may be included as part of the degree",
+        "plan subject to the provisions of the section on Transfer Admissions.",
+        "Major-related courses may not include more than 9 semester credit hours (BS) or 6 semester",
+        "credit hours (BA) of upper-division transfer credit and not more than 3 semester credit hours (Biology major) or 6 semester credit hours (Molecular Biology major) of individual instruction (e.g., BIOL 3V90, BIOL 3V91, BIOL 3V96, BIOL 4302, BIOL 4390, BIOL 4391, BIOL 4399, or BIOL 4V99).",
+        "Students planning a career in a particular allied health profession should consult the school they",
+        "expect to attend to apprise themselves of the course requirements for admission.",
+        "Admission standards for medical and dental schools are set by the individual professional school,",
+        "whose specific requirements should be reviewed with the help of the UT Dallas Health Professions",
+        "Advising Center (HPAC). Most professional schools prefer that admission applications be",
+        "channeled through the HPAC."
+      ]
+    }
+  ]
+}

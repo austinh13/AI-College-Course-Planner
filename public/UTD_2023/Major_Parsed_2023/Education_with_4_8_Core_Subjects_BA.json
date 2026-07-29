@@ -1,0 +1,412 @@
+{
+  "major": "Education with 4-8 Core Subjects (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 1311",
+              "title": "Survey of Oral and Technology-based Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 1302",
+              "title": "Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1314",
+              "title": "College Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 2341",
+              "title": "American Studies for the Twenty-First Century",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "AMS 2300",
+                  "title": "American Popular Culture",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "HUMA 1301",
+                  "title": "Exploration of the Humanities",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARTS 1301",
+              "title": "Exploration of the Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 1301",
+              "title": "U.S. History Survey to Civil War",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 1302",
+              "title": "U.S. History Survey from Civil War",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2306",
+              "title": "State and Local Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses. (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1316",
+              "title": "Trigonometry",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2306",
+                  "title": "Analytic Geometry",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "STAT 1342",
+              "title": "Statistical Decision Making",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 2317",
+                  "title": "Statistics for Psychology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+        "Or select any 3 semester credit hours Creative Arts Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2023/undergraduate/programs/is/education (2026-07-27 20:35:58) 6/",
+        "Or select any 6 semester credit hours from American History Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option Core courses.(see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "60",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 4300",
+              "title": "Oral and Written Communication for the Classroom",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 3320",
+              "title": "The Nature of Intellectual Inquiry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4694",
+              "title": "Student Teaching Secondary",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ED 4394",
+                  "title": "Residency 1- Secondary",
+                  "connector": "or",
+                  "with": [
+                    {
+                      "code": "ED 4395",
+                      "title": "Residency 2- Secondary"
+                    }
+                  ],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ED 3314",
+              "title": "The American Public School",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3315",
+              "title": "Children's Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3340",
+              "title": "Math Concepts for Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4351",
+              "title": "ESL for K-12 Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3339",
+              "title": "Educational Psychology for Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 3339",
+                  "title": "Educational Psychology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ED 4352",
+              "title": "Reading I: Learning to Read",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4357",
+              "title": "Diagnostic Reading",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4361",
+              "title": "Classroom Management Secondary",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4363",
+              "title": "Reading II/ELAR Methods",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4V95",
+              "title": "Special Topics in Education (Topic: Exceptional Populations in the General Education Class)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Major Related Courses (18 semester credit hours)",
+        "3 semester credit hour lower- or upper-level ISIS course",
+        "3 semester credit hour lower- or upper-level ISIS or ISNS course",
+        "https://catalog.utdallas.edu/2023/undergraduate/programs/is/education (2026-07-27 20:35:58) 7/",
+        "Foundation I (12 semester credit hours)",
+        "12 semester credit hours of lower or upper-level courses from selected Foundation (see advisor)",
+        "Foundation II: Education (12 semester credit hours)",
+        "Teaching Techniques (18 semester credit hours)"
+      ]
+    },
+    {
+      "title": "Certification Requirements and Recommendations",
+      "credit_hours": "18",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 4306",
+              "title": "Strategies for Diversity in Education",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3371",
+              "title": "Curriculum and Instruction in the Natural Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3382",
+              "title": "Curriculum and Instruction in Social Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4344",
+              "title": "Mathematics Methods for Elementary Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4372",
+              "title": "Educational Technology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Guided Electives",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 1100",
+              "title": "Interdisciplinary Studies First Year Experience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "UNIV 1010",
+              "title": "Comets to the Core Pre-Assessment",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2023/undergraduate/programs/is/education (2026-07-27 20:35:58) 8/",
+        "2 semester credit hours of lower- or upper-level courses (see advisor)",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

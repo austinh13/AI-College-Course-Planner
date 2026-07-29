@@ -1,0 +1,478 @@
+{
+  "major": "Education with 4-8 Science (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 1311",
+              "title": "Survey of Oral and Technology-based Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 1302",
+              "title": "Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1314",
+              "title": "College Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIOL 2311",
+              "title": "Introduction to Modern Biology I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BIOL 1300",
+                  "title": "Body Systems with Lab",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BIOL 2312",
+              "title": "Introduction to Modern Biology II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 2341",
+              "title": "American Studies for the Twenty-First Century",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "AMS 2300",
+                  "title": "American Popular Culture",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "HUMA 1301",
+                  "title": "Exploration of the Humanities",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARTS 1301",
+              "title": "Exploration of the Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 1301",
+              "title": "U.S. History Survey to Civil War",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 1302",
+              "title": "U.S. History Survey from Civil War",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2306",
+              "title": "State and Local Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses. (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NATS 1311",
+              "title": "The Universe, and Everything Else",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 1301",
+                  "title": "College Physics I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/is/education (2026-07-28 14:20:23) 12/",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+        "Or select any 3 semester credit hours Creative Arts Core courses (see advisor)",
+        "Or select any 6 semester credit hours from American History Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/is/education (2026-07-28 14:20:23) 13/",
+        "Or select any 6 semester credit hours from Component Area Option Core courses. (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "60",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 3320",
+              "title": "The Nature of Intellectual Inquiry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4694",
+              "title": "Student Teaching Secondary",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISNS 3373",
+              "title": "Our Nearest Neighbors in the Sky",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 4V01",
+              "title": "",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 3361",
+              "title": "Introduction to Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "And choose one from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "GEOS 1303",
+              "title": "Physical Geology4 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOS 1304",
+              "title": "History of Earth and Life4 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOS 2310",
+              "title": "Environmental Geology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3314",
+              "title": "The American Public School",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3339",
+              "title": "Educational Psychology for Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 3339",
+                  "title": "Educational Psychology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ED 4351",
+              "title": "ESL for K-12 Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4353",
+              "title": "Reading in Secondary Content",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "AMS 4300",
+              "title": "Oral and Written Communication for the Classroom",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3371",
+              "title": "Curriculum and Instruction in the Natural Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4361",
+              "title": "Classroom Management Secondary",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4372",
+              "title": "Educational Technology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose two from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ISNS 2367",
+              "title": "The Oceans",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ISNS 2359",
+                  "title": "Earthquakes and Volcanoes",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ISNS 2368",
+              "title": "Weather and Climate",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ISNS 2366",
+                  "title": "Global Climate Change",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Major Related Courses (18 semester credit hours)",
+        "3 semester credit hour lower- or upper-level ISIS course",
+        "Foundation I: Natural Science and Mathematics (12 semester credit hours)",
+        "6 semester credit hours of upper-level BIOL courses",
+        "Foundation II: Education (12 semester credit hours)",
+        "Teaching Techniques (18 semester credit hours)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/is/education (2026-07-28 14:20:23) 14/"
+      ]
+    },
+    {
+      "title": "Certification Requirements and Recommendations",
+      "credit_hours": "18",
+      "groups": [
+        {
+          "label": "beyond Core",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Curriculum",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 4306",
+              "title": "Strategies for Diversity in Education",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II",
+              "connector": null,
+              "with": [
+                {
+                  "code": "CHEM 1112",
+                  "title": "General Chemistry Laboratory II"
+                }
+              ],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4V95",
+              "title": "Special Topics in Education (Topic: Exceptional Populations in the General Education Class)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Guided Electives",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 1100",
+              "title": "Interdisciplinary Studies Freshman Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "UNIV 1010",
+              "title": "Comets to the Core Pre-Assessment",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "7 semester credit hours of lower- or upper-level courses (see advisor)"
+      ]
+    }
+  ]
+}

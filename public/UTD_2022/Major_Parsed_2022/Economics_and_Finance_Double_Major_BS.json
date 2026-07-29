@@ -1,0 +1,643 @@
+{
+  "major": "Economics and Finance (Double Major) (BS)",
+  "total_credit_hours": "128",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I4 , 5 , 6 , 7",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor and degree requirements)",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2306",
+              "title": "State and Local Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1326",
+              "title": "Applied Calculus II4 , 5 , 9",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/epps/economics-finance (2026-07-28 14:19:55) 2/",
+        "Or select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+        "Or select any 6 semester credit hours from Component Area Option Core courses"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "63",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ACCT 2301",
+              "title": "Introductory Financial Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 2302",
+              "title": "Introductory Management Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 2301",
+              "title": "Business and Public Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I4 , 5 , 6 , 7",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 1326",
+              "title": "Applied Calculus II4 , 5 , 9",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2333",
+              "title": "Matrices, Vectors, and Their Application4 , 10",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "OPRE 3333",
+                  "title": "Quantitative Business Analysis",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "OPRE 3360",
+              "title": "Managerial Methods in Decision Making Under Uncertainty",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 3360",
+                  "title": "Probability and Statistics for Management and Economics",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "48",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BCOM 1300",
+              "title": "Introduction to Professionalism and Communication in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BCOM 3300",
+                  "title": "Professionalism and Communication in Business",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BCOM 4300",
+              "title": "Managing Communications in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IMS 3310",
+              "title": "International Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3320",
+              "title": "Business Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 3300",
+              "title": "Information Technology for Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3310",
+              "title": "Operations Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "OBHR 3330",
+                  "title": "Introduction to Human Resource Management",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3390",
+              "title": "Introduction to Financial Modeling",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4310",
+              "title": "Intermediate Financial Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3310",
+              "title": "Intermediate Microeconomic Theory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3311",
+              "title": "Intermediate Macroeconomic Theory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4351",
+              "title": "Mathematical Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4355",
+              "title": "Econometrics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4300",
+              "title": "Investment Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4395",
+              "title": "Capstone Senior Project - Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "FIN 4328",
+                  "title": "Real Estate Valuation",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4333",
+                  "title": "Enterprise Risk Management",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "FIN 4380",
+                  "title": "Fund Management",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "BPS 4395",
+                  "title": "Capstone Senior Project - Business",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ENTP 4395",
+                  "title": "Capstone Senior Project - Entrepreneurship",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/epps/economics-finance (2026-07-28 14:19:55) 3/",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/epps/economics-finance (2026-07-28 14:19:55) 4/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "23",
+      "groups": [
+        {
+          "label": "Guided Electives",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 4V80",
+              "title": "Practicum in Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4080",
+              "title": "Finance Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 4090",
+              "title": "Management Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IMS 4335",
+              "title": "Social Sector Entrepreneurship and Community Engagement",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ENTP 4340",
+                  "title": "Social Sector Entrepreneurship and Community Engagement",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "MKT 4360",
+                  "title": "Social Impact Marketing",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "BA 4095",
+                  "title": "Social Sector Engagement and Community Outreach Practicum",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Choose from the following to fulfill remaining Elective semester credit hours:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 3305",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3330",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3340",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3350",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3365",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3380",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4313",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4315",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4320",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4321",
+              "title": ", FIN 432812 , FIN 433312 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4336",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4338",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4340",
+              "title": ", FIN",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4390",
+              "title": ".",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3312",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3332",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4301",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4310",
+              "title": ", ECON",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4345",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4360",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4382",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4385",
+              "title": ", or",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4396",
+              "title": ".",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "A practicum experience of at least 160 working hours is required; the student has the option of",
+        "zero to 3 semester credit hours, depending on the particular internship, and preference for",
+        "additional electives.",
+        "A community engagement experience is required; the student has the option of zero or 3 semester",
+        "credit hours, depending on the particular experience, and preference for additional electives.",
+        "In Elective section above, other upper-division courses with a course prefix of ACCT, MATH, or STAT",
+        "may be used to fulfill up to 3 semester credit hours of electives with advance written permission",
+        "from the BS Finance Program Director.",
+        "Both lower- and upper-division courses may count as electives but students must complete at least",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/epps/economics-finance (2026-07-28 14:19:55) 5/",
+        "51 semester credit hours of upper-division courses to qualify for graduation."
+      ]
+    }
+  ]
+}

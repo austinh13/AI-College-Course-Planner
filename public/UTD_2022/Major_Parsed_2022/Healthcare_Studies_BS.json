@@ -1,0 +1,885 @@
+{
+  "major": "Healthcare Studies (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 1311",
+              "title": "Survey of Oral and Technology-based Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 1302",
+              "title": "Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARTS 1301",
+              "title": "Exploration of the Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government / Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2306",
+              "title": "State and Local Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIOL 2311",
+              "title": "Introduction to Modern Biology I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 2332",
+              "title": "Introductory Statistics for Life Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 1342",
+                  "title": "Statistical Decision Making",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/is/healthcare (2026-07-28 14:20:26) 1/",
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/is/healthcare (2026-07-28 14:20:26) 2/",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "44-52",
+      "groups": [
+        {
+          "label": "Curriculum (depending upon career track)",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "All the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIOL 2311",
+              "title": "Introduction to Modern Biology I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2111",
+              "title": "Introduction to Modern Biology Workshop I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2312",
+              "title": "Introduction to Modern Biology II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2112",
+              "title": "Introduction to Modern Biology Workshop II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1111",
+              "title": "General Chemistry Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1112",
+              "title": "General Chemistry Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2413",
+                  "title": "Differential Calculus",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "And either 8 or 16 semester credit hours of the following courses: 8 semester credit hours of the following (depending on career track):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 2323",
+              "title": "Introductory Organic Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2123",
+              "title": "Introductory Organic Chemistry Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2325",
+              "title": "Introductory Organic Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2125",
+              "title": "Introductory Organic Chemistry Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 1301",
+              "title": "College Physics I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 1302",
+              "title": "College Physics II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "16 semester credit hours of the following (depending on career track):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 2323",
+              "title": "Introductory Organic Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2123",
+              "title": "Introductory Organic Chemistry Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2325",
+              "title": "Introductory Organic Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2125",
+              "title": "Introductory Organic Chemistry Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 1301",
+              "title": "College Physics I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2325",
+                  "title": "Mechanics",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 1302",
+              "title": "College Physics II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2326",
+                  "title": "Electromagnetism and Waves",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Foundation II: Healthcare Foundation Studies",
+          "credit_hours": "14",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "HLTH 1100",
+              "title": "Career Explorations for the Health Professions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 3101",
+              "title": "Medical Terminology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 3300",
+              "title": "Pre-Health Professional Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 3305",
+              "title": "The U.S. Healthcare System",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 3315",
+              "title": "Issues in Patient Education",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 4304",
+              "title": "Health Professions Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Foundation III: Multidisciplinary Healthcare Studies",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Required (3 semester credit hours):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 3320",
+              "title": "The Nature of Intellectual Inquiry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Required (3 semester credit hours from the following):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "HLTH 3301",
+              "title": "Issues in Geriatric Healthcare",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 4305",
+              "title": "Public Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 4380",
+              "title": "Special Topics in Healthcare",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Required (3 semester credit hours from the following):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 4328",
+              "title": "Health Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4343",
+              "title": "Abnormal Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "And choose 6 semester credit hours from among the following courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECON 3330",
+              "title": "Economics of Health",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3357",
+              "title": "Spatial Dimensions of Health and Disease",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 3310",
+              "title": "Health Care Issues: Global Perspectives",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HMGT 3301",
+              "title": "Introduction to Healthcare Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 3306",
+              "title": "Gender in Healthcare",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3328",
+              "title": "History and Philosophy of Science and Medicine",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3320",
+              "title": "Medical Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 4321",
+              "title": "Philosophy of Medicine",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4371",
+              "title": "Mental Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 4372",
+              "title": "Health and Illness",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Foundation I: Scientific Foundation Studies: 15 or 23 semester credit hours beyond Core",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/is/healthcare (2026-07-28 14:20:26) 3/",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/is/healthcare (2026-07-28 14:20:26) 4/",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/is/healthcare (2026-07-28 14:20:26) 5/"
+      ]
+    },
+    {
+      "title": "Guided Elective Requirements",
+      "credit_hours": "26-34",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "UNIV 1010",
+              "title": "Freshman Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 1100",
+              "title": "Interdisciplinary Studies Freshman Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2281",
+              "title": "Introductory Biology Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3301",
+              "title": "Classical and Molecular Genetics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3101",
+              "title": "Classical and Molecular Genetics Workshop",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3302",
+              "title": "Eukaryotic Molecular and Cell Biology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3102",
+              "title": "Eukaryotic Molecular and Cell Biology Workshop",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3361",
+              "title": "or",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 3361",
+              "title": "Biochemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3161",
+              "title": "Biochemistry Workshop I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3362",
+              "title": "or",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 3362",
+              "title": "Biochemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3162",
+              "title": "Biochemistry Workshop II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3455",
+              "title": "Human Anatomy and Physiology with Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3456",
+              "title": "Human Anatomy and Physiology with Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3520",
+              "title": "General Microbiology with Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3370",
+              "title": "Exercise Physiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 4310",
+              "title": "Cellular Microbiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 4345",
+              "title": "Immunobiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 4350",
+              "title": "Medical Microbiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 4V40",
+              "title": "Special Topics in Molecular and Cell Biology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 1301",
+              "title": "Introduction to Kinesiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 1322",
+              "title": "Human Nutrition",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 3306",
+              "title": "Gender in Healthcare",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 4306",
+              "title": "Health and Sport",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 4307",
+              "title": "Climate Change in Healthcare",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HLTH 4V01",
+              "title": "Health Professions Independent Study",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 3309",
+              "title": "Dental Anthropology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ISIS 4V89",
+              "title": "Special Topics in Interdisciplinary Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 3361",
+              "title": "Introduction to Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4366",
+              "title": "Neuroanatomy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4351",
+              "title": "Medical Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Required for all freshmen: 1 semester credit hour",
+        "Guided Electives: 25 or 33 semester credit hours",
+        "Students interested in pursuing entrance into health professional fields (such as medical, dental, pharmacy, physician assistant, physical therapy, optometry, etc.) should seek advising on",
+        "additional courses required for entrance into the particular professional school of their interest. A",
+        "subset of the following courses should be considered essential and should be taken as part of their",
+        "elective credits.",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/is/healthcare (2026-07-28 14:20:26) 6/",
+        "Students must complete a total of 51 semester credit hours of upper-division coursework to",
+        "graduate. A minimum of 45 semester credit hours must be taken at UT Dallas. All the coursework",
+        "in the final semester must be taken at UT Dallas."
+      ]
+    }
+  ]
+}

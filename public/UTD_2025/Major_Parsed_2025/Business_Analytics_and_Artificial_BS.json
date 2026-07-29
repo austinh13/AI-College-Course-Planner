@@ -1,0 +1,885 @@
+{
+  "major": "Business Analytics and Artificial (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BA 1320",
+                  "title": "Business in a Global World1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ECON 2301",
+                  "title": "Principles of Macroeconomics1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ECON 2302",
+                  "title": "Principles of Microeconomics1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1326",
+              "title": "Applied Calculus II1 , 2 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BA 1320",
+                  "title": "Business in a Global World1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ECON 2301",
+                  "title": "Principles of Macroeconomics1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ECON 2302",
+                  "title": "Principles of Microeconomics1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/business-analytics (2026-07-27 13:40:12) 2/",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/business-analytics (2026-07-27 13:40:12) 3/",
+        "And select 3 semester credit hours from Component Area Option Core",
+        "Or select any 6 semester credit hours from Component Area Option Core courses"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "76",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "18",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ACCT 2301",
+              "title": "Introductory Financial Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 2302",
+              "title": "Introductory Management Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 2301",
+              "title": "Business and Public Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 3311",
+              "title": "Introduction to Programming",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3333",
+              "title": "Quantitative Business Analysis1 ,",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3360",
+              "title": "Managerial Methods in Decision Making Under Uncertainty",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 3360",
+                  "title": "Probability and Statistics for Management and Economics",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Complete the following courses if not already completed as part of the Core Curriculum Requirements:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I1 , 2  (Required for all JSOM undergraduate students. May elect to substitute",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose two of the following if not completed in Core Curriculum:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses: 28 semester credit",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 3105",
+              "title": "Professional Development (Transfer students and students new to JSOM are required to take",
+              "connector": "or",
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BCOM 3300",
+              "title": "Business Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3320",
+              "title": "Business Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IMS 3310",
+              "title": "International Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 3300",
+              "title": "Information Technology for Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 3301",
+              "title": "AI in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "OBHR 3330",
+                  "title": "Human Resource Management in Business",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "OPRE 3310",
+              "title": "Supply Chain and Operations Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Experiential Learning",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BUAN 4395",
+              "title": "Capstone Senior Project - Business Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BPS 4395",
+                  "title": "Capstone Senior Project - Business",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BUAN 4090",
+              "title": "Business Analytics Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 4095",
+              "title": "Social Sector Engagement and Community Outreach Practicum",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses: 21 semester credit",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BUAN 4320",
+              "title": "Database Fundamentals for Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 4351",
+              "title": "Foundations of Business Intelligence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 4353",
+              "title": "Business Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 4355",
+              "title": "Data Visualization",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 4373",
+              "title": "Data Science for Business Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 4381",
+              "title": "Object Oriented Programming with Python",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 4383",
+              "title": "Advanced Applied Artificial Intelligence/Machine Learning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Guided Electives",
+          "credit_hours": "9",
+          "choice": false,
+          "description": "hours from one of the following Concentrations:",
+          "courses": []
+        },
+        {
+          "label": "A. Marketing Analytics and AI Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MKT 4330",
+              "title": "Digital and Internet Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4331",
+              "title": "Digital Prospecting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4334",
+              "title": "Social Media Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4336",
+              "title": "E-Retailing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 4337",
+              "title": "Marketing Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4339",
+              "title": "AI-Driven Content Creation and Campaign Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4341",
+              "title": "Predictive Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4390",
+              "title": "Advanced Marketing Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3320",
+              "title": "Integrated Supply Chain Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4310",
+              "title": "Lean and Six Sigma Processes",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4320",
+              "title": "Supply Chain Information Systems: SAP, AI, and Blockchain Innovations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4330",
+              "title": "Global Logistics and Inventory Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4340",
+              "title": "Purchasing and Sourcing Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4393",
+              "title": "A.I. in Supply Chain Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 4357",
+              "title": "Supply Chain Analytics, AI, and Advanced Solutions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "C. Finance and Risk Analytics Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "FIN 3390",
+              "title": "Introduction to Financial Modeling",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4300",
+              "title": "Investment Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4322",
+              "title": "Financial Technology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4338",
+              "title": "Foundations of Risk Analytics and Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4345",
+              "title": "Financial Information and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4346",
+              "title": "Applied Machine Learning in Finance, Insurance, and Real Estate",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4352",
+              "title": "Financial Risk Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "D. Information Technology Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ITSS 4330",
+              "title": "Systems Analysis and Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 4340",
+              "title": "Enterprise Resource Planning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 4344",
+              "title": "CRM using Salesforce",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 4356",
+              "title": "Data Governance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 4360",
+              "title": "Network and Information Security",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 4361",
+              "title": "Information Technology Cybersecurity",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 4362",
+              "title": "Cybersecurity Governance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 4371",
+              "title": "Cloud Computing with AWS",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "E. Data Science Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BUAN 4350",
+              "title": "Spreadsheet Modeling and Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 4352",
+              "title": "Introduction to Web Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 4354",
+              "title": "Advanced Big Data Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "And select one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BUAN 4357",
+              "title": "Supply Chain Analytics, AI, and Advanced Solutions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 4322",
+              "title": "Financial Technology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 4341",
+              "title": "Predictive Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "F. Human Resources (HR) Analytics",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "OBHR 4337",
+              "title": "HR Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4339",
+              "title": "People Technology Leadership and Artificial Intelligence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4334",
+              "title": "Talent Acquisition and Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4338",
+              "title": "Managing Diversity in Organizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "G. General Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 3350",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4V91",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "BA 11051  Professional Development (JSOM first-time-in-college freshmen are required to take BA 1105 in their first semester)",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/business-analytics (2026-07-27 13:40:12) 4/",
+        "A capstone course is required for all undergraduate JSOM students.",
+        "A practicum experience of at least 160 working hours is required, with registration in the course",
+        "below.",
+        "Students are required to complete 100 hours of community engagement.",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/business-analytics (2026-07-27 13:40:12) 5/",
+        "The BS BUAN degree program gives students the opportunity to focus on a specific Concentration",
+        "to obtain in-depth knowledge in a specific business area. Students will choose 9 semester credit",
+        "Students who pursue this concentration learn skills necessary for using data to gather deeper",
+        "consumer insights, optimizing marketing objectives, and in general, achieving a higher return on",
+        "investment. Students completing this concentration may pursue careers as Marketing and",
+        "Research Analysts, Social Media and Digital Marketing Specialists.",
+        "B. Operations and Supply Chain Analytics and AI Concentration",
+        "Students who pursue this concentration learn to apply analytical concepts in diverse areas in",
+        "supply chain industry such as integrated supply chain management, project management and",
+        "inventory management to name a few. Students completing this concentration may pursue",
+        "careers as Supply Chain Analysts, Project Managers and Product Analysts.",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/business-analytics (2026-07-27 13:40:12) 6/",
+        "Students who choose this concentration will learn both the qualitative and quantitative tools",
+        "necessary to enter one of the many different areas within the finance risk management and",
+        "insurance industries. Students completing this concentration may pursue careers as Financial",
+        "Analysts, Quantitative Risk Analysts and Credit Risk Model Developers.",
+        "Students who choose this concentration will learn key fundamentals of how businesses design and",
+        "use information technology to optimize their business processes. Combined with business",
+        "analytics knowledge students completing this concentration may pursue careers as Business",
+        "Intelligence Analysts, IT Analysts, Cybersecurity Analysts, and Systems Analysts.",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/business-analytics (2026-07-27 13:40:12) 7/",
+        "Students who choose this concentration will advance their knowledge into domains of advanced",
+        "applied machine learning, web analytics, artificial intelligence, and big data analytics. Students may",
+        "pursue job titles such as Data Scientist, Data Mining Engineer, Data Analyst, Decision Scientist,",
+        "Machine Learning Scientist, Data Manager and Data Architect.",
+        "Students who pursue this concentration will be able to apply their analytical knowledge to analyze",
+        "workforce data, improve employee performance, and optimize HR decision-making. They will gain",
+        "expertise in leveraging data to address talent management, recruitment, and retention challenges.",
+        "Students pursuing this concentration and any of the above, may pursue the job title of Business",
+        "Analysts or HR Analysts.",
+        "Students who pursue this concentration have the flexibility to apply their analytical knowledge and",
+        "skills to diverse areas not limited to business domains of Marketing, Finance, Supply Chain, or IT,",
+        "but also in areas of Litigation, Social Sciences, Sports Analytics and many more. Students pursuing",
+        "this concentration and any of the above, may pursue the job title of Business Analysts.",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/business-analytics (2026-07-27 13:40:12) 8/",
+        "Any combination of approved upper-level guided elective courses listed in concentrations A, B, C,",
+        "D, E, or F may be used to satisfy the required 9 hours of guided elective credit.",
+        "and/or an Individual Study based on the major to satisfy JURS program requirements. These",
+        "credits may be applied to the general concentration."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "2",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "2",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both lower- and upper-division courses may count as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

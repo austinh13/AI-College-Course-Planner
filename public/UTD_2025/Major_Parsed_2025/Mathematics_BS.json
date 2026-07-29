@@ -1,0 +1,650 @@
+{
+  "major": "Mathematics (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I9 , 10",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2422",
+                  "title": "Honors Physics II - Electromagnetism and Waves",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Statistics Specialization",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2422",
+                  "title": "Honors Physics II - Electromagnetism and Waves",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1315",
+                  "title": "Honors Freshman Chemistry I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1316",
+                  "title": "Honors Freshman Chemistry II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses(see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I9 , 10",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2419",
+              "title": "Calculus II9 , 10",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I9 , 11",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1111",
+                  "title": "General Chemistry Laboratory I9 , 11",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat12 , 13",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Mathematics/Applied Mathematics Specialization",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/nsm/mathematics (2026-07-27 13:41:38) 7/",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/nsm/mathematics (2026-07-27 13:41:38) 8/"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "49-50",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "13-14",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "NATS 1101",
+              "title": "Natural Sciences and Mathematics Freshman Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics9 , 11",
+              "connector": null,
+              "with": [
+                {
+                  "code": "PHYS 2125",
+                  "title": "Physics Laboratory I9 , 11"
+                }
+              ],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat9 , 13 , 14",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves9 , 11",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2422",
+                  "title": "Honors Physics II - Electromagnetism and Waves9 , 11",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "For Statistics Specialization",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics9 , 11",
+              "connector": null,
+              "with": [
+                {
+                  "code": "PHYS 2125",
+                  "title": "Physics Laboratory I9 , 11"
+                }
+              ],
+              "alternatives": [
+                {
+                  "code": "PHYS 2421",
+                  "title": "Honors Physics I - Mechanics and Heat9 , 13 , 14",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves9 , 11",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2422",
+                  "title": "Honors Physics II - Electromagnetism and Waves9 , 11",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1111",
+              "title": "General Chemistry Laboratory I9 , 11",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1115",
+                  "title": "Honors Freshman Chemistry Laboratory I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1112",
+              "title": "General Chemistry Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1116",
+                  "title": "Honors Freshman Chemistry Laboratory II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I9 , 11",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1315",
+                  "title": "Honors Freshman Chemistry I9 , 11",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II9 , 11",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CHEM 1316",
+                  "title": "Honors Freshman Chemistry II9 , 11",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "For All",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2370",
+              "title": "Introduction to Programming with MATLAB",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "CS 1325",
+                  "title": "Introduction to Programming",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "CS 1337",
+                  "title": "Computer Science I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I9 , 10 , 16",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2418",
+              "title": "Linear Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2419",
+              "title": "Calculus II9 , 10 , 16",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2420",
+              "title": "Differential Equations with Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 3310",
+              "title": "Theoretical Concepts of Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3311",
+              "title": "Abstract Algebra I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3379",
+              "title": "Complex Variables",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3351",
+              "title": "Advanced Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 4301",
+              "title": "Mathematical Analysis I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 4302",
+              "title": "Mathematical Analysis II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 4334",
+              "title": "Numerical Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 4351",
+              "title": "Probability",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Applied Mathematics Specialization",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 4341",
+              "title": "Topology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 4355",
+              "title": "Methods of Applied Mathematics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 4362",
+              "title": "Partial Differential Equations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 4382",
+              "title": "Stochastic Processes",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics Specialization",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 3312",
+              "title": "Abstract Algebra II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3380",
+              "title": "Differential Geometry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 4341",
+              "title": "Topology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Statistics Specialization",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "STAT 3355",
+              "title": "Introduction to Data Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 4352",
+              "title": "Mathematical Statistics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 4382",
+              "title": "Stochastic Processes",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "For Mathematics/Applied Mathematics Specialization",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/nsm/mathematics (2026-07-27 13:41:38) 9/",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/nsm/mathematics (2026-07-27 13:41:38) 10/",
+        "3 semester credit hours upper-division guided elective",
+        "3 semester credit hours upper-division guided elective"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "28-29",
+      "groups": [
+        {
+          "label": "Electives",
+          "credit_hours": "28-29",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both lower- and upper-division courses may count as electives",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

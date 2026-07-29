@@ -1,0 +1,285 @@
+{
+  "major": "Literature (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "RHET 1302",
+              "title": "Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 2302",
+              "title": "Intermediate Composition and Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "LIT 2331",
+              "title": "Introduction to World Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/literature (2026-07-27 15:50:51) 2/"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "45-48",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "6-9",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "LIT 2350",
+              "title": "Close Reading",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select 6 semester credit hours from the following four:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "LIT 2320",
+              "title": "Survey A: Literature in English",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2321",
+              "title": "Survey B: Literature in Translation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2322",
+              "title": "Survey of African-American and African Diaspora Literatures",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2331",
+              "title": "Introduction to World Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "LIT 3300",
+              "title": "Western Literary Tradition",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3339",
+              "title": "Writing Literary Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 4329",
+              "title": "Single Author",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 4390",
+              "title": "Capstone",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Distribution and Elective Courses",
+          "credit_hours": "27",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "3 semester credit hours from the following \"Research and Writing\" courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARHM 3342",
+              "title": "Advanced Interdisciplinary Studies in the Arts and Humanities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3338",
+              "title": "Literary Theory and Aesthetic Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "6 semester credit hours from the following \"Contexts\" course:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "LIT 3319",
+              "title": "Contexts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "3 semester credit hours from the following \"Comparisons\" courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CRWT 3330",
+              "title": "Translation Workshop",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3337",
+              "title": "Comparisons",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Any upper-division creative writing workshop (prefix CRWT)",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/literature (2026-07-27 15:50:51) 3/",
+        "15 semester credit hours from any foreign language electives or upper-division LIT, or CRWT",
+        "electives."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "30-33",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "30-33",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both upper-division and lower-division courses may be used as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

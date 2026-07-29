@@ -1,0 +1,630 @@
+{
+  "major": "Mechanical Engineering (BS)",
+  "total_credit_hours": "127",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "RHET 1302",
+              "title": "Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 3390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2306",
+              "title": "State and Local Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2419",
+              "title": "Calculus II4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/mechanical-engineering (2026-07-28 14:19:40) 3/",
+        "Or select any 6 semester credit hours from Government/Political Science Option courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "82",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "29",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Students pursuing the general program take 29 semester credit hours from the list below:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 1111",
+              "title": "General Chemistry Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1325",
+              "title": "Introduction to Programming",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 1100",
+              "title": "Introduction to Engineering and Computer Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2419",
+              "title": "Calculus II4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2420",
+              "title": "Differential Equations with Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 1100",
+              "title": "Introduction to Mechanical Engineering I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 1208",
+              "title": "Introduction to Mechanical Engineering II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 2120",
+              "title": "Mechanics of Materials Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 2300",
+              "title": "Linear Algebra for Engineers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 2310",
+              "title": "Statics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 2320",
+              "title": "Mechanics of Materials",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 2330",
+              "title": "Dynamics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "41",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECS 3390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3105",
+              "title": "Computer Aided Design Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3115",
+              "title": "Fluid Mechanics Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3120",
+              "title": "Heat Transfer Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3150",
+              "title": "Kinematics and Dynamics Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 3300",
+              "title": "Advanced Engineering Mathematics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3305",
+              "title": "Computer Aided Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3310",
+              "title": "Thermodynamics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3315",
+              "title": "Fluid Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3320",
+              "title": "Heat Transfer",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3340",
+              "title": "System Dynamics Modeling and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 3341",
+              "title": "Probability Theory and Statistics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3350",
+              "title": "Kinematics and Dynamics of Mechanical Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3351",
+              "title": "Design of Mechanical Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4110",
+              "title": "Systems and Controls Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4310",
+              "title": "Systems and Controls",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4381",
+              "title": "Senior Design Project I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4382",
+              "title": "Senior Design Project II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Prescribed Electives",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MECH 2340",
+              "title": "Circuits and Applied Electronics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3360",
+              "title": "Introduction to Materials Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3370",
+              "title": "Applied Thermodynamics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3380",
+              "title": "Introduction to Computational Design and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3381",
+              "title": "Introduction to Manufacturing Processes",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 3V95",
+              "title": "Topics in Mechanical Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4301",
+              "title": "Intermediate Mechanics of Materials",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4320",
+              "title": "Applications of Computational Tools in Thermal Fluid Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4330",
+              "title": "Intermediate Fluid Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4340",
+              "title": "Mechanical Vibrations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4342",
+              "title": "Introduction to Robotics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4360",
+              "title": "Introduction to Nanostructured Materials",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4365",
+              "title": "Energy Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4370",
+              "title": "Introduction to MEMS",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4380",
+              "title": "HVAC Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MECH 4V95",
+              "title": "Topics in Mechanical Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 3301",
+              "title": "Innovation and Entrepreneurship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/mechanical-engineering (2026-07-28 14:19:40) 4/",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/mechanical-engineering (2026-07-28 14:19:40) 5/",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/mechanical-engineering (2026-07-28 14:19:40) 6/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "3",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Fast Track Baccalaureate/Master's Degrees",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Honors Program",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both lower- and upper-division courses may count as free electives but students must complete at",
+        "least 51 semester credit hours of upper-division courses to qualify for graduation.",
+        "Degree programs in the Erik Jonsson School of Engineering and Computer Science are governed by",
+        "various accreditation boards that place restrictions on classes used to meet the curricular",
+        "requirements of degrees they certify. For this reason, not all classes offered by the University can",
+        "be used to meet elective requirements. Please check with your academic advisor before enrolling",
+        "in classes you hope to use as free electives.",
+        "In response to the need for advanced education in Mechanical Engineering, a Fast Track program",
+        "is available to well-qualified UT Dallas undergraduate students. Qualified seniors may take up to 15",
+        "graduate semester credit hours that may be used to complete the baccalaureate degree and also",
+        "to satisfy the requirements for the master's degree. This is accomplished by (1) taking courses (typically electives) during one or more summer semesters, and (2) beginning graduate coursework",
+        "during the senior year. Details are available from the Associate Dean for Undergraduate Education.",
+        "The Department of Mechanical Engineering offers upper-division Honors for outstanding students",
+        "in the BS Mechanical Engineering degree program. This program offers special sections of",
+        "designated classes and other activities designed to enhance the educational experience of",
+        "exceptional students. Admission to the Honors programs requires a 3.500 or better GPA (grade point average) in at least 30 semester credit hours of coursework. Graduation with Honors",
+        "requires a 3.500 or better GPA and completion of at least 6 honors classes. These honors classes",
+        "must include either Senior Honors in Mechanical Engineering (MECH 4399) or Undergraduate",
+        "Research in Mechanical Engineering (MECH 4V98) and a Senior Honors Thesis must be completed",
+        "within one of those two classes. While the topics may be related, the Senior Thesis does not",
+        "replace the need for the student to complete a regular Senior Design Project. The other 5 honors",
+        "classes can come from a mixture of Graduate level (up to a count of 4) classes and special honor",
+        "sections of regular undergraduate MECH classes (up to a count of 2).",
+        "Departmental Honors with Distinction may be awarded to students whose Senior Honors Thesis is",
+        "judged by a faculty committee to be of exemplary quality. Only students graduating with",
+        "Departmental Honors are eligible. Thesis/projects must be submitted by the deadline that applies",
+        "to MS Theses in the graduating semester to allow for proper evaluation. Students interested in",
+        "Honors with Distinction are encouraged to start working on their thesis/project a year prior to",
+        "graduation.",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/mechanical-engineering (2026-07-28 14:19:40) 7/"
+      ]
+    }
+  ]
+}

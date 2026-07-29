@@ -1,0 +1,601 @@
+{
+  "major": "History (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHIL 1301",
+              "title": "Introduction to Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 1305",
+              "title": "Introduction to Philosophy of Religion",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 1306",
+              "title": "Introduction to Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 2316",
+              "title": "History of Philosophy I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 2317",
+              "title": "History of Philosophy II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HUMA 1301",
+              "title": "Exploration of the Humanities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 1301",
+              "title": "Introduction to Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2329",
+              "title": "Introduction to Ethnic American Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2331",
+              "title": "Introduction to World Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHIL 1301",
+              "title": "Introduction to Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 1305",
+              "title": "Introduction to Philosophy of Religion",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 1306",
+              "title": "Introduction to Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 2316",
+              "title": "History of Philosophy I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 2317",
+              "title": "History of Philosophy II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HUMA 1301",
+              "title": "Exploration of the Humanities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 1301",
+              "title": "Introduction to Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2329",
+              "title": "Introduction to Ethnic American Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2331",
+              "title": "Introduction to World Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ah/history (2026-07-28 14:18:09) 2/",
+        "Or select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+        "Or Select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements, Lower-Division",
+      "credit_hours": "0-6",
+      "groups": [
+        {
+          "label": "beyond Core Curriculum",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "One of the following World Regional History Surveys (3 semester credit hours):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 2340",
+              "title": "Middle East Civilizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 2341",
+              "title": "East Asian Civilizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 2350",
+              "title": "Latin American Civilizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 2360",
+              "title": "European Civilizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "And one of the following (3 semester credit hours):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHIL 1301",
+              "title": "Introduction to Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 1305",
+              "title": "Introduction to Philosophy of Religion",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 1306",
+              "title": "Introduction to Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 2316",
+              "title": "History of Philosophy I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 2317",
+              "title": "History of Philosophy II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HUMA 1301",
+              "title": "Exploration of the Humanities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 1301",
+              "title": "Introduction to Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2329",
+              "title": "Introduction to Ethnic American Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 2331",
+              "title": "Introduction to World Literature",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ah/history (2026-07-28 14:18:09) 3/"
+      ]
+    },
+    {
+      "title": "Major Requirements, Upper-Division",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 3301",
+              "title": "Historical Inquiry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 4390",
+              "title": "History Capstone Project",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Distribution and Elective Courses",
+          "credit_hours": "30",
+          "choice": false,
+          "description": "Courses. These courses must meet the following distribution requirement:",
+          "courses": []
+        },
+        {
+          "label": "Major Distribution Courses: Select any 3 upper-division semester credit hours from 3 of the following 5 geographical areas (9 hours)",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 East Asian History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 European History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Latin American History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Middle Eastern History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 North American History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Select 3 upper-division semester credit hours from each of the following disciplinary focus areas (12 hours) \u2022 Gender and Women's History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Race and Ethnicity",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Intellectual History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Pre-1500 History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Research-Focused Course:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 4390",
+              "title": "History Capstone Project requires",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Elective Courses: Major-Related Courses",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Select 6 semester credit hours of major related upper-division electives from the following list of courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Any 3000 or 4000 level course AHST Course",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARHM 3342",
+              "title": "Advanced Interdisciplinary Studies in the Arts and Humanities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "DANC 3340",
+              "title": "Dance in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FILM 3321",
+              "title": "Film in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 3322",
+              "title": "Music in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 3324",
+              "title": "Jazz History: Roots to Swing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MUSI 3325",
+              "title": "Jazz History: Modern Jazz since BeBop",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3321",
+              "title": "Philosophical Traditions I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3322",
+              "title": "Ancient Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3323",
+              "title": "Early Modern Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3324",
+              "title": "19th and 20th Century Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3328",
+              "title": "History and Philosophy of Science and Medicine",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "THEA 3323",
+              "title": "Performance in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "30 semester credit hours of upper-division HIST courses are required beyond the Major Core",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ah/history (2026-07-28 14:18:09) 4/",
+        "All courses will be designated with the geographical and disciplinary focus areas they cover. The",
+        "same course may be used to meet no more than two distribution requirements. No double",
+        "counting of courses will reduce the requirement that students must take a total of 30 semester",
+        "credit hours of upper-division HIST courses in addition to the major required courses.",
+        "In addition, in order to achieve depth students will be required to take a second linked course in",
+        "any one geographical or disciplinary focus area that they have used to fulfill the distribution",
+        "requirements above.",
+        "All 4000-level HIST courses have a focus on historical research. Select at least 3 semester credit",
+        "students to further develop a research project begun in a prerequisite 4000-level course taken in a",
+        "prior semester. Make sure to choose 4000-level course(s) in the area you wish to focus on for your",
+        "capstone project.",
+        "It is recommended that you take a variety of 4000-level HIST courses.",
+        "Once meeting the requirements above, students will take between 3-15 additional semester credit",
+        "hours of HIST electives, for a total of 30 semester credit hours.",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ah/history (2026-07-28 14:18:09) 5/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "30-36",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "30-36",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARHM 1100",
+              "title": ".",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Both upper-and lower-division courses may be used as electives, but students must complete at",
+        "least 51 semester credit hours of upper-division courses to qualify for graduation."
+      ]
+    }
+  ]
+}

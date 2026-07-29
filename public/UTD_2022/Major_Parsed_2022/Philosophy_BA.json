@@ -1,0 +1,659 @@
+{
+  "major": "Philosophy (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHIL 2303",
+              "title": "Introduction to Logic",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Select one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHIL 1301",
+              "title": "Introduction to Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 1305",
+              "title": "Introduction to Philosophy of Religion",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 1306",
+              "title": "Introduction to Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ah/philosophy (2026-07-28 14:18:27) 2/"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "0",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHIL 2303",
+              "title": "Introduction to Logic",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHIL 1301",
+              "title": "Introduction to Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 1305",
+              "title": "Introduction to Philosophy of Religion",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 1306",
+              "title": "Introduction to Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHIL 3321",
+              "title": "Philosophical Traditions I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 4328",
+              "title": "Philosophy Capstone Project",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Distribution Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "different periods",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHIL 2316",
+              "title": "History of Philosophy I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHIL 3322",
+                  "title": "Ancient Philosophy",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHIL 2317",
+              "title": "History of Philosophy II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHIL 3323",
+                  "title": "Early Modern Philosophy",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHIL 3324",
+              "title": "19th and 20th Century Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3373",
+              "title": "Philosophy of Mind",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 4308",
+              "title": "Theories of Knowledge",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3328",
+              "title": "History and Philosophy of Science and Medicine",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 4321",
+              "title": "Philosophy of Medicine",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 4344",
+              "title": "Philosophy of Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3375",
+              "title": "Contemporary Ethical Issues",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3320",
+              "title": "Medical Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 3338",
+              "title": "Literary Theory and Aesthetic Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 4323",
+              "title": "Ethical Theories",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 4324",
+              "title": "Social and Political Philosophy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHIL 4325",
+              "title": "Philosophy of Art and Aesthetics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Elective Courses",
+          "credit_hours": "18",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Major-Related Courses",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "significant philosophical content:",
+          "courses": []
+        },
+        {
+          "label": "Any RELS course",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARHM 3100",
+              "title": "Topics in Values and Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ARHM 3342",
+              "title": "Advanced Interdisciplinary Studies in the Arts and Humanities",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3300",
+              "title": "Code Plus Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4384",
+              "title": "Ethics in New Media, Technology, and Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CGS 2301",
+              "title": "Cognitive Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CGS 3325",
+              "title": "or",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3360",
+              "title": "Historical Perspectives on Psychology: Mind and Machines since 16005",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CGS 4320",
+              "title": "or",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4320",
+              "title": "Psychology of Reasoning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CGS 4362",
+              "title": "or",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4362",
+              "title": "Perception",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3351",
+              "title": "History and Theory of Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 3352",
+              "title": "Media and Culture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 4360",
+              "title": "Communication Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4301",
+              "title": "Game Theory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4381",
+              "title": "History of Economic Ideas",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GST 2300",
+              "title": "Introduction to Gender Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 3302",
+              "title": "Gender in Western Thought",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 3376",
+              "title": "American Intellectual History, Colonial to the Civil War",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 3377",
+              "title": "American Intellectual History, Civil War to the Present",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 4380",
+              "title": "Topics in Intellectual History",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IPEC 4305",
+              "title": "Topics in Science, Technology and Institutions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3316",
+              "title": "The Literature of Science Fiction",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3317",
+              "title": "The Literature of Fantasy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "LIT 3330",
+              "title": "Linguistics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4310",
+              "title": "Business Ethics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3301",
+              "title": "Political Theory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3303",
+              "title": "Civil Liberties",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 3306",
+              "title": "Political Economy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4328",
+              "title": "Fake News",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4334",
+              "title": "Approaches to Peace",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4357",
+              "title": "Human Rights",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3324",
+              "title": "Psychology of Gender",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3331",
+              "title": "Social Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4325",
+              "title": "Death and Dying",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 2305",
+              "title": "Individual and Society",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 2320",
+              "title": "Contemporary Social Issues",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SOC 3303",
+              "title": "Classical Social Theory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "6 semester credit hours of lower- or upper-division courses in History of Philosophy from two",
+        "Courses with other numbers may be considered for this distribution requirement on a case-by-",
+        "case basis, when their syllabus indicates that they focus primarily on the history of philosophy.",
+        "3 semester credit hours of upper-division courses in Metaphysics, Epistemology, and Science",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ah/philosophy (2026-07-28 14:18:27) 3/",
+        "Courses with other numbers may be considered for this distribution requirement on a case-by-",
+        "case basis, when their syllabus indicates that they focus primarily on metaphysics, epistemology,",
+        "or philosophy of science.",
+        "3 semester credit hours of upper-division courses in Ethics, Values, and Society",
+        "Courses with other numbers may be considered for this distribution requirement on a case-by-",
+        "case basis, when their syllabus indicates that they focus primarily on value theory.",
+        "18 semester credit hours of upper-division Philosophy electives, including Major Figures, Great",
+        "Texts, Traditions, and Topics courses.",
+        "Students must select 6 semester credit hours of courses from the following list of courses with",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ah/philosophy (2026-07-28 14:18:27) 4/",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ah/philosophy (2026-07-28 14:18:27) 5/",
+        "Other courses from prefixes besides PHIL may be considered for this requirement on a case-by-",
+        "case basis, when their syllabus indicates that they have significant philosophical content."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "36",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "36",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ARHM 1100",
+              "title": ".",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Both upper- and lower-division courses may be used as electives, but students must complete at",
+        "least 51 semester credit hours of upper-division courses to qualify for graduation.",
+        "Philosophy majors interested in graduate study should strongly consider using some of their free",
+        "electives for foreign language study in a language that would support an area of their philosophical",
+        "interest. Similarly, students with a primary interest in areas of philosophy that depend on outside",
+        "domains of knowledge (such as philosophy of science or philosophy of mind) should consider",
+        "using some of their free electives for advanced study or a minor in the relevant field.",
+        "Students may want to consider using some free elective credit to complete one of the approved",
+        "minors offered by UT-Dallas, and should consult their academic advisor for more information",
+        "about their choices."
+      ]
+    }
+  ]
+}

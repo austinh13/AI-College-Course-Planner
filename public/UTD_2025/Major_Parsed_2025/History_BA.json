@@ -1,0 +1,263 @@
+{
+  "major": "History (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses (see advisor)",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/aht/history (2026-07-27 13:37:03) 2/"
+      ]
+    },
+    {
+      "title": "Major Requirements, Lower-Division",
+      "credit_hours": "1-4",
+      "groups": [
+        {
+          "label": "beyond Core Curriculum",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AHTC 1100",
+              "title": "First Year Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "One of the following World Regional History Surveys (0-3 semester credit hours beyond Core Curriculum):",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 2340",
+              "title": "Middle East Civilizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 2341",
+              "title": "East Asian Civilizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 2350",
+              "title": "Latin American Civilizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 2360",
+              "title": "European Civilizations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "title": "Major Requirements, Upper-Division",
+      "credit_hours": "30",
+      "groups": [
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 3301",
+              "title": "Historical Inquiry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HIST 4390",
+              "title": "History Capstone Project",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Distribution Courses",
+          "credit_hours": "18",
+          "choice": false,
+          "description": "Select any 6 upper-division HIST courses from 3 of the following 5 geographical areas. One course",
+          "courses": []
+        },
+        {
+          "label": "\u2022 East Asian History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 European History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Latin American History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 Middle Eastern History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "\u2022 North American History",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Major Elective Courses",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 2 upper-division HIST courses",
+          "courses": []
+        },
+        {
+          "label": "Geographical and Temporal Focus: Research-Focused Course:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "HIST 4390",
+              "title": "requires students to further develop a",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "choose 4000-level course(s) in the area you wish to focus on for your capstone project. Majors are",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "must cover a topic in pre-1500 history.",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/aht/history (2026-07-27 13:37:03) 3/",
+        "All courses will be designated with the geographical and a temporal focus (pre-1500 or post-1500).",
+        "All 4000-level HIST courses have a focus on historical research. Select at least 3 semester credit",
+        "research project begun in a prerequisite 4000-level course taken in a prior semester. Make sure to",
+        "recommended to take a variety of 4000-level HIST courses."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "44-47",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "44-47",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both upper-and lower-division courses may be used as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

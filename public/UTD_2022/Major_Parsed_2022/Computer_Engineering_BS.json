@@ -1,0 +1,753 @@
+{
+  "major": "Computer Engineering (BS)",
+  "total_credit_hours": "126",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "RHET 1302",
+              "title": "Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 3390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2306",
+              "title": "State and Local Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2419",
+              "title": "Calculus II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/computer-engineering (2026-07-28 14:19:27) 3/",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Government/Political Science Option courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/computer-engineering (2026-07-28 14:19:27) 4/"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "80-84",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "28-32",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Curriculum",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CE 1100",
+              "title": "Introduction to Electrical and Computer Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 1202",
+              "title": "Introduction to Electrical and Computer Engineering II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1136",
+              "title": "Computer Science Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1336",
+              "title": "Programming Fundamentals",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 1337",
+              "title": "Computer Science I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 1100",
+              "title": "Introduction to Engineering and Computer Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 2300",
+              "title": "Linear Algebra for Engineers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 2305",
+              "title": "Discrete Mathematics for Computing I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 2310",
+              "title": "Introduction to Digital Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 2336",
+              "title": "Computer Science II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "MATH Sequence - Students may choose one of the following two sequences:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus",
+              "connector": null,
+              "with": [
+                {
+                  "code": "MATH 2414",
+                  "title": "Integral Calculus"
+                },
+                {
+                  "code": "MATH 2415",
+                  "title": "Calculus of Several Variables"
+                }
+              ],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2420",
+              "title": "Differential Equations with Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I",
+              "connector": null,
+              "with": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II"
+                }
+              ],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2420",
+              "title": "Differential Equations with Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "43",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CE 3161",
+              "title": "Social Issues and Ethics in Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 3201",
+              "title": "Electrical and Computer Engineering Fundamentals-I Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 3202",
+              "title": "Electrical and Computer Engineering Fundamentals-II Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 3390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 3301",
+              "title": "Electrical Network Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 3303",
+              "title": "Discrete-Time Signals and Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 3311",
+              "title": "Electronic Circuits",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 3320",
+              "title": "Digital Circuits",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 3341",
+              "title": "Probability Theory and Statistics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 3345",
+              "title": "Data Structures and Introduction to Algorithmic Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 3354",
+              "title": "Software Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 4304",
+              "title": "Computer Architecture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 4348",
+              "title": "Operating Systems Concepts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 4370",
+              "title": "Embedded Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 4388",
+              "title": "Senior Design Project I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 4389",
+              "title": "Senior Design Project II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select one of the following laboratories:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "CE 4201",
+              "title": "Electrical and Computer Engineering Laboratory in Computing Systems and Computer",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Engineering",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CE 4202",
+              "title": "Electrical and Computer Engineering Laboratory in Circuits",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 4203",
+              "title": "Electrical and Computer Engineering Laboratory in Signals and Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 4204",
+              "title": "Electrical and Computer Engineering Laboratory in Devices",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 4205",
+              "title": "Electrical and Computer Engineering Laboratory in Power Electronics and Energy Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Guided Electives",
+          "credit_hours": "9",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EE 4325",
+              "title": "Introduction to VLSI Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4330",
+              "title": "Integrated Circuit Technology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4340",
+              "title": "Analog Integrated Circuit Analysis and Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4342",
+              "title": "Introduction to Robotics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4360",
+              "title": "Digital Communications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4361",
+              "title": "Introduction to Digital Signal Processing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4363",
+              "title": "Introduction to Power Electronics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4365",
+              "title": "Introduction to Wireless Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4367",
+              "title": "Telecommunication Networks",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4371",
+              "title": "Introduction to MEMS",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CE 4331",
+              "title": "Applied Machine Learning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4332",
+              "title": "Introduction to Programming Video Games",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4334",
+              "title": "Numerical Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4337",
+              "title": "Programming Language Paradigms",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4347",
+              "title": "Database Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4352",
+              "title": "Human-Computer Interaction I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4361",
+              "title": "Computer Graphics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4365",
+              "title": "Artificial Intelligence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4375",
+              "title": "Introduction to Machine Learning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4384",
+              "title": "Automata Theory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4389",
+              "title": "Data and Applications Security",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4390",
+              "title": "Computer Networks",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4392",
+              "title": "Computer Animation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4393",
+              "title": "Computer and Network Security",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 4398",
+              "title": "Digital Forensics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/computer-engineering (2026-07-28 14:19:27) 5/",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/computer-engineering (2026-07-28 14:19:27) 6/",
+        "Students take 9 semester credit hours from any 4000 level course from the list below. Independent",
+        "Study in Computer Engineering (CE 4V97), Undergraduate Research in Computer Engineering (CE 4V98), or Senior Honors in Computer Engineering (CE 4399) may be used for up to 6 of these",
+        "hours.",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/computer-engineering (2026-07-28 14:19:27) 7/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "0-4",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "0-4",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Fast Track Baccalaureate/Master's Degrees",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Honors Program",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "student meet the following qualifications:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "\u2022 Students who take MATH sequence I will not have any free electives.",
+        "\u2022 Students who take MATH sequence II take 4 semester credit hours of free electives.",
+        "Both lower-and upper-division courses may count as free electives, but students must complete at",
+        "least 51 semester credit hours of upper-division courses to qualify for graduation.",
+        "Degree programs in the Erik Jonsson School of Engineering and Computer Science are governed by",
+        "various accreditation boards that place restrictions on classes used to meet the curricular",
+        "requirements of degrees they certify. For this reason, not all classes offered by the University can",
+        "be used to meet elective requirements. Please check with your academic advisor before enrolling",
+        "in classes you hope to use as free electives.",
+        "In response to the need for advanced education in computer engineering, a Fast Track program is",
+        "available to well-qualified UT Dallas undergraduate students. Qualified seniors may take up to 15",
+        "graduate semester credit hours that may be used to complete the baccalaureate degree and also",
+        "to satisfy the requirements for the master's degree. This is accomplished by (1) taking courses (typically electives) during one or more summer semesters, and (2) beginning graduate coursework",
+        "during the senior year. Details are available from the Associate Dean for Undergraduate Education.",
+        "The Computer Engineering Program offers Departmental Honors for outstanding students in the",
+        "BS Computer Engineering degree program. Admission to the Honors programs requires that the",
+        "\u2022 Has repeated no more than 3 courses at UT Dallas and has repeated no course more than once.",
+        "Graduation with Honors requires a 3.500 or better GPA and completion of either Senior Honors in",
+        "Computer Engineering (CE 4399) or Undergraduate Research in Computer Engineering (CE 4V98). A",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/computer-engineering (2026-07-28 14:19:27) 8/",
+        "Senior Honors Thesis must be completed within one of those two classes. (While the topics may be related, the Senior Thesis does not replace the need for the student to complete a regular Senior Design Project).",
+        "Departmental Honors with Distinction may be awarded to students whose Senior Honors Thesis is",
+        "judged by a faculty committee to be of exemplary quality. Only students graduating with",
+        "Departmental Honors are eligible. Thesis/projects must be submitted by the deadline that applies",
+        "to MS Theses in the graduating semester to allow for proper evaluation. Students interested in",
+        "Honors with Distinction are encouraged to start working on their thesis/project a year prior to",
+        "graduation."
+      ]
+    }
+  ]
+}

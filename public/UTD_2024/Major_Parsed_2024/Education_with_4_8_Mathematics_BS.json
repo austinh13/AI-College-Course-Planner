@@ -1,0 +1,362 @@
+{
+  "major": "Education with 4-8 Mathematics (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2413",
+              "title": "Differential Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "MATH 1325",
+                  "title": "Applied Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 2341",
+              "title": "American Studies for the Twenty-First Century",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "AMS 2300",
+                  "title": "American Popular Culture",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses. (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "MATH 1326",
+                  "title": "Applied Calculus II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2415",
+              "title": "Calculus of Several Variables",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/is/education-48-mathematics (2026-07-27 15:53:05) 2/",
+        "Or select any 6 semester credit hours from Component Area Option Core courses. (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "60-61",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIS 3320",
+              "title": "The Nature of Intellectual Inquiry",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4694",
+              "title": "Student Teaching Secondary",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "ED 4394",
+                  "title": "Residency 1- Secondary",
+                  "connector": "or",
+                  "with": [
+                    {
+                      "code": "ED 4395",
+                      "title": "Residency 2- Secondary"
+                    }
+                  ],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2312",
+              "title": "Precalculus4 , 5",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2333",
+              "title": "Matrices, Vectors, and Data",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2418",
+                  "title": "Linear Algebra",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 3303",
+              "title": "Introduction to Mathematical Modeling",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3305",
+              "title": "Foundations of Measurement and Informal Geometry",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 3321",
+                  "title": "Geometry",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ED 3314",
+              "title": "The American Public School",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 3339",
+              "title": "Educational Psychology for Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 3339",
+                  "title": "Educational Psychology",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ED 4351",
+              "title": "ESL for K-12 Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4353",
+              "title": "Reading in Secondary Content",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 4306",
+              "title": "Strategies for Diversity in Education",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4361",
+              "title": "Classroom Management Secondary",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 3307",
+              "title": "Mathematical Problem Solving for Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "STAT 3360",
+              "title": "Probability and Statistics for Management and Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Major Related Courses (18 semester credit hours)",
+        "9 semester credit hours of lower- or upper-level ISNS courses",
+        "Foundation I: Natural Science and Mathematics (12-13 semester credit hours)",
+        "Foundation II: Education (12 semester credit hours)",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/is/education-48-mathematics (2026-07-27 15:53:05) 3/",
+        "Teaching Techniques (18 semester credit hours)",
+        "6 semester credit hours of Math or Science courses (upper or lower-level)"
+      ]
+    },
+    {
+      "title": "Certification Requirements and Recommendations",
+      "credit_hours": "17-18",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AMS 4300",
+              "title": "Oral and Written Communication for the Classroom",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4301",
+              "title": "Exceptional Populations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4344",
+              "title": "Mathematics Methods for Elementary Teachers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ED 4372",
+              "title": "Educational Technology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIS 1100",
+              "title": "Interdisciplinary Studies First Year Experience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Guided Electives (5-6 semester credit hours)",
+        "Both lower- and upper-division courses may count as electives to fulfill remaining requirements.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

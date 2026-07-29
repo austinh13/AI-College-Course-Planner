@@ -1,0 +1,786 @@
+{
+  "major": "Animation and Games (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Component Area Option Core courses",
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/animation-and-games (2026-07-27 15:50:30) 2/"
+      ]
+    },
+    {
+      "title": "Major Requirements, Lower-Division",
+      "credit_hours": "27",
+      "groups": [
+        {
+          "label": "Foundations",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 2301",
+              "title": "Digital Art and Design Foundations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2302",
+              "title": "Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 2305",
+              "title": "Programming for Digital Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Fundamentals",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 2303",
+              "title": "Project Management for Arts, Technology, and Emerging Communication I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 2310",
+              "title": "Animation and Game Fundamentals",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose two from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 2321",
+              "title": "Reading Media Critically",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 2345",
+              "title": "Introduction to Audio Production",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 2350",
+              "title": "Time-Based Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 2309",
+              "title": "Drawing for Animation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose two from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 2315",
+              "title": "Animation Origins and Techniques",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 2325",
+              "title": "History of Visual Effects",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 2335",
+              "title": "History of Audio Technology in Media",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 2375",
+              "title": "History of Games",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "title": "Major Requirements, Upper-Division",
+      "credit_hours": "21",
+      "groups": [
+        {
+          "label": "Choose one from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 3315",
+              "title": "Animation Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3366",
+              "title": "Game Studies I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose one from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ANGM 3311",
+              "title": "Scripting for Animation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3368",
+              "title": "Scripting for Games I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose any five ANGM 3000 or 4000 level courses: (At least 2 must be 4000 level)",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/animation-and-games (2026-07-27 15:50:30) 3/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "30",
+      "groups": [
+        {
+          "label": "Prescribed Electives",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose any five courses from the following: (At least 2 must be 4000 level)",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ATCM 3301",
+              "title": "Writing for ATEC",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3304",
+              "title": "Character Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3305",
+              "title": "Computer Animation I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3306",
+              "title": "Modeling and Texturing I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3307",
+              "title": "Lighting and Composition I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3308",
+              "title": "Rigging I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3310",
+              "title": "Introduction to Proceduralism",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3311",
+              "title": "Scripting for Animation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3312",
+              "title": "Surfacing and Shading",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3313",
+              "title": "2D Animation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3314",
+              "title": "Background Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3315",
+              "title": "Animation Studies",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3320",
+              "title": "Stop Motion Animation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3321",
+              "title": "Life Drawing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3330",
+              "title": "3D Print Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3338",
+              "title": "Motion Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3346",
+              "title": "Audio Productions Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3347",
+              "title": "Recording Studio Techniques I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3350",
+              "title": "Digital Video Production I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3365",
+              "title": "Game Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3366",
+              "title": "Game Studies I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3367",
+              "title": "Level Design I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3368",
+              "title": "Scripting for Games I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3369",
+              "title": "Games and Narrative I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3370",
+              "title": "Virtual Environments I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 3371",
+              "title": "User Experience Design for Games",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3372",
+              "title": "Sound Design for Games",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3373",
+              "title": "Field Audio Recording Techniques",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3380",
+              "title": "Virtual Reality",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 3381",
+              "title": "Augmented Reality",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4304",
+              "title": "Visual Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4305",
+              "title": "Computer Animation II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4306",
+              "title": "Modeling and Texturing II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4307",
+              "title": "Lighting and Composition II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4308",
+              "title": "Rigging II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4309",
+              "title": "Storyboarding",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4310",
+              "title": "Motion Capture Animation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4312",
+              "title": "Digital Sculpting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4313",
+              "title": "Digital Effects",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4314",
+              "title": "Character Effects",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4315",
+              "title": "Computer Animation III",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4316",
+              "title": "Animation Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4317",
+              "title": "Animation Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4318",
+              "title": "Motion Capture Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4319",
+              "title": "Topics in Animation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4320",
+              "title": "2D Animation Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4321",
+              "title": "Collaborative Modeling",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4322",
+              "title": "Experimental Animation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4323",
+              "title": "Real Time Texturing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4338",
+              "title": "Motion Design II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4339",
+              "title": "Motion Design Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4346",
+              "title": "Audio Productions Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4347",
+              "title": "Recording Studio Techniques II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4350",
+              "title": "Escape Pod Studio",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4351",
+              "title": "Immersive Technologies Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4365",
+              "title": "Game Design II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4366",
+              "title": "Game Studies II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4367",
+              "title": "Level Design II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4368",
+              "title": "Scripting for Games II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4369",
+              "title": "Games and Narrative II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4370",
+              "title": "Virtual Environments II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4373",
+              "title": "Animation for Games",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4374",
+              "title": "Mobile Game Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4376",
+              "title": "Game Production Lab I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4377",
+              "title": "Game Production Lab II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ANGM 4379",
+              "title": "Topics in Games",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4384",
+              "title": "Ethics in New Media, Technology, and Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4398",
+              "title": "Capstone Project",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ATCM 4099",
+              "title": "Major Honors Paper in Arts, Technology, and Emerging Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Free Electives",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/animation-and-games (2026-07-27 15:50:30) 4/",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/animation-and-games (2026-07-27 15:50:30) 5/",
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/aht/animation-and-games (2026-07-27 15:50:30) 6/",
+        "Both upper-and lower-division courses may be used as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

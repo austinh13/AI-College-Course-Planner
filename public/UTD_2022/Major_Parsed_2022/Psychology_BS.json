@@ -1,0 +1,1039 @@
+{
+  "major": "Psychology (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "COMM 1311",
+              "title": "Survey of Oral and Technology-based Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "COMM 1315",
+              "title": "Public Speaking",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "RHET 1302",
+              "title": "Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one course from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1306",
+              "title": "College Algebra for the Non-Scientist",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 1314",
+              "title": "College Algebra",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from Government/Political Science Core courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2317",
+              "title": "Statistics for Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 1342",
+                  "title": "Statistical Decision Making",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "STAT 2332",
+                  "title": "Introductory Statistics for Life Sciences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "AND one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2314",
+              "title": "Lifespan Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2364",
+              "title": "Animal Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CGS 2301",
+              "title": "Cognitive Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/bbs/psychology (2026-07-28 14:19:18) 2/",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/bbs/psychology (2026-07-28 14:19:18) 3/"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "36",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2317",
+              "title": "Statistics for Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 1342",
+                  "title": "Statistical Decision Making",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "STAT 2332",
+                  "title": "Introductory Statistics for Life Sciences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "NSC 3361",
+              "title": "Introduction to Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3360",
+              "title": "Historical Perspectives on Psychology: Mind and Machines since 1600",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3361",
+              "title": "Cognitive Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSY 4359",
+                  "title": "Cognitive Neuroscience",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 3392",
+              "title": "Research Design and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3393",
+              "title": "Experimental Projects in Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3331",
+              "title": "Social Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3310",
+              "title": "Child Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4343",
+              "title": "Abnormal Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Guided Electives; 3 semester credit hours of one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BBSU 3310",
+              "title": "Community-Based Service Learning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4390",
+              "title": "Directed Research and Writing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4391",
+              "title": "Individual Study and Writing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4394",
+              "title": "Internship in Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4395",
+              "title": "Co-op Fieldwork",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4V96",
+              "title": "Teaching Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4397",
+              "title": "Thesis Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4V98",
+              "title": "Directed Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4V99",
+              "title": "Individual Study",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "UNIV 3310",
+              "title": "Community-Engaged Service Learning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3301",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3303",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3304",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3340",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3343",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3344",
+              "title": ", SPAU",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 4308",
+              "title": ".",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/bbs/psychology (2026-07-28 14:19:18) 4/",
+        "Plus any 9 semester credit hours of courses with PSY or CGS or CLDP or NSC prefixes or the"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "42",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BBSU 1100",
+              "title": ".",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Fast Track Baccalaureate/Master's Degrees",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Minor in Psychology",
+          "credit_hours": "18",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Psychology Major Core courses",
+          "credit_hours": "9",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose three courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 3310",
+              "title": "Child Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3331",
+              "title": "Social Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3360",
+              "title": "Historical Perspectives on Psychology: Mind and Machines since 1600",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3361",
+              "title": "Cognitive Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3392",
+              "title": "Research Design and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3393",
+              "title": "Experimental Projects in Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4343",
+              "title": "Abnormal Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4359",
+              "title": "Cognitive Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 3361",
+              "title": "Introduction to Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Upper-Division Courses",
+          "credit_hours": "9",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Business Careers",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "and a strong background in liberal arts. Suggested courses are the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 3361",
+              "title": "Cognitive Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4331",
+              "title": "Personality",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3331",
+              "title": "Social Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4332",
+              "title": "Psychology in the Workplace",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4370",
+              "title": "Industrial and Organizational Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4333",
+              "title": "Human Relations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3392",
+              "title": "Research Design and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Education Careers",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2314",
+              "title": "Lifespan Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3310",
+              "title": "Child Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3361",
+              "title": "Cognitive Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3339",
+              "title": "Educational Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3362",
+              "title": "Cognitive Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3342",
+              "title": "Exceptional Children",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3332",
+              "title": "Social and Personality Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3338",
+              "title": "Adolescence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4373",
+              "title": "Psychological Assessment",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2317",
+              "title": "Statistics for Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3392",
+              "title": "Research Design and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Law and Crime and Justice Careers",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "enforcement. Suggested courses are the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 4372",
+              "title": "Forensic Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2314",
+              "title": "Lifespan Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3361",
+              "title": "Cognitive Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4331",
+              "title": "Personality",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3331",
+              "title": "Social Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4343",
+              "title": "Abnormal Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4373",
+              "title": "Psychological Assessment",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2317",
+              "title": "Statistics for Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3392",
+              "title": "Research Design and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Medical Careers",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2314",
+              "title": "Lifespan Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 3361",
+              "title": "Introduction to Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4328",
+              "title": "Health Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4343",
+              "title": "Abnormal Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3361",
+              "title": "Cognitive Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3338",
+              "title": "Adolescence",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3333",
+              "title": "Approaches to Clinical Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2317",
+              "title": "Statistics for Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3392",
+              "title": "Research Design and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "important that students take the following courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2314",
+              "title": "Lifespan Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 3361",
+              "title": "Introduction to Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3361",
+              "title": "Cognitive Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4331",
+              "title": "Personality",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4343",
+              "title": "Abnormal Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2317",
+              "title": "Statistics for Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3392",
+              "title": "Research Design and Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Other courses of interest include:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 3333",
+              "title": "Approaches to Clinical Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 3350",
+              "title": "Psychology of Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4333",
+              "title": "Human Relations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4328",
+              "title": "Health Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4373",
+              "title": "Psychological Assessment",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4344",
+              "title": "Child Psychopathology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 4345",
+              "title": "Violence in the Family",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Electives are selected by students to explore areas of concentration in Psychology as well as",
+        "explore interests outside the field. Both lower- and upper-division courses may count as electives",
+        "but students must be sure to complete at least 51 semester credit hours of upper-division courses",
+        "to qualify for graduation.",
+        "UT Dallas undergraduate students with strong academic records who intend to pursue a master's",
+        "degree in Human Development and Early Childhood Disorders or in Applied Cognition and",
+        "Neuroscience at UT Dallas may consider an accelerated undergraduate-graduate plan of study. If",
+        "accepted into the program, students may take up to 15 semester credit hours of graduate courses",
+        "that may be used to complete the baccalaureate degree and also to satisfy requirements for the",
+        "master's degree. Students must maintain a 3.000 grade point average and earn grades of B or",
+        "better in graduate courses taken.",
+        "Students should apply for Fast Track admission in the semester they reach 90 semester credit",
+        "hours. To qualify for application, undergraduate students must have completed at least 18",
+        "semester credit hours in major core courses at UT Dallas. To be eligible for Fast Track admission,",
+        "students must have completed at least 90 semester credit hours toward a baccalaureate degree,",
+        "have completed a minimum of 36 hours of general education core curriculum, and meet program",
+        "admission requirements, including submission of GRE scores. Apply to the Fast Track program",
+        "through the Program Office of the master's program. Students should consult with a graduate",
+        "advisor regarding admissions criteria and plans of study.",
+        "Students who are not majoring in Psychology may minor in Psychology by taking 18 semester",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/bbs/psychology (2026-07-28 14:19:18) 5/",
+        "credit hours of Psychology courses (i.e., those with a PSY prefix, excluding those listed under Independent Study in the Catalog). Students who take a minor will be expected to meet the normal",
+        "prerequisites in courses making up the minor, and should maintain a minimum GPA of 2.000 on a",
+        "4.00 scale (C average). At least 12 semester credit hours must be upper-division courses, of which",
+        "at least 9 semester credit hours must be Psychology major core courses taken at UT Dallas (see list below). No semester credit hours may be used to satisfy both major and minor requirements;",
+        "however, free elective semester credit hours or major preparatory classes may be used to satisfy",
+        "the minor.",
+        "Because Psychology is concerned with a wide range of social behaviors, it provides a strong",
+        "foundation for all careers involving people. Students considering careers in business, education,",
+        "law, medicine, clinical psychology, and counseling or social work can benefit from minoring (or majoring) in psychology.",
+        "Graduate programs for business often look for students who have writing and quantitative skills",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/bbs/psychology (2026-07-28 14:19:18) 6/",
+        "Psychology courses are especially relevant for students pursuing careers in child development,",
+        "educational psychology, education counseling, and school psychology. Suggested courses are the",
+        "A background in psychology can be quite useful for the study and practice of law and law",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/bbs/psychology (2026-07-28 14:19:18) 7/",
+        "Psychology is highly recommended as a major or minor for pre-medical students interested in",
+        "psychiatry or for neurology, or any student wishing to practice medicine. The intended area of",
+        "medical specialization should influence the choice of courses; for example, a future pediatrician",
+        "would benefit from courses in developmental psychology. In general, suggested courses are the",
+        "Careers in Clinical Psychology, Counseling, or Social Work",
+        "Although all courses in psychology are good preparation for careers in these areas, it is especially",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/bbs/psychology (2026-07-28 14:19:18) 8/"
+      ]
+    }
+  ]
+}

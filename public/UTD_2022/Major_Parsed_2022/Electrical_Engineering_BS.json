@@ -1,0 +1,807 @@
+{
+  "major": "Electrical Engineering (BS)",
+  "total_credit_hours": "128",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "RHET 1302",
+              "title": "Rhetoric",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 3390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "GOVT 2305",
+              "title": "American National Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GOVT 2306",
+              "title": "State and Local Government",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 2415",
+              "title": "Calculus of Several Variables",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/electrical-engineering (2026-07-28 14:19:37) 4/",
+        "Or select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "77",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "22",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "CHEM 1111",
+              "title": "General Chemistry Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CS 1325",
+              "title": "Introduction to Programming",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 1100",
+              "title": "Introduction to Electrical and Computer Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 1100",
+              "title": "Introduction to Engineering and Computer Science",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 1202",
+              "title": "Introduction to Electrical and Computer Engineering II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 2300",
+              "title": "Linear Algebra for Engineers",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 2310",
+              "title": "Introduction to Digital Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2125",
+              "title": "Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2126",
+              "title": "Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2325",
+              "title": "Mechanics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 2326",
+              "title": "Electromagnetism and Waves",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "MATH Sequence - Students may choose one of the following two sequences:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus",
+              "connector": null,
+              "with": [
+                {
+                  "code": "MATH 2415",
+                  "title": "Calculus of Several Variables"
+                }
+              ],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2420",
+              "title": "Differential Equations with Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2417",
+              "title": "Calculus I",
+              "connector": null,
+              "with": [
+                {
+                  "code": "MATH 2419",
+                  "title": "Calculus II"
+                }
+              ],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2420",
+              "title": "Differential Equations with Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "43",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EE 3161",
+              "title": "Social Issues and Ethics in Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECS 3390",
+              "title": "Professional and Technical Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 3201",
+              "title": "Electrical and Computer Engineering Fundamentals-I Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 3202",
+              "title": "Electrical and Computer Engineering Fundamentals-II Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 3300",
+              "title": "Advanced Engineering Mathematics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 3301",
+              "title": "Electrical Network Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 3302",
+              "title": "Signals and Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 3310",
+              "title": "Electronic Devices",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 3311",
+              "title": "Electronic Circuits",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 3320",
+              "title": "Digital Circuits",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENGR 3341",
+              "title": "Probability Theory and Statistics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4301",
+              "title": "Electromagnetic Engineering I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4310",
+              "title": "Systems and Controls",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4370",
+              "title": "Embedded Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4388",
+              "title": "Senior Design Project I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4389",
+              "title": "Senior Design Project II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select one of the following laboratories:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "EE 4201",
+              "title": "Electrical and Computer Engineering Laboratory in Computing Systems and Computer",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Engineering",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EE 4202",
+              "title": "Electrical and Computer Engineering Laboratory in Circuits",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4203",
+              "title": "Electrical and Computer Engineering Laboratory in Signals and Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4204",
+              "title": "Electrical and Computer Engineering Laboratory in Devices",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4205",
+              "title": "Electrical and Computer Engineering Laboratory in Power Electronics and Energy Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Guided Electives",
+          "credit_hours": "12",
+          "choice": false,
+          "description": "courses in that area:",
+          "courses": []
+        },
+        {
+          "label": "Circuits",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EE 4168",
+              "title": "RF/Microwave Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4325",
+              "title": "Introduction to VLSI Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4340",
+              "title": "Analog Integrated Circuit Analysis and Design",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4368",
+              "title": "RF Circuit Design Principles",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4V95",
+              "title": "Undergraduate Topics in Electrical Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4202",
+              "title": "Electrical and Computer Engineering Laboratory in Circuits",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Computing Systems",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EE 4304",
+              "title": "Computer Architecture",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4V95",
+              "title": "Undergraduate Topics in Electrical Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4201",
+              "title": "Electrical and Computer Engineering Laboratory in Computing Systems and Computer",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Engineering",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Devices",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EE 4330",
+              "title": "Integrated Circuit Technology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4391",
+              "title": "Technology of Plasma",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4371",
+              "title": "Introduction to MEMs",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4V95",
+              "title": "Undergraduate Topics in Electrical Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4204",
+              "title": "Electrical and Computer Engineering Laboratory in Devices",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Power Electronics and Energy Systems",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EE 4362",
+              "title": "Introduction to Energy Conversion",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4363",
+              "title": "Introduction to Power Electronics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4V95",
+              "title": "Undergraduate Topics in Electrical Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4205",
+              "title": "Electrical and Computer Engineering Laboratory in Power Electronics and Energy Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Signals and Systems",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EE 3350",
+              "title": "Communications Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4331",
+              "title": "Applied Machine Learning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4360",
+              "title": "Digital Communications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4361",
+              "title": "Introduction to Digital Signal Processing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4365",
+              "title": "Introduction to Wireless Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4367",
+              "title": "Telecommunication Networks",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4V95",
+              "title": "Undergraduate Topics in Electrical Engineering",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EE 4203",
+              "title": "Electrical and Computer Engineering Laboratory in Signals and Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/electrical-engineering (2026-07-28 14:19:37) 5/",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/electrical-engineering (2026-07-28 14:19:37) 6/",
+        "Students pursuing the general program take 12 semester credit hours from any other 4000 level or",
+        "higher Electrical Engineering courses. Independent Study in Electrical Engineering (EE 4V97),",
+        "Undergraduate Research in Electrical Engineering (EE 4V98), or Senior Honors in Electrical",
+        "Engineering (EE 4399) may be used for up to 6 of these hours.",
+        "Students pursuing a concentration in one of the following areas should take a minimum of two",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/electrical-engineering (2026-07-28 14:19:37) 7/",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/electrical-engineering (2026-07-28 14:19:37) 8/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "9",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "9",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Fast Track Baccalaureate/Master's Degrees",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Honors Program",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "programs requires that the student meet the following qualifications:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "\u2022 Students who take MATH sequence I take 5 semester credit hours of free electives.",
+        "\u2022 Students who take MATH sequence II take 9 semester credit hours of free electives.",
+        "Both lower- and upper-division courses may count as free electives but students must complete at",
+        "least 51 semester credit hours of upper-division courses to qualify for graduation.",
+        "Degree programs in the Erik Jonsson School of Engineering and Computer Science are governed by",
+        "various accreditation boards that place restrictions on classes used to meet the curricular",
+        "requirements of degrees they certify. For this reason, not all classes offered by the University can",
+        "be used to meet elective requirements. Please check with your academic advisor before enrolling",
+        "in classes you hope to use as free electives.",
+        "In response to the need for advanced education in electrical engineering, a Fast Track program is",
+        "available to well-qualified UT Dallas undergraduate students. Qualified seniors may take up to 15",
+        "graduate semester credit hours that may be used to complete the baccalaureate degree and also",
+        "to satisfy the requirements for the master's degree. This is accomplished by (1) taking courses (typically electives) during one or more summer semesters, and (2) beginning graduate coursework",
+        "during the senior year. Details are available from the Associate Dean for Undergraduate Education.",
+        "The Department of Electrical and Computer Engineering offers Departmental Honors for",
+        "outstanding students in the BS Electrical Engineering degree program. Admission to the Honors",
+        "\u2022 Has repeated no more than 3 courses at UT Dallas and has repeated no course more than once.",
+        "Graduation with Honors requires a 3.500 or better GPA and completion of either Senior Honors in",
+        "Electrical Engineering (EE 4399) or Undergraduate Research in Electrical Engineering (EE 4V98). A",
+        "Senior Honors Thesis must be completed within one of those two classes. (While the topics may be related, the Senior Thesis does not replace the need for the student to complete a regular Senior Design Project).",
+        "Departmental Honors with Distinction may be awarded to students whose Senior Honors Thesis is",
+        "judged by a faculty committee to be of exemplary quality. Only students graduating with",
+        "Departmental Honors are eligible. Thesis/projects must be submitted by the deadline that applies",
+        "to MS Theses in the graduating semester to allow for proper evaluation. Students interested in",
+        "https://catalog.utdallas.edu/2022/undergraduate/programs/ecs/electrical-engineering (2026-07-28 14:19:37) 9/",
+        "Honors with Distinction are encouraged to start working on their thesis/project a year prior to",
+        "graduation."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1076 @@
+{
+  "major": "Neuroscience (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BIOL 2311",
+              "title": "Introduction to Modern Biology I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture (040)",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from American History Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2317",
+              "title": "Statistics for Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 1342",
+                  "title": "Statistical Decision Making",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "STAT 2332",
+                  "title": "Introductory Statistics for Life Sciences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "Or select 6 semester credit hours from Life and Physical Sciences Core courses (see NSC advisor)",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/bbs/neuroscience (2026-07-27 13:38:05) 2/",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "27",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "25",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "All of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BBSU 1100",
+              "title": "First Year Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2111",
+              "title": "Introduction to Modern Biology Workshop I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2281",
+              "title": "Introductory Biology Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2311",
+              "title": "Introduction to Modern Biology I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1111",
+              "title": "General Chemistry Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1311",
+              "title": "General Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1112",
+              "title": "General Chemistry Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 1312",
+              "title": "General Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2414",
+              "title": "Integral Calculus",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSY 2317",
+              "title": "Statistics for Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 1342",
+                  "title": "Statistical Decision Making",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "STAT 2332",
+                  "title": "Introductory Statistics for Life Sciences",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses required for all Tracks",
+          "credit_hours": "21",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "All of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "NSC 3361",
+              "title": "Introduction to Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4352",
+              "title": "Cellular Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4353",
+              "title": "Neuroscience Laboratory Methods",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4354",
+              "title": "Integrative Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4356",
+              "title": "Neurophysiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4363",
+              "title": "Neuropharmacology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4366",
+              "title": "Neuroanatomy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/bbs/neuroscience (2026-07-27 13:38:05) 3/"
+      ]
+    },
+    {
+      "title": "Tracks",
+      "credit_hours": "51",
+      "groups": [
+        {
+          "label": "Neuroscience majors select one of three Tracks: Track 1: Medical Neuroscience",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose four courses (12 semester credit hours) from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "NSC 4310",
+              "title": "Principles of Pediatric Neurology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4320",
+              "title": "Sleep and Sleep Disorders",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4330",
+              "title": "Fundamentals of EEG and ECoG",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4350",
+              "title": "Medical Neuropathology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4351",
+              "title": "Medical Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4358",
+              "title": "Neuroscience of Pain",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4362",
+              "title": "Molecular Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4364",
+              "title": "Journey into Medicine",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4372",
+              "title": "Neuroimmunology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4373",
+              "title": "Sensory Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4377",
+              "title": "Neurogenetics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4378",
+              "title": "Neurotoxicology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4380",
+              "title": "Neurology of Cognition",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4381",
+              "title": "Health Disparities in Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4382",
+              "title": "Neurobiology of Emotion",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4383",
+              "title": "Human Neurophysiology Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4387",
+              "title": "Neuropathology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4388",
+              "title": "Medical Physiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4397",
+              "title": "Thesis Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4V75",
+              "title": "Honors Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4V98",
+              "title": "Directed Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4V99",
+              "title": "Independent Study",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2112",
+              "title": "Introduction to Modern Biology Workshop II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2312",
+              "title": "Introduction to Modern Biology II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3461",
+              "title": "Biochemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2233",
+              "title": "Introductory Organic Chemistry Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2323",
+              "title": "Introductory Organic Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2325",
+              "title": "Introductory Organic Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 1301",
+              "title": "College Physics I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 1101",
+              "title": "College Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2125",
+                  "title": "Physics Laboratory I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 1302",
+              "title": "College Physics II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 1102",
+              "title": "College Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2126",
+                  "title": "Physics Laboratory II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Elective Requirements",
+          "credit_hours": "11",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Track 2: Research Neuroscience",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose four courses (12 semester credit hours) from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "NSC 4320",
+              "title": "Sleep and Sleep Disorders",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4330",
+              "title": "Fundamentals of EEG and ECoG",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4355",
+              "title": "Advanced Neuroscience Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4357",
+              "title": "Neurobiology of Learning and Memory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4358",
+              "title": "Neuroscience of Pain",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4359",
+              "title": "Cognitive Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4362",
+              "title": "Molecular Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4367",
+              "title": "Developmental Neurobiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4371",
+              "title": "Neural Plasticity",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4372",
+              "title": "Neuroimmunology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4373",
+              "title": "Sensory Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4374",
+              "title": "Neuroplasticity in Disorders of the Nervous System",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4376",
+              "title": "Neurobiology of Stress",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4377",
+              "title": "Neurogenetics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4380",
+              "title": "Neurology of Cognition",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4381",
+              "title": "Health Disparities in Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4382",
+              "title": "Neurobiology of Emotion",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4383",
+              "title": "Human Neurophysiology Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4391",
+              "title": "Writing and Independent Study",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4397",
+              "title": "Thesis Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4V75",
+              "title": "Honors Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4V98",
+              "title": "Directed Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4V99",
+              "title": "Independent Study",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2112",
+              "title": "Introduction to Modern Biology Workshop II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 2312",
+              "title": "Introduction to Modern Biology II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BIOL 3461",
+              "title": "Biochemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2233",
+              "title": "Introductory Organic Chemistry Laboratory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2323",
+              "title": "Introductory Organic Chemistry I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "CHEM 2325",
+              "title": "Introductory Organic Chemistry II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 1301",
+              "title": "College Physics I",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 1101",
+              "title": "College Physics Laboratory I",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2125",
+                  "title": "Physics Laboratory I",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PHYS 1302",
+              "title": "College Physics II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PHYS 1102",
+              "title": "College Physics Laboratory II",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PHYS 2126",
+                  "title": "Physics Laboratory II",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Elective Requirements",
+          "credit_hours": "11",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Track 3: Industrial Neuroscience",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Required coursework",
+          "credit_hours": "16",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "NSC 4360",
+              "title": "Introduction to Entrepreneurship in Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4361",
+              "title": "Pathway Into Industrial Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4193",
+              "title": "Internship Preparation",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Select 3 additional courses",
+          "credit_hours": "9",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "NSC 4391",
+              "title": "Writing and Independent Study",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4394",
+              "title": "Internship in Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4395",
+              "title": "Internship in Neuroscience II",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4397",
+              "title": "Thesis Research",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4V95",
+              "title": "Externship in Neuroscience",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "NSC 4V99",
+              "title": "Independent Study",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Additional Emphasis",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Choose from one of the following two-course groups for additional emphasis:",
+          "courses": []
+        },
+        {
+          "label": "Entrepreneurship",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ENTP 3301",
+              "title": "Innovation and Entrepreneurship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENTP 4311",
+              "title": "Entrepreneurial Strategy and Business Models",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Healthcare Management",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "HMGT 3301",
+              "title": "Introduction to Healthcare Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "HMGT 3310",
+              "title": "Healthcare Regulatory Environment",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Marketing",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3330",
+              "title": "Introduction to Professional Selling",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Elective Requirements",
+          "credit_hours": "29",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "\u2022 Medical Neuroscience (12 semester credit hours, plus 28 semester credit hours of pre-med courses, plus 11 semester credit hours of free electives)",
+        "\u2022 Research Neuroscience (12 semester credit hours, plus 28 semester credit hours of pre- graduate courses, plus 11 semester credit hours of free electives)",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/bbs/neuroscience (2026-07-27 13:38:05) 4/",
+        "\u2022 Industrial Neuroscience (22 semester credit hours, plus 29 semester credit hours of free electives)",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/bbs/neuroscience (2026-07-27 13:38:05) 5/",
+        "Required Pre-medical Basic Biology, Chemistry and Physics (28 semester credit hours)",
+        "An additional 4 semester credit hours selected with your advisor from NSC or other fields. See",
+        "advisor for additional guidance.",
+        "At least 11 semester credit hours of lower- or upper-division courses of the student's choice.",
+        "Students are encouraged to explore additional courses in Neuroscience as well as explore",
+        "interests outside the field.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit",
+        "hours.",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/bbs/neuroscience (2026-07-27 13:38:05) 6/",
+        "Required pre-graduate courses, basic Biology, Chemistry and Physics (28 semester credit hours)",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/bbs/neuroscience (2026-07-27 13:38:05) 7/",
+        "An additional 4 semester credit hours selected with your advisor from NSC or other fields. See",
+        "advisor for additional guidance.",
+        "At least 11 semester credit hours of lower- or upper-division courses of the student's choice.",
+        "Students are encouraged to explore additional courses in Neuroscience as well as explore",
+        "interests outside the field.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit",
+        "hours.",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/bbs/neuroscience (2026-07-27 13:38:05) 8/",
+        "29 semester credit hours of free elective coursework, selected with your advisor, from NSC or",
+        "other fields.",
+        "Electives are of lower- or upper-division courses of the student's choice. Students are encouraged",
+        "to explore additional courses in Neuroscience as well as explore interests outside the field.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

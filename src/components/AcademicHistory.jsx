@@ -1,14 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import utdDegrees from "../data/utd_degrees.json";
-import { extractCompletedCourses, loadCoreCurriculum, assignCoreCategories } from "../lib/parseTranscript";
+import { extractCompletedCourses, loadCoreCurriculum, coreCurriculumUrl, assignCoreCategories } from "../lib/parseTranscript";
 import "./AcademicHistory.css";
 
 function catalogBaseUrl(startYear) {
   return `/UTD_${startYear}/Major_Parsed_${startYear}`;
-}
-
-function coreCurriculumUrl(startYear) {
-  return `/UTD_${startYear}/Core_${startYear}.json`;
 }
 
 const NORMALIZED_MAJOR_KEYS = Object.keys(utdDegrees).reduce((map, key) => {
@@ -463,47 +459,57 @@ function ManualEntryGroup({ group, entries, onAdd, onRemove, courseOptions }) {
         </ul>
       )}
 
-      <form className="s3-manual-form" onSubmit={handleAdd}>
-        {hasDropdown ? (
-          <select
-            className="s3-manual-input s3-manual-input--code"
-            value={selectedOption}
-            onChange={handleSelectChange}
-          >
-            <option value="">Select a course…</option>
-            {availableOptions.map((opt) => (
-              <option key={opt.code} value={opt.code}>
-                {opt.code} — {opt.name}
-              </option>
-            ))}
-          </select>
-        ) : (
-          <input
-            type="text"
-            className="s3-manual-input s3-manual-input--code"
-            placeholder="e.g. CS 4348"
-            value={code}
-            onChange={(e) => setCode(e.target.value)}
-          />
-        )}
-        <input
-          type="number"
-          className="s3-manual-input s3-manual-input--hours"
-          min="1"
-          max="12"
-          value={hours}
-          onChange={(e) => setHours(e.target.value)}
-        />
-        <button type="submit" className="s3-manual-add" disabled={hasDropdown && !selectedOption}>
-          Add
-        </button>
-      </form>
-
-      {target != null ? (
-        <p className="s3-manual-progress">
-          {total} of {target} SCH logged
+      {satisfied ? (
+        <p className="s3-manual-progress s3-manual-progress--done">
+          {total} of {target} SCH logged — requirement met, remove an entry above to log a different course.
         </p>
       ) : (
+        <>
+          <form className="s3-manual-form" onSubmit={handleAdd}>
+            {hasDropdown ? (
+              <select
+                className="s3-manual-input s3-manual-input--code"
+                value={selectedOption}
+                onChange={handleSelectChange}
+              >
+                <option value="">Select a course…</option>
+                {availableOptions.map((opt) => (
+                  <option key={opt.code} value={opt.code}>
+                    {opt.code} — {opt.name}
+                  </option>
+                ))}
+              </select>
+            ) : (
+              <input
+                type="text"
+                className="s3-manual-input s3-manual-input--code"
+                placeholder="e.g. CS 4348"
+                value={code}
+                onChange={(e) => setCode(e.target.value)}
+              />
+            )}
+            <input
+              type="number"
+              className="s3-manual-input s3-manual-input--hours"
+              min="1"
+              max="12"
+              value={hours}
+              onChange={(e) => setHours(e.target.value)}
+            />
+            <button type="submit" className="s3-manual-add" disabled={hasDropdown && !selectedOption}>
+              Add
+            </button>
+          </form>
+
+          {target != null && (
+            <p className="s3-manual-progress">
+              {total} of {target} SCH logged
+            </p>
+          )}
+        </>
+      )}
+
+      {target == null && (
         <p className="s3-manual-progress s3-manual-progress--unknown">
           {total} SCH logged (not counted toward hours left — this requirement's exact
           SCH isn't in the catalog data)
@@ -752,7 +758,7 @@ export default function Step3AcademicHistory({
         try {
           // Reuse what's already loaded at mount; only fetch fresh if
           // someone manages to upload before that resolves.
-          const curriculum = coreCurriculum ?? (await loadCoreCurriculum());
+          const curriculum = coreCurriculum ?? (await loadCoreCurriculum(coreCurriculumUrl(startYear)));
           additions = classifyUnlistedCourses(extracted, allCodes, catalog, curriculum);
           if (additions.length) {
             manualEntriesNext = { ...manualEntries };
@@ -760,6 +766,9 @@ export default function Step3AcademicHistory({
               const key = `${si}-${gi}`;
               const list = manualEntriesNext[key] || manualEntries[key] || [];
               if (list.some((entry) => entry.code === code)) continue; // already logged from a prior upload
+              const target = parseHours(catalog.sections[si]?.groups[gi]?.credit_hours);
+              const total = list.reduce((sum, e) => sum + e.hours, 0);
+              if (target != null && total >= target) continue; // requirement already met
               manualEntriesNext[key] = [...list, { id: crypto.randomUUID(), code, hours }];
               loggedCount += 1;
             }

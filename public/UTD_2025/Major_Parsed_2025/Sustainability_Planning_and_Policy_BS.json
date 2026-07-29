@@ -1,0 +1,699 @@
+{
+  "major": "Sustainability Planning and Policy (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EPPS 2307",
+              "title": "Digital Earth",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "GISC 2307",
+                  "title": "Digital Earth",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "GEOS 2307",
+                  "title": "Digital Earth",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2413",
+                  "title": "Differential Calculus1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Select two courses from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "GEOS 1303",
+              "title": "Physical Geology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOS 2310",
+              "title": "Environmental Geology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOS 2304",
+              "title": "The 21st Century Energy Transition",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ENVR 2302",
+              "title": "The Global Environment",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "GEOG 2302",
+                  "title": "The Global Environment",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "GEOS 2302",
+                  "title": "The Global Environment",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses (see advisor).",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EPPS 2301",
+              "title": "Research Design in the Social and Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2302",
+              "title": "Methods of Quantitative Analysis in the Social and Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "Or select any 6 semester credit hours from Communication Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Mathematics Core courses (see advisor)",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/epps/sustainability-planning-and-policy (2026-07-27 13:39:19) 2/",
+        "Or select any 6 semester credit hours from Life and Physical Sciences Core courses (see advisor)",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Core courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "64",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "16-17",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "EPPS 1110",
+              "title": "Critical Issues in the Social Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2307",
+              "title": "Digital Earth",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "GISC 2307",
+                  "title": "Digital Earth",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "GEOS 2307",
+                  "title": "Digital Earth",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I1 , 2",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "MATH 2413",
+                  "title": "Differential Calculus1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "MATH 2417",
+                  "title": "Calculus I1 , 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2301",
+              "title": "Research Design in the Social and Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 2302",
+              "title": "Methods of Quantitative Analysis in the Social and Policy Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "42",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 3310",
+              "title": "Intermediate Microeconomic Theory",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4324",
+              "title": "Economics of Sustainability",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "IPEC 4324",
+                  "title": "Economics of Sustainability",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "PPOL 4324",
+                  "title": "Economics of Sustainability",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "PSCI 4324",
+                  "title": "Economics of Sustainability",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GEOG 3331",
+              "title": "Smart and Sustainable Cities",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "EPPS 3331",
+                  "title": "Smart and Sustainable Cities",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ENVR 3331",
+                  "title": "Smart and Sustainable Cities",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GEOG 3372",
+              "title": "Population and Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3377",
+              "title": "Urban Planning and Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PA 3377",
+                  "title": "Urban Planning and Policy",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GISC 2309",
+              "title": "Principles of Geospatial Information Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 3336",
+              "title": "Fundamentals of Sustainability",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "EPPS 3336",
+                  "title": "Fundamentals of Sustainability",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ENVR 3336",
+                  "title": "Fundamentals of Sustainability",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GISC 4386",
+              "title": "Climate Change and Sustainable Solutions",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "EPPS 4386",
+                  "title": "Climate Change and Sustainable Solutions",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ENVR 4386",
+                  "title": "Climate Change and Sustainable Solutions",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GISC 4325",
+              "title": "Introduction to Remote Sensing",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "GEOS 4325",
+                  "title": "Introduction to Remote Sensing",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "IPEC 3349",
+              "title": "World Resources and Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3382",
+              "title": "Sustainable Communities",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "SOC 3382",
+                  "title": "Sustainable Communities",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PPOL 4305",
+              "title": "Policy Analysis, Theory, and Methods",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4304",
+              "title": "Energy and Environmental Politics and Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Sustainability Policy Electives",
+          "credit_hours": "21",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Select seven courses (21 semester credit hours) from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "ECON 4333",
+              "title": "Environmental Economics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 4336",
+              "title": "Environmental Economic Theory and Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "EPPS 4300",
+              "title": "EPPS Policy Lab",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 3357",
+              "title": "Spatial Dimensions of Health and Disease",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GEOG 4338",
+              "title": "Hazard and Disaster Management",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "EPPS 4338",
+                  "title": "Hazard and Disaster Management",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "ENVR 4338",
+                  "title": "Hazard and Disaster Management",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GISC 4310",
+              "title": "Environmental and Health Policy in East Asia",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "IPEC 4310",
+                  "title": "Environmental and Health Policy in East Asia",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "GISC 4382",
+              "title": "Applied Geographic Information Systems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "GISC 4384",
+              "title": "Health and Environmental GIS",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IPEC 4396",
+              "title": "Topics in International Political Economy (when the topic related to environmental policy)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 3333",
+              "title": "Human Resources Management: Leading a Diverse Workforce",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PA 4357",
+              "title": "Measuring Social Impact",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4302",
+              "title": "Data and Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "PSCI 4302",
+                  "title": "Data and Policy",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PPOL 4311",
+              "title": "Wicked Social Problems",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4398",
+              "title": "Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PPOL 4V91",
+              "title": "Undergraduate Research in Public Policy",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "PSCI 4396",
+              "title": "Selected Topics in Government and Politics (when the topic related to environmental policy)",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/epps/sustainability-planning-and-policy (2026-07-27 13:39:19) 3/",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/epps/sustainability-planning-and-policy (2026-07-27 13:39:19) 4/",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/epps/sustainability-planning-and-policy (2026-07-27 13:39:19) 5/"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "14",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1314",
+              "title": ", prior to taking",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 1325",
+              "title": "or",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2312",
+              "title": "prior to taking",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MATH 2413",
+              "title": ".",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "This requirement may be satisfied with lower- and upper-division courses from any field of study.",
+        "Incoming and transfer students may need to complete the necessary 1000-level mathematics",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

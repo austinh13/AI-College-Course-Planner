@@ -1,0 +1,337 @@
+{
+  "major": "Speech, Language, and Hearing (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Mathematics Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from Life and Physical Sciences Core courses 2",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select 6 semester credit hours from Government/Political Science Core courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2317",
+              "title": "Statistics for Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 1342",
+                  "title": "Statistical Decision Making",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "PSY 2314",
+              "title": "Lifespan Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/bbs/speech-language-and-hearing-sciences (2026-07-27 15:51:52) 2/",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option courses (see advisor)"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "36",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "0",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "PSY 2301",
+              "title": "Introduction to Psychology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "SPAU 3301",
+              "title": "Communication Disorders",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3303",
+              "title": "Normal Language Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3304",
+              "title": "Communication Sciences",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3340",
+              "title": "Articulation Disorders",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3341",
+              "title": "Audiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3343",
+              "title": "Phonetics and Phonology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3344",
+              "title": "Anatomy and Physiology of Speech and Hearing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3388",
+              "title": "Clinical Observation in Speech-Language Pathology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "SPAU Choice",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Select at least 12 semester credit hours from the following to meet major requirements:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "SPAU 3345",
+              "title": "Neural Basis of Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "NSC 3361",
+                  "title": "Introduction to Neuroscience",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "SPAU 4308",
+              "title": "Language Disorders in Children",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 4394",
+              "title": "Multicultural Aspects of Communication Disorders",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "SPAU 4393",
+                  "title": "Language in Culture and Society",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "SPAU 3305",
+              "title": "Language and Literacy Development",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 4395",
+              "title": "Issues in the Management of Persons with Hearing Impairment",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3342",
+              "title": "Exceptional Children",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 4386",
+              "title": "Adult Development and Aging",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 4342",
+              "title": "Assessment Procedures in Speech-Language Pathology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 3390",
+              "title": "Clinical Practicum in Speech-Language Pathology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 4396",
+              "title": "Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 4V75",
+              "title": "Honors Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "SPAU 4V90",
+              "title": "Special Topics in Speech-Language Pathology and Audiology",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2024/undergraduate/programs/bbs/speech-language-and-hearing-sciences (2026-07-27 15:51:52) 3/",
+        "Courses are frequently offered as special topics in areas that will help students achieve their",
+        "career goals. Please see advisor."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "42",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "At least 42 semester credit hours of lower- or upper-division courses of the student's choice.",
+        "Students are encouraged to explore areas of concentration in Speech, Language, and Hearing",
+        "Sciences, selecting additional courses with the SPAU prefix, as well as related interests in",
+        "behavioral and brain sciences.",
+        "ASHA requires students to complete a physics or chemistry course and a biological science course.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

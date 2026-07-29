@@ -1,0 +1,276 @@
+{
+  "major": "Visual and Performing Arts with Dance (BA)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Mathematics Core courses",
+          "courses": []
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "DANC 1310",
+              "title": "Understanding Dance",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "DANC 1305",
+                  "title": "Introduction to World Dance Forms",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Core courses (see advisor)",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "DANC 1305",
+              "title": "Introduction to World Dance Forms",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "DANC 1310",
+                  "title": "Understanding Dance",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Curriculum Requirements can be fulfilled by other approved courses from institutions of higher",
+        "education. The courses listed are recommended as the most efficient way to satisfy both Core",
+        "Curriculum and Major Requirements at UT Dallas.",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/aht/visual-and-performing-arts-dance (2026-07-27 13:37:37) 1/",
+        "Or select any 3 semester credit hours from Creative Arts Core courses (see advisor)",
+        "Or select any 6 semester credit hours from Component Area Option Core courses"
+      ]
+    },
+    {
+      "title": "Major Requirements, Lower-Division",
+      "credit_hours": "7",
+      "groups": [
+        {
+          "label": null,
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "AHTC 1100",
+              "title": "First Year Seminar",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "0 semester credit hours beyond Core Curriculum from the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "DANC 1310",
+              "title": "Understanding Dance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "DANC 1305",
+              "title": "Introduction to World Dance Forms",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/aht/visual-and-performing-arts-dance (2026-07-27 13:37:37) 2/",
+        "3 semester credit hours from a DANC studio",
+        "3 semester credit hours from a DANC, THEA, or MUSI studio ensemble course"
+      ]
+    },
+    {
+      "title": "Major Requirements, Upper-Division",
+      "credit_hours": "36",
+      "groups": [
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "12",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "VPAS 3340",
+              "title": "Writing in the Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "VPAS 4389",
+              "title": "Theory and Practice of the Visual and Performing Arts",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "VPAS 4390",
+              "title": "Senior Capstone",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "VPAS 4V99",
+                  "title": "Senior Honors in Visual and Performing Art",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Dance Concentration Requirements",
+          "credit_hours": "24",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "DANC 3340",
+              "title": "Dance in Historical Context",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "DANC 3347",
+              "title": "Dance Composition",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "DANC 3345",
+              "title": "Dance Performance",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "DANC 3346",
+                  "title": "Musical Theatre Dance Performance",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                },
+                {
+                  "code": "DANC 4317",
+                  "title": "Dance Performance 2",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "3 semester credit hours of upper-level Related Courses from the Harry W. Bass Jr. School of Arts,",
+        "Humanities, and Technology (excluding the DANC prefix)",
+        "or Upper-Level Visual and Performing Arts Historical Context course",
+        "12 semester credit hours of 3000/4000-level Dance Studio and Ensemble courses",
+        "3 semester credit hours of upper-division Visual and Performing Arts elective"
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "35",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "35",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both upper- and lower-division courses may be used as electives. Students are encouraged to",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/aht/visual-and-performing-arts-dance (2026-07-27 13:37:37) 3/",
+        "enroll in lower-level courses in other performance areas, such as theatre and music.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}

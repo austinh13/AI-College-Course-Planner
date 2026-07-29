@@ -1,0 +1,743 @@
+{
+  "major": "Supply Chain Management and (BS)",
+  "total_credit_hours": "120",
+  "sections": [
+    {
+      "title": "Core Curriculum Requirements",
+      "credit_hours": "42",
+      "groups": [
+        {
+          "label": "Communication",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Communication Core courses",
+          "courses": []
+        },
+        {
+          "label": "Mathematics",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Life and Physical Sciences",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Life and Physical Sciences Core courses",
+          "courses": []
+        },
+        {
+          "label": "Language, Philosophy and Culture",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Language, Philosophy and Culture Core courses",
+          "courses": []
+        },
+        {
+          "label": "Creative Arts",
+          "credit_hours": "3",
+          "choice": false,
+          "description": "Select any 3 semester credit hours from Creative Arts Core courses",
+          "courses": []
+        },
+        {
+          "label": "American History",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from American History Core courses",
+          "courses": []
+        },
+        {
+          "label": "Government/Political Science",
+          "credit_hours": "6",
+          "choice": false,
+          "description": "Select any 6 semester credit hours from Government/Political Science Option courses",
+          "courses": []
+        },
+        {
+          "label": "Social and Behavioral Sciences",
+          "credit_hours": "3",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Component Area Option",
+          "credit_hours": "6",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose one of the following:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/supply-chain-management (2026-07-27 13:41:06) 1/",
+        "Or select any 3 semester credit hours from Mathematics Core courses",
+        "Or select any 3 semester credit hours from Social and Behavioral Sciences Core courses",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/supply-chain-management (2026-07-27 13:41:06) 2/",
+        "And select 3 semester credit hours from Component Area Option Core",
+        "Or select any 6 semester credit hours from Component Area Option Core courses"
+      ]
+    },
+    {
+      "title": "Major Requirements",
+      "credit_hours": "70-76",
+      "groups": [
+        {
+          "label": "Major Preparatory Courses",
+          "credit_hours": "15",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "ACCT 2301",
+              "title": "Introductory Financial Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ACCT 2302",
+              "title": "Introductory Management Accounting",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BLAW 2301",
+              "title": "Business and Public Law",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3333",
+              "title": "Quantitative Business Analysis",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3360",
+              "title": "Managerial Methods in Decision Making Under Uncertainty",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "STAT 3360",
+                  "title": "Probability and Statistics for Management and Economics",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Complete the following courses if not already completed as part of the Core Curriculum Requirements",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "MATH 1325",
+              "title": "Applied Calculus I2 , 3  (Required for all JSOM undergraduate students. May elect to substitute",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose two of the following if not completed in Core Curriculum:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1310",
+              "title": "Making Choices in Free Market Systems2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BA 1320",
+              "title": "Business in a Global World2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2301",
+              "title": "Principles of Macroeconomics2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ECON 2302",
+              "title": "Principles of Microeconomics2 , 3",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Core Courses",
+          "credit_hours": "28-31",
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 1105",
+              "title": "Professional Development (JSOM first-time-in-college freshmen are required to take",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BA 3105",
+                  "title": "Professional Development (Transfer students and students new to JSOM are required to take",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BCOM 3300",
+              "title": "Business Communication",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "FIN 3320",
+              "title": "Business Finance",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "IMS 3310",
+              "title": "International Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 3300",
+              "title": "Information Technology for Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BUAN 3301",
+              "title": "AI in Business",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3300",
+              "title": "Principles of Marketing",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 3310",
+              "title": "Organizational Behavior",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "OBHR 3330",
+                  "title": "Human Resource Management in Business",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "OPRE 3310",
+              "title": "Supply Chain and Operations Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Experiential Learning",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "be fulfilled with enrollment in one of the following courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "OPRE 4395",
+              "title": "Capstone Senior Project - Supply Chain Management",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "BPS 4395",
+                  "title": "Capstone Senior Project - Business",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "OPRE 4V90",
+              "title": "will also satisfy a Guided Elective requirement.",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4V90",
+              "title": "Supply Chain Management Internship",
+              "connector": null,
+              "with": [],
+              "alternatives": [
+                {
+                  "code": "OPRE 4090",
+                  "title": "Supply Chain Management Internship",
+                  "connector": "or",
+                  "with": [],
+                  "alternatives": []
+                }
+              ]
+            },
+            {
+              "code": "BA 4095",
+              "title": "Social Sector Engagement and Community Outreach Practicum",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Major Related Courses",
+          "credit_hours": "18",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose six courses from the following seven courses:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "OPRE 3320",
+              "title": "Integrated Supply Chain Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3330",
+              "title": "Project Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4310",
+              "title": "Lean and Six Sigma Processes",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4320",
+              "title": "Supply Chain Information Systems: SAP, AI, and Blockchain Innovations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4330",
+              "title": "Global Logistics and Inventory Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4340",
+              "title": "Purchasing and Sourcing Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4362",
+              "title": "Supply Chain Strategies, Processes and AI Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Guided Electives",
+          "credit_hours": "9-12",
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "A. Digital Supply Chain Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose from the following to fulfill Guided Elective semester credit hours:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "OPRE 4350",
+              "title": "Spreadsheet Modeling and Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4357",
+              "title": "Supply Chain Analytics, AI, and Advanced Solutions",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "ITSS 4340",
+              "title": "Enterprise Resource Planning",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4393",
+              "title": "A.I. in Supply Chain Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose from the following to fulfill Guided Elective semester credit hours:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "OPRE 4350",
+              "title": "Spreadsheet Modeling and Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3320",
+              "title": "Product and Brand Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "MKT 3330",
+              "title": "Fundamentals of Professional Selling",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OBHR 4352",
+              "title": "Negotiation and Dispute Resolution",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 3330",
+              "title": "Project Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "C. Analytics and AI Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": []
+        },
+        {
+          "label": "Choose from the following to fulfill Guided Elective semester credit hours:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "OPRE 4337",
+              "title": "Marketing Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4350",
+              "title": "Spreadsheet Modeling and Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4353",
+              "title": "Business Analytics",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4373",
+              "title": "Data Science for Business Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4393",
+              "title": "A.I. in Supply Chain Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "Choose from the following to fulfill Guided Elective semester credit hours:",
+          "credit_hours": null,
+          "choice": true,
+          "description": null,
+          "courses": [
+            {
+              "code": "OPRE 3370",
+              "title": "Managing Sustainable Operations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4345",
+              "title": "Retail Operations",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4362",
+              "title": "Supply Chain Strategies, Processes and AI Applications",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4391",
+              "title": "Social Impact and Sustainable Community Engagement",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "BPS 4305",
+              "title": "Strategic Management",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        },
+        {
+          "label": "E. General Concentration",
+          "credit_hours": null,
+          "choice": false,
+          "description": null,
+          "courses": [
+            {
+              "code": "BA 3350",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            },
+            {
+              "code": "OPRE 4V91",
+              "title": ",",
+              "connector": null,
+              "with": [],
+              "alternatives": []
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/supply-chain-management (2026-07-27 13:41:06) 3/",
+        "A capstone course is required for all undergraduate JSOM students. The capstone requirement can",
+        "A practicum experience of at least 160 working hours is required. Depending on the internship and",
+        "preference for additional electives, the student may qualify for a zero to 3 semester credit hours",
+        "course with the BS SCM Program Director's approval. Completing an approved 3 semester credit",
+        "Students are required to complete 100 hours of community engagement experience with",
+        "registration in one of the courses below.",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/supply-chain-management (2026-07-27 13:41:06) 4/",
+        "The BS SCM degree program allows students to focus on a specific concentration to obtain in-",
+        "depth knowledge in a particular business area. Students will choose at least nine semester credit",
+        "hours from one of the following concentrations.",
+        "Any OPRE courses listed below can satisfy guided elective requirements in prior BS SCM catalogs if",
+        "not used elsewhere on the student's degree plan. With advanced written permission from the BS",
+        "SCM Program Director, three semester credit hours of equivalent or similar upper-level courses",
+        "not used elsewhere on the degree plan may fulfill one guided elective.",
+        "Students pursuing this concentration will learn how to implement and manage a supply chain",
+        "system that fully integrates the different functional areas using technology and information",
+        "systems.",
+        "B. Project Management and Leadership Concentration",
+        "Students pursuing this concentration will develop leadership and project management skills that",
+        "will allow them to lead teams in different industries, to the successful completion of demanding",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/supply-chain-management (2026-07-27 13:41:06) 5/",
+        "projects.",
+        "Students pursuing this concentration will have a solid analytical profile suited to developing data-",
+        "oriented supply chain solutions and solving business problems in various industry roles.",
+        "D. Global and Sustainability Strategy Concentration",
+        "Students pursuing this concentration will learn how to manage global supply chain strategy by",
+        "assigning the appropriate emphasis on speed, quality, cost, and flexibility in the global",
+        "marketplace.",
+        "https://catalog.utdallas.edu/2025/undergraduate/programs/jsom/supply-chain-management (2026-07-27 13:41:06) 6/",
+        "If not used elsewhere in the degree plan, students may use any OPRE upper-level courses or",
+        "courses in Concentrations A, B, C, or D to satisfy the required hours for guided electives. At least 6",
+        "of the 12 semester credit hours used in the General Concentration must have an OPRE prefix.",
+        "and/or an Individual Study based on the major to satisfy JURS program requirements. These",
+        "credits may be applied to the general concentration."
+      ]
+    },
+    {
+      "title": "Elective Requirements",
+      "credit_hours": "2-8",
+      "groups": [
+        {
+          "label": "Free Electives",
+          "credit_hours": "2-8",
+          "choice": false,
+          "description": null,
+          "courses": []
+        }
+      ],
+      "notes": [
+        "Both lower- and upper-division courses may count as electives.",
+        "The plan must include sufficient upper-division courses to total 45 upper-division semester credit"
+      ]
+    }
+  ]
+}
