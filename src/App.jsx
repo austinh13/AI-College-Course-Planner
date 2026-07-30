@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import ScheduleGridBackdrop from "./components/ScheduleGridBackdrop";
-import CometFlyby from "./components/CometFlyby";
-import StepIndicator from "./components/StepIndicator";
+import {
+  CometFlyby,
+  ScheduleGridBackdrop,
+  StepIndicator,
+} from "./components/AppShellDecorations";
 import QuestionnaireStep from "./steps/QuestionnaireStep";
 import TimeConstraintsStep from "./steps/TimeConstraintsStep";
 import AcademicHistory from "./components/AcademicHistory";
