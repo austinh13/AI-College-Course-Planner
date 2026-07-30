@@ -353,5 +353,865 @@
     "name": "Advanced Statistics for Risk Modeling",
     "code": "ACTS 6307",
     "prereq": "STAT 5352"
+  },
+  "AHST 1304": {
+    "name": "Survey of Western Art History  Renaissance to Modern",
+    "code": "AHST 1304",
+    "prereq": null
+  },
+  "AHST 2331": {
+    "name": "Understanding Art",
+    "code": "AHST 2331",
+    "prereq": null
+  },
+  "AHST 3316": {
+    "name": "Baroque Art and Architecture",
+    "code": "AHST 3316",
+    "prereq": "Completion of 050 Creative Arts Core"
+  },
+  "AHST 3317": {
+    "name": "Pioneers of Modern Art",
+    "code": "AHST 3317",
+    "prereq": "Completion of 050 Creative Arts Core"
+  },
+  "AHST 4342": {
+    "name": "Topics in Art History  - New Media Art Histories",
+    "code": "AHST 4342",
+    "prereq": "Completion of 050 core. Repeat Limit - AHST 4342 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "AHST 6301": {
+    "name": "Foundations I  Practices of Art History",
+    "code": "AHST 6301",
+    "prereq": null
+  },
+  "AHST 6327": {
+    "name": "Special Topics in Renaissance and Baroque Art and Architecture  - Venice and the Mediterranean",
+    "code": "AHST 6327",
+    "prereq": "AHST 6327 Repeat Limit - This course may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "AHST 6329": {
+    "name": "Special Topics in Classical Antiquity  - Oplontis Project",
+    "code": "AHST 6329",
+    "prereq": "AHST 6329 Repeat Limit - This course may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "AHST 6333": {
+    "name": "Special Topics in the Social History of Art  - Orientalism",
+    "code": "AHST 6333",
+    "prereq": "AHST 6333 Repeat Limit - This course may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "AHTC 1100": {
+    "name": "First Year Seminar",
+    "code": "AHTC 1100",
+    "prereq": null
+  },
+  "AHTC 2100": {
+    "name": "Student Success Seminar",
+    "code": "AHTC 2100",
+    "prereq": null
+  },
+  "AHTC 2120": {
+    "name": "Careers Exploration in the Arts  Humanities  and Technology",
+    "code": "AHTC 2120",
+    "prereq": null
+  },
+  "AMS 2300": {
+    "name": "American Popular Culture",
+    "code": "AMS 2300",
+    "prereq": null
+  },
+  "AMS 2341": {
+    "name": "American Studies for the Twenty-First Century",
+    "code": "AMS 2341",
+    "prereq": "AMS 2341 Repeat Restriction"
+  },
+  "AMS 3316": {
+    "name": "Interpersonal Communication",
+    "code": "AMS 3316",
+    "prereq": null
+  },
+  "AMS 3327": {
+    "name": "American Studies  Histories  Theories  Methodologies",
+    "code": "AMS 3327",
+    "prereq": null
+  },
+  "AMS 4300": {
+    "name": "Oral and Written Communication for the Classroom",
+    "code": "AMS 4300",
+    "prereq": null
+  },
+  "AMS 4305": {
+    "name": "World History for Teachers",
+    "code": "AMS 4305",
+    "prereq": null
+  },
+  "AMS 4379": {
+    "name": "Special Topics in American Studies  - U.S. \\u0026 Russia Relations",
+    "code": "AMS 4379",
+    "prereq": "Repeat Limit - AMS 4379 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "ANGM 2303": {
+    "name": "Project Management for Arts  Technology  and Emerging Communication I",
+    "code": "ANGM 2303",
+    "prereq": "ANGM 2303 Repeat Restriction"
+  },
+  "ANGM 2305": {
+    "name": "Programming for Digital Arts",
+    "code": "ANGM 2305",
+    "prereq": null
+  },
+  "ANGM 2309": {
+    "name": "Drawing for Animation",
+    "code": "ANGM 2309",
+    "prereq": "ANGM 2309 Repeat Limit"
+  },
+  "ANGM 2310": {
+    "name": "Animation and Game Fundamentals",
+    "code": "ANGM 2310",
+    "prereq": "ANGM 2310 Repeat Restriction"
+  },
+  "ANGM 2315": {
+    "name": "Animation Origins and Techniques",
+    "code": "ANGM 2315",
+    "prereq": null
+  },
+  "ANGM 2325": {
+    "name": "History of Visual Effects",
+    "code": "ANGM 2325",
+    "prereq": null
+  },
+  "ANGM 2335": {
+    "name": "History of Audio Technology in Media",
+    "code": "ANGM 2335",
+    "prereq": null
+  },
+  "ANGM 2350": {
+    "name": "Story",
+    "code": "ANGM 2350",
+    "prereq": null
+  },
+  "ANGM 3304": {
+    "name": "Character Design",
+    "code": "ANGM 3304",
+    "prereq": "ANGM 2309 with a grade of B or better"
+  },
+  "ANGM 3305": {
+    "name": "Computer Animation I",
+    "code": "ANGM 3305",
+    "prereq": "ANGM 2310 with a grade of B or better or equivalent. Repeat Restriction"
+  },
+  "ANGM 3306": {
+    "name": "Modeling and Texturing I",
+    "code": "ANGM 3306",
+    "prereq": "(ANGM 2310 with a grade of B or better) or equivalent. ANGM 3306 Repeat Restriction"
+  },
+  "ANGM 3307": {
+    "name": "Lighting and Composition I",
+    "code": "ANGM 3307",
+    "prereq": "ANGM 2310 with a grade of B or better"
+  },
+  "ANGM 3308": {
+    "name": "Rigging I",
+    "code": "ANGM 3308",
+    "prereq": "ANGM 2310 with a grade of B or better. Repeat Restriction"
+  },
+  "ANGM 3310": {
+    "name": "Introduction to Proceduralism",
+    "code": "ANGM 3310",
+    "prereq": "ANGM 2310 with a grade of B or better"
+  },
+  "ANGM 3311": {
+    "name": "Scripting for Animation",
+    "code": "ANGM 3311",
+    "prereq": "(ANGM 2305 or CS 1335 or CS 1337) and (ANGM 2310 with a grade of B or better)"
+  },
+  "ANGM 3313": {
+    "name": "2D Animation",
+    "code": "ANGM 3313",
+    "prereq": "ANGM 2309 with a grade of B or better"
+  },
+  "ANGM 3314": {
+    "name": "Background Design",
+    "code": "ANGM 3314",
+    "prereq": "ANGM 2309 with a grade of B or better"
+  },
+  "ANGM 3315": {
+    "name": "Animation Studies",
+    "code": "ANGM 3315",
+    "prereq": "ANGM 2315 or ATCM 2321 or ATCM 3301"
+  },
+  "ANGM 3321": {
+    "name": "Life Drawing",
+    "code": "ANGM 3321",
+    "prereq": "ANGM 2309 with a grade of B or better. Repeat Restriction"
+  },
+  "ANGM 3322": {
+    "name": "Editing for Animation",
+    "code": "ANGM 3322",
+    "prereq": "Completion of two of the following: ANGM 2303 or ANGM 2309 or ATCM 2345"
+  },
+  "ANGM 3323": {
+    "name": "Layout",
+    "code": "ANGM 3323",
+    "prereq": "ANGM 2310 with a grade of B or better"
+  },
+  "ANGM 3324": {
+    "name": "Color   Design",
+    "code": "ANGM 3324",
+    "prereq": "ANGM 2309 with a grade of B or better"
+  },
+  "ANGM 3330": {
+    "name": "3D Print Lab",
+    "code": "ANGM 3330",
+    "prereq": "ANGM 2310 with a grade of B or better"
+  },
+  "ANGM 3338": {
+    "name": "Motion Design I",
+    "code": "ANGM 3338",
+    "prereq": "ATCM 2301. Repeat Restriction"
+  },
+  "ANGM 3365": {
+    "name": "Game Design I",
+    "code": "ANGM 3365",
+    "prereq": "ANGM 2310 with a grade of B or better. Repeat Restriction"
+  },
+  "ANGM 3366": {
+    "name": "Game Studies I",
+    "code": "ANGM 3366",
+    "prereq": "ANGM 2310 or ATCM 2320 or ATCM 2321"
+  },
+  "ANGM 3367": {
+    "name": "Level Design I",
+    "code": "ANGM 3367",
+    "prereq": "ANGM 2310 with a grade of B or better. Repeat Restriction"
+  },
+  "ANGM 3368": {
+    "name": "Scripting for Games I",
+    "code": "ANGM 3368",
+    "prereq": "ANGM 2310 with a grade of B or better"
+  },
+  "ANGM 3369": {
+    "name": "Games and Narrative I",
+    "code": "ANGM 3369",
+    "prereq": "ANGM 2310 or CRWT 2301"
+  },
+  "ANGM 3370": {
+    "name": "Virtual Environments I",
+    "code": "ANGM 3370",
+    "prereq": "ANGM 2310. Repeat Restriction"
+  },
+  "ANGM 3380": {
+    "name": "Virtual Reality",
+    "code": "ANGM 3380",
+    "prereq": "ANGM 2310"
+  },
+  "ANGM 4305": {
+    "name": "Computer Animation II",
+    "code": "ANGM 4305",
+    "prereq": "ANGM 3305 with a grade of B or better. ANGM 4305 Repeat Restriction"
+  },
+  "ANGM 4306": {
+    "name": "Modeling and Texturing II",
+    "code": "ANGM 4306",
+    "prereq": "ANGM 3306 with a grade of B or better"
+  },
+  "ANGM 4308": {
+    "name": "Rigging II",
+    "code": "ANGM 4308",
+    "prereq": "ANGM 3308 with a grade of B or better"
+  },
+  "ANGM 4309": {
+    "name": "Storyboarding",
+    "code": "ANGM 4309",
+    "prereq": "ANGM 2309 with a grade of B or better"
+  },
+  "ANGM 4310": {
+    "name": "Motion Capture Animation",
+    "code": "ANGM 4310",
+    "prereq": "ANGM 3305 or ANGM 3306 or ANGM 3307 or ANGM 3308"
+  },
+  "ANGM 4312": {
+    "name": "Digital Sculpting",
+    "code": "ANGM 4312",
+    "prereq": "ANGM 3306 with a grade of B or better"
+  },
+  "ANGM 4313": {
+    "name": "Digital Effects",
+    "code": "ANGM 4313",
+    "prereq": "ANGM 3310 with a grade of C or better"
+  },
+  "ANGM 4315": {
+    "name": "Computer Animation III",
+    "code": "ANGM 4315",
+    "prereq": "ANGM 4305 with a grade of B or higher"
+  },
+  "ANGM 4317": {
+    "name": "Animation Lab II",
+    "code": "ANGM 4317",
+    "prereq": "Repeat Limit - ANGM 4317 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ANGM 4319": {
+    "name": "Topics in Animation  - Animation Lab Pre Production",
+    "code": "ANGM 4319",
+    "prereq": "Repeat Limit - ANGM 4319 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ANGM 4321": {
+    "name": "Collaborative Modeling",
+    "code": "ANGM 4321",
+    "prereq": "ANGM 3306 with a grade of B or better"
+  },
+  "ANGM 4322": {
+    "name": "Experimental Animation",
+    "code": "ANGM 4322",
+    "prereq": "Repeat Limit - ANGM 4322 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ANGM 4325": {
+    "name": "2D Portfolio",
+    "code": "ANGM 4325",
+    "prereq": "ANGM 3304 or ANGM 3314 with a grade of B or better or instructor consent"
+  },
+  "ANGM 4338": {
+    "name": "Motion Design II",
+    "code": "ANGM 4338",
+    "prereq": "ANGM 3338 with a grade of B or better"
+  },
+  "ANGM 4339": {
+    "name": "Motion Design Lab  - Motion Design Lab",
+    "code": "ANGM 4339",
+    "prereq": "Repeat Limit - ANGM 4339 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ANGM 4365": {
+    "name": "Game Design II",
+    "code": "ANGM 4365",
+    "prereq": "ANGM 3365. ANGM 4365 Repeat Restriction"
+  },
+  "ANGM 4367": {
+    "name": "Level Design II",
+    "code": "ANGM 4367",
+    "prereq": "ANGM 3367 with a grade of B or better"
+  },
+  "ANGM 4368": {
+    "name": "Scripting for Games II",
+    "code": "ANGM 4368",
+    "prereq": "ANGM 3368 with a grade of C or better"
+  },
+  "ANGM 4370": {
+    "name": "Virtual Environments II",
+    "code": "ANGM 4370",
+    "prereq": "ANGM 3370 with a grade of B or higher and instructor consent required"
+  },
+  "ANGM 4373": {
+    "name": "Animation for Games",
+    "code": "ANGM 4373",
+    "prereq": "ANGM 3305"
+  },
+  "ANGM 4374": {
+    "name": "Mobile Game Development",
+    "code": "ANGM 4374",
+    "prereq": "ANGM 3368 with a grade of C or better"
+  },
+  "ANGM 4376": {
+    "name": "Game Production Lab I",
+    "code": "ANGM 4376",
+    "prereq": "Repeat Limit - ANGM 4376 may be repeated only for a maximum of 6 semester credit hours"
+  },
+  "ANGM 6305": {
+    "name": "Animation Creative Practices I",
+    "code": "ANGM 6305",
+    "prereq": null
+  },
+  "ANGM 6306": {
+    "name": "Animation Creative Practices II",
+    "code": "ANGM 6306",
+    "prereq": "ANGM 6305"
+  },
+  "ANGM 6312": {
+    "name": "Digital Cinematography",
+    "code": "ANGM 6312",
+    "prereq": null
+  },
+  "ANGM 6313": {
+    "name": "Animation Project Development",
+    "code": "ANGM 6313",
+    "prereq": null
+  },
+  "ANGM 6318": {
+    "name": "Special Topics in Animation  - Motion Design Lab",
+    "code": "ANGM 6318",
+    "prereq": "Repeat Limit - ANGM 6318 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "ANGM 6334": {
+    "name": "Game Production Practices",
+    "code": "ANGM 6334",
+    "prereq": null
+  },
+  "ANGM 6342": {
+    "name": "Experimental Games Studio",
+    "code": "ANGM 6342",
+    "prereq": "Repeat Limit - ANGM 6342 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ANGM 6353": {
+    "name": "Games  Education  and Simulation",
+    "code": "ANGM 6353",
+    "prereq": "ANGM 6335 or ATCM 6336"
+  },
+  "ANGM 6356": {
+    "name": "Anatomy of a Game",
+    "code": "ANGM 6356",
+    "prereq": null
+  },
+  "ANGM 6373": {
+    "name": "Interactive Environments",
+    "code": "ANGM 6373",
+    "prereq": null
+  },
+  "ARAB 1311": {
+    "name": "Beginning Arabic I",
+    "code": "ARAB 1311",
+    "prereq": "Arabic Language Placement Test Score less than 20"
+  },
+  "ARAB 1312": {
+    "name": "Beginning Arabic II",
+    "code": "ARAB 1312",
+    "prereq": "ARAB 1311 or Arabic Language Placement score of 20-39"
+  },
+  "ARAB 2311": {
+    "name": "Intermediate Arabic I",
+    "code": "ARAB 2311",
+    "prereq": "ARAB 1312 or Arabic Language Place Test Score of 40-59"
+  },
+  "ARAB 4366": {
+    "name": "Arabic Literature",
+    "code": "ARAB 4366",
+    "prereq": "ARAB 2312 or equivalent based on placement exam score"
+  },
+  "ARHM 2340": {
+    "name": "Creativity",
+    "code": "ARHM 2340",
+    "prereq": null
+  },
+  "ARHM 3342": {
+    "name": "Advanced Interdisciplinary Studies in the Arts and Humanities  - Music in Games and Film",
+    "code": "ARHM 3342",
+    "prereq": "RHET 1302 and Completion of 040 Core.  Repeat Limit - ARHM 3342 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "ARHM 6310": {
+    "name": "Team-Taught Interdisciplinary Seminar  - What is Interperetation",
+    "code": "ARHM 6310",
+    "prereq": "Repeat Limit - ARHM 6310 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "ARTS 1301": {
+    "name": "Exploration of the Arts",
+    "code": "ARTS 1301",
+    "prereq": "ARTS 1301 Repeat Restriction"
+  },
+  "ARTS 1316": {
+    "name": "Drawing Foundations",
+    "code": "ARTS 1316",
+    "prereq": "ARTS 1316 Repeat Restriction"
+  },
+  "ARTS 2316": {
+    "name": "Painting Foundations",
+    "code": "ARTS 2316",
+    "prereq": null
+  },
+  "ARTS 2318": {
+    "name": "Mobile Photography",
+    "code": "ARTS 2318",
+    "prereq": null
+  },
+  "ARTS 2348": {
+    "name": "Digital Art",
+    "code": "ARTS 2348",
+    "prereq": null
+  },
+  "ARTS 2350": {
+    "name": "Photography  Design",
+    "code": "ARTS 2350",
+    "prereq": null
+  },
+  "ARTS 2380": {
+    "name": "Visual Design Foundations",
+    "code": "ARTS 2380",
+    "prereq": "ARTS 2380 Repeat Restriction"
+  },
+  "ARTS 2381": {
+    "name": "Introduction to Sculpture",
+    "code": "ARTS 2381",
+    "prereq": null
+  },
+  "ARTS 3363": {
+    "name": "Typography  Technology  Image",
+    "code": "ARTS 3363",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2348 or ARTS 2350 or ARTS 2380 or ARTS 2381 or ATCM 2301 or ATCM 2302 or instructor consent required. Repeat Limit - ARTS 3363 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ARTS 3364": {
+    "name": "Silkscreen Printmaking",
+    "code": "ARTS 3364",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2380. Repeat Limit - ARTS 3364 may only be repeated for a maximum of 6 semester credit hours. Repeat Restriction"
+  },
+  "ARTS 3366": {
+    "name": "Intermediate Drawing",
+    "code": "ARTS 3366",
+    "prereq": "ARTS 1316 or ARTS 2380. Repeat Limit - ARTS 3366 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ARTS 3367": {
+    "name": "Figure Drawing",
+    "code": "ARTS 3367",
+    "prereq": "ARTS 1316 or ARTS 2380. Repeat Restriction"
+  },
+  "ARTS 3368": {
+    "name": "Mixed Media",
+    "code": "ARTS 3368",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2350 or ARTS 2380 or ARTS 2381.  Repeat Limit - ARTS 3368 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ARTS 3369": {
+    "name": "Intermediate Painting",
+    "code": "ARTS 3369",
+    "prereq": "ARTS 2316"
+  },
+  "ARTS 3371": {
+    "name": "Photography  Black White  - Camera/darkroom",
+    "code": "ARTS 3371",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2318 or ARTS 2348 or ARTS 2350 or ARTS 2380 or ATCM 2301 or ATCM 2302.  Repeat Limit - ARTS 3371 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ARTS 3372": {
+    "name": "Photography  Color",
+    "code": "ARTS 3372",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2318 or ARTS 2348 or ARTS 2350 or ARTS 2380 or ATCM 2301 or ATCM 2302 or instructor consent required.  Repeat Limit - ARTS 3372 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ARTS 3373": {
+    "name": "Printmaking  - Monotype and Woodcut",
+    "code": "ARTS 3373",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2380.  Repeat Limit - ARTS 3373 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ARTS 3375": {
+    "name": "Sculpture",
+    "code": "ARTS 3375",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2380 or ARTS 2381. Repeat Limit - ARTS 3375 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ARTS 3377": {
+    "name": "Photography  Altered Image",
+    "code": "ARTS 3377",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2348 or ARTS 2350 or ARTS 2380 or ATCM 2301 or ATCM 2302. Repeat Limit - ARTS 3377 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ARTS 3379": {
+    "name": "Photography  New Media",
+    "code": "ARTS 3379",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2318 or ARTS 2348 or ARTS 2350 or ARTS 2380 or ATCM 2301 or ATCM 2302 or instructor consent required. Repeat Limit - ARTS 3379 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ARTS 3382": {
+    "name": "Color as Subject  - Figure and Life Painting",
+    "code": "ARTS 3382",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2348 or ARTS 2350 or ARTS 2380 or ARTS 2381 or ATCM 2301 or ATCM 2302 or instructor consent required. Repeat Limit - ARTS 3382 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "ARTS 3383": {
+    "name": "Digital Drawing",
+    "code": "ARTS 3383",
+    "prereq": "ARTS 2348 or ARTS 1316 or ARTS 2316 or ARTS 2350 or ARTS 2380 or ARTS 2381. Repeat Limit - ARTS 3383 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ARTS 3387": {
+    "name": "Lighting for Photography and Video",
+    "code": "ARTS 3387",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2318 or ARTS 2348 or ARTS 2350 or ARTS 2380 or ATCM 2301 or ATCM 2302"
+  },
+  "ARTS 4310": {
+    "name": "Studies in Contemporary Exhibitions  - Stdy Contemporary Exhibitions",
+    "code": "ARTS 4310",
+    "prereq": "ARTS 1316 or ARTS 2316 or ARTS 2350 or ARTS 2380 or ARTS 2381. Repeat Restriction"
+  },
+  "ARTS 4368": {
+    "name": "Advanced Visual Arts",
+    "code": "ARTS 4368",
+    "prereq": "6 SCH of upper-division ARTS courses. Repeat Limit - ARTS 4368 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ATCM 2300": {
+    "name": "Introduction to TechnoCulture",
+    "code": "ATCM 2300",
+    "prereq": "ATCM 2300 Repeat Restriction"
+  },
+  "ATCM 2301": {
+    "name": "Computer Imaging",
+    "code": "ATCM 2301",
+    "prereq": "ATCM 2301 Repeat Restriction"
+  },
+  "ATCM 2302": {
+    "name": "Design I",
+    "code": "ATCM 2302",
+    "prereq": "ATCM 2302 Repeat Restriction"
+  },
+  "ATCM 2321": {
+    "name": "Reading Media Critically",
+    "code": "ATCM 2321",
+    "prereq": "RHET 1302. Repeat Restriction"
+  },
+  "ATCM 2322": {
+    "name": "Media Histories",
+    "code": "ATCM 2322",
+    "prereq": "RHET 1302"
+  },
+  "ATCM 2330": {
+    "name": "Digital Art and Social Practice",
+    "code": "ATCM 2330",
+    "prereq": "ATCM 2330 Repeat Restriction"
+  },
+  "ATCM 2335": {
+    "name": "Internet Studio I",
+    "code": "ATCM 2335",
+    "prereq": "ATCM 2301"
+  },
+  "ATCM 2340": {
+    "name": "Visual Communication",
+    "code": "ATCM 2340",
+    "prereq": null
+  },
+  "ATCM 2345": {
+    "name": "Sound Design",
+    "code": "ATCM 2345",
+    "prereq": "ANGM 2345 Repeat Restriction"
+  },
+  "ATCM 2350": {
+    "name": "Time-Based Media",
+    "code": "ATCM 2350",
+    "prereq": "ATCM 2350 Repeat Restriction"
+  },
+  "ATCM 2360": {
+    "name": "Design Histories",
+    "code": "ATCM 2360",
+    "prereq": null
+  },
+  "ATCM 3301": {
+    "name": "Digital Content Design",
+    "code": "ATCM 3301",
+    "prereq": "RHET 1302. ATCM 3301 Repeat Restriction"
+  },
+  "ATCM 3325": {
+    "name": "Global Media Cultures",
+    "code": "ATCM 3325",
+    "prereq": "RHET 1302"
+  },
+  "ATCM 3326": {
+    "name": "Emerging Media Arts",
+    "code": "ATCM 3326",
+    "prereq": "ATCM 2301 or ATCM 2302 or ATCM 2350. ATCM 3326 Repeat Limit - This course may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ATCM 3336": {
+    "name": "Design Research Methods",
+    "code": "ATCM 3336",
+    "prereq": "ATCM 2302 or instructor consent required. ATCM 3336 Repeat Restriction"
+  },
+  "ATCM 3337": {
+    "name": "Interaction Design I",
+    "code": "ATCM 3337",
+    "prereq": "ATCM 2302. Repeat Restriction"
+  },
+  "ATCM 3339": {
+    "name": "Intermediate Digital Painting",
+    "code": "ATCM 3339",
+    "prereq": "ATCM 2301 and ATCM 2302. Repeat Limit - ATCM 3339 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ATCM 3340": {
+    "name": "Design II",
+    "code": "ATCM 3340",
+    "prereq": "ATCM 2302. Repeat Restriction"
+  },
+  "ATCM 3341": {
+    "name": "Prototyping",
+    "code": "ATCM 3341",
+    "prereq": null
+  },
+  "ATCM 3342": {
+    "name": "Design Operations",
+    "code": "ATCM 3342",
+    "prereq": null
+  },
+  "ATCM 3346": {
+    "name": "Audio Productions Lab I",
+    "code": "ATCM 3346",
+    "prereq": "ATCM 2345. Repeat Limit - ANGM 3346 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ATCM 3347": {
+    "name": "Recording Studio Techniques I",
+    "code": "ATCM 3347",
+    "prereq": "ATCM  2345"
+  },
+  "ATCM 3350": {
+    "name": "Digital Video Production I",
+    "code": "ATCM 3350",
+    "prereq": "ATCM 2301 or ATCM 2302 or ARTS 2350 or ARTS 2380 or FILM 2332. Repeat Restriction"
+  },
+  "ATCM 3355": {
+    "name": "Computer Modeling for Digital Fabrication",
+    "code": "ATCM 3355",
+    "prereq": "ATCM 2355 or ATCM 2301 or ANGM 3306"
+  },
+  "ATCM 3372": {
+    "name": "Sound Design for Games",
+    "code": "ATCM 3372",
+    "prereq": "ATCM 2345. Repeat Restriction"
+  },
+  "ATCM 3373": {
+    "name": "Field Audio Recording Techniques",
+    "code": "ATCM 3373",
+    "prereq": "ATCM 2345. Repeat Limit - ATCM 3373 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ATCM 3387": {
+    "name": "Emergence Studies - Experimental Publishing in the AI Era",
+    "code": "ATCM 3387",
+    "prereq": null
+  },
+  "ATCM 4326": {
+    "name": "Mediated Textuality",
+    "code": "ATCM 4326",
+    "prereq": "ATCM 3301 or ATCM 3320"
+  },
+  "ATCM 4330": {
+    "name": "Culture Jamming",
+    "code": "ATCM 4330",
+    "prereq": "ATCM 2330 or ATCM 3320"
+  },
+  "ATCM 4337": {
+    "name": "Interaction Design II",
+    "code": "ATCM 4337",
+    "prereq": "ATCM 3337"
+  },
+  "ATCM 4340": {
+    "name": "Strategic Design",
+    "code": "ATCM 4340",
+    "prereq": "ATCM 3340"
+  },
+  "ATCM 4341": {
+    "name": "Applied Experience Design",
+    "code": "ATCM 4341",
+    "prereq": null
+  },
+  "ATCM 4350": {
+    "name": "Digital Video Production II",
+    "code": "ATCM 4350",
+    "prereq": "ATCM 3350. Repeat Restriction"
+  },
+  "ATCM 4384": {
+    "name": "Ethics in New Media  Technology  and Communication",
+    "code": "ATCM 4384",
+    "prereq": "ATCM 4384 Repeat Restriction"
+  },
+  "ATCM 4397": {
+    "name": "Senior Seminar",
+    "code": "ATCM 4397",
+    "prereq": null
+  },
+  "ATCM 4398": {
+    "name": "Capstone Project",
+    "code": "ATCM 4398",
+    "prereq": null
+  },
+  "ATCM 6300": {
+    "name": "Approaches to Arts  Technology  and Emerging Communication",
+    "code": "ATCM 6300",
+    "prereq": null
+  },
+  "ATCM 6306": {
+    "name": "First Year Seminar",
+    "code": "ATCM 6306",
+    "prereq": null
+  },
+  "ATCM 6325": {
+    "name": "Arts  Science  and Humanities",
+    "code": "ATCM 6325",
+    "prereq": "Repeat Limit - ATCM 6325 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "ATCM 6375": {
+    "name": "Critical Approaches to Networked Cultures",
+    "code": "ATCM 6375",
+    "prereq": null
+  },
+  "ATCM 6377": {
+    "name": "Creativity as Social Practice",
+    "code": "ATCM 6377",
+    "prereq": null
+  },
+  "ATCM 6387": {
+    "name": "Emerging Media Studio",
+    "code": "ATCM 6387",
+    "prereq": null
+  },
+  "ATCM 6394": {
+    "name": "Technology for the Invisible",
+    "code": "ATCM 6394",
+    "prereq": null
+  },
+  "ATCM 6395": {
+    "name": "Special Topics in Arts  Technology  and Emerging Communication  - Lightsquad Studio",
+    "code": "ATCM 6395",
+    "prereq": "Repeat Limit - ATCM 6395 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "ATCM 7331": {
+    "name": "Research Methodology in Arts  Technology  and Emerging Communication",
+    "code": "ATCM 7331",
+    "prereq": null
+  },
+  "AUD 6013": {
+    "name": "AuD Grand Rounds",
+    "code": "AUD 6013",
+    "prereq": "BBS GRAD Majors Only"
+  },
+  "AUD 6121": {
+    "name": "Foundation Laboratory Procedures in Audiology and Hearing Science",
+    "code": "AUD 6121",
+    "prereq": "BBSC majors only. Corequisite: AUD 6310 or AUD 6311 or AUD 7321 or AUD 7327. Repeat Limit - AUD 6121 may only be repeated for a maximum of 4 semester credit hours"
+  },
+  "AUD 6122": {
+    "name": "Laboratory Procedures in Audiology and Hearing Science",
+    "code": "AUD 6122",
+    "prereq": "BBSC majors only and department consent required. Corequisite: AUD 7324 or AUD 7354. Repeat Limit - AUD 6122 may only be repeated for a maximum of 4 semester credit hours"
+  },
+  "AUD 6303": {
+    "name": "Hearing Science",
+    "code": "AUD 6303",
+    "prereq": "BBSC majors only"
+  },
+  "AUD 6305": {
+    "name": "Anatomy and Physiology of Audition",
+    "code": "AUD 6305",
+    "prereq": "BBSC majors only"
+  },
+  "AUD 6310": {
+    "name": "Advanced Clinical Audiology",
+    "code": "AUD 6310",
+    "prereq": "BBSC majors only. Corequisite: AUD 6V20"
+  },
+  "AUD 7320": {
+    "name": "Tinnitus and Decreased Sound Tolerance",
+    "code": "AUD 7320",
+    "prereq": null
+  },
+  "AUD 7321": {
+    "name": "Theories of Amplification",
+    "code": "AUD 7321",
+    "prereq": "BBSC majors only. Corequisite: AUD 6V20"
+  },
+  "AUD 7324": {
+    "name": "Seminar in Cochlear Implants and Technology for Persons with Hearing Impairments",
+    "code": "AUD 7324",
+    "prereq": "BBSC majors only"
+  },
+  "AUD 7338": {
+    "name": "Research in Audiology",
+    "code": "AUD 7338",
+    "prereq": "BBSC majors only"
+  },
+  "AUD 7352": {
+    "name": "Advanced Diagnostics of Auditory and Balance Disorder",
+    "code": "AUD 7352",
+    "prereq": "BBS GRAD Majors Only"
+  },
+  "AUD 7354": {
+    "name": "Auditory Evoked Potentials and Auditory Processing",
+    "code": "AUD 7354",
+    "prereq": null
+  },
+  "AUD 7361": {
+    "name": "Practice and Business Management",
+    "code": "AUD 7361",
+    "prereq": null
   }
 }
