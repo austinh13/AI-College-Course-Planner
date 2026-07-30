@@ -1213,5 +1213,2270 @@
     "name": "Practice and Business Management",
     "code": "AUD 7361",
     "prereq": null
+  },
+  "BA 1104": {
+    "name": "First-Year Seminar in Management",
+    "code": "BA 1104",
+    "prereq": null
+  },
+  "BA 1310": {
+    "name": "Making Choices in Free Market Systems",
+    "code": "BA 1310",
+    "prereq": "BA 1310 Repeat Restriction"
+  },
+  "BA 1320": {
+    "name": "Business in a Global World",
+    "code": "BA 1320",
+    "prereq": "BA 1320 Repeat Restriction"
+  },
+  "BA 3105": {
+    "name": "Professional Development",
+    "code": "BA 3105",
+    "prereq": null
+  },
+  "BA 3300": {
+    "name": "Advanced Topics in Capitalism  Ideas and Challenges That Shape Our World",
+    "code": "BA 3300",
+    "prereq": "BA 3300 Repeat Restriction"
+  },
+  "BBSU 1100": {
+    "name": "First Year Seminar",
+    "code": "BBSU 1100",
+    "prereq": "BBS Majors Only"
+  },
+  "BCOM 3300": {
+    "name": "Professionalism and Communication in Business",
+    "code": "BCOM 3300",
+    "prereq": "BA 1105 or BA 3105. Repeat Restriction"
+  },
+  "BCOM 4300": {
+    "name": "Managing Communications in Business",
+    "code": "BCOM 4300",
+    "prereq": "BCOM 1300 or BCOM 3300. Repeat Restriction"
+  },
+  "BIMS 1101": {
+    "name": "Introduction to Biomedical Sciences",
+    "code": "BIMS 1101",
+    "prereq": null
+  },
+  "BIMS 3306": {
+    "name": "Parasitology",
+    "code": "BIMS 3306",
+    "prereq": "(BIOL 2311 or equivalent) and (BIOL 2312 or equivalent) and (BIOL 2281 or equivalent)"
+  },
+  "BIMS 3325": {
+    "name": "Drug Development to Clinical Trials",
+    "code": "BIMS 3325",
+    "prereq": "(BIOL 2281 or BIOL 2V81 or CHEM 2401 or equivalent) and BIOL 2311 and BIOL 2312"
+  },
+  "BIMS 3335": {
+    "name": "Informatics and Programming",
+    "code": "BIMS 3335",
+    "prereq": "(MATH 1325 or MATH 2413) and (STAT 1342 or STAT 2332 or STAT 3332). (Same as MATH 3335 and STAT 3335)"
+  },
+  "BIMS 3337": {
+    "name": "Elements of Biostatistics and Epidemiology",
+    "code": "BIMS 3337",
+    "prereq": "(MATH 2414 or MATH 2419) and either STAT 3355 or ((STAT 2332 or STAT 3332) and (MATH 3335 or STAT 3335))"
+  },
+  "BIMS 3372": {
+    "name": "Comparative Physiology",
+    "code": "BIMS 3372",
+    "prereq": "BIOL 2312"
+  },
+  "BIMS 3380": {
+    "name": "Biochemistry Laboratory",
+    "code": "BIMS 3380",
+    "prereq": "BIOL 2281 or CHEM 2401 or equivalent. Prerequisite or Corequisite: BIOL 3461 or CHEM 3461"
+  },
+  "BIMS 3385": {
+    "name": "Medical Histology",
+    "code": "BIMS 3385",
+    "prereq": "BIOL 2311 and BIOL 2312 or equivalent"
+  },
+  "BIMS 3398": {
+    "name": "Biological Barriers",
+    "code": "BIMS 3398",
+    "prereq": "BIOL 2311 and BIOL 2312 or equivalent"
+  },
+  "BIMS 4312": {
+    "name": "Data Science for Biologists  Programming and Analysis",
+    "code": "BIMS 4312",
+    "prereq": "(BIOL 2311 or equivalent) and (BIOL 2312 or equivalent) and STAT 3332"
+  },
+  "BIMS 4338": {
+    "name": "Biostatistics and Machine Learning Lab",
+    "code": "BIMS 4338",
+    "prereq": "BIMS 3337 or STAT 3337. BIMS/STAT 4V96 Repeat Limit - This course may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "BIMS 4350": {
+    "name": "Medical Microbiology",
+    "code": "BIMS 4350",
+    "prereq": "(BIOL 3401 or equivalent) or BIOL 3520 or (BIOL 3303 and BIOL 3203)"
+  },
+  "BIMS 4356": {
+    "name": "Molecular Neuropathology",
+    "code": "BIMS 4356",
+    "prereq": "(BIOL 2281 or BIOL 2V81 or equivalent) and BIOL 3401"
+  },
+  "BIMS 4366": {
+    "name": "Molecular Biology of Cancer",
+    "code": "BIMS 4366",
+    "prereq": "Prerequisite BIOL 2311. Repeat Limit"
+  },
+  "BIMS 4371": {
+    "name": "General and Molecular Virology",
+    "code": "BIMS 4371",
+    "prereq": "BIOL 2311 and BIOL 2312 or equivalent"
+  },
+  "BIMS 4379": {
+    "name": "Advanced Research in Biomedical Sciences  - Cancer Therapeutics",
+    "code": "BIMS 4379",
+    "prereq": "BIOL 2311 and BIOL 2312 and BIOL 2281"
+  },
+  "BIMS 4v00": {
+    "name": null,
+    "code": "BIMS 4v00",
+    "prereq": null
+  },
+  "BIMS 5304": {
+    "name": "Introduction to Human Health Research",
+    "code": "BIMS 5304",
+    "prereq": null
+  },
+  "BIOL 1318": {
+    "name": "Human Genetics",
+    "code": "BIOL 1318",
+    "prereq": null
+  },
+  "BIOL 2111": {
+    "name": "Introduction to Modern Biology Workshop I",
+    "code": "BIOL 2111",
+    "prereq": "((CHEM 1311 or CHEM 1315 or equivalent) and (CHEM 1312 or CHEM 1316)) or CHEM 1301. Corequisite: BIOL 2311.001. Check class notes to make sure you are selecting the matching corequisite section. Repeat Restriction"
+  },
+  "BIOL 2112": {
+    "name": "Introduction to Modern Biology Workshop II",
+    "code": "BIOL 2112",
+    "prereq": "Corequisite: BIOL 2312.001. Check class notes to make sure you are selecting the matching corequisite section.  Repeat Restriction"
+  },
+  "BIOL 2281": {
+    "name": "Introductory Biology Laboratory",
+    "code": "BIOL 2281",
+    "prereq": "BIOL 2311. Repeat Restriction"
+  },
+  "BIOL 2311": {
+    "name": "Introduction to Modern Biology I",
+    "code": "BIOL 2311",
+    "prereq": "((CHEM 1311 or CHEM 1315) and (CHEM 1312 or CHEM 1316)) or CHEM 1301. Corequisite: BIOL 2111.501.  Check class notes to make sure you are selecting the matching corequisite section. Repeat Restriction"
+  },
+  "BIOL 2312": {
+    "name": "Introduction to Modern Biology II",
+    "code": "BIOL 2312",
+    "prereq": "Coreqrequisite: BIOL 2112 workshop 001. Check class notes to make sure you are selecting the matching corequisite section. Repeat Restriction"
+  },
+  "BIOL 2v81": {
+    "name": null,
+    "code": "BIOL 2v81",
+    "prereq": null
+  },
+  "BIOL 3203": {
+    "name": "Introduction to Microbiology Lab",
+    "code": "BIOL 3203",
+    "prereq": "Prerequisite or Corequisite: BIOL 3303"
+  },
+  "BIOL 3303": {
+    "name": "Introduction to Microbiology",
+    "code": "BIOL 3303",
+    "prereq": "(BIOL 2311 or equivalent) and (BIOL 2312 or equivalent) and (BIOL 2281 or equivalent). Repeat Restriction"
+  },
+  "BIOL 3306": {
+    "name": "Parasitology",
+    "code": "BIOL 3306",
+    "prereq": "(BIOL 2311 or equivalent) and (BIOL 2312 or equivalent) and (BIOL 2281 or equivalent)"
+  },
+  "BIOL 3318": {
+    "name": "Forensic Biology",
+    "code": "BIOL 3318",
+    "prereq": "BIOL 3318 Repeat Restriction"
+  },
+  "BIOL 3320": {
+    "name": "Applied Genetics",
+    "code": "BIOL 3320",
+    "prereq": "(BIOL 2281 or equivalent) and BIOL 2311 and (BIOL 2111 or equivalent) and BIOL 2312 and (BIOL 2112 or equivalent)"
+  },
+  "BIOL 3322": {
+    "name": "Ecosystems",
+    "code": "BIOL 3322",
+    "prereq": "BIOL 2311"
+  },
+  "BIOL 3325": {
+    "name": "Drug Development to Clinical Trials",
+    "code": "BIOL 3325",
+    "prereq": "(BIOL 2281 or BIOL 2V81 or CHEM 2401 or equivalent) and BIOL 2311 and BIOL 2312"
+  },
+  "BIOL 3335": {
+    "name": "Microbial Physiology",
+    "code": "BIOL 3335",
+    "prereq": "BIOL 2311 and (BIOL 3461 or CHEM 3461)"
+  },
+  "BIOL 3336": {
+    "name": "Protein and Nucleic Acid Structure",
+    "code": "BIOL 3336",
+    "prereq": "CHEM 3461 or BIOL 3461 or equivalent"
+  },
+  "BIOL 3355": {
+    "name": "Clinical Pathophysiology",
+    "code": "BIOL 3355",
+    "prereq": "(BIOL 2281 or CHEM 2401) and BIOL 2312 and Collegium V Honors Student Group"
+  },
+  "BIOL 3370": {
+    "name": "Exercise Physiology",
+    "code": "BIOL 3370",
+    "prereq": "BIOL 2312 and (BIOL 2311 or equivalent) and BIOL 3455. Repeat Restriction"
+  },
+  "BIOL 3372": {
+    "name": "Comparative Physiology",
+    "code": "BIOL 3372",
+    "prereq": "BIOL 2312"
+  },
+  "BIOL 3375": {
+    "name": "Dental Microbiology",
+    "code": "BIOL 3375",
+    "prereq": "(BIOL 2311 or equivalent) and (BIOL 2312 or equivalent) and (BIOL 2281 or BIOL2V81 or equivalent)"
+  },
+  "BIOL 3380": {
+    "name": "Biochemistry Laboratory",
+    "code": "BIOL 3380",
+    "prereq": "BIOL 2281 or CHEM 2401 or equivalent. Prerequisite or Corequisite: BIOL 3461 or CHEM 3461"
+  },
+  "BIOL 3385": {
+    "name": "Medical Histology",
+    "code": "BIOL 3385",
+    "prereq": "BIOL 2311 and BIOL 2312 or equivalent"
+  },
+  "BIOL 3388": {
+    "name": "Honey Bee Biology",
+    "code": "BIOL 3388",
+    "prereq": "(BIOL 2281 or BIOL 2V81 or CHEM 2401 or equivalent) and BIOL 2311 and BIOL 2312"
+  },
+  "BIOL 3398": {
+    "name": "Biological Barriers",
+    "code": "BIOL 3398",
+    "prereq": "BIOL 2311 and BIOL 2312 or equivalent"
+  },
+  "BIOL 3401": {
+    "name": "Genetics",
+    "code": "BIOL 3401",
+    "prereq": "BIOL 2311 and (BIOL 2281 or CHEM 2401 or equivalent) and (CHEM 2323 or equivalent)"
+  },
+  "BIOL 3402": {
+    "name": "Molecular and Cell Biology",
+    "code": "BIOL 3402",
+    "prereq": "BIOL 3401 and (BIOL 3461 or CHEM 3461) or equivalent"
+  },
+  "BIOL 3455": {
+    "name": "Human Anatomy and Physiology with Lab I",
+    "code": "BIOL 3455",
+    "prereq": "BIOL 2312. Repeat Restriction"
+  },
+  "BIOL 3456": {
+    "name": "Human Anatomy and Physiology with Lab II",
+    "code": "BIOL 3456",
+    "prereq": "BIOL 2312 or equivalent. Repeat Restriction"
+  },
+  "BIOL 3461": {
+    "name": "Biochemistry I",
+    "code": "BIOL 3461",
+    "prereq": "CHEM 2323 and CHEM 2325. Repeat Restriction"
+  },
+  "BIOL 3462": {
+    "name": "Biochemistry II",
+    "code": "BIOL 3462",
+    "prereq": "BIOL 3461 or CHEM 3461. Repeat Restriction"
+  },
+  "BIOL 4312": {
+    "name": "Data Science for Biologists  Programming and Analysis",
+    "code": "BIOL 4312",
+    "prereq": "(BIOL 2311 or equivalent) and (BIOL 2312 or equivalent) and STAT 3332"
+  },
+  "BIOL 4325": {
+    "name": "Nutrition and Metabolism",
+    "code": "BIOL 4325",
+    "prereq": "Prerequisite or Corequisite: BIOL 3461"
+  },
+  "BIOL 4345": {
+    "name": "Immunobiology",
+    "code": "BIOL 4345",
+    "prereq": "CHEM 2323 and CHEM 2325. Repeat Restriction"
+  },
+  "BIOL 4350": {
+    "name": "Medical Microbiology",
+    "code": "BIOL 4350",
+    "prereq": "(BIOL 3401 or equivalent) or BIOL 3520 or (BIOL 3303 and BIOL 3203)"
+  },
+  "BIOL 4356": {
+    "name": "Molecular Neuropathology",
+    "code": "BIOL 4356",
+    "prereq": "(BIOL 2281 or BIOL 2V81 or equivalent) and BIOL 3401"
+  },
+  "BIOL 4366": {
+    "name": "Molecular Biology of Cancer",
+    "code": "BIOL 4366",
+    "prereq": "Prerequisite BIOL 2311. Repeat Limit"
+  },
+  "BIOL 4371": {
+    "name": "General and Molecular Virology",
+    "code": "BIOL 4371",
+    "prereq": "BIOL 2311 and BIOL 2312 or equivalent"
+  },
+  "BIOL 4380": {
+    "name": "Cell and Molecular Biology Laboratory",
+    "code": "BIOL 4380",
+    "prereq": "BIOL 3380. Prerequisite or Corequisite: BIOL 3402"
+  },
+  "BIOL 4385": {
+    "name": "Oral Histology and Embryology",
+    "code": "BIOL 4385",
+    "prereq": "(BIOL 3461 or equivalent) and (BIOL 3455 or BIOL 3456). Repeat Restriction"
+  },
+  "BIOL 5325": {
+    "name": "Nutritional Physiology",
+    "code": "BIOL 5325",
+    "prereq": null
+  },
+  "BIOL 5375": {
+    "name": "Genes to Genomes",
+    "code": "BIOL 5375",
+    "prereq": null
+  },
+  "BIOL 5376": {
+    "name": "Applied Bioinformatics",
+    "code": "BIOL 5376",
+    "prereq": null
+  },
+  "BIOL 5398": {
+    "name": "Biological Barriers in Health and Disease",
+    "code": "BIOL 5398",
+    "prereq": null
+  },
+  "BIOL 5420": {
+    "name": "Molecular Biology",
+    "code": "BIOL 5420",
+    "prereq": null
+  },
+  "BIOL 5460": {
+    "name": "Quantitative Biology",
+    "code": "BIOL 5460",
+    "prereq": null
+  },
+  "BIOL 6100": {
+    "name": "Biological Sciences Department Seminar",
+    "code": "BIOL 6100",
+    "prereq": "Graduate standing in Biology"
+  },
+  "BIOL 6111": {
+    "name": "Graduate Research Presentation",
+    "code": "BIOL 6111",
+    "prereq": null
+  },
+  "BIOL 6193": {
+    "name": "Colloquium in Molecular and Cell Biology",
+    "code": "BIOL 6193",
+    "prereq": null
+  },
+  "BIOL 6252": {
+    "name": "Current Research in Molecular Biology",
+    "code": "BIOL 6252",
+    "prereq": "Repeat Limit - BIOL 6252 may only be repeated for a maximum of 8 semester credit hours"
+  },
+  "BIOL 6343": {
+    "name": "Molecular Neuropathology",
+    "code": "BIOL 6343",
+    "prereq": null
+  },
+  "BIOL 6354": {
+    "name": "Microbial Physiology",
+    "code": "BIOL 6354",
+    "prereq": null
+  },
+  "BIOL 6373": {
+    "name": "Proteomics",
+    "code": "BIOL 6373",
+    "prereq": "BIOL 5410"
+  },
+  "BIOL 6394": {
+    "name": "Laboratory Techniques and Research Strategy Workshop",
+    "code": "BIOL 6394",
+    "prereq": "Two courses from the following - BIOL 5410 or BIOL 5420 or BIOL 5440 or BIOL 5460"
+  },
+  "BIOL 6396": {
+    "name": "Cellular Dynamics",
+    "code": "BIOL 6396",
+    "prereq": null
+  },
+  "BIOL 6397": {
+    "name": "Lipid Metabolism in Health and Disease",
+    "code": "BIOL 6397",
+    "prereq": null
+  },
+  "BIOL 6398": {
+    "name": "The Art of Scientific Writing",
+    "code": "BIOL 6398",
+    "prereq": null
+  },
+  "BIOL 6399": {
+    "name": "Inner Workings of the Pharmaceutical Industry",
+    "code": "BIOL 6399",
+    "prereq": null
+  },
+  "BIOL 6431": {
+    "name": "Molecular Genetics",
+    "code": "BIOL 6431",
+    "prereq": null
+  },
+  "BIOL 6452": {
+    "name": "Modern Biochemistry I",
+    "code": "BIOL 6452",
+    "prereq": null
+  },
+  "BIOL 6453": {
+    "name": "Modern Biochemistry II",
+    "code": "BIOL 6453",
+    "prereq": null
+  },
+  "BIOL 6456": {
+    "name": "Eukaryotic Molecular and Cell Biology",
+    "code": "BIOL 6456",
+    "prereq": null
+  },
+  "BIOL 6684": {
+    "name": "Biotechnology Laboratory",
+    "code": "BIOL 6684",
+    "prereq": null
+  },
+  "BIOL 6v29": {
+    "name": null,
+    "code": "BIOL 6v29",
+    "prereq": null
+  },
+  "BIOL 6v51": {
+    "name": null,
+    "code": "BIOL 6v51",
+    "prereq": null
+  },
+  "BIS 1100": {
+    "name": "Interdisciplinary Studies Freshman Seminar",
+    "code": "BIS 1100",
+    "prereq": null
+  },
+  "BIS 2190": {
+    "name": "Library Research Skills",
+    "code": "BIS 2190",
+    "prereq": "BIS 2190 Repeat Restriction"
+  },
+  "BIS 3320": {
+    "name": "The Nature of Intellectual Inquiry",
+    "code": "BIS 3320",
+    "prereq": "BIS 3320 Repeat Restriction"
+  },
+  "BIS 4306": {
+    "name": "Strategies for Diversity in Education",
+    "code": "BIS 4306",
+    "prereq": "Upper-division standing"
+  },
+  "BIS 4310": {
+    "name": "Co-op Education",
+    "code": "BIS 4310",
+    "prereq": "Repeat Limit - BIS 4310 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "BLAW 2301": {
+    "name": "Business and Public Law",
+    "code": "BLAW 2301",
+    "prereq": "BLAW 2301 Repeat Restriction and non-DMHP/non-LLC (DMLC, DFLC, DHLC) Student Group Only"
+  },
+  "BLAW 3301": {
+    "name": "Employment Law",
+    "code": "BLAW 3301",
+    "prereq": "BLAW 2301"
+  },
+  "BLAW 4301": {
+    "name": "International Law",
+    "code": "BLAW 4301",
+    "prereq": "BLAW 4301 Repeat Restriction"
+  },
+  "BMEN 1208": {
+    "name": "Introduction to Bioengineering II",
+    "code": "BMEN 1208",
+    "prereq": "BMEN 1100. Prerequisite or Corequisite: BMEN 1300 or equivalent"
+  },
+  "BMEN 2320": {
+    "name": "Statics",
+    "code": "BMEN 2320",
+    "prereq": "PHYS 2325 and PHYS 2125. Prerequisite or Corequisite: MATH 2415 or MATH 2419 or equivalent"
+  },
+  "BMEN 3220": {
+    "name": "Electrical and Electronic Circuits in Biomedical Engineering Lab",
+    "code": "BMEN 3220",
+    "prereq": "MATH 2420 and PHYS 2326 and PHYS 2126. Prerequisites or Corequisites: BMEN 1300 and BMEN 3320"
+  },
+  "BMEN 3300": {
+    "name": "Advanced Engineering Mathematics for Bioengineers",
+    "code": "BMEN 3300",
+    "prereq": "(MATH 2415 or MATH 2419 or equivalent) and ENGR 2300. Prerequisite or Corequisite: MATH 2420"
+  },
+  "BMEN 3302": {
+    "name": "Bioengineering Signals and Systems",
+    "code": "BMEN 3302",
+    "prereq": "BMEN 1208 and ENGR 3300"
+  },
+  "BMEN 3310": {
+    "name": "Fluid Mechanics and Transport Processes in Biomedical Engineering",
+    "code": "BMEN 3310",
+    "prereq": "BMEN 1208 and ENGR 3300"
+  },
+  "BMEN 3315": {
+    "name": "Thermodynamics and Physical Chemistry in Biomedical Engineering",
+    "code": "BMEN 3315",
+    "prereq": "(CHEM 1301 or (CHEM 1311 and CHEM 1312)) and (CHEM 2324 or (CHEM 2323 and CHEM 2325)) and (MATH 2415 or MATH 2419 or equivalent) and (PHYS 2126 and PHYS 2326)"
+  },
+  "BMEN 3320": {
+    "name": "Electrical and Electronic Circuits in Biomedical Engineering",
+    "code": "BMEN 3320",
+    "prereq": "MATH 2420 and (PHYS 2126 and PHYS 2326). Prerequisite or Corequisite: CS 1324 or BMEN 1300"
+  },
+  "BMEN 3331": {
+    "name": "Cell and Molecular Engineering",
+    "code": "BMEN 3331",
+    "prereq": "MATH 2420 and CHEM 1312"
+  },
+  "BMEN 3332": {
+    "name": "Quantitative Physiology for Engineers",
+    "code": "BMEN 3332",
+    "prereq": "BMEN 3331"
+  },
+  "BMEN 3341": {
+    "name": "Probability Theory and Statistics for Biomedical Engineers",
+    "code": "BMEN 3341",
+    "prereq": "MATH 2414 or MATH 2419. Credit cannot be received for both courses, (CS 3341 or SE 3341 or STAT 3341 or ENGR 3341) and BMEN 3341"
+  },
+  "BMEN 3350": {
+    "name": "Biomedical Component and System Design",
+    "code": "BMEN 3350",
+    "prereq": "BMEN 3320"
+  },
+  "BMEN 3380": {
+    "name": "Medical Imaging Systems and Methods",
+    "code": "BMEN 3380",
+    "prereq": "BMEN 3302"
+  },
+  "BMEN 3399": {
+    "name": "Introductory Biomechanics",
+    "code": "BMEN 3399",
+    "prereq": "BMEN 2320. Repeat Restriction"
+  },
+  "BMEN 4310": {
+    "name": "Feedback Systems in Biomedical Engineering",
+    "code": "BMEN 4310",
+    "prereq": "ENGR 2300 and BMEN 3302 and MATH 2420"
+  },
+  "BMEN 4343": {
+    "name": "Microfluidics in Biomedical Engineering",
+    "code": "BMEN 4343",
+    "prereq": "BMEN 1208 and MATH 2420 (or equivalent)"
+  },
+  "BMEN 4355": {
+    "name": "Finite Element Analysis in Biomedical Engineering",
+    "code": "BMEN 4355",
+    "prereq": "(BMEN 3399 and ENGR 2300) or (senior status and permission of instructor)"
+  },
+  "BMEN 4360": {
+    "name": "Biomaterials and Medical Devices",
+    "code": "BMEN 4360",
+    "prereq": "Prerequisites or Corequisites: BMEN 2320 and (CHEM 1301 or (CHEM 1311 and CHEM 1312)) and (CHEM 2324 or (CHEM 2323 and CHEM 2325))"
+  },
+  "BMEN 4371": {
+    "name": "Introduction to Biophotonics",
+    "code": "BMEN 4371",
+    "prereq": "PHYS 2326"
+  },
+  "BMEN 4388": {
+    "name": "Senior Design Project I",
+    "code": "BMEN 4388",
+    "prereq": "BMEN 3200 and BMEN 3332 and ECS 2390"
+  },
+  "BMEN 4389": {
+    "name": "Senior Design Project II",
+    "code": "BMEN 4389",
+    "prereq": "BMEN 4388"
+  },
+  "BMEN 4v95": {
+    "name": null,
+    "code": "BMEN 4v95",
+    "prereq": null
+  },
+  "BMEN 6325": {
+    "name": "Human Motion Analysis",
+    "code": "BMEN 6325",
+    "prereq": null
+  },
+  "BMEN 6337": {
+    "name": "Good Manufacturing Practices",
+    "code": "BMEN 6337",
+    "prereq": null
+  },
+  "BMEN 6338": {
+    "name": "Six Sigma Yellow Belt for Biomedical Engineers",
+    "code": "BMEN 6338",
+    "prereq": null
+  },
+  "BMEN 6343": {
+    "name": null,
+    "code": "BMEN 6343",
+    "prereq": null
+  },
+  "BMEN 6351": {
+    "name": "Biomedical Microdevices",
+    "code": "BMEN 6351",
+    "prereq": null
+  },
+  "BMEN 6367": {
+    "name": "Artificial Intelligence in Biomedical Engineering",
+    "code": "BMEN 6367",
+    "prereq": null
+  },
+  "BMEN 6368": {
+    "name": "Cancer  Pathology-Therapeutics",
+    "code": "BMEN 6368",
+    "prereq": null
+  },
+  "BMEN 6372": {
+    "name": "Engineering Systems  Modeling and Simulation",
+    "code": "BMEN 6372",
+    "prereq": null
+  },
+  "BMEN 6373": {
+    "name": "Anatomy and Human Physiology for Engineers",
+    "code": "BMEN 6373",
+    "prereq": null
+  },
+  "BMEN 6374": {
+    "name": "Genes  Proteins and Cell Biology for Engineers",
+    "code": "BMEN 6374",
+    "prereq": null
+  },
+  "BMEN 6387": {
+    "name": "Applied Bioinformatics",
+    "code": "BMEN 6387",
+    "prereq": null
+  },
+  "BMEN 6391": {
+    "name": "Proteomics",
+    "code": "BMEN 6391",
+    "prereq": "BIOL 5410"
+  },
+  "BMEN 6393": {
+    "name": "Neural Engineering Methods and Applications",
+    "code": "BMEN 6393",
+    "prereq": null
+  },
+  "BMEN 6394": {
+    "name": "Medical Imaging Techniques and Image Processing",
+    "code": "BMEN 6394",
+    "prereq": "BMEN 3302"
+  },
+  "BMEN 6395": {
+    "name": "Advanced Topics in Neuroscience for Engineers",
+    "code": "BMEN 6395",
+    "prereq": null
+  },
+  "BMEN 6396": {
+    "name": "CRISPR and Genome Editing",
+    "code": "BMEN 6396",
+    "prereq": null
+  },
+  "BMEN 6399": {
+    "name": "Advanced Soft Tissue Mechanics",
+    "code": "BMEN 6399",
+    "prereq": "(MATH 2415 or MATH 2419) and BMEN 3399"
+  },
+  "BMEN 6v87": {
+    "name": null,
+    "code": "BMEN 6v87",
+    "prereq": null
+  },
+  "BMEN 7088": {
+    "name": "Departmental Seminar in Biomedical Engineering",
+    "code": "BMEN 7088",
+    "prereq": null
+  },
+  "BMEN 7188": {
+    "name": "Advanced Seminars in Biomedical Engineering I  - Seminar Biomedical Engineering",
+    "code": "BMEN 7188",
+    "prereq": "Repeat Limit - BMEN 7188 may only be repeated for a maximum of 2 semester credit hours"
+  },
+  "BMEN 7340": {
+    "name": "Experimental Methods and Statistical Analysis",
+    "code": "BMEN 7340",
+    "prereq": null
+  },
+  "BPS 4305": {
+    "name": "Strategic Management",
+    "code": "BPS 4305",
+    "prereq": "(BCOM 1300 or BCOM 3300) and (ACCT 2301 or FIN 3320 or HMGT 3301 or IMS 3310 or ITSS 3300 or MKT 3300 or OBHR 3310 or OBHR 3330 or OPRE 3310). BPS 4305 Repeat Restriction"
+  },
+  "BPS 4395": {
+    "name": "Capstone Senior Project - Business",
+    "code": "BPS 4395",
+    "prereq": "Junior or Senior standing and (ACCT 2301 or FIN 3320 or ITSS 3300 or HMGT 3301 or MKT 3300 or OPRE 3310 or IMS 3310 or OBHR 3310 or OBHR 3330). Prerequisite or Corequisite: BCOM 3300"
+  },
+  "BPS 6310": {
+    "name": "Strategic Management",
+    "code": "BPS 6310",
+    "prereq": "((ACCT 6301 and ACCT 6202) or ACCT 6305) and FIN 6301 and MKT 6301 and OB 6301. Credit cannot be received for both BPS 6310 and ENTP 6310"
+  },
+  "BPS 6332": {
+    "name": "Strategic Leadership",
+    "code": "BPS 6332",
+    "prereq": null
+  },
+  "BPS 6379": {
+    "name": "Business Strategies for Sustainability",
+    "code": "BPS 6379",
+    "prereq": null
+  },
+  "BPS 7300": {
+    "name": "Advanced Strategic Management Seminar I",
+    "code": "BPS 7300",
+    "prereq": "Corequisite: OB 7300"
+  },
+  "BUAN 3301": {
+    "name": "AI in Business",
+    "code": "BUAN 3301",
+    "prereq": "Math 1325"
+  },
+  "BUAN 4320": {
+    "name": "Database Fundamentals for Analytics",
+    "code": "BUAN 4320",
+    "prereq": "ITSS 3300 and ITSS 3311 and (MATH 1325 or MATH 2413 or MATH 2417) and (CS 2305 or MATH 2418 or MATH 2333 or OPRE 3333)"
+  },
+  "BUAN 4328": {
+    "name": "Harnessing AI for a Sustainable Future",
+    "code": "BUAN 4328",
+    "prereq": null
+  },
+  "BUAN 4337": {
+    "name": "Marketing Analytics",
+    "code": "BUAN 4337",
+    "prereq": "MKT 3300"
+  },
+  "BUAN 4350": {
+    "name": "Spreadsheet Modeling and Analytics",
+    "code": "BUAN 4350",
+    "prereq": "OPRE 3310"
+  },
+  "BUAN 4351": {
+    "name": "Foundations of Business Intelligence",
+    "code": "BUAN 4351",
+    "prereq": "ITSS 3300 and (BUAN 4320 or ITSS 4300) and (MATH 1325 or MATH 2413 or MATH 2417) and (CS 2305 or MATH 2418 or MATH 2333 or OPRE 3333). Repeat Restriction"
+  },
+  "BUAN 4352": {
+    "name": "Introduction to Web Analytics",
+    "code": "BUAN 4352",
+    "prereq": "ITSS 3300 and (MATH 1325 or MATH 2413 or MATH 2417) and (CS 2305 or MATH 2418 or MATH 2333 or OPRE 3333)"
+  },
+  "BUAN 4353": {
+    "name": "Business Analytics",
+    "code": "BUAN 4353",
+    "prereq": "(ITSS 3312 or OPRE 3312 or BUAN 4381 or ITSS 4381) and (MATH 1325 or MATH 2413 or MATH 2417) and (CS 2305 or MATH 2418 or MATH 2333 or OPRE 3333) and OPRE 3360"
+  },
+  "BUAN 4354": {
+    "name": "Advanced Big Data Analytics",
+    "code": "BUAN 4354",
+    "prereq": "(ITSS 3312 or BUAN 4381 or ITSS 4381) and (BUAN 4320 or ITSS 4300) and (BUAN 4351 or ITSS 4351)"
+  },
+  "BUAN 4355": {
+    "name": "Data Visualization",
+    "code": "BUAN 4355",
+    "prereq": "(ITSS 3312 or BUAN 4381 or ITSS 4381) and (BUAN 4320 or ITSS 4300) and (BUAN 4351 or ITSS 4351)"
+  },
+  "BUAN 4373": {
+    "name": "Data Science for Business Applications",
+    "code": "BUAN 4373",
+    "prereq": "OPRE 3360"
+  },
+  "BUAN 4381": {
+    "name": "Object Oriented Programming with Python",
+    "code": "BUAN 4381",
+    "prereq": "ITSS 3311 and (MATH 1325 or MATH 2413 or MATH 2417) and (CS 2305 or MATH 2333 or MATH 2418 or OPRE 3333). Repeat Restriction"
+  },
+  "BUAN 4382": {
+    "name": "Applied Artificial Intelligence Machine Learning",
+    "code": "BUAN 4382",
+    "prereq": "ITSS 3312 or BUAN 4381 or ITSS 4381"
+  },
+  "BUAN 4383": {
+    "name": "Machine Learning for Business Analytics",
+    "code": "BUAN 4383",
+    "prereq": "(ITSS 3312 or BUAN 4381 or ITSS 4381) and (BUAN 4373 or OPRE 4373)"
+  },
+  "BUAN 6312": {
+    "name": "Applied Econometrics and Time Series Analysis",
+    "code": "BUAN 6312",
+    "prereq": "Prerequisite or Corequisite: OPRE 6301 or OPRE 6359 or BUAN 6359 or FIN 6306 or FIN 6307 or SYSM 6303. Credit cannot be received for more than one of the following: BUAN 6312 or FIN 6318 or MECO 6312 and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6319": {
+    "name": "AI in Manufacturing  - AI in Manufacturing",
+    "code": "BUAN 6319",
+    "prereq": null
+  },
+  "BUAN 6320": {
+    "name": "Database Foundations",
+    "code": "BUAN 6320",
+    "prereq": "Credit cannot be received for more than one of the following: BUAN 6320 or HMGT 6338 or SYSM 6338 or MIS 6326 or ACCT 6320 or ACCT 6321 or MIS 6320 or OPRE 6393 and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6327": {
+    "name": "IT and AI Strategy and Innovation",
+    "code": "BUAN 6327",
+    "prereq": null
+  },
+  "BUAN 6333": {
+    "name": "Foundations of Programming for Business Analytics",
+    "code": "BUAN 6333",
+    "prereq": null
+  },
+  "BUAN 6335": {
+    "name": "Organizing for Business Analytics Platforms",
+    "code": "BUAN 6335",
+    "prereq": "Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6336": {
+    "name": "Applied AI in a Healthcare Setting",
+    "code": "BUAN 6336",
+    "prereq": "HMGT 6320"
+  },
+  "BUAN 6337": {
+    "name": "Predictive Analytics Using SAS",
+    "code": "BUAN 6337",
+    "prereq": "OPRE 6301 or OPRE 6359 or BUAN 6359 or SYSM 6303 and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6341": {
+    "name": "Applied Machine Learning",
+    "code": "BUAN 6341",
+    "prereq": "(BUAN 6356 or BUAN 6383 or MIS 6386 or BUAN 6324 or MIS 6324 or OPRE 6399) and (OPRE 6359 or BUAN 6359) and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6343": {
+    "name": "Applied AI",
+    "code": "BUAN 6343",
+    "prereq": null
+  },
+  "BUAN 6344": {
+    "name": "Web Analytics",
+    "code": "BUAN 6344",
+    "prereq": "Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6346": {
+    "name": "Big Data",
+    "code": "BUAN 6346",
+    "prereq": "BUAN 6320 or MIS 6320 or MIS 6326 and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6356": {
+    "name": "Business Analytics With R",
+    "code": "BUAN 6356",
+    "prereq": "Prerequisite or Corequisite: BUAN 6359 or OPRE 6359. Credit cannot be received for both courses, (BUAN 6324 or MIS 6324 or OPRE 6399) and (BUAN 6356 or MIS 6356 or OPRE 6305) and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6358": {
+    "name": "AWS Cloud Analytics",
+    "code": "BUAN 6358",
+    "prereq": null
+  },
+  "BUAN 6359": {
+    "name": "Advanced Statistics for Data Science",
+    "code": "BUAN 6359",
+    "prereq": "Credit cannot be received for both: OPRE 6301 and (OPRE 6359 or BUAN 6359) and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6368": {
+    "name": "Applied Cybersecurity Analytics and Risk Management",
+    "code": "BUAN 6368",
+    "prereq": null
+  },
+  "BUAN 6375": {
+    "name": "Technology Strategies and New Product Development",
+    "code": "BUAN 6375",
+    "prereq": null
+  },
+  "BUAN 6378": {
+    "name": "Corporate Innovation - Entrepreneurial Strategies",
+    "code": "BUAN 6378",
+    "prereq": null
+  },
+  "BUAN 6382": {
+    "name": "Applied Deep Learning",
+    "code": "BUAN 6382",
+    "prereq": "Prerequisite or Corequisite: BUAN 6341 or MIS 6341 or OPRE 6343 and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6383": {
+    "name": "Modeling for Business Analytics",
+    "code": "BUAN 6383",
+    "prereq": "Prerequisite or Corequisite: BUAN 6359 or OPRE 6359 and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6385": {
+    "name": "Robotic Process Automation",
+    "code": "BUAN 6385",
+    "prereq": "Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6390": {
+    "name": "Analytics Practicum",
+    "code": "BUAN 6390",
+    "prereq": "MAS 6102 or MBA major and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6392": {
+    "name": "Causal Analytics and A B Testing",
+    "code": "BUAN 6392",
+    "prereq": "OPRE 6301 or OPRE 6359 or BUAN 6359 and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6393": {
+    "name": "Advanced Database with AI Analytics",
+    "code": "BUAN 6393",
+    "prereq": "MIS 6320 or MIS 6326 or BUAN 6320"
+  },
+  "BUAN 6398": {
+    "name": "Prescriptive Analytics",
+    "code": "BUAN 6398",
+    "prereq": "OPRE 6301 or OPRE 6359 or BUAN 6359 or SYSM 6303 and Academic Plan Not Equal to BSANMSNF"
+  },
+  "BUAN 6399": {
+    "name": "AI in Business",
+    "code": "BUAN 6399",
+    "prereq": null
+  },
+  "CE 1202": {
+    "name": "Introduction to Electrical Engineering II",
+    "code": "CE 1202",
+    "prereq": "CE 1100 or EE 1100. ENCS UGRD Majors Only"
+  },
+  "CE 1337": {
+    "name": "Computer Science I",
+    "code": "CE 1337",
+    "prereq": "CS 1436 with a grade of C or better or CS Placement Test 70 or higher"
+  },
+  "CE 2301": {
+    "name": "Electrical Network Analysis",
+    "code": "CE 2301",
+    "prereq": "MATH 2420 and PHYS 2326"
+  },
+  "CE 2302": {
+    "name": "Programming Fundamentals for Electrical and Computer Engineers",
+    "code": "CE 2302",
+    "prereq": null
+  },
+  "CE 2305": {
+    "name": "Discrete Mathematics for Computing I",
+    "code": "CE 2305",
+    "prereq": "(MATH 2413 or MATH 2417) with a grade of C or better. CE/CS 2305 Repeat Restriction"
+  },
+  "CE 2310": {
+    "name": "Introduction to Digital Systems",
+    "code": "CE 2310",
+    "prereq": "CE 1202 or EE 1202"
+  },
+  "CE 2336": {
+    "name": "Computer Science II",
+    "code": "CE 2336",
+    "prereq": "(CE 1337 or CS 1337) with a C or better. Credit cannot be received for both CS 2337 and (CS 2336 or CE 2336). Repeat Restriction"
+  },
+  "CE 3161": {
+    "name": "Social Issues and Ethics in Engineering",
+    "code": "CE 3161",
+    "prereq": null
+  },
+  "CE 3201": {
+    "name": "Electrical and Computer Engineering Fundamentals-I Laboratory",
+    "code": "CE 3201",
+    "prereq": "(CE 1202 or EE 1202) and RHET 1302. Prerequisite or Corequisite: (EE 2301 or CE 2301) and (EE 3320 or CE 3320)"
+  },
+  "CE 3202": {
+    "name": "Electrical and Computer Engineering Fundamentals-II Laboratory",
+    "code": "CE 3202",
+    "prereq": "CE 3201 or EE 3201.RHET 1302 \\u0026 junior standing \\u0026 ENCS Undergraduate Major. CE/EE 3202 Repeat Restriction"
+  },
+  "CE 3300": {
+    "name": "Advanced Engineering Mathematics",
+    "code": "CE 3300",
+    "prereq": "(MATH 2415 or MATH 2419 or equivalent) and ENGR 2300. Prerequisite or Corequisite: MATH 2420"
+  },
+  "CE 3303": {
+    "name": "Discrete-Time Signals and Systems",
+    "code": "CE 3303",
+    "prereq": "MATH 2420. Credit cannot be received for both CE 3303 and EE 4361. Credit cannot be received for more than one of the following: BMEN 3302 or BMEN 3402 or CE 3303 or EE 3302. Repeat Restriction"
+  },
+  "CE 3310": {
+    "name": "Electronic Devices",
+    "code": "CE 3310",
+    "prereq": "MATH 2420 and PHYS 2326 and (CE 2301 or EE 2301) and Repeat Restriction"
+  },
+  "CE 3311": {
+    "name": "Electronic Circuits",
+    "code": "CE 3311",
+    "prereq": "CE 2301 or EE 2301"
+  },
+  "CE 3320": {
+    "name": "Digital Circuits",
+    "code": "CE 3320",
+    "prereq": "CE 2310 or EE 2310. Credit cannot be received for both courses, CS 4341 and (CE 3320 or EE 3320)"
+  },
+  "CE 3345": {
+    "name": "Data Structures and Introduction to Algorithmic Analysis",
+    "code": "CE 3345",
+    "prereq": "(CE 2305 or CS 2305 or MATH 3315) with a grade of C or better and (CE 2336 or CS 2336 or CS 2337) with a grade of C or better. Repeat Restriction"
+  },
+  "CE 3354": {
+    "name": "Software Engineering",
+    "code": "CE 3354",
+    "prereq": "(CE 2305 or CS 2305) with a grade of C or better and ((CE 2336 or CS 2336 or CS 2337) with a grade of C or better or CS 3333 with a grade of C or better) and ECS 2390 with a grade of C or better. Repeat Restriction"
+  },
+  "CE 4201": {
+    "name": "Electrical and Computer Engineering Laboratory in Computing Systems and Computer Engineering",
+    "code": "CE 4201",
+    "prereq": "CE 3202 or EE 3202"
+  },
+  "CE 4202": {
+    "name": "Electrical and Computer Engineering Laboratory in Circuits",
+    "code": "CE 4202",
+    "prereq": "CE 3202 or EE 3202"
+  },
+  "CE 4304": {
+    "name": "Computer Architecture",
+    "code": "CE 4304",
+    "prereq": "CE 3320 or EE 3320. Credit cannot be received for both courses, (CS 2340 or SE 2340) and (CE 4304 or EE 4304). Repeat Restriction"
+  },
+  "CE 4337": {
+    "name": "Organization of Programming Languages",
+    "code": "CE 4337",
+    "prereq": "(CE 2336 or CS 2336 or CS 2337 or CS 3333) with a grade of C or better, and (CE 2305 or CS 2305) with a grade of C or better, and (CS 2340 or SE 2340 or CE 4304 or EE 4304) with a grade of C or better. Repeat Restriction"
+  },
+  "CE 4348": {
+    "name": "Operating Systems Concepts",
+    "code": "CE 4348",
+    "prereq": "(CS 2340 or SE 2340 or equivalent), and (CE 3345 or CS 3345 or SE 3345). Repeat Restriction"
+  },
+  "CE 4370": {
+    "name": "Embedded Microprocessor Systems",
+    "code": "CE 4370",
+    "prereq": "EE 3320 or equivalent"
+  },
+  "CE 4388": {
+    "name": "Senior Design Project I",
+    "code": "CE 4388",
+    "prereq": "ECS 2390 and CE 3161 and CE 3202 and CE 3303 and CE 3311 and CE 3320"
+  },
+  "CE 4389": {
+    "name": "Senior Design Project II",
+    "code": "CE 4389",
+    "prereq": "CE 4388 or EE 4388"
+  },
+  "CE 4390": {
+    "name": "Computer Networks",
+    "code": "CE 4390",
+    "prereq": "(CE 3345 or CS 3345 or SE 3345) with a grade of C or better or equivalent. Credit cannot be received for both courses, (CE 4390 or CS 4390) and EE 4390. Repeat Restriction"
+  },
+  "CE 6302": {
+    "name": "Microprocessor Systems",
+    "code": "CE 6302",
+    "prereq": "EE 4304 or equivalent"
+  },
+  "CE 6304": {
+    "name": "Computer Architecture",
+    "code": "CE 6304",
+    "prereq": "CS 2340 or EE 4304 or equivalent and ENCS majors only"
+  },
+  "CE 6308": {
+    "name": "Real-Time Systems",
+    "code": "CE 6308",
+    "prereq": "CS 5348"
+  },
+  "CE 6320": {
+    "name": "Applied Data Structures and Algorithms",
+    "code": "CE 6320",
+    "prereq": "May not be used to satisfy degree requirements for MS CS or the MS SE degree plans"
+  },
+  "CE 6325": {
+    "name": "VLSI Design",
+    "code": "CE 6325",
+    "prereq": "EE 3320 or equivalent"
+  },
+  "CE 6364": {
+    "name": "Machine Learning and Pattern Recognition",
+    "code": "CE 6364",
+    "prereq": null
+  },
+  "CE 6v98": {
+    "name": null,
+    "code": "CE 6v98",
+    "prereq": null
+  },
+  "CE 7001": {
+    "name": "Seminar",
+    "code": "CE 7001",
+    "prereq": null
+  },
+  "CE 7010": {
+    "name": "Graduate Internship",
+    "code": "CE 7010",
+    "prereq": "EE or CE or TE major and department consent required"
+  },
+  "CE 8v70": {
+    "name": null,
+    "code": "CE 8v70",
+    "prereq": null
+  },
+  "CGS 2301": {
+    "name": "Cognitive Science",
+    "code": "CGS 2301",
+    "prereq": "CGS 2301 Repeat Restriction"
+  },
+  "CGS 3325": {
+    "name": "Historical Perspectives on Psychology  Mind and Machines since 1600",
+    "code": "CGS 3325",
+    "prereq": "CGS 2301 or PSY 2301"
+  },
+  "CGS 3340": {
+    "name": "Experimental Projects in Cognitive Science",
+    "code": "CGS 3340",
+    "prereq": "PSY 3392 and (PSY 3380 or CLDP 3394)"
+  },
+  "CGS 3346": {
+    "name": "PYTHON for Biobehavioral Data Analysis",
+    "code": "CGS 3346",
+    "prereq": null
+  },
+  "CGS 3361": {
+    "name": "Cognitive Psychology",
+    "code": "CGS 3361",
+    "prereq": "CGS 2301 or PSY 2301. Repeat Restriction"
+  },
+  "CGS 4193": {
+    "name": "Internship Preparation",
+    "code": "CGS 4193",
+    "prereq": null
+  },
+  "CGS 4352": {
+    "name": "Human Computer Interactions I",
+    "code": "CGS 4352",
+    "prereq": "(CE 1337 or CS 1337) with a grade of C or better"
+  },
+  "CGS 4353": {
+    "name": "Human Computer Interactions II",
+    "code": "CGS 4353",
+    "prereq": null
+  },
+  "CGS 4359": {
+    "name": "Cognitive Neuroscience",
+    "code": "CGS 4359",
+    "prereq": "PSY 2301"
+  },
+  "CGS 4385": {
+    "name": "Neuropsychology",
+    "code": "CGS 4385",
+    "prereq": "NSC 3361 or equivalent. CGS 4385 Repeat Restriction"
+  },
+  "CGS 4386": {
+    "name": "Adult Development and Aging",
+    "code": "CGS 4386",
+    "prereq": "PSY 2301"
+  },
+  "CGS 4389": {
+    "name": "Developmental Cognitive Neuroscience",
+    "code": "CGS 4389",
+    "prereq": "((CLDP 2314 or PSY 2314) and PSY 2301) or (CLDP 3310 or PSY 3310)"
+  },
+  "CGS 4392": {
+    "name": "Teaching and Professional Skills Practicum",
+    "code": "CGS 4392",
+    "prereq": null
+  },
+  "CGS 4394": {
+    "name": "Internship in Cognitive Science",
+    "code": "CGS 4394",
+    "prereq": "BBSC Internship Repeat Restriction"
+  },
+  "CGS 4v75": {
+    "name": null,
+    "code": "CGS 4v75",
+    "prereq": null
+  },
+  "CHEM 1111": {
+    "name": "General Chemistry Laboratory I",
+    "code": "CHEM 1111",
+    "prereq": "Corequisite: CHEM 1311 or CHEM 1315. Repeat Restriction"
+  },
+  "CHEM 1112": {
+    "name": "General Chemistry Laboratory II",
+    "code": "CHEM 1112",
+    "prereq": "CHEM 1111 or CHEM 1115. Corequisite: CHEM 1312. Repeat Restriction"
+  },
+  "CHEM 1115": {
+    "name": "Honors Freshman Chemistry Laboratory I  - CV Honors",
+    "code": "CHEM 1115",
+    "prereq": "Collegium V Honors Student Group and Corequisite: CHEM 1315.  Check class notes to make sure you are selecting the matching corequisite section"
+  },
+  "CHEM 1311": {
+    "name": "General Chemistry I",
+    "code": "CHEM 1311",
+    "prereq": "Corequisite: CHEM 1111. Repeat Restriction"
+  },
+  "CHEM 1312": {
+    "name": "General Chemistry II",
+    "code": "CHEM 1312",
+    "prereq": "CHEM 1311 or CHEM 1315. Corequisite: CHEM 1112. Repeat Restriction"
+  },
+  "CHEM 1315": {
+    "name": "Honors Freshman Chemistry I  - CV Honors",
+    "code": "CHEM 1315",
+    "prereq": "SCVG Student Group. Corequisite: CHEM 1115.  Check class notes to make sure you are selecting the matching corequisite section"
+  },
+  "CHEM 2233": {
+    "name": "Introductory Organic Chemistry Laboratory",
+    "code": "CHEM 2233",
+    "prereq": "CHEM 2323. Corequisite: CHEM 2325. Repeat Restriction"
+  },
+  "CHEM 2323": {
+    "name": "Introductory Organic Chemistry I",
+    "code": "CHEM 2323",
+    "prereq": "CHEM 1312 or CHEM 1316. Repeat Restriction"
+  },
+  "CHEM 2325": {
+    "name": "Introductory Organic Chemistry II",
+    "code": "CHEM 2325",
+    "prereq": "CHEM 2323. Corequisite: CHEM 2233. Repeat Restriction"
+  },
+  "CHEM 2327": {
+    "name": "Honors Organic Chemistry I  - CV Honors",
+    "code": "CHEM 2327",
+    "prereq": "CHEM 1312 or CHEM 1316 and SCVG Student Group"
+  },
+  "CHEM 2401": {
+    "name": "Introductory Quantitative Methods in Chemistry",
+    "code": "CHEM 2401",
+    "prereq": "(CHEM 1112 or CHEM 1116) and (CHEM 1312 or CHEM 1316)"
+  },
+  "CHEM 3321": {
+    "name": "Physical Chemistry I",
+    "code": "CHEM 3321",
+    "prereq": "CHEM 2325 and (MATH 2415 or MATH 2451 or MATH 3351). Repeat Restriction"
+  },
+  "CHEM 3322": {
+    "name": "Physical Chemistry II",
+    "code": "CHEM 3322",
+    "prereq": "CHEM 2325 and (MATH 2415 or MATH 2451 or MATH 3351). Repeat Restriction"
+  },
+  "CHEM 3341": {
+    "name": "Inorganic Chemistry I",
+    "code": "CHEM 3341",
+    "prereq": "CHEM 2323 and CHEM 2325"
+  },
+  "CHEM 3461": {
+    "name": "Biochemistry I",
+    "code": "CHEM 3461",
+    "prereq": "CHEM 2323 and CHEM 2325. Repeat Restriction"
+  },
+  "CHEM 3462": {
+    "name": "Biochemistry II",
+    "code": "CHEM 3462",
+    "prereq": "CHEM 3461 or BIOL 3461 or equivalent"
+  },
+  "CHEM 3471": {
+    "name": "Advanced Chemical Synthesis Laboratory",
+    "code": "CHEM 3471",
+    "prereq": "(CHEM 2233 or CHEM 2237) and CHEM 2401"
+  },
+  "CHEM 3472": {
+    "name": "Instrumental Analysis",
+    "code": "CHEM 3472",
+    "prereq": "CHEM 2401"
+  },
+  "CHEM 4311": {
+    "name": "Classical Simulations for Biological and Condensed Systems",
+    "code": "CHEM 4311",
+    "prereq": "(CHEM 3361 or BIOL 3361) and CHEM 3321 and CHEM 3322"
+  },
+  "CHEM 4332": {
+    "name": "Total Synthesis of Natural Products",
+    "code": "CHEM 4332",
+    "prereq": "CHEM 2325 or CHEM 2328"
+  },
+  "CHEM 4390": {
+    "name": "Research and Advanced Writing in Chemistry",
+    "code": "CHEM 4390",
+    "prereq": "at least 3 semester credit hours of undergraduate research"
+  },
+  "CHEM 4v01": {
+    "name": null,
+    "code": "CHEM 4v01",
+    "prereq": null
+  },
+  "CHEM 5311": {
+    "name": "Classical Simulations for Biological and Condensed Systems",
+    "code": "CHEM 5311",
+    "prereq": null
+  },
+  "CHEM 5331": {
+    "name": "Advanced Organic Chemistry I",
+    "code": "CHEM 5331",
+    "prereq": null
+  },
+  "CHEM 5332": {
+    "name": "Total Synthesis of Natural Products",
+    "code": "CHEM 5332",
+    "prereq": "CHEM 5331"
+  },
+  "CHEM 5333": {
+    "name": "Advanced Organic Chemistry II",
+    "code": "CHEM 5333",
+    "prereq": "CHEM 5331"
+  },
+  "CHEM 5341": {
+    "name": "Advanced Inorganic Chemistry I",
+    "code": "CHEM 5341",
+    "prereq": null
+  },
+  "CHEM 5355": {
+    "name": "Analytical Techniques I",
+    "code": "CHEM 5355",
+    "prereq": null
+  },
+  "CHEM 5361": {
+    "name": "Advanced Biochemistry",
+    "code": "CHEM 5361",
+    "prereq": "CHEM 3461 or BIOL 3461 or equivalent"
+  },
+  "CHEM 6100": {
+    "name": "Chemistry Department Seminar",
+    "code": "CHEM 6100",
+    "prereq": "Graduate standing in chemistry"
+  },
+  "CHEM 6v39": {
+    "name": null,
+    "code": "CHEM 6v39",
+    "prereq": null
+  },
+  "CHEM 8v91": {
+    "name": null,
+    "code": "CHEM 8v91",
+    "prereq": null
+  },
+  "CHEM 8v99": {
+    "name": null,
+    "code": "CHEM 8v99",
+    "prereq": null
+  },
+  "CHIN 1311": {
+    "name": "Beginning Chinese I",
+    "code": "CHIN 1311",
+    "prereq": "Chinese Language Placement score less than 21"
+  },
+  "CHIN 1312": {
+    "name": "Beginning Chinese II",
+    "code": "CHIN 1312",
+    "prereq": "CHIN 1311 or Chinese Language Placement score of 21-40"
+  },
+  "CHIN 2311": {
+    "name": "Intermediate Chinese I",
+    "code": "CHIN 2311",
+    "prereq": "CHIN 1312 or Chinese Language Placement score of 41-60"
+  },
+  "CHIN 2312": {
+    "name": "Intermediate Chinese II",
+    "code": "CHIN 2312",
+    "prereq": "CHIN 2311 or Chinese Language Placement score of 61-80"
+  },
+  "CHIN 3311": {
+    "name": "Advanced Chinese I",
+    "code": "CHIN 3311",
+    "prereq": "CHIN 2312 or Chinese Language Placement score greater than 80. Repeat Restriction"
+  },
+  "CHIN 3330": {
+    "name": "Medical Chinese",
+    "code": "CHIN 3330",
+    "prereq": "CHIN 2312 or Chinese Language Placement score greater than 80"
+  },
+  "CLDP 2314": {
+    "name": "Lifespan Development",
+    "code": "CLDP 2314",
+    "prereq": "CLDP 2314 Repeat Restriction"
+  },
+  "CLDP 3303": {
+    "name": "Normal Language Development",
+    "code": "CLDP 3303",
+    "prereq": "CLDP 3303 and SPAU 3303 Repeat Restriction"
+  },
+  "CLDP 3305": {
+    "name": "Language and Literacy Development",
+    "code": "CLDP 3305",
+    "prereq": null
+  },
+  "CLDP 3310": {
+    "name": "Child Development",
+    "code": "CLDP 3310",
+    "prereq": "PSY 2301. Repeat Restriction"
+  },
+  "CLDP 3332": {
+    "name": "Social and Personality Development",
+    "code": "CLDP 3332",
+    "prereq": "((PSY 2314 or CLDP 2314) and PSY 2301) or (PSY 3310 or CLDP 3310) or equivalent"
+  },
+  "CLDP 3336": {
+    "name": "Infancy",
+    "code": "CLDP 3336",
+    "prereq": "((PSY 2314 or CLDP 2314) and PSY 2301) or (PSY 3310 or CLDP 3310) or equivalent"
+  },
+  "CLDP 3338": {
+    "name": "Adolescence",
+    "code": "CLDP 3338",
+    "prereq": "((PSY 2314 or CLDP 2314) and PSY 2301) or (PSY 3310 or CLDP 3310) or equivalent"
+  },
+  "CLDP 3339": {
+    "name": "Educational Psychology",
+    "code": "CLDP 3339",
+    "prereq": "PSY 2301 or equivalent. PSY/CLDP 3339 Repeat Restriction"
+  },
+  "CLDP 3342": {
+    "name": "Exceptional Children",
+    "code": "CLDP 3342",
+    "prereq": "((PSY 2314 or CLDP 2314) and PSY 2301) or (PSY 3310 or CLDP 3310) or equivalent"
+  },
+  "CLDP 3362": {
+    "name": "Cognitive Development",
+    "code": "CLDP 3362",
+    "prereq": "((PSY 2314 or CLDP 2314) and PSY 2301) or (PSY 3310 or CLDP 3310) or equivalent"
+  },
+  "CLDP 3394": {
+    "name": "Research and Evaluation Methods",
+    "code": "CLDP 3394",
+    "prereq": "(PSY 2317 or STAT 1342) and PSY 3392"
+  },
+  "CLDP 4193": {
+    "name": "Internship Preparation",
+    "code": "CLDP 4193",
+    "prereq": null
+  },
+  "CLDP 4308": {
+    "name": "Language Disorders in Children",
+    "code": "CLDP 4308",
+    "prereq": "CLDP 3303 or SPAU 3303. Repeat Restriction"
+  },
+  "CLDP 4344": {
+    "name": "Child Psychopathology",
+    "code": "CLDP 4344",
+    "prereq": "PSY 2301"
+  },
+  "CLDP 4389": {
+    "name": "Developmental Cognitive Neuroscience",
+    "code": "CLDP 4389",
+    "prereq": "((CLDP 2314 or PSY 2314) and PSY 2301) or (CLDP 3310 or PSY 3310)"
+  },
+  "CLDP 4392": {
+    "name": "Teaching and Professional Skills Practicum",
+    "code": "CLDP 4392",
+    "prereq": null
+  },
+  "CLDP 4394": {
+    "name": "Internship",
+    "code": "CLDP 4394",
+    "prereq": "BBSC Internship Repeat Restriction"
+  },
+  "CLDP 4v75": {
+    "name": null,
+    "code": "CLDP 4v75",
+    "prereq": null
+  },
+  "COMD 5344": {
+    "name": "Anatomy and Physiology of Speech and Hearing",
+    "code": "COMD 5344",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6101": {
+    "name": "Childhood Apraxia of Speech",
+    "code": "COMD 6101",
+    "prereq": "COMD 6320"
+  },
+  "COMD 6106": {
+    "name": "Medical SLP",
+    "code": "COMD 6106",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6107": {
+    "name": "Dementia",
+    "code": "COMD 6107",
+    "prereq": "COMD 6377"
+  },
+  "COMD 6108": {
+    "name": "Pulmonary Issues",
+    "code": "COMD 6108",
+    "prereq": "COMD 7303"
+  },
+  "COMD 6109": {
+    "name": "Tracheostomy and Mechanical Ventilation",
+    "code": "COMD 6109",
+    "prereq": "COMD 7303"
+  },
+  "COMD 6110": {
+    "name": "Pediatric Feeding",
+    "code": "COMD 6110",
+    "prereq": "COMD 7303"
+  },
+  "COMD 6111": {
+    "name": "Articulation and Phonological Disorders",
+    "code": "COMD 6111",
+    "prereq": null
+  },
+  "COMD 6112": {
+    "name": "Counseling in Communication Disorders",
+    "code": "COMD 6112",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6113": {
+    "name": "Bilingual Speech Assessment and Treatment",
+    "code": "COMD 6113",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6222": {
+    "name": "Stuttering",
+    "code": "COMD 6222",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6240": {
+    "name": "Professional Issues in Speech Language Pathology",
+    "code": "COMD 6240",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6305": {
+    "name": "Speech Science",
+    "code": "COMD 6305",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6307": {
+    "name": "Language Acquisition",
+    "code": "COMD 6307",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6308": {
+    "name": "Assessment and Intervention of Language Impairments in Preschool and School-Age Children",
+    "code": "COMD 6308",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6320": {
+    "name": "Motor Speech Disorders",
+    "code": "COMD 6320",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6330": {
+    "name": "Practicum in Communication Sciences",
+    "code": "COMD 6330",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6377": {
+    "name": "Neurogenic Communication Disorders I",
+    "code": "COMD 6377",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6378": {
+    "name": "Neurogenic Communication Disorders II",
+    "code": "COMD 6378",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 6v09": {
+    "name": null,
+    "code": "COMD 6v09",
+    "prereq": null
+  },
+  "COMD 7204": {
+    "name": "Craniofacial Disorders",
+    "code": "COMD 7204",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 7208": {
+    "name": "Pediatric Dysphagia",
+    "code": "COMD 7208",
+    "prereq": "COMD 7303"
+  },
+  "COMD 7221": {
+    "name": "Preschool Intervention",
+    "code": "COMD 7221",
+    "prereq": "COMD 6308"
+  },
+  "COMD 7301": {
+    "name": "Public School Methods",
+    "code": "COMD 7301",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 7309": {
+    "name": "Neural Correlates of Human Cognition  Lesion-Deficit Models",
+    "code": "COMD 7309",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 7324": {
+    "name": "Seminar in Cochlear Implants and Technology for Persons with Hearing Impairments",
+    "code": "COMD 7324",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 7336": {
+    "name": "Social Communication in Early Childhood Disorders",
+    "code": "COMD 7336",
+    "prereq": "BBSC majors only"
+  },
+  "COMD 7v82": {
+    "name": null,
+    "code": "COMD 7v82",
+    "prereq": null
+  },
+  "COMM 1311": {
+    "name": "Survey of Oral and Technology-based Communication",
+    "code": "COMM 1311",
+    "prereq": "COMM 1311 Repeat Restriction"
+  },
+  "COMM 1315": {
+    "name": "Public Speaking",
+    "code": "COMM 1315",
+    "prereq": "COMM 1315 Repeat Restriction"
+  },
+  "COMM 1320": {
+    "name": "Interpersonal Communication",
+    "code": "COMM 1320",
+    "prereq": null
+  },
+  "COMM 2301": {
+    "name": "Communication Technology Skills",
+    "code": "COMM 2301",
+    "prereq": null
+  },
+  "COMM 2310": {
+    "name": "Introduction to Professional Communication",
+    "code": "COMM 2310",
+    "prereq": "Completion of an 010 core course"
+  },
+  "COMM 2320": {
+    "name": "Scientific Communication",
+    "code": "COMM 2320",
+    "prereq": null
+  },
+  "COMM 2351": {
+    "name": "History and Theory of Communication",
+    "code": "COMM 2351",
+    "prereq": null
+  },
+  "COMM 3302": {
+    "name": "Graphics and Images in Professional Communication",
+    "code": "COMM 3302",
+    "prereq": "COMM 2310"
+  },
+  "COMM 3310": {
+    "name": "Research Methods in Communication Studies",
+    "code": "COMM 3310",
+    "prereq": "COMM 2351"
+  },
+  "COMM 3320": {
+    "name": "Readers  Theater",
+    "code": "COMM 3320",
+    "prereq": "Repeat Limit - COMM 3320 may only be repeated for a maximum of 6 semester credit hours"
+  },
+  "COMM 3360": {
+    "name": "TV and Radio Announcing",
+    "code": "COMM 3360",
+    "prereq": "Completion of an 010 core course"
+  },
+  "COMM 4341": {
+    "name": "Information Design and Usability",
+    "code": "COMM 4341",
+    "prereq": "COMM 2351"
+  },
+  "COMM 4353": {
+    "name": "Political Discourse in a Digital Era",
+    "code": "COMM 4353",
+    "prereq": "COMM 2351"
+  },
+  "COMM 4360": {
+    "name": "Communication Ethics",
+    "code": "COMM 4360",
+    "prereq": "COMM 2351"
+  },
+  "CRIM 1301": {
+    "name": "Introduction to Criminal Justice",
+    "code": "CRIM 1301",
+    "prereq": "CRIM 1301 Repeat Restriction"
+  },
+  "CRIM 1307": {
+    "name": "Introduction to Crime and Criminology",
+    "code": "CRIM 1307",
+    "prereq": "CRIM 1307 Repeat Restriction"
+  },
+  "CRIM 2306": {
+    "name": "Criminal Law",
+    "code": "CRIM 2306",
+    "prereq": "CRIM 2306 Repeat Restriction"
+  },
+  "CRIM 2313": {
+    "name": "Police and Society",
+    "code": "CRIM 2313",
+    "prereq": "CRIM 2313 Repeat Restriction"
+  },
+  "CRIM 2316": {
+    "name": "Corrections",
+    "code": "CRIM 2316",
+    "prereq": "CRIM 2316 Repeat Restriction"
+  },
+  "CRIM 2317": {
+    "name": "Criminal Prosecution and Court Process",
+    "code": "CRIM 2317",
+    "prereq": "CRIM 2317 Repeat Restriction"
+  },
+  "CRIM 3300": {
+    "name": "Crime and Civil Liberties",
+    "code": "CRIM 3300",
+    "prereq": null
+  },
+  "CRIM 3301": {
+    "name": "Theories of Justice",
+    "code": "CRIM 3301",
+    "prereq": "CRIM 3301 Repeat Restriction"
+  },
+  "CRIM 3302": {
+    "name": "Advanced Criminology",
+    "code": "CRIM 3302",
+    "prereq": "CRIM 1307. Repeat Restriction"
+  },
+  "CRIM 3303": {
+    "name": "Advanced Criminal Justice",
+    "code": "CRIM 3303",
+    "prereq": "CRIM 1301"
+  },
+  "CRIM 3309": {
+    "name": "Media and Crime",
+    "code": "CRIM 3309",
+    "prereq": "CRIM 3309 Repeat Restriction"
+  },
+  "CRIM 3310": {
+    "name": "Youth Crime and Justice",
+    "code": "CRIM 3310",
+    "prereq": "CRIM 3310 Repeat Restriction"
+  },
+  "CRIM 3312": {
+    "name": "Drugs and Crime",
+    "code": "CRIM 3312",
+    "prereq": null
+  },
+  "CRIM 3319": {
+    "name": "Comparative Justice Systems",
+    "code": "CRIM 3319",
+    "prereq": "CRIM 3319 Repeat Restriction"
+  },
+  "CRIM 3325": {
+    "name": "Victimology",
+    "code": "CRIM 3325",
+    "prereq": null
+  },
+  "CRIM 3327": {
+    "name": "Violent Crime",
+    "code": "CRIM 3327",
+    "prereq": "CRIM 1301 or CRIM 1307"
+  },
+  "CRIM 4305": {
+    "name": "Applied Data Analysis",
+    "code": "CRIM 4305",
+    "prereq": "EPPS 2301 and EPPS 2302"
+  },
+  "CRIM 4311": {
+    "name": "Crime and Justice Policy",
+    "code": "CRIM 4311",
+    "prereq": "CRIM 3302 or CRIM 3303. Repeat Restriction"
+  },
+  "CRIM 4322": {
+    "name": "Senior Research Seminar",
+    "code": "CRIM 4322",
+    "prereq": "EPPS 2301 and EPPS 2302 and Upper-division standing and instructor consent required"
+  },
+  "CRIM 4396": {
+    "name": "Selected Topics in Criminology  - Organized Crime",
+    "code": "CRIM 4396",
+    "prereq": "Repeat Limit - CRIM 4396 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "CRIM 6301": {
+    "name": "Research Design I",
+    "code": "CRIM 6301",
+    "prereq": null
+  },
+  "CRIM 6303": {
+    "name": "Etiology of Crime and Criminality",
+    "code": "CRIM 6303",
+    "prereq": null
+  },
+  "CRIM 6315": {
+    "name": "Violent Crime",
+    "code": "CRIM 6315",
+    "prereq": null
+  },
+  "CRIM 6381": {
+    "name": "Special Topics in Criminology  - Mental Health and Crime",
+    "code": "CRIM 6381",
+    "prereq": "Repeat Limit - CRIM 6381 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "CRIM 7300": {
+    "name": "Advances in Criminology Theory",
+    "code": "CRIM 7300",
+    "prereq": "CRIM 7305 and CRIM 7315"
+  },
+  "CRIM 7301": {
+    "name": "Seminar in Criminology Research and Analysis",
+    "code": "CRIM 7301",
+    "prereq": "CRIM 7305 and CRIM 7315 and EPPS 7313 and EPPS 7316"
+  },
+  "CRIM 7305": {
+    "name": "Professional Development in Criminology",
+    "code": "CRIM 7305",
+    "prereq": null
+  },
+  "CRWT 2301": {
+    "name": "Introductory Creative Writing",
+    "code": "CRWT 2301",
+    "prereq": "CRWT 2301 Repeat Restriction"
+  },
+  "CRWT 3306": {
+    "name": "Fiction Workshop",
+    "code": "CRWT 3306",
+    "prereq": "CRWT 2301. Repeat Limit - CRWT 3306 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "CRWT 3308": {
+    "name": "Nonfiction Workshop",
+    "code": "CRWT 3308",
+    "prereq": "CRWT 2301. Repeat Limit - CRWT 3308 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "CRWT 3330": {
+    "name": "Translation Workshop",
+    "code": "CRWT 3330",
+    "prereq": "Repeat Limit - CRWT 3330 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "CRWT 3351": {
+    "name": "Creating Poetry",
+    "code": "CRWT 3351",
+    "prereq": "CRWT 2301. Repeat Limit - CRWT 3351 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "CRWT 3354": {
+    "name": "Screenwriting",
+    "code": "CRWT 3354",
+    "prereq": "Repeat Limit - CRWT 3354 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "CRWT 3355": {
+    "name": "Comics Workshop  - CV Honors",
+    "code": "CRWT 3355",
+    "prereq": "CRWT 2301. Repeat Limit - CRWT 3355 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "CRWT 4307": {
+    "name": "Creating Short Stories  Advanced",
+    "code": "CRWT 4307",
+    "prereq": "CRWT 3306. Repeat Limit - CRWT 4307 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "CS 1325": {
+    "name": "Introduction to Programming",
+    "code": "CS 1325",
+    "prereq": "Prerequisite or Corequisite: MATH 2413 or MATH 2417. May not be used to satisfy degree requirements for majors in Computer Engineering, Computer Science, and Software Engineering. Repeat Restriction"
+  },
+  "CS 1337": {
+    "name": "Computer Science I",
+    "code": "CS 1337",
+    "prereq": "CS 1436 with a grade of C or better or a CS placement test of 70 or higher. CS 1337 Repeat Restriction"
+  },
+  "CS 1436": {
+    "name": "Programming Fundamentals",
+    "code": "CS 1436",
+    "prereq": "Open to students in the School of Engineering and Computer Science, Actuarial Science, Data Science, and Cognitive Science only. Credit cannot be received for both courses, (CS 1336 and CS 1136) and CS 1436. Repeat Restriction"
+  },
+  "CS 2305": {
+    "name": "Discrete Mathematics for Computing I",
+    "code": "CS 2305",
+    "prereq": "(MATH 2413 or MATH 2417) with a grade of C or better. CE/CS 2305 Repeat Restriction"
+  },
+  "CS 2336": {
+    "name": "Computer Science II",
+    "code": "CS 2336",
+    "prereq": "(CE 1337 or CS 1337) with a C or better. Credit cannot be received for both CS 2337 and (CS 2336 or CE 2336). Repeat Restriction"
+  },
+  "CS 2337": {
+    "name": "Computer Science II",
+    "code": "CS 2337",
+    "prereq": "AP score of at least 4. Credit cannot be received for both CS 2337 and (CS 2336 or CE 2336)"
+  },
+  "CS 2340": {
+    "name": "Computer Architecture",
+    "code": "CS 2340",
+    "prereq": "(CE 1337 or CS 1337 with a C or better or equivalent) and (CE 2305 or CS 2305 with a C or better). Credit cannot be received for both courses, (CS 2340 or SE 2340) and (CE 4304 or EE 4304). Repeat Restriction"
+  },
+  "CS 3162": {
+    "name": "Professional Responsibility in Computer Science and Software Engineering",
+    "code": "CS 3162",
+    "prereq": "(ECS 2390 and GOVT 2305) with a grade of C or better. Repeat Restriction"
+  },
+  "CS 3341": {
+    "name": "Probability and Statistics in Computer Science and Software Engineering",
+    "code": "CS 3341",
+    "prereq": "(MATH 1326 or MATH 2414 or MATH 2419) and MATH 2418 and (CE 2305 or CS 2305) with a grade of C or better. Credit cannot be received for both courses, (CS 3341 or SE 3341 or STAT 3341) and ENGR 3341. Repeat Restriction"
+  },
+  "CS 3345": {
+    "name": "Data Structures and Introduction to Algorithmic Analysis",
+    "code": "CS 3345",
+    "prereq": "(CE 2305 or CS 2305 or MATH 3315) with a grade of C or better and (CE 2336 or CS 2336 or CS 2337) with a grade of C or better. Repeat Restriction"
+  },
+  "CS 3354": {
+    "name": "Software Engineering",
+    "code": "CS 3354",
+    "prereq": "(CE 2305 or CS 2305) with a grade of C or better and ((CE 2336 or CS 2336 or CS 2337) with a grade of C or better or CS 3333 with a grade of C or better) and ECS 2390 with a grade of C or better. Repeat Restriction"
+  },
+  "CS 3377": {
+    "name": "C C  Programming in a UNIX Environment",
+    "code": "CS 3377",
+    "prereq": "(CE 2336 or CS 2336 or CS 2337) with a grade of C or better or equivalent. Repeat Restriction"
+  },
+  "CS 4141": {
+    "name": "Digital Systems Laboratory",
+    "code": "CS 4141",
+    "prereq": "Corequisite: CS 4341. Repeat Restriction"
+  },
+  "CS 4301": {
+    "name": "Special Topics in Computer Science  - Big Data Mgmt and Analys",
+    "code": "CS 4301",
+    "prereq": "CE 3345 or CS 3345 or SE 3345. Repeat Limit - CS 4301 may only be repeated for a maximum of 9 semester credit hours"
+  },
+  "CS 4334": {
+    "name": "Numerical Analysis",
+    "code": "CS 4334",
+    "prereq": "(MATH 2370 or CS 1325 or CE 1337 or CS 1337) with a grade of C or better, and MATH 2418 with a grade of C or better, and (MATH 2451 or MATH 3351) with a grade of C or better"
+  },
+  "CS 4337": {
+    "name": "Organization of Programming Languages",
+    "code": "CS 4337",
+    "prereq": "((CE 2336 or CS 2336 or CS 2337) with a grade of C or better or CS 3333) and (CE 2305 or CS 2305) with a grade of C or better and (CS 2340 or SE 2340 or CE 4304 or EE 4304). Repeat Restriction"
+  },
+  "CS 4341": {
+    "name": "Digital Logic and Computer Design",
+    "code": "CS 4341",
+    "prereq": "(CE 2310 or EE 2310 or CS 2340 or SE 2340) with a grade of C or better, and PHYS 2326 with a grade of C or better. Corequisite: CS 4141"
+  },
+  "CS 4347": {
+    "name": "Database Systems",
+    "code": "CS 4347",
+    "prereq": "(CE 3345 or CS 3345 or SE 3345) with a grade of C or better. Repeat Restriction"
+  },
+  "CS 4348": {
+    "name": "Operating Systems Concepts",
+    "code": "CS 4348",
+    "prereq": "(CS 2340 or SE 2340 or equivalent) with a grade of C or better and (CS 3377 or SE 3377) with a grade of C or better and (CE 3345 or CS 3345 or SE 3345) with a grade of C or better. Repeat Restriction"
+  },
+  "CS 4349": {
+    "name": "Advanced Algorithm Design and Analysis",
+    "code": "CS 4349",
+    "prereq": "(CE 2305 or CS 2305) with a grade of C or better, and (CE 3345 or CS 3345 or SE 3345) with a grade of C or better. Repeat Restriction"
+  },
+  "CS 4352": {
+    "name": "Human Computer Interactions I",
+    "code": "CS 4352",
+    "prereq": "(CE 1337 or CS 1337) with a grade of C or better"
+  },
+  "CS 4361": {
+    "name": "Computer Graphics",
+    "code": "CS 4361",
+    "prereq": "MATH 2418 with a grade of C or better and (CE 2336 or CS 2336 or CS 2337) with a grade of C or better and (CE 3345 or CS 3345 or SE 3345 or equivalent) with a grade of C or better"
+  },
+  "CS 4365": {
+    "name": "Artificial Intelligence",
+    "code": "CS 4365",
+    "prereq": "(CE 3345 or CS 3345 or SE 3345 or equivalent) with a grade of C or better"
+  },
+  "CS 4371": {
+    "name": "Introduction to Big Data Management and Analytics",
+    "code": "CS 4371",
+    "prereq": "(CS 2336 or CS 2337) with a grade of C or better, and CS 4347 with a grade of C or better"
+  },
+  "CS 4372": {
+    "name": "Computational Methods for Data Scientists",
+    "code": "CS 4372",
+    "prereq": "CS 4375 with a grade of C or better"
+  },
+  "CS 4375": {
+    "name": "Introduction to Machine Learning",
+    "code": "CS 4375",
+    "prereq": "(CS 3341 or SE 3341 or STAT 3355) with a grade of C or better and (CE 3345 or CS 3345 or SE 3345 or equivalent) with a grade of C or better"
+  },
+  "CS 4376": {
+    "name": "Object-Oriented Programming Systems",
+    "code": "CS 4376",
+    "prereq": "(CE 2336 or CS 2336 or CS 2337 or equivalent) with a grade of C or better, and (CE 3354 or CS 3354 or SE 3354) with a grade of C or better. Repeat Restriction"
+  },
+  "CS 4384": {
+    "name": "Automata Theory",
+    "code": "CS 4384",
+    "prereq": "(CE 2305 or CS 2305) with a grade of C or better. Repeat Restriction"
+  },
+  "CS 4386": {
+    "name": "Compiler Design",
+    "code": "CS 4386",
+    "prereq": "(CE 3345 or CS 3345 or SE 3345 or equivalent) with a grade of C or better"
+  },
+  "CS 4389": {
+    "name": "Data and Applications Security",
+    "code": "CS 4389",
+    "prereq": "(CS 4347 or SE 4347) with a grade of C or better"
+  },
+  "CS 4390": {
+    "name": "Computer Networks",
+    "code": "CS 4390",
+    "prereq": "(CE 3345 or CS 3345 or SE 3345) with a grade of C or better or equivalent. Credit cannot be received for both courses, (CE 4390 or CS 4390) and EE 4390. Repeat Restriction"
+  },
+  "CS 4391": {
+    "name": "Introduction to Computer Vision",
+    "code": "CS 4391",
+    "prereq": "(CE 3345 or CS 3345 or SE 3345) with a grade of C or better"
+  },
+  "CS 4392": {
+    "name": "Computer Animation",
+    "code": "CS 4392",
+    "prereq": "MATH 2418 with a grade of C or better and (CE 3345 or CS 3345 or SE 3345 or equivalent) with a grade of C or better"
+  },
+  "CS 4393": {
+    "name": "Computer and Network Security",
+    "code": "CS 4393",
+    "prereq": "(CE 4348 or CS 4348 or SE 4348 or equivalent) with a grade of C or better and (CE 4390 or CS 4390 or equivalent) with a grade of C or better"
+  },
+  "CS 4395": {
+    "name": "Human Language Technologies",
+    "code": "CS 4395",
+    "prereq": "(CS 3341 or SE 3341) with a grade of C or better and (CE 3345 or CS 3345 or SE 3345 or equivalent) with a grade of C or better"
+  },
+  "CS 4475": {
+    "name": "Capstone Project",
+    "code": "CS 4475",
+    "prereq": "(STAT 4355 and CS 4375) with a grade of C or better. Repeat Restriction"
+  },
+  "CS 4485": {
+    "name": "Computer Science Project",
+    "code": "CS 4485",
+    "prereq": "(CE 3345 or CS 3345 or SE 3345), and (CE 3354 or CS 3354 or SE 3354) or equivalent, and at least three CS 43XX classes. Repeat Restriction"
+  },
+  "CS 5303": {
+    "name": "Computer Science I",
+    "code": "CS 5303",
+    "prereq": "ENCS Majors Only"
+  },
+  "CS 5330": {
+    "name": "Computer Science II",
+    "code": "CS 5330",
+    "prereq": "Corequisite or Prerequisite: CS 5303"
+  },
+  "CS 5333": {
+    "name": "Discrete Structures",
+    "code": "CS 5333",
+    "prereq": "ENCS Majors Only"
+  },
+  "CS 5343": {
+    "name": "Algorithm Analysis and Data Structures",
+    "code": "CS 5343",
+    "prereq": "Corequisite or Prerequisite: CS 5333. Prerequisite: CS 5303"
+  },
+  "CS 5348": {
+    "name": "Operating Systems Concepts",
+    "code": "CS 5348",
+    "prereq": "CS 5330. Prerequisite or Corequisite: CS 5343"
+  },
+  "CS 5349": {
+    "name": "Automata Theory",
+    "code": "CS 5349",
+    "prereq": "CS 5333"
+  },
+  "CS 5390": {
+    "name": "Computer Networks",
+    "code": "CS 5390",
+    "prereq": "CS 5343"
+  },
+  "CS 6301": {
+    "name": "Special Topics in Computer Science  - Cyber Security Essentials",
+    "code": "CS 6301",
+    "prereq": "CS 5343"
+  },
+  "CS 6303": {
+    "name": "Cyber Security Essentials for Practitioners",
+    "code": "CS 6303",
+    "prereq": "May not be used to satisfy the degree requirements of the MS CS or the MS SE degree plans"
+  },
+  "CS 6304": {
+    "name": "Computer Architecture",
+    "code": "CS 6304",
+    "prereq": "CS 2340 or EE 4304 or equivalent and ENCS majors only"
+  },
+  "CS 6306": {
+    "name": "Cyber Security Analytics   Malware Analysis for Practitioners",
+    "code": "CS 6306",
+    "prereq": "May not be used to satisfy the degree requirements of the MS CS or the MS SE degree plans"
+  },
+  "CS 6313": {
+    "name": "Statistical Methods for Data Science",
+    "code": "CS 6313",
+    "prereq": "CS 3341 or SE 3341 or STAT 3341 or equivalent"
+  },
+  "CS 6314": {
+    "name": "Web Programming Languages",
+    "code": "CS 6314",
+    "prereq": "CS 5343"
+  },
+  "CS 6320": {
+    "name": "Natural Language Processing",
+    "code": "CS 6320",
+    "prereq": "CS 5343"
+  },
+  "CS 6323": {
+    "name": "Computer Animation and Gaming",
+    "code": "CS 6323",
+    "prereq": "CS 5343"
+  },
+  "CS 6326": {
+    "name": "Human Computer Interactions",
+    "code": "CS 6326",
+    "prereq": "CS 5343"
+  },
+  "CS 6332": {
+    "name": "Systems Security and Malicious Code Analysis",
+    "code": "CS 6332",
+    "prereq": "CS 5343 and CS 5348"
+  },
+  "CS 6335": {
+    "name": "Language-based Security",
+    "code": "CS 6335",
+    "prereq": "CS 5330 and CS 5343"
+  },
+  "CS 6341": {
+    "name": "Robotics",
+    "code": "CS 6341",
+    "prereq": "CS 5343"
+  },
+  "CS 6343": {
+    "name": "Cloud Computing",
+    "code": "CS 6343",
+    "prereq": "CS 5343 and CS 5348"
+  },
+  "CS 6344": {
+    "name": "Data Representation",
+    "code": "CS 6344",
+    "prereq": "CS 5343"
+  },
+  "CS 6349": {
+    "name": "Network Security",
+    "code": "CS 6349",
+    "prereq": "CS 5390"
+  },
+  "CS 6350": {
+    "name": "Big Data Management and Analytics",
+    "code": "CS 6350",
+    "prereq": "CS 6360"
+  },
+  "CS 6360": {
+    "name": "Database Design",
+    "code": "CS 6360",
+    "prereq": "CS 5343"
+  },
+  "CS 6363": {
+    "name": "Design and Analysis of Computer Algorithms",
+    "code": "CS 6363",
+    "prereq": "CS 5333 and CS 5343"
+  },
+  "CS 6364": {
+    "name": "Artificial Intelligence",
+    "code": "CS 6364",
+    "prereq": "CS 5343"
+  },
+  "CS 6375": {
+    "name": "Machine Learning",
+    "code": "CS 6375",
+    "prereq": "CS 5343"
+  },
+  "CS 6377": {
+    "name": "Introduction to Cryptography",
+    "code": "CS 6377",
+    "prereq": "CS 5333 and CS 5343 and ENCS Majors Only"
+  },
+  "CS 6378": {
+    "name": "Advanced Operating Systems",
+    "code": "CS 6378",
+    "prereq": "CS 5343 and CS 5348"
+  },
+  "CS 6382": {
+    "name": "Theory of Computation",
+    "code": "CS 6382",
+    "prereq": "ENCS Majors Only"
+  },
+  "CS 6390": {
+    "name": "Advanced Computer Networks",
+    "code": "CS 6390",
+    "prereq": "CS 5390"
+  },
+  "CS 6396": {
+    "name": "Real-Time Systems",
+    "code": "CS 6396",
+    "prereq": "CS 5348"
+  },
+  "CS 7301": {
+    "name": "Recent Advances in Computing  - Visual Languages\\u0026visualization",
+    "code": "CS 7301",
+    "prereq": "ENCS PhD majors only"
+  },
+  "CYBR 3320": {
+    "name": "Operating Systems and Networking",
+    "code": "CYBR 3320",
+    "prereq": null
+  },
+  "CYBR 3370": {
+    "name": null,
+    "code": "CYBR 3370",
+    "prereq": null
+  },
+  "CYBR 4333": {
+    "name": "Enterprise Risk Management",
+    "code": "CYBR 4333",
+    "prereq": "Senior standing and FIN 3370"
+  },
+  "CYBR 4336": {
+    "name": null,
+    "code": "CYBR 4336",
+    "prereq": null
+  },
+  "CYBR 4351": {
+    "name": "Operational Risk Management",
+    "code": "CYBR 4351",
+    "prereq": null
+  },
+  "CYBR 4354": {
+    "name": "Cybersecurity Risk Management",
+    "code": "CYBR 4354",
+    "prereq": null
+  },
+  "CYBR 4356": {
+    "name": "Data Governance",
+    "code": "CYBR 4356",
+    "prereq": "ITSS 3300"
+  },
+  "CYBR 4359": {
+    "name": "Preparing for Cybersecurity Threats",
+    "code": "CYBR 4359",
+    "prereq": null
+  },
+  "CYBR 4360": {
+    "name": "Network and Information Security",
+    "code": "CYBR 4360",
+    "prereq": "ITSS 3300 and (MATH 1325 or MATH 2413 or MATH 2417) and (CS 2305 or MATH 2418 or MATH 2333 or OPRE 3333). Repeat Restriction"
+  },
+  "CYBR 4361": {
+    "name": "Information Technology Cybersecurity",
+    "code": "CYBR 4361",
+    "prereq": "ITSS 4360 or CYBR 4360"
+  },
+  "CYBR 4362": {
+    "name": "Cybersecurity Governance",
+    "code": "CYBR 4362",
+    "prereq": "ITSS 4360 or CYBR 4360"
   }
 }
