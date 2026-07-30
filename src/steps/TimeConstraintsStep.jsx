@@ -1,3 +1,7 @@
+import React, { useMemo, useCallback } from "react";
+
+// Days and labeled time blocks for the UI. Kept as constants to avoid
+// recreating these arrays on every render.
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 const TIME_BLOCKS = [
   { id: "early", label: "Early (8–10am)" },
@@ -6,17 +10,37 @@ const TIME_BLOCKS = [
   { id: "evening", label: "Evening (4pm+)" },
 ];
 
+// Toggle helper implemented with a Set to make intent clear and avoid
+// an extra iteration when adding/removing items (small constant overhead
+// for Set creation, but clearer and often faster for larger lists).
 function toggle(list, value) {
-  return list.includes(value) ? list.filter((v) => v !== value) : [...list, value];
+  const s = new Set(list);
+  if (s.has(value)) {
+    s.delete(value);
+    return Array.from(s);
+  }
+  s.add(value);
+  return Array.from(s);
 }
 
 export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }) {
-  const canSubmit = data.targetHours !== "" && Number(data.targetHours) > 0;
+  // Derived boolean indicating whether the user may proceed. useMemo
+  // avoids recalculating the Number(...) conversion on unrelated renders.
+  const canSubmit = useMemo(() => data.targetHours !== "" && Number(data.targetHours) > 0, [data.targetHours]);
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    if (canSubmit) onSubmit();
-  }
+  // Memoized submit handler. Keeps a stable reference for the form.
+  const handleSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
+      if (canSubmit) onSubmit();
+    },
+    [canSubmit, onSubmit]
+  );
+
+  // Small wrappers to keep map render callbacks concise and to ensure
+  // onChange calls use the latest data snapshot.
+  const toggleDay = useCallback((day) => onChange({ ...data, daysOff: toggle(data.daysOff, day) }), [data, onChange]);
+  const toggleBlock = useCallback((blockId) => onChange({ ...data, timeBlocks: toggle(data.timeBlocks, blockId) }), [data, onChange]);
 
   return (
     <form className="step-panel" onSubmit={handleSubmit}>
@@ -26,9 +50,7 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
         <br />
         your week.
       </h1>
-      <p className="step-panel__hint">
-        We'll only place classes inside the space you leave open.
-      </p>
+      <p className="step-panel__hint">We'll only place classes inside the space you leave open.</p>
 
       <fieldset className="field">
         <legend className="field__label">Days you want off</legend>
@@ -39,7 +61,7 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
               key={day}
               className={`pill ${data.daysOff.includes(day) ? "pill--selected" : ""}`}
               aria-pressed={data.daysOff.includes(day)}
-              onClick={() => onChange({ ...data, daysOff: toggle(data.daysOff, day) })}
+              onClick={() => toggleDay(day)}
             >
               {day}
             </button>
@@ -56,9 +78,7 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
               key={block.id}
               className={`pill ${data.timeBlocks.includes(block.id) ? "pill--selected" : ""}`}
               aria-pressed={data.timeBlocks.includes(block.id)}
-              onClick={() =>
-                onChange({ ...data, timeBlocks: toggle(data.timeBlocks, block.id) })
-              }
+              onClick={() => toggleBlock(block.id)}
             >
               {block.label}
             </button>
@@ -75,6 +95,7 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
           />
           <span>Keep a lunch period free</span>
         </label>
+
         {data.wantsLunch && (
           <div className="time-range">
             <input
@@ -128,9 +149,7 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
         <input
           type="checkbox"
           checked={data.unlimitedDailyHours}
-          onChange={(e) =>
-            onChange({ ...data, unlimitedDailyHours: e.target.checked, maxHoursPerDay: "" })
-          }
+          onChange={(e) => onChange({ ...data, unlimitedDailyHours: e.target.checked, maxHoursPerDay: "" })}
         />
         <span>No daily limit</span>
       </label>
