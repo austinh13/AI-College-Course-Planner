@@ -12,6 +12,14 @@
  */
 import utdDegrees from "../data/utd_degrees.json";
 
+// Course name + prereq text, keyed by course code (e.g. "CS 3345"),
+// served as a static JSON file from the public root.
+export async function loadClasses(url = "/classes.json") {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to load classes.json: ${res.status}`);
+  return res.json();
+}
+
 export function catalogBaseUrl(startYear) {
   return `/UTD_${startYear}/Major_Parsed_${startYear}`;
 }

@@ -14,6 +14,7 @@ import {
   findOpenCoreGroups,
   findGroupByLabel,
   buildOpenGroupCourseOptions,
+  loadClasses,
 } from "../lib/catalog";
 import "./AcademicHistory.css";
 
@@ -272,11 +273,22 @@ function CourseOption({ option, completed, onToggle, isAlternative }) {
   );
 }
 
-function RequirementGroup({ group, completed, onToggle, query }) {
+function RequirementGroup({ group, completed, onToggle, query, extraEntries = [], onExtraAdd, onExtraRemove, classesMap }) {
   const visibleCourses = group.courses.filter((opt) => matchesSearch(opt, query));
   if (query && visibleCourses.length === 0) return null;
 
-  const satisfied = groupSatisfied(group, completed);
+  // Component Area Option (090) is UTD's odd one: it's satisfied by
+  // re-using courses already completed for *other* categories, not just
+  // the handful the catalog PDF happens to list for it — so its "done"
+  // state and its add-more capability both need to factor in the extra
+  // courses logged below, not just this group's own checkbox list.
+  const isComponentAreaOption = normalizeLabel(group.label) === normalizeLabel("Component Area Option");
+  const target = parseHours(group.credit_hours);
+  const extraHours = extraEntries.reduce((sum, e) => sum + e.hours, 0);
+  const satisfied =
+    isComponentAreaOption && target != null
+      ? explicitGroupHoursEarned(group, completed, target) + extraHours >= target
+      : groupSatisfied(group, completed);
 
   return (
     <div className="s3-group">
@@ -289,7 +301,85 @@ function RequirementGroup({ group, completed, onToggle, query }) {
       {visibleCourses.map((opt) => (
         <CourseOption key={opt.code} option={opt} completed={completed} onToggle={onToggle} />
       ))}
+      {isComponentAreaOption && (
+        <ComponentAreaExtras
+          group={group}
+          completed={completed}
+          extraEntries={extraEntries}
+          onAdd={onExtraAdd}
+          onRemove={onExtraRemove}
+          classesMap={classesMap}
+        />
+      )}
     </div>
+  );
+}
+
+// Dropdown of the student's other completed transcript courses — ones
+// not already checked off in this group's own list — so Component Area
+// Option can pull in courses that satisfy it by virtue of already
+// satisfying a different category, which the catalog's own course list
+// for this group doesn't capture.
+function ComponentAreaExtras({ group, completed, extraEntries, onAdd, onRemove, classesMap }) {
+  const [selected, setSelected] = useState("");
+  const ownCodes = new Set(group.courses.flatMap((opt) => [opt.code, ...opt.alternatives.map((alt) => alt.code)]));
+  const alreadyExtra = new Set(extraEntries.map((e) => e.code));
+  const available = [...completed]
+    .filter((code) => !ownCodes.has(code) && !alreadyExtra.has(code))
+    .map((code) => ({ code, name: classesMap[code]?.name || code }))
+    .sort((a, b) => a.code.localeCompare(b.code));
+
+  function handleAdd(e) {
+    e.preventDefault();
+    if (!selected) return;
+    onAdd(selected, creditHoursFromCode(selected));
+    setSelected("");
+  }
+
+  return (
+    <>
+      {extraEntries.length > 0 && (
+        <ul className="s3-manual-list">
+          {extraEntries.map((entry) => (
+            <li key={entry.id} className="s3-manual-row">
+              <span className="s3-code">{entry.code}</span>
+              <span className="s3-manual-hours">{entry.hours} SCH</span>
+              <button
+                type="button"
+                className="s3-manual-remove"
+                onClick={() => onRemove(entry.id)}
+                aria-label={`Remove ${entry.code}`}
+              >
+                ×
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+      {available.length > 0 ? (
+        <form className="s3-manual-form" onSubmit={handleAdd}>
+          <select
+            className="s3-manual-input s3-manual-input--code"
+            value={selected}
+            onChange={(e) => setSelected(e.target.value)}
+          >
+            <option value="">Add another completed course…</option>
+            {available.map((opt) => (
+              <option key={opt.code} value={opt.code}>
+                {opt.code} — {opt.name}
+              </option>
+            ))}
+          </select>
+          <button type="submit" className="s3-manual-add" disabled={!selected}>
+            Add
+          </button>
+        </form>
+      ) : (
+        <p className="s3-manual-progress s3-manual-progress--unknown">
+          No other completed courses available to add here yet.
+        </p>
+      )}
+    </>
   );
 }
 
@@ -420,6 +510,7 @@ function RequirementSection({
   onManualAdd,
   onManualRemove,
   courseOptionsByGroup,
+  classesMap,
 }) {
   const [open, setOpen] = useState(true);
   const indexedGroups = section.groups.map((g, gi) => ({ g, gi }));
@@ -458,6 +549,10 @@ function RequirementSection({
                 completed={completed}
                 onToggle={onToggle}
                 query={query}
+                extraEntries={manualEntries[key] || []}
+                onExtraAdd={(code, hours) => onManualAdd(key, code, hours)}
+                onExtraRemove={(id) => onManualRemove(key, id)}
+                classesMap={classesMap}
               />
             );
           })}
@@ -479,10 +574,27 @@ export default function Step3AcademicHistory({
   const [catalog, setCatalog] = useState(null);
   const [loadError, setLoadError] = useState(null);
   const [coreCurriculum, setCoreCurriculum] = useState(null);
+  const [classesMap, setClassesMap] = useState({});
   const [query, setQuery] = useState("");
   const [transcriptFile, setTranscriptFile] = useState(null);
   const [transcriptNote, setTranscriptNote] = useState("");
   const [transcriptParsing, setTranscriptParsing] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    loadClasses()
+      .then((data) => {
+        if (!cancelled) setClassesMap(data);
+      })
+      .catch((err) => {
+        // Best-effort — the Component Area Option add-dropdown just
+        // shows bare course codes instead of names if this fails.
+        console.warn("Couldn't load classes.json — course names won't show in Component Area Option:", err);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   useEffect(() => {
     if (!startYear) return;
@@ -567,7 +679,9 @@ export default function Step3AcademicHistory({
         const target = parseHours(group.credit_hours);
         if (target == null) return;
         if (group.courses.length > 0) {
-          earned += explicitGroupHoursEarned(group, completed, target);
+          const key = `${si}-${gi}`;
+          const manualTotal = (manualEntries[key] || []).reduce((sum, e) => sum + e.hours, 0);
+          earned += Math.min(explicitGroupHoursEarned(group, completed, target) + manualTotal, target);
         } else {
           const key = `${si}-${gi}`;
           const manualTotal = (manualEntries[key] || []).reduce((sum, e) => sum + e.hours, 0);
@@ -787,6 +901,7 @@ export default function Step3AcademicHistory({
                 onManualAdd={addManualEntry}
                 onManualRemove={removeManualEntry}
                 courseOptionsByGroup={courseOptionsByGroup}
+                classesMap={classesMap}
               />
             ))}
           </div>

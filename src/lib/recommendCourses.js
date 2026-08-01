@@ -9,13 +9,9 @@
  * mandatory courses + 1-2 core electives that sum close to the
  * student's target weekly hours.
  */
-import { optionSatisfied, groupSatisfied, creditHoursFromCode, parseHours, explicitGroupHoursEarned } from "./catalog";
+import { optionSatisfied, groupSatisfied, creditHoursFromCode, parseHours, explicitGroupHoursEarned, loadClasses } from "./catalog";
 
-export async function loadClasses(url = "/classes.json") {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Failed to load classes.json: ${res.status}`);
-  return res.json();
-}
+export { loadClasses };
 
 export function courseLevel(code) {
   const match = code.match(/(\d)\d{3}/);
@@ -188,7 +184,8 @@ function buildCandidates(catalog, completed, manualEntries, classesMap) {
 
       let remaining;
       if (target != null) {
-        remaining = target - explicitGroupHoursEarned(group, completed, target);
+        const manualTotal = (manualEntries[groupKey] || []).reduce((sum, e) => sum + e.hours, 0);
+        remaining = target - explicitGroupHoursEarned(group, completed, target) - manualTotal;
         if (remaining <= 0) return;
       } else if (groupSatisfied(group, completed)) {
         return;
