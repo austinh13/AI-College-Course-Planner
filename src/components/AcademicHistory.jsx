@@ -1,69 +1,21 @@
 import { useEffect, useMemo, useState } from "react";
-import utdDegrees from "../data/utd_degrees.json";
 import { extractCompletedCourses, loadCoreCurriculum, coreCurriculumUrl, assignCoreCategories } from "../lib/parseTranscript";
+import {
+  catalogBaseUrl,
+  resolveMajorKey,
+  undergradDegreeTypes,
+  parseHours,
+  slugify,
+  optionSatisfied,
+  groupSatisfied,
+  creditHoursFromCode,
+  explicitGroupHoursEarned,
+  normalizeLabel,
+  findOpenCoreGroups,
+  findGroupByLabel,
+  buildOpenGroupCourseOptions,
+} from "../lib/catalog";
 import "./AcademicHistory.css";
-
-function catalogBaseUrl(startYear) {
-  return `/UTD_${startYear}/Major_Parsed_${startYear}`;
-}
-
-const NORMALIZED_MAJOR_KEYS = Object.keys(utdDegrees).reduce((map, key) => {
-  map[key.trim().toLowerCase().replace(/\s+/g, " ")] = key;
-  return map;
-}, {});
-
-function resolveMajorKey(majorName) {
-  if (!majorName) return null;
-  return NORMALIZED_MAJOR_KEYS[majorName.trim().toLowerCase().replace(/\s+/g, " ")] || null;
-}
-
-function undergradDegreeTypes(majorName) {
-  const key = resolveMajorKey(majorName);
-  const entry = key ? utdDegrees[key] : null;
-  if (!entry) return [];
-  const types = new Set();
-  entry.levels.forEach((lvl) => {
-    const match = lvl.match(/^(BA|BS)/);
-    if (match) types.add(match[1]);
-  });
-  return [...types];
-}
-
-function parseHours(value) {
-  if (value == null) return null;
-  const match = String(value).match(/\d+/);
-  return match ? Number(match[0]) : null;
-}
-
-function slugify(majorName) {
-  return majorName.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
-}
-
-function optionSatisfied(option, completed) {
-  if (!completed.has(option.code)) return false;
-  return option.with.every((w) => completed.has(w.code));
-}
-
-function groupSatisfied(group, completed) {
-  if (!group.courses.length) return false;
-  const satisfiesSlot = (opt) =>
-    optionSatisfied(opt, completed) ||
-    opt.alternatives.some((alt) => optionSatisfied(alt, completed));
-  return group.choice
-    ? group.courses.some(satisfiesSlot)
-    : group.courses.every(satisfiesSlot);
-}
-
-// UTD catalog numbers encode credit hours in the 2nd digit of the
-// 4-digit number (ECS 1100 -> 1, MATH 2418 -> 4, PHYS 2125 -> 1,
-// PHYS 2325 -> 3) — verified against every course in a real transcript.
-// Falls back to 3 (the most common UTD course size) for anything that
-// doesn't fit the pattern (shouldn't happen for real catalog codes).
-function creditHoursFromCode(code) {
-  const match = code.match(/(\d[\d-]{2,3})$/);
-  const digit = match?.[1]?.[1];
-  return digit && /\d/.test(digit) ? Number(digit) : 3;
-}
 
 // Partial credit for an explicit-course, choice:false group, weighted by
 // each course's real SCH instead of treating every course slot equally.
@@ -80,19 +32,6 @@ function creditHoursFromCode(code) {
 // but in this catalog those already have credit_hours: null and are
 // excluded from the hours math entirely, so this only actually applies
 // to choice:false groups in practice.
-function explicitGroupHoursEarned(group, completed, target) {
-  if (group.choice) return groupSatisfied(group, completed) ? target : 0;
-  const satisfiesSlot = (opt) =>
-    optionSatisfied(opt, completed) || opt.alternatives.some((alt) => optionSatisfied(alt, completed));
-  const courseHours = group.courses.map((opt) => creditHoursFromCode(opt.code));
-  const totalWeight = courseHours.reduce((sum, h) => sum + h, 0) || group.courses.length;
-  const satisfiedWeight = group.courses.reduce(
-    (sum, opt, i) => sum + (satisfiesSlot(opt) ? courseHours[i] : 0),
-    0
-  );
-  return Math.round((satisfiedWeight / totalWeight) * target);
-}
-
 function collectAllCodes(catalog) {
   const codes = new Set();
   catalog.sections.forEach((s) =>
@@ -110,10 +49,6 @@ function collectAllCodes(catalog) {
   return codes;
 }
 
-function normalizeLabel(s) {
-  return (s || "").trim().toLowerCase().replace(/[^a-z]+/g, " ").trim();
-}
-
 const TECH_ELECTIVE_SUBJECTS = new Set(["CS", "SE", "EE"]);
 
 // 4000+ CS/SE/EE courses not already in the catalog's explicit list are
@@ -122,50 +57,6 @@ const TECH_ELECTIVE_SUBJECTS = new Set(["CS", "SE", "EE"]);
 function isTechnicalElectiveCandidate(subject, catalogNbr) {
   const num = parseInt(catalogNbr, 10);
   return TECH_ELECTIVE_SUBJECTS.has(subject) && Number.isFinite(num) && num >= 4000;
-}
-
-// Core Curriculum groups with no explicit course list (e.g. "American
-// History" — the catalog just says "see advisor") are the only ones an
-// unlisted course can land in automatically; groups that already have
-// their own explicit course list only accept checkbox matches, never
-// manual entries (see classifyUnlistedCourses doc comment below).
-function findOpenCoreGroups(catalog) {
-  const groups = [];
-  catalog.sections.forEach((section, si) => {
-    if (section.title !== "Core Curriculum Requirements") return;
-    section.groups.forEach((group, gi) => {
-      if (group.courses.length === 0) groups.push({ si, gi, group });
-    });
-  });
-  return groups;
-}
-
-function findGroupByLabel(catalog, label) {
-  for (let si = 0; si < catalog.sections.length; si++) {
-    const gi = catalog.sections[si].groups.findIndex((g) => g.label === label);
-    if (gi !== -1) return { si, gi };
-  }
-  return null;
-}
-
-// For every open Core Curriculum group (empty course list — American
-// History, Creative Arts, etc.), looks up the matching category in
-// core_curriculum.json (same label-matching used for auto-routing
-// parsed transcript courses) and returns its course list, so the
-// manual-entry form can offer a dropdown instead of free text. Groups
-// with no matching category (Free Electives, Major Technical
-// Electives — there's no bounded course list for those) are simply
-// absent from the returned map, and the form falls back to free text.
-function buildOpenGroupCourseOptions(catalog, coreCurriculum) {
-  const options = {};
-  for (const { si, gi, group } of findOpenCoreGroups(catalog)) {
-    const category = coreCurriculum.find((c) => normalizeLabel(c.name) === normalizeLabel(group.label));
-    if (!category) continue;
-    options[`${si}-${gi}`] = category.courses
-      .map((c) => ({ code: c.code, name: c.name }))
-      .sort((a, b) => a.code.localeCompare(b.code));
-  }
-  return options;
 }
 
 /**
@@ -913,7 +804,7 @@ export default function Step3AcademicHistory({
           type="button"
           disabled={!catalog}
           onClick={() =>
-            onContinue({ completedCodes: [...completed], hoursEarned, hoursLeft, totalHours })
+            onContinue({ completedCodes: [...completed], hoursEarned, hoursLeft, totalHours, degreeType: resolvedDegreeType })
           }
         >
           Continue
