@@ -12,6 +12,7 @@ import {
   explicitGroupHoursEarned,
   normalizeLabel,
   findOpenCoreGroups,
+  findComponentAreaOptionGroup,
   findGroupByLabel,
   buildOpenGroupCourseOptions,
   loadClasses,
@@ -50,6 +51,35 @@ function collectAllCodes(catalog) {
   return codes;
 }
 
+// Which courses are already spoken for by another requirement group —
+// either checked off against that group's own explicit course list, or
+// logged as a manual/extra entry there (including a different Component
+// Area Option's own extras). Used to keep Component Area Option's add-
+// dropdown from re-offering a course that's already getting credit
+// elsewhere (e.g. CS 1200 checked off under Major Preparatory Courses,
+// or THEA 1310 logged manually under Creative Arts).
+function buildUsedElsewhere(catalog, completed, manualEntries) {
+  const usedBy = new Map(); // code -> Set of group keys ("si-gi")
+  function mark(code, key) {
+    if (!usedBy.has(code)) usedBy.set(code, new Set());
+    usedBy.get(code).add(key);
+  }
+  catalog.sections.forEach((section, si) => {
+    section.groups.forEach((group, gi) => {
+      const key = `${si}-${gi}`;
+      group.courses.forEach((opt) => {
+        const codes = [opt.code, ...opt.with.map((w) => w.code)];
+        opt.alternatives.forEach((alt) => codes.push(alt.code, ...alt.with.map((w) => w.code)));
+        codes.forEach((code) => {
+          if (completed.has(code)) mark(code, key);
+        });
+      });
+      (manualEntries[key] || []).forEach((entry) => mark(entry.code, key));
+    });
+  });
+  return usedBy;
+}
+
 const TECH_ELECTIVE_SUBJECTS = new Set(["CS", "SE", "EE"]);
 
 // 4000+ CS/SE/EE courses not already in the catalog's explicit list are
@@ -71,9 +101,11 @@ function isTechnicalElectiveCandidate(subject, catalogNbr) {
  * e.g. Government/Political Science here only lists GOVT 2305, not
  * GOVT 2306, so a student who took 2306 instead won't get credited
  * toward that group by this function) isn't touched, since the UI
- * doesn't support mixing checkboxes and manual entries in one group.
- * Those courses — and anything with no category match at all — fall
- * through to elective.
+ * doesn't support mixing checkboxes and manual entries in one group —
+ * except Component Area Option (090), whose UI is built specifically
+ * for that (ComponentAreaExtras), so surplus 090-eligible courses still
+ * route there instead of falling through to elective.
+ * Anything else with no category match at all falls through to elective.
  *
  * Returns a flat list of { si, gi, code, hours } to merge into
  * manualEntries; doesn't mutate anything itself.
@@ -99,6 +131,16 @@ function classifyUnlistedCourses(courses, allCodes, catalog, coreCurriculum) {
     if (openGroup) {
       additions.push({ si: openGroup.si, gi: openGroup.gi, code: course.code, hours: course.earned });
       continue;
+    }
+
+    // 090 (Component Area Option) has its own explicit course list, so
+    // it's never among openGroups above — it needs its own lookup.
+    if (categoryCode === "090") {
+      const cao = findComponentAreaOptionGroup(catalog);
+      if (cao) {
+        additions.push({ si: cao.si, gi: cao.gi, code: course.code, hours: course.earned });
+        continue;
+      }
     }
 
     const target = isTechnicalElectiveCandidate(course.subject, course.catalogNbr)
@@ -273,7 +315,18 @@ function CourseOption({ option, completed, onToggle, isAlternative }) {
   );
 }
 
-function RequirementGroup({ group, completed, onToggle, query, extraEntries = [], onExtraAdd, onExtraRemove, classesMap }) {
+function RequirementGroup({
+  group,
+  completed,
+  onToggle,
+  query,
+  extraEntries = [],
+  onExtraAdd,
+  onExtraRemove,
+  classesMap,
+  usedElsewhere,
+  groupKey,
+}) {
   const visibleCourses = group.courses.filter((opt) => matchesSearch(opt, query));
   if (query && visibleCourses.length === 0) return null;
 
@@ -309,6 +362,8 @@ function RequirementGroup({ group, completed, onToggle, query, extraEntries = []
           onAdd={onExtraAdd}
           onRemove={onExtraRemove}
           classesMap={classesMap}
+          usedElsewhere={usedElsewhere}
+          groupKey={groupKey}
         />
       )}
     </div>
@@ -320,12 +375,19 @@ function RequirementGroup({ group, completed, onToggle, query, extraEntries = []
 // Option can pull in courses that satisfy it by virtue of already
 // satisfying a different category, which the catalog's own course list
 // for this group doesn't capture.
-function ComponentAreaExtras({ group, completed, extraEntries, onAdd, onRemove, classesMap }) {
+function ComponentAreaExtras({ group, completed, extraEntries, onAdd, onRemove, classesMap, usedElsewhere, groupKey }) {
   const [selected, setSelected] = useState("");
   const ownCodes = new Set(group.courses.flatMap((opt) => [opt.code, ...opt.alternatives.map((alt) => alt.code)]));
   const alreadyExtra = new Set(extraEntries.map((e) => e.code));
+  // A course counts as "used elsewhere" only if some *other* group's key
+  // claims it — this group's own claim on it (its own list, or its own
+  // extra entries) doesn't disqualify it, and is already handled above.
+  const isUsedElsewhere = (code) => {
+    const keys = usedElsewhere?.get(code);
+    return !!keys && [...keys].some((k) => k !== groupKey);
+  };
   const available = [...completed]
-    .filter((code) => !ownCodes.has(code) && !alreadyExtra.has(code))
+    .filter((code) => !ownCodes.has(code) && !alreadyExtra.has(code) && !isUsedElsewhere(code))
     .map((code) => ({ code, name: classesMap[code]?.name || code }))
     .sort((a, b) => a.code.localeCompare(b.code));
 
@@ -511,6 +573,7 @@ function RequirementSection({
   onManualRemove,
   courseOptionsByGroup,
   classesMap,
+  usedElsewhere,
 }) {
   const [open, setOpen] = useState(true);
   const indexedGroups = section.groups.map((g, gi) => ({ g, gi }));
@@ -553,6 +616,8 @@ function RequirementSection({
                 onExtraAdd={(code, hours) => onManualAdd(key, code, hours)}
                 onExtraRemove={(id) => onManualRemove(key, id)}
                 classesMap={classesMap}
+                usedElsewhere={usedElsewhere}
+                groupKey={key}
               />
             );
           })}
@@ -617,6 +682,11 @@ export default function Step3AcademicHistory({
   const courseOptionsByGroup = useMemo(
     () => (catalog && coreCurriculum ? buildOpenGroupCourseOptions(catalog, coreCurriculum) : {}),
     [catalog, coreCurriculum]
+  );
+
+  const usedElsewhere = useMemo(
+    () => (catalog ? buildUsedElsewhere(catalog, completed, manualEntries) : new Map()),
+    [catalog, completed, manualEntries]
   );
 
   const degreeTypes = useMemo(() => (major ? undergradDegreeTypes(major) : []), [major]);
@@ -902,6 +972,7 @@ export default function Step3AcademicHistory({
                 onManualRemove={removeManualEntry}
                 courseOptionsByGroup={courseOptionsByGroup}
                 classesMap={classesMap}
+                usedElsewhere={usedElsewhere}
               />
             ))}
           </div>

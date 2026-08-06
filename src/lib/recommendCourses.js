@@ -214,6 +214,19 @@ function buildCandidates(catalog, completed, manualEntries, classesMap) {
   return { slots, openGroups };
 }
 
+// UTD catalogs list every required section (Core Curriculum, Major
+// Requirements) before "Elective Requirements", and required courses
+// alone routinely already reach a typical target-hours load — so
+// without help, elective-flavored slots/groups (Free Electives, Major
+// Technical/Guided Electives) never get reached by the fill loop below.
+// This matches both plain "Free Electives" (no course list) and named
+// technical/guided elective categories that do have one, e.g. Mechanical
+// Engineering's "Technical Electives" list.
+const ELECTIVE_LABEL_RE = /elective/i;
+const isElectiveSlot = (slot) => ELECTIVE_LABEL_RE.test(slot.sectionTitle) || ELECTIVE_LABEL_RE.test(slot.label);
+const isElectiveGroup = (group) => ELECTIVE_LABEL_RE.test(group.sectionTitle) || ELECTIVE_LABEL_RE.test(group.label);
+const MAX_GUARANTEED_ELECTIVES = 2;
+
 // Fills each slot's own remaining SCH need from its priority-sorted
 // pool (prereqs-satisfied and lower-level courses first), then flags
 // open elective categories still needed, until the term's target hours
@@ -226,8 +239,37 @@ export function recommend({ catalog, completed, manualEntries, classesMap, targe
   const target = Number(targetHours) || 15;
 
   const slotPicks = [];
+  const electivePicks = [];
   let hours = 0;
+
+  // Guaranteed-elective pass: up to 2 picks, one representative course
+  // each — not the slot's full remaining SCH — so a catalog quirk (a
+  // group with no declared credit_hours falls back to summing every
+  // option in its list, which can be much larger than a real term's
+  // worth) can't eat the whole term's budget on its own.
+  const electiveCandidates = [
+    ...slots.filter(isElectiveSlot).map((slot) => ({ kind: "slot", item: slot })),
+    ...openGroups.filter(isElectiveGroup).map((group) => ({ kind: "group", item: group })),
+  ];
+  let guaranteed = 0;
+  for (const { kind, item } of electiveCandidates) {
+    if (guaranteed >= MAX_GUARANTEED_ELECTIVES) break;
+    if (kind === "slot") {
+      const firstOption = item.options[0];
+      slotPicks.push({ ...item, picks: [firstOption] });
+      hours += firstOption.hours;
+    } else {
+      electivePicks.push(item);
+      hours += Math.min(item.remainingHours, ELECTIVE_DEFAULT_HOURS);
+    }
+    guaranteed++;
+  }
+
+  const pickedSlotKeys = new Set(slotPicks.map((s) => s.groupKey));
+  const pickedGroupKeys = new Set(electivePicks.map((g) => g.groupKey));
+
   for (const slot of slots) {
+    if (pickedSlotKeys.has(slot.groupKey)) continue;
     if (hours >= target) break;
     const picks = [];
     let filled = 0;
@@ -240,8 +282,8 @@ export function recommend({ catalog, completed, manualEntries, classesMap, targe
     if (picks.length) slotPicks.push({ ...slot, picks });
   }
 
-  const electivePicks = [];
   for (const group of openGroups) {
+    if (pickedGroupKeys.has(group.groupKey)) continue;
     if (hours >= target) break;
     electivePicks.push(group);
     hours += Math.min(group.remainingHours, ELECTIVE_DEFAULT_HOURS);

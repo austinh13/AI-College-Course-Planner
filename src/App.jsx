@@ -9,10 +9,11 @@ import QuestionnaireStep from "./steps/QuestionnaireStep";
 import TimeConstraintsStep from "./steps/TimeConstraintsStep";
 import AcademicHistory from "./components/AcademicHistory";
 import ReviewStep from "./steps/ReviewStep";
+import ScheduleStep from "./steps/ScheduleStep";
 import { wakeBackend } from "./lib/api";
 import "./App.css";
 
-const STAGE = { PROFILE: 0, CONSTRAINTS: 1, ACADEMIC_HISTORY: 2, REVIEW: 3 };
+const STAGE = { PROFILE: 0, CONSTRAINTS: 1, ACADEMIC_HISTORY: 2, REVIEW: 3, SCHEDULE: 4 };
 
 const initialProfile = { major: "", year: "" };
 const initialConstraints = {
@@ -39,6 +40,7 @@ export default function App() {
   const [profile, setProfile] = useState(initialProfile);
   const [constraints, setConstraints] = useState(initialConstraints);
   const [academicHistory, setAcademicHistory] = useState(initialAcademicHistory);
+  const [scheduleCourses, setScheduleCourses] = useState([]);
 
   // Fire the moment the app mounts (start of the questionnaire) so a
   // free-tier Render backend has the whole flow to finish waking up.
@@ -104,6 +106,18 @@ export default function App() {
                 constraints={constraints}
                 academicHistory={academicHistory}
                 onEdit={() => setStage(STAGE.ACADEMIC_HISTORY)}
+                onContinue={(courses) => {
+                  setScheduleCourses(courses);
+                  setStage(STAGE.SCHEDULE);
+                }}
+              />
+            )}
+
+            {stage === STAGE.SCHEDULE && (
+              <ScheduleStep
+                courses={scheduleCourses}
+                constraints={constraints}
+                onBack={() => setStage(STAGE.REVIEW)}
               />
             )}
           </motion.div>

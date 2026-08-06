@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
-import { catalogBaseUrl, resolveMajorKey, undergradDegreeTypes, slugify, buildOpenGroupCourseOptions } from "../lib/catalog";
+import { catalogBaseUrl, resolveMajorKey, undergradDegreeTypes, slugify, buildOpenGroupCourseOptions, buildMajorElectiveOptions } from "../lib/catalog";
 import { loadCoreCurriculum, coreCurriculumUrl } from "../lib/parseTranscript";
 import { loadClasses, recommend, prereqSatisfied } from "../lib/recommendCourses";
 import "./ReviewStep.css";
 
-export default function ReviewStep({ profile, constraints, academicHistory, onEdit }) {
+export default function ReviewStep({ profile, constraints, academicHistory, onEdit, onContinue }) {
   const { major, year: startYear } = profile;
   const { completed, manualEntries } = academicHistory;
   // academicHistory.degreeType is set once Screen 3 has resolved it; if a
@@ -96,10 +96,13 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
     };
   }, []);
 
-  const openGroupOptions = useMemo(
-    () => (catalog && coreCurriculum ? buildOpenGroupCourseOptions(catalog, coreCurriculum) : {}),
-    [catalog, coreCurriculum]
-  );
+  const openGroupOptions = useMemo(() => {
+    if (!catalog) return {};
+    return {
+      ...buildMajorElectiveOptions(catalog),
+      ...(coreCurriculum ? buildOpenGroupCourseOptions(catalog, coreCurriculum) : {}),
+    };
+  }, [catalog, coreCurriculum]);
 
   const result = useMemo(() => {
     if (!catalog || !classesMap) {
@@ -163,6 +166,13 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
   }
 
   const { slotPicks, electivePicks, totalHours, shortfallHours, remainingSlots, remainingElectiveGroups } = result;
+
+  // Screen 5's input: every course code currently shown above, overrides
+  // included — exactly what's on screen when the user continues.
+  const finalCourseCodes = [
+    ...slotPicks.flatMap((slot) => codesForSlot(slot)),
+    ...electivePicks.map((group) => overrides[group.groupKey]).filter(Boolean),
+  ];
 
   return (
     <div className="step-panel s4-panel">
@@ -246,7 +256,9 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
           const ok = !selectedCode || prereqStatus(selectedCode);
           return (
             <div className="s4-card" key={group.groupKey}>
-              <span className="s4-card__tag">Core elective · {group.label}</span>
+              <span className="s4-card__tag">
+                {group.sectionTitle === "Core Curriculum Requirements" ? "Core elective" : "Elective"} · {group.label}
+              </span>
               {options ? (
                 <select
                   className="s4-card__select"
@@ -295,9 +307,19 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
         </details>
       )}
 
-      <button type="button" className="btn btn--ghost" onClick={onEdit}>
-        Edit academic history
-      </button>
+      <div className="step-panel__actions">
+        <button type="button" className="btn btn--ghost" onClick={onEdit}>
+          Edit academic history
+        </button>
+        <button
+          type="button"
+          className="btn btn--primary"
+          disabled={!finalCourseCodes.length}
+          onClick={() => onContinue(finalCourseCodes)}
+        >
+          Build my schedule
+        </button>
+      </div>
     </div>
   );
 }

@@ -120,6 +120,23 @@ export function findOpenCoreGroups(catalog) {
   return groups;
 }
 
+// Component Area Option (090) is the one Core Curriculum category that
+// keeps its own explicit course list *and* still accepts courses pooled
+// in from wherever they weren't needed (that's what ComponentAreaExtras'
+// manual "Add" is for) — so unlike every other category, it doesn't fit
+// findOpenCoreGroups' "no explicit list" test and needs its own lookup.
+export function findComponentAreaOptionGroup(catalog) {
+  for (let si = 0; si < catalog.sections.length; si++) {
+    const section = catalog.sections[si];
+    if (section.title !== "Core Curriculum Requirements") continue;
+    const gi = section.groups.findIndex(
+      (g) => normalizeLabel(g.label) === normalizeLabel("Component Area Option")
+    );
+    if (gi !== -1) return { si, gi, group: section.groups[gi] };
+  }
+  return null;
+}
+
 export function findGroupByLabel(catalog, label) {
   for (let si = 0; si < catalog.sections.length; si++) {
     const gi = catalog.sections[si].groups.findIndex((g) => g.label === label);
@@ -141,5 +158,46 @@ export function buildOpenGroupCourseOptions(catalog, coreCurriculum) {
       .map((c) => ({ code: c.code, name: c.name }))
       .sort((a, b) => a.code.localeCompare(b.code));
   }
+  return options;
+}
+
+// Named elective categories outside Core Curriculum (Major Technical
+// Electives, Guided Electives, etc.) often show up with an empty course
+// list right next to a *different* group in the same section that
+// carries the actual list — the parser is splitting one requirement's
+// descriptive paragraph from its course list into two JSON groups
+// rather than the category genuinely having no options (verified against
+// real catalogs: CS's empty "Major Technical Electives" sits beside a
+// 29-course "electives without the explicit approval of an advisor:"
+// group in the same "Major Requirements" section). Pools every
+// same-section sibling that also reads as elective (by its own label, or
+// by the section title, e.g. "Elective Requirements") and does carry a
+// course list, so the dropdown can use it instead of free text. Returns
+// nothing for a group with no such sibling — free text stays the
+// fallback, same as today.
+const ELECTIVE_RE = /elective/i;
+export function buildMajorElectiveOptions(catalog) {
+  const options = {};
+  catalog.sections.forEach((section, si) => {
+    if (section.title === "Core Curriculum Requirements") return; // handled above, via core_curriculum.json
+    const sectionReadsElective = ELECTIVE_RE.test(section.title);
+
+    section.groups.forEach((group, gi) => {
+      if (group.courses.length !== 0) return; // only filling in empty ones
+      if (!sectionReadsElective && !ELECTIVE_RE.test(group.label)) return;
+
+      const pool = new Map();
+      section.groups.forEach((sibling, sgi) => {
+        if (sgi === gi || !sibling.courses.length) return;
+        if (!sectionReadsElective && !ELECTIVE_RE.test(sibling.label)) return;
+        sibling.courses.forEach((c) => pool.set(c.code, c));
+      });
+      if (!pool.size) return;
+
+      options[`${si}-${gi}`] = [...pool.values()]
+        .map((c) => ({ code: c.code, name: c.title || c.code }))
+        .sort((a, b) => a.code.localeCompare(b.code));
+    });
+  });
   return options;
 }

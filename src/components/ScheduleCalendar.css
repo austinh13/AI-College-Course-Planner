@@ -1,0 +1,78 @@
+.cal {
+  border: 1px solid var(--panel-600);
+  border-radius: 10px;
+  background: var(--panel-700);
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.cal__header {
+  display: grid;
+  gap: 0;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--panel-600);
+  min-width: 480px;
+}
+
+.cal__day-label {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--steel-400);
+}
+
+.cal__body {
+  display: grid;
+  position: relative;
+  min-width: 480px;
+  min-height: 320px;
+}
+
+.cal__hour-label {
+  position: relative;
+  align-self: start;
+  transform: translateY(-50%);
+  text-align: right;
+  padding-right: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--steel-400);
+  white-space: nowrap;
+}
+
+.cal__hour-line {
+  align-self: start;
+  height: 0;
+  border-top: 1px solid var(--panel-600);
+}
+
+.cal__event {
+  margin: 1px 3px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border-left: 3px solid var(--event-color);
+  background: color-mix(in srgb, var(--event-color) 22%, var(--panel-700));
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.cal__event-code {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--paper-100);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cal__event-time {
+  font-size: 0.65rem;
+  color: var(--steel-400);
+  white-space: nowrap;
+}
