@@ -187,11 +187,25 @@ export function buildMajorElectiveOptions(catalog) {
       if (!sectionReadsElective && !ELECTIVE_RE.test(group.label)) return;
 
       const pool = new Map();
+      const electiveLikeSiblings = [];
+      const nearbySiblings = [];
+
       section.groups.forEach((sibling, sgi) => {
         if (sgi === gi || !sibling.courses.length) return;
-        if (!sectionReadsElective && !ELECTIVE_RE.test(sibling.label)) return;
+        if (ELECTIVE_RE.test(sibling.label)) {
+          electiveLikeSiblings.push(sibling);
+          return;
+        }
+        if (Math.abs(sgi - gi) <= 2) {
+          nearbySiblings.push(sibling);
+        }
+      });
+
+      const poolSiblings = electiveLikeSiblings.length ? electiveLikeSiblings : nearbySiblings;
+      poolSiblings.forEach((sibling) => {
         sibling.courses.forEach((c) => pool.set(c.code, c));
       });
+
       if (!pool.size) return;
 
       options[`${si}-${gi}`] = [...pool.values()]

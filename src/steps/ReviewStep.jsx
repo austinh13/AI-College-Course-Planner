@@ -121,6 +121,14 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
   // Core Curriculum category, or free text if none exists.
   const [overrides, setOverrides] = useState({});
 
+  // Elective slots that resolved a course pool (Major Technical
+  // Electives, Core Curriculum categories, etc.) default to a dropdown
+  // of matching courses, but the pool is a best-effort guess (see
+  // buildMajorElectiveOptions) — not every valid course is guaranteed to
+  // be in it. This tracks which groups the user has switched to manual
+  // free-text entry for, keyed by groupKey.
+  const [manualElectiveEntry, setManualElectiveEntry] = useState({});
+
   const prereqStatus = (code) => prereqSatisfied(classesMap?.[code]?.prereq, completed);
 
   const codesForSlot = (slot) => overrides[slot.groupKey] || slot.picks.map((p) => p.code);
@@ -254,12 +262,25 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
           const options = openGroupOptions[group.groupKey];
           const selectedCode = overrides[group.groupKey] || "";
           const ok = !selectedCode || prereqStatus(selectedCode);
+          // Only groups with a resolved pool ever get a dropdown; groups
+          // with none always use free text, same as before.
+          const isManual = !options || manualElectiveEntry[group.groupKey];
           return (
             <div className="s4-card" key={group.groupKey}>
               <span className="s4-card__tag">
                 {group.sectionTitle === "Core Curriculum Requirements" ? "Core elective" : "Elective"} · {group.label}
               </span>
-              {options ? (
+              {isManual ? (
+                <input
+                  className="s4-card__input"
+                  type="text"
+                  placeholder="Course code (e.g. CS 4485)"
+                  value={selectedCode}
+                  onChange={(e) =>
+                    setOverrides((prev) => ({ ...prev, [group.groupKey]: e.target.value.toUpperCase() }))
+                  }
+                />
+              ) : (
                 <select
                   className="s4-card__select"
                   value={selectedCode}
@@ -272,16 +293,17 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
                     </option>
                   ))}
                 </select>
-              ) : (
-                <input
-                  className="s4-card__input"
-                  type="text"
-                  placeholder="Course code (e.g. CS 4485)"
-                  value={selectedCode}
-                  onChange={(e) =>
-                    setOverrides((prev) => ({ ...prev, [group.groupKey]: e.target.value.toUpperCase() }))
+              )}
+              {options && (
+                <button
+                  type="button"
+                  className="s4-card__add"
+                  onClick={() =>
+                    setManualElectiveEntry((prev) => ({ ...prev, [group.groupKey]: !isManual }))
                   }
-                />
+                >
+                  {isManual ? "Choose from list instead" : "+ Enter a course manually"}
+                </button>
               )}
               {!ok && <p className="s4-card__warning">Prerequisite not yet satisfied for {selectedCode}.</p>}
             </div>

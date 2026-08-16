@@ -102,18 +102,35 @@
 .step-indicator li {
   display: flex;
   align-items: baseline;
+}
+
+.step-indicator__button {
+  display: flex;
+  align-items: baseline;
   gap: 8px;
+  padding: 0;
+  border: none;
+  background: none;
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--steel-400);
+  cursor: default;
   transition: color 0.25s ease;
 }
 
-.step-indicator li.is-active {
+.step-indicator li.is-clickable .step-indicator__button {
+  cursor: pointer;
+}
+
+.step-indicator li.is-clickable .step-indicator__button:hover {
+  color: var(--paper-100);
+}
+
+.step-indicator li.is-active .step-indicator__button {
   color: var(--amber-500);
 }
 
-.step-indicator li.is-done {
+.step-indicator li.is-done .step-indicator__button {
   color: var(--paper-100);
 }
 
@@ -417,6 +434,16 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+  }
+
+  .step-indicator {
+    gap: 14px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .step-indicator__label {
+    display: none;
   }
 
   .field-grid {

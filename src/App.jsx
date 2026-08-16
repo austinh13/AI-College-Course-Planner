@@ -15,7 +15,7 @@ import "./App.css";
 
 const STAGE = { PROFILE: 0, CONSTRAINTS: 1, ACADEMIC_HISTORY: 2, REVIEW: 3, SCHEDULE: 4 };
 
-const initialProfile = { major: "", year: "" };
+const initialProfile = { major: "", year: "", isHonors: false };
 const initialConstraints = {
   daysOff: [],
   timeBlocks: [],
@@ -25,6 +25,8 @@ const initialConstraints = {
   targetHours: "",
   maxHoursPerDay: "",
   unlimitedDailyHours: false,
+  gradeImportance: 1,
+  rmpImportance: 1,
 };
 const initialAcademicHistory = {
   completed: new Set(),
@@ -37,6 +39,11 @@ const initialAcademicHistory = {
 
 export default function App() {
   const [stage, setStage] = useState(STAGE.PROFILE);
+  // The furthest stage the user has actually reached by completing the
+  // one before it. Used to gate the step indicator: you can always jump
+  // back to an earlier stage, but can't skip ahead past one you haven't
+  // finished yet.
+  const [furthestStage, setFurthestStage] = useState(STAGE.PROFILE);
   const [profile, setProfile] = useState(initialProfile);
   const [constraints, setConstraints] = useState(initialConstraints);
   const [academicHistory, setAcademicHistory] = useState(initialAcademicHistory);
@@ -48,6 +55,18 @@ export default function App() {
     wakeBackend();
   }, []);
 
+  // Advances (or rewinds) to a stage, unlocking it as the new furthest
+  // point reached. Used for every "finish this step" transition below.
+  function advanceTo(next) {
+    setStage(next);
+    setFurthestStage((prev) => Math.max(prev, next));
+  }
+
+  // Step-indicator navigation: only allowed to a stage already unlocked.
+  function handleNavigate(target) {
+    if (target <= furthestStage) setStage(target);
+  }
+
   return (
     <div className="app-shell">
       {stage <= STAGE.CONSTRAINTS && <ScheduleGridBackdrop />}
@@ -55,7 +74,7 @@ export default function App() {
 
       <header className="app-shell__header">
         <span className="app-shell__mark">Comet Planner</span>
-        {stage < STAGE.REVIEW && <StepIndicator current={stage} />}
+        <StepIndicator current={stage} furthest={furthestStage} onNavigate={handleNavigate} />
       </header>
 
       <main className="app-shell__main">
@@ -72,7 +91,7 @@ export default function App() {
               <QuestionnaireStep
                 data={profile}
                 onChange={setProfile}
-                onNext={() => setStage(STAGE.CONSTRAINTS)}
+                onNext={() => advanceTo(STAGE.CONSTRAINTS)}
               />
             )}
 
@@ -81,7 +100,7 @@ export default function App() {
                 data={constraints}
                 onChange={setConstraints}
                 onBack={() => setStage(STAGE.PROFILE)}
-                onSubmit={() => setStage(STAGE.ACADEMIC_HISTORY)}
+                onSubmit={() => advanceTo(STAGE.ACADEMIC_HISTORY)}
               />
             )}
 
@@ -95,7 +114,7 @@ export default function App() {
                 onBack={() => setStage(STAGE.CONSTRAINTS)}
                 onContinue={(summary) => {
                   setAcademicHistory((prev) => ({ ...prev, ...summary }));
-                  setStage(STAGE.REVIEW);
+                  advanceTo(STAGE.REVIEW);
                 }}
               />
             )}
@@ -108,7 +127,7 @@ export default function App() {
                 onEdit={() => setStage(STAGE.ACADEMIC_HISTORY)}
                 onContinue={(courses) => {
                   setScheduleCourses(courses);
-                  setStage(STAGE.SCHEDULE);
+                  advanceTo(STAGE.SCHEDULE);
                 }}
               />
             )}
@@ -117,6 +136,7 @@ export default function App() {
               <ScheduleStep
                 courses={scheduleCourses}
                 constraints={constraints}
+                isHonors={!!profile.isHonors}
                 onBack={() => setStage(STAGE.REVIEW)}
               />
             )}

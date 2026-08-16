@@ -12,6 +12,12 @@
  * ignored — a full section still counts as a valid option.
  */
 import { creditHoursFromCode } from "./catalog";
+import { loadProfessorRatings, sectionFailsHardFilter, sectionPreferenceScore, getInstructorRating } from "./professorRatings";
+
+// How many top-scoring schedules to keep around for the user to cycle
+// through (Screen 5). Kept small since these are held in memory across
+// the whole backtracking search.
+const MAX_SCHEDULES = 10;
 
 // CourseBook spells days out in full; Screen 2 (and everything else in
 // this app) uses 3-letter abbreviations, so every day gets normalized
@@ -120,11 +126,20 @@ export function classifyCourse(rows) {
   const fixedExtra = commonExam.length === 1 ? rowMeetings(commonExam[0], "exam") : [];
   const primaryRows = rest.length ? rest : commonExam;
 
-  const sections = primaryRows.map((row) => ({
-    sectionId: (row.section || "").trim(),
-    label: `Sec ${(row.section || "").trim()} · ${(row.instructors || "Staff").trim()} · ${row.times_12h || "TBA"}`,
-    meetings: [...rowMeetings(row), ...fixedExtra],
-  }));
+  const sections = primaryRows.map((row) => {
+    const isHonors = /honors/i.test(row.topic || "");
+    return {
+      sectionId: (row.section || "").trim(),
+      label: `Sec ${(row.section || "").trim()} · ${(row.instructors || "Staff").trim()} · ${row.times_12h || "TBA"}${isHonors ? " · Honors" : ""}`,
+      meetings: [...rowMeetings(row), ...fixedExtra],
+      instructors: (row.instructors || "")
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean),
+      term: row.term || "",
+      isHonors,
+    };
+  });
 
   return { status: "ok", sections };
 }
@@ -172,9 +187,15 @@ function backtrackCount(courseSectionLists, constraints) {
   const chosenSections = [];
   const dayHours = {};
   let count = 0;
-  let firstValid = null;
+  let currentScore = 0;
   let visits = 0;
   let truncated = false;
+  // Kept sorted descending by score, capped at MAX_SCHEDULES — these are
+  // the schedules the user cycles through on Screen 5. When every
+  // section scores 0 (no grade/RMP preference set), this just keeps the
+  // first MAX_SCHEDULES valid combinations found, same as the old
+  // single-best behavior did for its one result.
+  const topSchedules = [];
 
   function recurse(i) {
     if (truncated) return;
@@ -184,11 +205,15 @@ function backtrackCount(courseSectionLists, constraints) {
     }
     if (i === courseSectionLists.length) {
       count++;
-      if (!firstValid) {
-        firstValid = chosenSections.map((section, idx) => ({
+      const worstKept = topSchedules.length ? topSchedules[topSchedules.length - 1].score : -Infinity;
+      if (topSchedules.length < MAX_SCHEDULES || currentScore > worstKept) {
+        const schedule = chosenSections.map((section, idx) => ({
           code: courseSectionLists[idx].code,
           section,
         }));
+        topSchedules.push({ score: currentScore, schedule });
+        topSchedules.sort((a, b) => b.score - a.score);
+        if (topSchedules.length > MAX_SCHEDULES) topSchedules.length = MAX_SCHEDULES;
       }
       return;
     }
@@ -207,6 +232,7 @@ function backtrackCount(courseSectionLists, constraints) {
 
       chosenSections.push(section);
       chosenMeetings.push(...section.meetings);
+      currentScore += section.score || 0;
       touchedDays.forEach((d) => {
         dayHours[d] = (dayHours[d] || 0) + hours;
       });
@@ -215,6 +241,7 @@ function backtrackCount(courseSectionLists, constraints) {
 
       chosenSections.pop();
       chosenMeetings.length -= section.meetings.length;
+      currentScore -= section.score || 0;
       touchedDays.forEach((d) => {
         dayHours[d] -= hours;
       });
@@ -222,17 +249,24 @@ function backtrackCount(courseSectionLists, constraints) {
   }
 
   recurse(0);
-  return { count, firstValid, truncated };
+  return { count, schedules: topSchedules.map((s) => s.schedule), truncated };
 }
 
 // Main entry point. courses: array of course codes from Screen 4's
-// final picks (e.g. ["CS 1337", "MATH 2417", ...]).
-export async function generateSchedules({ courses, constraints }) {
+// final picks (e.g. ["CS 1337", "MATH 2417", ...]). isHonors: whether
+// the student can be placed into Honors-only sections (Screen 1) — for
+// everyone else, Honors sections are dropped before scheduling so they
+// never show up as an option.
+export async function generateSchedules({ courses, constraints, isHonors = false }) {
   const codes = [...new Set(courses)];
   const parsedByCode = new Map(codes.map((code) => [code, parseCode(code)]));
   const prefixes = [...new Set([...parsedByCode.values()].filter(Boolean).map((p) => p.prefix))];
 
   const filesByPrefix = {};
+  const ratingsPromise = loadProfessorRatings().catch((err) => {
+    console.warn("[scheduleCourses] no professor ratings data:", err.message);
+    return {};
+  });
   await Promise.all(
     prefixes.map(async (prefix) => {
       try {
@@ -243,6 +277,7 @@ export async function generateSchedules({ courses, constraints }) {
       }
     })
   );
+  const ratingsMap = await ratingsPromise;
 
   const resolved = [];
   const excluded = [];
@@ -270,20 +305,52 @@ export async function generateSchedules({ courses, constraints }) {
       continue;
     }
 
-    const validSections = classified.sections.filter((s) => sectionPasses(s, constraints));
-    if (!validSections.length) {
-      console.log(`[scheduleCourses] ${code} has no section that fits the time constraints`);
-      return { total: 0, blockedBy: code, excluded, example: null, truncated: false };
+    // Non-Honors students never see Honors sections at all. Honors
+    // students keep both — Honors is an extra option, not a replacement.
+    const honorsEligibleSections = isHonors ? classified.sections : classified.sections.filter((s) => !s.isHonors);
+    if (!honorsEligibleSections.length) {
+      console.log(`[scheduleCourses] ${code} only has Honors sections and student isn't an Honors student`);
+      return { total: 0, blockedBy: code, blockedReason: "honors", excluded, example: null, schedules: [], truncated: false };
     }
+
+    const timeValidSections = honorsEligibleSections.filter((s) => sectionPasses(s, constraints));
+    if (!timeValidSections.length) {
+      console.log(`[scheduleCourses] ${code} has no section that fits the time constraints`);
+      return { total: 0, blockedBy: code, blockedReason: "time", excluded, example: null, schedules: [], truncated: false };
+    }
+
+    const codeNoSpace = `${parsed.prefix}${parsed.number}`;
+    const validSections = timeValidSections.filter((s) => !sectionFailsHardFilter(s, codeNoSpace, constraints, ratingsMap));
+    if (!validSections.length) {
+      console.log(`[scheduleCourses] ${code} has no section meeting the grade/RMP preference`);
+      return { total: 0, blockedBy: code, blockedReason: "preferences", excluded, example: null, schedules: [], truncated: false };
+    }
+    validSections.forEach((s) => {
+      s.score = sectionPreferenceScore(s, codeNoSpace, constraints, ratingsMap);
+      // Course-specific instructor GPA (falls back to overall if this
+      // exact course isn't on record) — shown on Screen 5's cards.
+      s.instructorRatings = s.instructors.map((name) => ({
+        name,
+        ...getInstructorRating(name, codeNoSpace, ratingsMap),
+      }));
+    });
     resolved.push({ code, sections: validSections, hours: creditHoursFromCode(code) });
   }
 
   if (!resolved.length) {
-    return { total: 0, blockedBy: null, excluded, example: null, truncated: false };
+    return { total: 0, blockedBy: null, blockedReason: null, excluded, example: null, schedules: [], truncated: false };
   }
 
   resolved.sort((a, b) => a.sections.length - b.sections.length);
-  const { count, firstValid, truncated } = backtrackCount(resolved, constraints);
+  const { count, schedules, truncated } = backtrackCount(resolved, constraints);
 
-  return { total: count, blockedBy: null, excluded, example: firstValid, truncated };
+  return {
+    total: count,
+    blockedBy: null,
+    blockedReason: null,
+    excluded,
+    example: schedules[0] || null,
+    schedules,
+    truncated,
+  };
 }

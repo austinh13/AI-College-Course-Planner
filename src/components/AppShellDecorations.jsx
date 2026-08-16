@@ -7,6 +7,8 @@ const STEP_ITEMS = [
   { n: "01", label: "About you" },
   { n: "02", label: "Time constraints" },
   { n: "03", label: "Academic history" },
+  { n: "04", label: "Recommended courses" },
+  { n: "05", label: "Schedule" },
 ];
 
 const GRID_STARS = [
@@ -51,20 +53,36 @@ export function CometFlyby() {
   );
 }
 
-export function StepIndicator({ current }) {
+// `furthest` is the highest stage index the user has unlocked by
+// completing everything before it. Steps up to and including that are
+// clickable; anything past it is shown but inert (not yet reachable).
+export function StepIndicator({ current, furthest = current, onNavigate }) {
   return (
     <ol className="step-indicator">
-      {STEP_ITEMS.map((step, i) => (
-        <li
-          key={step.n}
-          className={
-            i === current ? "is-active" : i < current ? "is-done" : ""
-          }
-        >
-          <span className="step-indicator__num">{step.n}</span>
-          <span className="step-indicator__label">{step.label}</span>
-        </li>
-      ))}
+      {STEP_ITEMS.map((step, i) => {
+        const unlocked = i <= furthest;
+        return (
+          <li
+            key={step.n}
+            className={[
+              i === current ? "is-active" : i < current ? "is-done" : "",
+              unlocked ? "is-clickable" : "",
+            ]
+              .filter(Boolean)
+              .join(" ")}
+          >
+            <button
+              type="button"
+              className="step-indicator__button"
+              disabled={!unlocked}
+              onClick={() => onNavigate && onNavigate(i)}
+            >
+              <span className="step-indicator__num">{step.n}</span>
+              <span className="step-indicator__label">{step.label}</span>
+            </button>
+          </li>
+        );
+      })}
     </ol>
   );
 }

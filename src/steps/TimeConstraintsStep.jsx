@@ -10,6 +10,12 @@ const TIME_BLOCKS = [
   { id: "evening", label: "Evening (4pm+)" },
 ];
 
+const IMPORTANCE_LEVELS = [
+  { id: 1, label: "1 · None" },
+  { id: 2, label: "2 · Somewhat" },
+  { id: 3, label: "3 · Very important" },
+];
+
 // Toggle helper implemented with a Set to make intent clear and avoid
 // an extra iteration when adding/removing items (small constant overhead
 // for Set creation, but clearer and often faster for larger lists).
@@ -81,6 +87,40 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
               onClick={() => toggleBlock(block.id)}
             >
               {block.label}
+            </button>
+          ))}
+        </div>
+      </fieldset>
+
+      <fieldset className="field">
+        <legend className="field__label">How much do past grades matter when picking a professor?</legend>
+        <div className="pill-group">
+          {IMPORTANCE_LEVELS.map((level) => (
+            <button
+              type="button"
+              key={level.id}
+              className={`pill ${data.gradeImportance === level.id ? "pill--selected" : ""}`}
+              aria-pressed={data.gradeImportance === level.id}
+              onClick={() => onChange({ ...data, gradeImportance: level.id })}
+            >
+              {level.label}
+            </button>
+          ))}
+        </div>
+      </fieldset>
+
+      <fieldset className="field">
+        <legend className="field__label">How much do RateMyProfessors ratings matter?</legend>
+        <div className="pill-group">
+          {IMPORTANCE_LEVELS.map((level) => (
+            <button
+              type="button"
+              key={level.id}
+              className={`pill ${data.rmpImportance === level.id ? "pill--selected" : ""}`}
+              aria-pressed={data.rmpImportance === level.id}
+              onClick={() => onChange({ ...data, rmpImportance: level.id })}
+            >
+              {level.label}
             </button>
           ))}
         </div>

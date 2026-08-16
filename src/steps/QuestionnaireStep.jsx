@@ -128,6 +128,28 @@ export default function QuestionnaireStep({ data, onChange, onNext }) {
         </div>
       </fieldset>
 
+      <fieldset className="field">
+        <legend className="field__label">Are you an Honors student?</legend>
+        <div className="pill-group">
+          <button
+            type="button"
+            className={`pill ${data.isHonors ? "pill--selected" : ""}`}
+            onClick={() => onChange({ ...data, isHonors: true })}
+            aria-pressed={!!data.isHonors}
+          >
+            Yes
+          </button>
+          <button
+            type="button"
+            className={`pill ${!data.isHonors ? "pill--selected" : ""}`}
+            onClick={() => onChange({ ...data, isHonors: false })}
+            aria-pressed={!data.isHonors}
+          >
+            No
+          </button>
+        </div>
+      </fieldset>
+
       <button type="submit" className="btn btn--primary" disabled={!canContinue}>
         Continue
       </button>
