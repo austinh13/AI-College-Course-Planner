@@ -2,7 +2,7 @@
 // We fire this once, as soon as the app mounts, so the backend is warm by
 // the time the user finishes the questionnaire. Failures are ignored on
 // purpose — this is a best-effort wake-up ping, not a real request.
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+const API_BASE_URL = import.meta.env.VITE_API_URL as string | undefined;
 
 export function wakeBackend() {
   if (!API_BASE_URL) {
@@ -14,3 +14,4 @@ export function wakeBackend() {
     // Cold start or backend not deployed yet — nothing to do here.
   });
 }
+

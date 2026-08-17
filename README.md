@@ -45,10 +45,10 @@ npm run preview # serve the production build locally to sanity-check it
 
 ```
 src/
-  App.jsx                    step state machine + backend wake-up ping
+  App.tsx                    step state machine + backend wake-up ping
   App.css                    layout, palette, and component styles
   index.css                  fonts, CSS variables, global reset
-  lib/api.js                 wakeBackend() — fires once on load
+  lib/api.ts                 wakeBackend() — fires once on load
   components/
     ScheduleGridBackdrop.jsx tilted timetable-grid background motif
     StepIndicator.jsx        01/02 progress indicator in the header
@@ -61,14 +61,14 @@ src/
 ## Notes / what's intentionally not here yet
 
 - **No routing library.** Only two steps, so it's a local `stage` state
-  in `App.jsx` rather than React Router. Worth adding if more screens
+  in `App.tsx` rather than React Router. Worth adding if more screens
   come later.
 - **No OpenAI or PostgreSQL code.** Both are backend concerns — an API
   key should never live in frontend code. `ReviewStep` is the handoff
   point where a real request to your backend would go once that
   endpoint exists.
 - **The wake-up ping hits `${VITE_API_URL}/health`.** Change the path
-  in `src/lib/api.js` if your backend uses a different route.
+  in `src/lib/api.ts` if your backend uses a different route.
 
 ## Color palette
 

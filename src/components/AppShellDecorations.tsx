@@ -53,10 +53,7 @@ export function CometFlyby() {
   );
 }
 
-// `furthest` is the highest stage index the user has unlocked by
-// completing everything before it. Steps up to and including that are
-// clickable; anything past it is shown but inert (not yet reachable).
-export function StepIndicator({ current, furthest = current, onNavigate }) {
+export function StepIndicator({ current, furthest = current, onNavigate }: { current: number; furthest?: number; onNavigate?: (index: number) => void }) {
   return (
     <ol className="m-0 flex list-none gap-7 p-0 text-[0.8rem]">
       {STEP_ITEMS.map((step, i) => {
@@ -87,3 +84,4 @@ export function StepIndicator({ current, furthest = current, onNavigate }) {
     </ol>
   );
 }
+

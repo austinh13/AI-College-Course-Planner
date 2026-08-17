@@ -12,11 +12,12 @@ import ReviewStep from "./steps/ReviewStep";
 import ScheduleStep from "./steps/ScheduleStep";
 import { wakeBackend } from "./lib/api";
 import "./App.css";
+import type { AcademicHistory as AcademicHistoryState, Constraints, Profile, ScheduleCourse, Stage } from "./types";
 
-const STAGE = { PROFILE: 0, CONSTRAINTS: 1, ACADEMIC_HISTORY: 2, REVIEW: 3, SCHEDULE: 4 };
+const STAGE = { PROFILE: 0, CONSTRAINTS: 1, ACADEMIC_HISTORY: 2, REVIEW: 3, SCHEDULE: 4 } as const;
 
-const initialProfile = { major: "", year: "", isHonors: false };
-const initialConstraints = {
+const initialProfile: Profile = { major: "", year: "", isHonors: false };
+const initialConstraints: Constraints = {
   daysOff: [],
   timeBlocks: [],
   wantsLunch: false,
@@ -28,8 +29,8 @@ const initialConstraints = {
   gradeImportance: 1,
   rmpImportance: 1,
 };
-const initialAcademicHistory = {
-  completed: new Set(),
+const initialAcademicHistory: AcademicHistoryState = {
+  completed: new Set<string>(),
   manualEntries: {},
   completedCodes: [],
   hoursEarned: 0,
@@ -38,32 +39,23 @@ const initialAcademicHistory = {
 };
 
 export default function App() {
-  const [stage, setStage] = useState(STAGE.PROFILE);
-  // The furthest stage the user has actually reached by completing the
-  // one before it. Used to gate the step indicator: you can always jump
-  // back to an earlier stage, but can't skip ahead past one you haven't
-  // finished yet.
-  const [furthestStage, setFurthestStage] = useState(STAGE.PROFILE);
+  const [stage, setStage] = useState<Stage>(STAGE.PROFILE);
+  const [furthestStage, setFurthestStage] = useState<Stage>(STAGE.PROFILE);
   const [profile, setProfile] = useState(initialProfile);
   const [constraints, setConstraints] = useState(initialConstraints);
   const [academicHistory, setAcademicHistory] = useState(initialAcademicHistory);
-  const [scheduleCourses, setScheduleCourses] = useState([]);
+  const [scheduleCourses, setScheduleCourses] = useState<ScheduleCourse[]>([]);
 
-  // Fire the moment the app mounts (start of the questionnaire) so a
-  // free-tier Render backend has the whole flow to finish waking up.
   useEffect(() => {
     wakeBackend();
   }, []);
 
-  // Advances (or rewinds) to a stage, unlocking it as the new furthest
-  // point reached. Used for every "finish this step" transition below.
-  function advanceTo(next) {
+  function advanceTo(next: Stage) {
     setStage(next);
-    setFurthestStage((prev) => Math.max(prev, next));
+    setFurthestStage((prev) => Math.max(prev, next) as Stage);
   }
 
-  // Step-indicator navigation: only allowed to a stage already unlocked.
-  function handleNavigate(target) {
+  function handleNavigate(target: Stage) {
     if (target <= furthestStage) setStage(target);
   }
 
@@ -151,3 +143,6 @@ export default function App() {
     </div>
   );
 }
+
+
+
