@@ -19,6 +19,30 @@ import { loadProfessorRatings, sectionFailsHardFilter, sectionPreferenceScore, g
 // the whole backtracking search.
 const MAX_SCHEDULES = 10;
 
+type Meeting = {
+  day: string;
+  start: number;
+  end: number;
+  kind?: string;
+};
+
+type Section = {
+  sectionId: string;
+  label: string;
+  meetings: Meeting[];
+  instructors: string[];
+  term: string;
+  isHonors: boolean;
+  score?: number;
+  instructorRatings?: Array<{ name: string; rating?: number; total?: number; count?: number }>;
+};
+
+type CourseSectionList = {
+  code: string;
+  sections: Section[];
+  hours: number;
+};
+
 // CourseBook spells days out in full; Screen 2 (and everything else in
 // this app) uses 3-letter abbreviations, so every day gets normalized
 // through this map the moment it's read off a section.
@@ -53,7 +77,7 @@ export async function loadAllCourses(prefix, url = `/All_Courses/${prefix.toUppe
 // "CS 1337" -> { prefix: "CS", number: "1337" }. Returns null for
 // anything that doesn't look like a real course code (e.g. leftover
 // free-text from an elective input box).
-export function parseCode(code) {
+export function parseCode(code: string): { prefix: string; number: string } | null {
   const match = String(code || "")
     .trim()
     .match(/^([A-Za-z]{2,4})\s*([0-9][0-9A-Za-z]{2,4})$/);
@@ -181,11 +205,11 @@ function meetingsOverlap(a, b) {
 // days the *specific* picked section actually meets.
 const MAX_VISITS = 3_000_000;
 
-function backtrackCount(courseSectionLists, constraints) {
+function backtrackCount(courseSectionLists: CourseSectionList[], constraints: any) {
   const maxHoursPerDay = constraints.unlimitedDailyHours || !constraints.maxHoursPerDay ? null : Number(constraints.maxHoursPerDay);
-  const chosenMeetings = [];
-  const chosenSections = [];
-  const dayHours = {};
+  const chosenMeetings: Meeting[] = [];
+  const chosenSections: Section[] = [];
+  const dayHours: Record<string, number> = {};
   let count = 0;
   let currentScore = 0;
   let visits = 0;
@@ -195,7 +219,7 @@ function backtrackCount(courseSectionLists, constraints) {
   // section scores 0 (no grade/RMP preference set), this just keeps the
   // first MAX_SCHEDULES valid combinations found, same as the old
   // single-best behavior did for its one result.
-  const topSchedules = [];
+  const topSchedules: Array<{ score: number; schedule: Array<{ code: string; section: Section }> }> = [];
 
   function recurse(i) {
     if (truncated) return;
@@ -257,12 +281,28 @@ function backtrackCount(courseSectionLists, constraints) {
 // the student can be placed into Honors-only sections (Screen 1) — for
 // everyone else, Honors sections are dropped before scheduling so they
 // never show up as an option.
-export async function generateSchedules({ courses, constraints, isHonors = false }) {
-  const codes = [...new Set(courses)];
-  const parsedByCode = new Map(codes.map((code) => [code, parseCode(code)]));
-  const prefixes = [...new Set([...parsedByCode.values()].filter(Boolean).map((p) => p.prefix))];
+export async function generateSchedules({
+  courses,
+  constraints,
+  isHonors = false,
+}: {
+  courses: string[];
+  constraints: any;
+  isHonors?: boolean;
+}) {
+  const codes = [...new Set<string>(courses)];
+  const parsedByCode = new Map<string, { prefix: string; number: string } | null>(
+    codes.map((code) => [code, parseCode(code)])
+  );
+  const prefixes = [
+    ...new Set(
+      [...parsedByCode.values()]
+        .filter((p): p is { prefix: string; number: string } => Boolean(p))
+        .map((p) => p.prefix)
+    ),
+  ];
 
-  const filesByPrefix = {};
+  const filesByPrefix: Record<string, any[] | null> = {};
   const ratingsPromise = loadProfessorRatings().catch((err) => {
     console.warn("[scheduleCourses] no professor ratings data:", err.message);
     return {};

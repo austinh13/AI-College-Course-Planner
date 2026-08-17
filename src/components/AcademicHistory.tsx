@@ -34,7 +34,7 @@ import {
 // excluded from the hours math entirely, so this only actually applies
 // to choice:false groups in practice.
 function collectAllCodes(catalog) {
-  const codes = new Set();
+  const codes = new Set<string>();
   catalog.sections.forEach((s) =>
     s.groups.forEach((g) =>
       g.courses.forEach((opt) => {
@@ -58,10 +58,10 @@ function collectAllCodes(catalog) {
 // elsewhere (e.g. CS 1200 checked off under Major Preparatory Courses,
 // or THEA 1310 logged manually under Creative Arts).
 function buildUsedElsewhere(catalog, completed, manualEntries) {
-  const usedBy = new Map(); // code -> Set of group keys ("si-gi")
-  function mark(code, key) {
-    if (!usedBy.has(code)) usedBy.set(code, new Set());
-    usedBy.get(code).add(key);
+  const usedBy = new Map<string, Set<string>>(); // code -> Set of group keys ("si-gi")
+  function mark(code: string, key: string) {
+    if (!usedBy.has(code)) usedBy.set(code, new Set<string>());
+    usedBy.get(code)?.add(key);
   }
   catalog.sections.forEach((section, si) => {
     section.groups.forEach((group, gi) => {
@@ -111,11 +111,15 @@ function isTechnicalElectiveCandidate(subject, catalogNbr) {
  */
 function classifyUnlistedCourses(courses, allCodes, catalog, coreCurriculum) {
   const { assignment } = assignCoreCategories(courses, coreCurriculum);
-  const openGroups = findOpenCoreGroups(catalog);
-  const techElectiveGroup = findGroupByLabel(catalog, "Major Technical Electives");
-  const freeElectiveGroup = findGroupByLabel(catalog, "Free Electives");
+  const openGroups = findOpenCoreGroups(catalog) as Array<{
+    si: number;
+    gi: number;
+    group: { label: string };
+  }>;
+  const techElectiveGroup = findGroupByLabel(catalog, "Major Technical Electives") as { si: number; gi: number } | null;
+  const freeElectiveGroup = findGroupByLabel(catalog, "Free Electives") as { si: number; gi: number } | null;
 
-  const additions = [];
+  const additions: Array<{ si: number; gi: number; code: string; hours: number }> = [];
   for (const course of courses.values()) {
     if (!course.completed || allCodes.has(course.code)) continue;
 
@@ -176,7 +180,9 @@ function findExplicitGroupsForCode(catalog, code) {
 // group, "in progress" (excluded on purpose), or NOT PLACED (a real bug
 // if it shows up, since every completed course should land somewhere).
 function logTranscriptDebugReport(courses, allCodes, catalog, additions) {
-  const additionsByCode = new Map(additions.map((a) => [a.code, a]));
+  const additionsByCode = new Map<string, { si: number; gi: number; code: string; hours: number }>(
+    additions.map((a) => [a.code, a])
+  );
   const rows = [...courses.values()]
     .sort((a, b) => a.code.localeCompare(b.code))
     .map((c) => {
@@ -271,7 +277,17 @@ function matchesSearch(option, query) {
   return false;
 }
 
-function CourseOption({ option, completed, onToggle, isAlternative }) {
+function CourseOption({
+  option,
+  completed,
+  onToggle,
+  isAlternative = false,
+}: {
+  option: any;
+  completed: Set<string>;
+  onToggle: (code: string) => void;
+  isAlternative?: boolean;
+}) {
   const satisfied = optionSatisfied(option, completed);
   return (
     <div className="ml-0.5">
@@ -451,7 +467,7 @@ function ManualEntryGroup({ group, entries, onAdd, onRemove, courseOptions }) {
   const hasDropdown = Array.isArray(courseOptions) && courseOptions.length > 0;
   const [code, setCode] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
-  const [hours, setHours] = useState(3);
+  const [hours, setHours] = useState<number>(3);
   const target = parseHours(group.credit_hours);
   const total = entries.reduce((sum, e) => sum + e.hours, 0);
   const satisfied = target != null && total >= target;
@@ -461,13 +477,13 @@ function ManualEntryGroup({ group, entries, onAdd, onRemove, courseOptions }) {
     ? courseOptions.filter((opt) => !entries.some((e) => e.code === opt.code))
     : [];
 
-  function handleSelectChange(e) {
+  function handleSelectChange(e: React.ChangeEvent<HTMLSelectElement>) {
     const value = e.target.value;
     setSelectedOption(value);
     if (value) setHours(creditHoursFromCode(value)); // pre-fill, still editable below
   }
 
-  function handleAdd(e) {
+  function handleAdd(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const finalCode = hasDropdown ? selectedOption : code.trim().toUpperCase();
     if (!finalCode || Number(hours) <= 0) return;
@@ -539,7 +555,7 @@ function ManualEntryGroup({ group, entries, onAdd, onRemove, courseOptions }) {
               min="1"
               max="12"
               value={hours}
-              onChange={(e) => setHours(e.target.value)}
+              onChange={(e) => setHours(Number(e.target.value) || 0)}
             />
             <button type="submit" className="shrink-0 rounded-md border border-[#5fe0b7] bg-transparent px-3 py-2 text-[0.85rem] font-semibold uppercase tracking-[0.04em] text-[#5fe0b7] transition-colors hover:bg-[#5fe0b7] hover:text-[#06110d] disabled:cursor-not-allowed disabled:opacity-40" disabled={hasDropdown && !selectedOption}>
               Add
@@ -693,8 +709,8 @@ export default function Step3AcademicHistory({
     [catalog, completed, manualEntries]
   );
 
-  const degreeTypes = useMemo(() => (major ? undergradDegreeTypes(major) : []), [major]);
-  const [selectedDegreeType, setSelectedDegreeType] = useState(null);
+  const degreeTypes = useMemo<string[]>(() => (major ? (undergradDegreeTypes(major) as string[]) : []), [major]);
+  const [selectedDegreeType, setSelectedDegreeType] = useState<string | null>(null);
 
   useEffect(() => {
     setSelectedDegreeType(null);
