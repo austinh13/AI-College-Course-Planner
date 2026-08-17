@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { generateSchedules } from "../lib/scheduleCourses";
 import { rmpProfileUrl } from "../lib/professorRatings";
 import ScheduleCalendar from "../components/ScheduleCalendar";
+import Skeleton from "../components/Skeleton";
+import CountUp from "../components/CountUp";
 import "./ScheduleStep.css";
 
 export default function ScheduleStep({ courses, constraints, isHonors, onBack }) {
@@ -61,6 +63,15 @@ export default function ScheduleStep({ courses, constraints, isHonors, onBack })
       <div className="step-panel s5-panel">
         <p className="step-panel__eyebrow">Possible schedules</p>
         <h1 className="step-panel__title">Checking every combination…</h1>
+        <Skeleton height="220px" className="s5-skeleton-calendar" />
+        <ul className="s5-cards">
+          {[0, 1, 2].map((i) => (
+            <li className="s5-card" key={i}>
+              <Skeleton width="30%" height="0.75rem" />
+              <Skeleton width="70%" height="1rem" />
+            </li>
+          ))}
+        </ul>
       </div>
     );
   }
@@ -72,7 +83,7 @@ export default function ScheduleStep({ courses, constraints, isHonors, onBack })
     <div className="step-panel s5-panel">
       <p className="step-panel__eyebrow">Possible schedules</p>
       <h1 className="step-panel__title">
-        {total.toLocaleString()} possible
+        <CountUp value={total} /> possible
         <br />
         schedule{total === 1 ? "" : "s"}.
       </h1>

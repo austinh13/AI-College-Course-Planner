@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { catalogBaseUrl, resolveMajorKey, undergradDegreeTypes, slugify, buildOpenGroupCourseOptions, buildMajorElectiveOptions } from "../lib/catalog";
 import { loadCoreCurriculum, coreCurriculumUrl } from "../lib/parseTranscript";
 import { loadClasses, recommend, prereqSatisfied } from "../lib/recommendCourses";
+import Skeleton from "../components/Skeleton";
 import "./ReviewStep.css";
 
 export default function ReviewStep({ profile, constraints, academicHistory, onEdit, onContinue }) {
@@ -166,9 +167,17 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
 
   if (!result) {
     return (
-      <div className="step-panel">
+      <div className="step-panel s4-panel">
         <p className="step-panel__eyebrow">Recommended courses</p>
         <h1 className="step-panel__title">Building your next term…</h1>
+        <div className="s4-cards">
+          {[0, 1, 2].map((i) => (
+            <div className="s4-card" key={i}>
+              <Skeleton width="40%" height="0.75rem" />
+              <Skeleton width="90%" height="2.25rem" />
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
