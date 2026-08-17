@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Badge } from "../components/lightswind/badge";
+import { Button } from "../components/lightswind/button";
 import { generateSchedules } from "../lib/scheduleCourses";
 import { rmpProfileUrl } from "../lib/professorRatings";
 import ScheduleCalendar from "../components/ScheduleCalendar";
@@ -88,9 +90,9 @@ export default function ScheduleStep({ courses, constraints, isHonors, onBack })
 
   return (
     <div className="mx-auto flex w-full max-w-[640px] flex-col gap-7">
-      <p className="m-0 text-[0.8rem] font-medium uppercase tracking-[0.08em] text-[#e87500]" style={{ fontFamily: "var(--font-mono)" }}>
+      <Badge variant="warning" className="inline-flex w-fit border border-[#e87500]/30 bg-[#e87500]/10 px-2.5 py-1 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-[#f5d5b2]" style={{ fontFamily: "var(--font-mono)" }}>
         Possible schedules
-      </p>
+      </Badge>
       <h1 className="m-0 text-[clamp(2.5rem,5.5vw,3.5rem)] font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
         <CountUp value={total} /> possible
         <br />
@@ -133,7 +135,7 @@ export default function ScheduleStep({ courses, constraints, isHonors, onBack })
       )}
 
       {excluded.length > 0 && (
-        <div className="rounded-xl border border-[#1f5c43] bg-[#154734] p-4">
+        <div className="rounded-[22px] border border-white/10 bg-[#0d1b18]/80 p-4 shadow-[0_18px_36px_rgba(0,0,0,0.18)]">
           <p className="mb-2 text-[0.9rem] text-[#e87500]">Couldn't auto-schedule {excluded.length} course(s):</p>
           <ul className="m-0 flex list-disc flex-col gap-1.5 pl-5 text-[0.9rem] text-[#8a8d8f]">
             {excluded.map((item) => (
@@ -179,8 +181,8 @@ export default function ScheduleStep({ courses, constraints, isHonors, onBack })
             {currentSchedule.map(({ code, section }) => {
               const instructorRatings = section.instructorRatings || [];
               return (
-                <li className="rounded-xl border border-[#1f5c43] bg-[#154734] p-4" key={code}>
-                  <span className="text-[0.75rem] font-medium uppercase tracking-[0.06em] text-[#5fe0b7]" style={{ fontFamily: "var(--font-mono)" }}>{code}</span>
+                <li className="rounded-[22px] border border-white/10 bg-[#0d1b18]/80 p-4 shadow-[0_18px_36px_rgba(0,0,0,0.18)]" key={code}>
+                  <span className="text-[0.75rem] font-medium uppercase tracking-[0.08em] text-[#5fe0b7]" style={{ fontFamily: "var(--font-mono)" }}>{code}</span>
                   <p className="mt-1 mb-0 text-[0.95rem] text-[#f2f5f3]">{section.label}</p>
                   {instructorRatings.length > 0 && (
                     <ul className="mt-1.5 list-none space-y-1 p-0">
@@ -211,9 +213,9 @@ export default function ScheduleStep({ courses, constraints, isHonors, onBack })
       )}
 
       <div className="mt-1 flex gap-3">
-        <button type="button" className="rounded-full border border-[#1f5c43] bg-transparent px-8 py-4 text-[1.05rem] text-[#f2f5f3] transition-colors duration-200 hover:border-[#8a8d8f]" onClick={onBack}>
+        <Button type="button" variant="outline" className="rounded-full border border-white/10 bg-transparent px-8 py-4 text-[1.05rem] text-[#f2f5f3] transition-colors duration-200 hover:border-white/20 hover:bg-white/5" onClick={onBack}>
           Back to recommended courses
-        </button>
+        </Button>
       </div>
     </div>
   );

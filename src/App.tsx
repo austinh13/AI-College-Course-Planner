@@ -5,6 +5,7 @@ import {
   ScheduleGridBackdrop,
   StepIndicator,
 } from "./components/AppShellDecorations";
+import { Card } from "./components/lightswind/card";
 import QuestionnaireStep from "./steps/QuestionnaireStep";
 import TimeConstraintsStep from "./steps/TimeConstraintsStep";
 import AcademicHistory from "./components/AcademicHistory";
@@ -60,85 +61,99 @@ export default function App() {
   }
 
   return (
-    <div className="relative flex min-h-screen flex-col overflow-hidden bg-[#081712] text-[#f2f5f3]">
-      {stage <= STAGE.CONSTRAINTS && <ScheduleGridBackdrop />}
+    <div className="relative flex min-h-screen flex-col overflow-hidden bg-[#06120f] text-[#f2f5f3]">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(95,224,183,0.12),transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(232,117,0,0.12),transparent_24%)]" />
+      <ScheduleGridBackdrop />
       {stage === STAGE.PROFILE && <CometFlyby />}
 
-      <header className="relative z-10 flex items-center justify-between gap-6 px-[clamp(20px,5vw,64px)] pt-7">
-        <span
-          className="text-[1.1rem] font-bold tracking-[-0.01em] text-[#f2f5f3]"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
-          Comet Planner
-        </span>
-        <StepIndicator current={stage} furthest={furthestStage} onNavigate={handleNavigate} />
+      <header className="relative z-10 mx-auto flex w-full max-w-[1280px] items-center justify-between gap-6 px-[clamp(20px,5vw,64px)] pt-7">
+        <div className="h-10" aria-hidden="true" />
+        <div className="rounded-full border border-white/10 bg-[#0d1b18]/80 px-3 py-2 shadow-[0_8px_24px_rgba(0,0,0,0.18)] backdrop-blur-sm">
+          <StepIndicator current={stage} furthest={furthestStage} onNavigate={handleNavigate} />
+        </div>
       </header>
 
-      <main className="relative z-10 flex flex-1 min-h-0 items-center justify-center px-[clamp(20px,5vw,64px)] pb-[clamp(32px,8vw,64px)] pt-[clamp(24px,6vw,40px)]">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={stage}
-            className={stage === STAGE.ACADEMIC_HISTORY ? "h-full min-h-0 w-full" : undefined}
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -16 }}
-            transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          >
-            {stage === STAGE.PROFILE && (
-              <QuestionnaireStep
-                data={profile}
-                onChange={setProfile}
-                onNext={() => advanceTo(STAGE.CONSTRAINTS)}
-              />
-            )}
+      <main
+        className={
+          stage === STAGE.ACADEMIC_HISTORY
+            ? "relative z-10 flex flex-1 min-h-0 items-stretch justify-center px-[clamp(20px,5vw,64px)] pb-[clamp(32px,8vw,64px)] pt-[clamp(24px,6vw,40px)]"
+            : "relative z-10 flex flex-1 min-h-0 items-center justify-center px-[clamp(20px,5vw,64px)] pb-[clamp(32px,8vw,64px)] pt-[clamp(24px,6vw,40px)]"
+        }
+      >
+        <div className={stage === STAGE.ACADEMIC_HISTORY ? "w-full" : "w-full max-w-[1200px]"}>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={stage}
+              className={stage === STAGE.ACADEMIC_HISTORY ? "h-full min-h-0 w-full max-w-none" : "mx-auto w-full max-w-[720px]"}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -16 }}
+              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <Card
+                className={
+                  stage === STAGE.ACADEMIC_HISTORY
+                    ? "min-h-[calc(100vh-180px)] w-full rounded-[30px] border border-white/10 bg-[#0b1715]/80 p-[clamp(20px,2vw,28px)] shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-sm"
+                    : "rounded-[30px] border border-white/10 bg-[#0b1715]/80 p-[clamp(20px,3vw,32px)] shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-sm"
+                }
+              >
+                {stage === STAGE.PROFILE && (
+                  <QuestionnaireStep
+                    data={profile}
+                    onChange={setProfile}
+                    onNext={() => advanceTo(STAGE.CONSTRAINTS)}
+                  />
+                )}
 
-            {stage === STAGE.CONSTRAINTS && (
-              <TimeConstraintsStep
-                data={constraints}
-                onChange={setConstraints}
-                onBack={() => setStage(STAGE.PROFILE)}
-                onSubmit={() => advanceTo(STAGE.ACADEMIC_HISTORY)}
-              />
-            )}
+                {stage === STAGE.CONSTRAINTS && (
+                  <TimeConstraintsStep
+                    data={constraints}
+                    onChange={setConstraints}
+                    onBack={() => setStage(STAGE.PROFILE)}
+                    onSubmit={() => advanceTo(STAGE.ACADEMIC_HISTORY)}
+                  />
+                )}
 
-            {stage === STAGE.ACADEMIC_HISTORY && (
-              <AcademicHistory
-                major={profile.major}
-                startYear={profile.year}
-                completed={academicHistory.completed}
-                manualEntries={academicHistory.manualEntries}
-                onChange={(next) => setAcademicHistory((prev) => ({ ...prev, ...next }))}
-                onBack={() => setStage(STAGE.CONSTRAINTS)}
-                onContinue={(summary) => {
-                  setAcademicHistory((prev) => ({ ...prev, ...summary }));
-                  advanceTo(STAGE.REVIEW);
-                }}
-              />
-            )}
+                {stage === STAGE.ACADEMIC_HISTORY && (
+                  <AcademicHistory
+                    major={profile.major}
+                    startYear={profile.year}
+                    completed={academicHistory.completed}
+                    manualEntries={academicHistory.manualEntries}
+                    onChange={(next) => setAcademicHistory((prev) => ({ ...prev, ...next }))}
+                    onBack={() => setStage(STAGE.CONSTRAINTS)}
+                    onContinue={(summary) => {
+                      setAcademicHistory((prev) => ({ ...prev, ...summary }));
+                      advanceTo(STAGE.REVIEW);
+                    }}
+                  />
+                )}
 
-            {stage === STAGE.REVIEW && (
-              <ReviewStep
-                profile={profile}
-                constraints={constraints}
-                academicHistory={academicHistory}
-                onEdit={() => setStage(STAGE.ACADEMIC_HISTORY)}
-                onContinue={(courses) => {
-                  setScheduleCourses(courses);
-                  advanceTo(STAGE.SCHEDULE);
-                }}
-              />
-            )}
+                {stage === STAGE.REVIEW && (
+                  <ReviewStep
+                    profile={profile}
+                    constraints={constraints}
+                    academicHistory={academicHistory}
+                    onEdit={() => setStage(STAGE.ACADEMIC_HISTORY)}
+                    onContinue={(courses) => {
+                      setScheduleCourses(courses);
+                      advanceTo(STAGE.SCHEDULE);
+                    }}
+                  />
+                )}
 
-            {stage === STAGE.SCHEDULE && (
-              <ScheduleStep
-                courses={scheduleCourses}
-                constraints={constraints}
-                isHonors={!!profile.isHonors}
-                onBack={() => setStage(STAGE.REVIEW)}
-              />
-            )}
-          </motion.div>
-        </AnimatePresence>
+                {stage === STAGE.SCHEDULE && (
+                  <ScheduleStep
+                    courses={scheduleCourses}
+                    constraints={constraints}
+                    isHonors={!!profile.isHonors}
+                    onBack={() => setStage(STAGE.REVIEW)}
+                  />
+                )}
+              </Card>
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </main>
     </div>
   );

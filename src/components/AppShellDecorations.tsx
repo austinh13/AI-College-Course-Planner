@@ -55,27 +55,31 @@ export function CometFlyby() {
 
 export function StepIndicator({ current, furthest = current, onNavigate }: { current: number; furthest?: number; onNavigate?: (index: number) => void }) {
   return (
-    <ol className="m-0 flex list-none gap-7 p-0 text-[0.8rem]">
+    <ol className="m-0 flex list-none items-center gap-2 p-0 text-[0.8rem] sm:gap-3">
       {STEP_ITEMS.map((step, i) => {
         const unlocked = i <= furthest;
         const isActive = i === current;
         const isDone = i < current;
         return (
-          <li key={step.n} className="flex items-baseline">
+          <li key={step.n} className="flex items-center">
             <button
               type="button"
               className={[
-                "flex items-baseline gap-2 border-0 bg-transparent p-0 font-mono text-sm transition-colors duration-200",
+                "flex items-center gap-2 rounded-full border px-2.5 py-1.5 font-mono text-[0.7rem] uppercase tracking-[0.08em] transition-all duration-200",
                 unlocked ? "cursor-pointer" : "cursor-default",
-                isActive ? "text-[#e87500]" : isDone ? "text-[#f2f5f3]" : "text-[#8a8d8f]",
-                unlocked && !isActive ? "hover:text-[#f2f5f3]" : "",
+                isActive
+                  ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f4d2b1] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"
+                  : isDone
+                    ? "border-[#5fe0b7]/25 bg-[#5fe0b7]/8 text-[#dffcf5]"
+                    : "border-transparent bg-transparent text-[#8a8d8f]",
+                unlocked && !isActive ? "hover:border-white/10 hover:bg-white/5 hover:text-[#f2f5f3]" : "",
               ]
                 .filter(Boolean)
                 .join(" ")}
               disabled={!unlocked}
               onClick={() => onNavigate && onNavigate(i)}
             >
-              <span className="font-medium tracking-[0.06em]" style={{ fontFamily: "var(--font-mono)" }}>{step.n}</span>
+              <span className="font-semibold" style={{ fontFamily: "var(--font-mono)" }}>{step.n}</span>
               <span className="hidden sm:inline" style={{ fontFamily: "var(--font-mono)" }}>{step.label}</span>
             </button>
           </li>

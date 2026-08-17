@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
+import { Badge } from "./lightswind/badge";
+import { Button } from "./lightswind/button";
 import { extractCompletedCourses, loadCoreCurriculum, coreCurriculumUrl, assignCoreCategories } from "../lib/parseTranscript";
 import {
   catalogBaseUrl,
@@ -601,16 +603,16 @@ function RequirementSection({
   if (query && visibleGroups.length === 0) return null;
 
   return (
-    <section className="overflow-hidden rounded-xl border border-[#1f5c43]/80 bg-[#0b1c17]/80">
-      <button className="flex w-full items-center justify-between gap-4 bg-transparent px-4 py-3 text-left text-[#f2f5f3]" onClick={() => setOpen((o) => !o)} type="button">
+    <section className="h-full overflow-hidden rounded-2xl border border-white/10 bg-[#0b1d18]/80 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+      <button className="flex w-full items-center justify-between gap-4 bg-[#0f261f]/80 px-4 py-3.5 text-left text-[#f2f5f3] transition-colors hover:bg-[#122d27]" onClick={() => setOpen((o) => !o)} type="button">
         <span className="text-base font-semibold text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>{section.title}</span>
-        <span className="flex items-center gap-3 text-[0.8rem] uppercase tracking-[0.08em] text-[#8a8d8f]">
+        <span className="flex items-center gap-3 text-[0.76rem] uppercase tracking-[0.08em] text-[#9ca8a3]">
           {section.credit_hours} SCH
-          <span className={`inline-block h-0 w-0 border-l-[6px] border-r-[6px] border-b-[7px] border-l-transparent border-r-transparent border-b-[#8a8d8f] transition-transform ${open ? "rotate-180" : ""}`} aria-hidden="true" />
+          <span className={`inline-block h-0 w-0 border-l-[6px] border-r-[6px] border-b-[7px] border-l-transparent border-r-transparent border-b-[#9ca8a3] transition-transform ${open ? "rotate-180" : ""}`} aria-hidden="true" />
         </span>
       </button>
       {open && (
-        <div className="border-t border-[#1f5c43]/80 px-3 py-2 md:px-4">
+        <div className="space-y-3 border-t border-white/10 px-3 py-3 md:px-4">
           {visibleGroups.map(({ g, gi }) => {
             const key = `${sectionIndex}-${gi}`;
             if (g.courses.length === 0) {
@@ -903,24 +905,27 @@ export default function Step3AcademicHistory({
   const doneCount = [...allCodes].filter((c) => completed.has(c)).length;
 
   return (
-    <div className="relative z-10 flex w-full min-h-0 flex-col gap-5 rounded-[18px] border border-[#1f5c43] bg-[#081712]/90 p-4 shadow-[0_18px_40px_rgba(0,0,0,0.25)] md:p-6">
-      <header className="flex flex-wrap items-start justify-between gap-4 border-b border-[#1f5c43]/80 pb-4">
-        <div className="space-y-2">
-          <h1 className="m-0 text-[clamp(2.4rem,4vw,3rem)] font-bold leading-none tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
+    <div className="relative z-10 flex w-full min-h-0 flex-col gap-5 rounded-[22px] border border-white/10 bg-[#071611]/85 p-4 shadow-[0_30px_80px_rgba(2,6,23,0.65)] ring-1 ring-inset ring-white/5 md:p-6">
+      <header className="flex flex-wrap items-start justify-between gap-4 border-b border-white/10 pb-4">
+        <div className="space-y-3">
+          <Badge variant="secondary" className="border-[#2ad3a1]/30 bg-[#0f2c24] text-[#72f0c7] shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+            Academic history
+          </Badge>
+          <h1 className="m-0 text-[clamp(2.3rem,4vw,3rem)] font-bold leading-none tracking-[-0.03em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
             Your academic history
           </h1>
-          <p className="m-0 text-[1.05rem] text-[#8a8d8f]">
-            Upload a transcript or check off completed courses for <strong className="font-semibold text-[#5fe0b7]">{major}</strong>.
+          <p className="m-0 max-w-2xl text-[1.02rem] text-[#9ca8a3]">
+            Upload a transcript or check off completed courses for <strong className="font-semibold text-[#72f0c7]">{major}</strong>.
           </p>
         </div>
 
         <div className="flex flex-wrap items-center gap-4">
           {catalog && totalHours != null && (
-            <div className="flex items-baseline gap-3 rounded-lg border border-[#5fe0b7]/30 bg-[#154734]/50 px-4 py-3">
-              <span className="text-[2.6rem] font-bold leading-none text-[#5fe0b7]" style={{ fontFamily: "var(--font-display)" }}>{hoursLeft}</span>
-              <span className="flex flex-col text-[0.82rem] uppercase tracking-[0.03em] text-[#8a8d8f]">
+            <div className="flex items-baseline gap-3 rounded-2xl border border-[#72f0c7]/25 bg-[#112f26]/90 px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
+              <span className="text-[2.55rem] font-bold leading-none text-[#72f0c7]" style={{ fontFamily: "var(--font-display)" }}>{hoursLeft}</span>
+              <span className="flex flex-col text-[0.78rem] uppercase tracking-[0.06em] text-[#9ca8a3]">
                 SCH left to graduate
-                <span className="normal-case tracking-normal text-[#8a8d8f]">
+                <span className="normal-case tracking-normal text-[#b9c9c4]">
                   {hoursEarned} of {totalHours} satisfied
                 </span>
               </span>
@@ -928,7 +933,7 @@ export default function Step3AcademicHistory({
           )}
 
           <div className="flex items-center gap-3">
-            <label className={`inline-flex cursor-pointer items-center justify-center rounded-md border border-[#5fe0b7] bg-transparent px-4 py-2.5 text-[0.88rem] font-semibold uppercase tracking-[0.04em] text-[#5fe0b7] transition-colors duration-150 hover:bg-[#5fe0b7] hover:text-[#06110d] ${transcriptParsing ? "cursor-default opacity-60" : ""}`}>
+            <label className={`inline-flex cursor-pointer items-center justify-center rounded-xl border border-[#72f0c7]/60 bg-[#0d201a]/80 px-4 py-2.5 text-[0.82rem] font-semibold uppercase tracking-[0.08em] text-[#72f0c7] transition-all duration-150 hover:border-[#72f0c7] hover:bg-[#72f0c7]/10 ${transcriptParsing ? "cursor-default opacity-60" : ""}`}>
               {transcriptParsing ? "Reading…" : "Upload transcript"}
               <input
                 type="file"
@@ -938,22 +943,22 @@ export default function Step3AcademicHistory({
                 hidden
               />
             </label>
-            {transcriptFile && <span className="max-w-[140px] truncate text-[0.88rem] text-[#8a8d8f]">{transcriptFile.name}</span>}
+            {transcriptFile && <span className="max-w-[140px] truncate text-[0.85rem] text-[#9ca8a3]">{transcriptFile.name}</span>}
           </div>
         </div>
       </header>
 
-      {transcriptNote && <p className="rounded-lg border border-[#1f5c43]/80 bg-[#113125]/60 px-3 py-2 text-[0.95rem] text-[#cfe3db]">{transcriptNote}</p>}
+      {transcriptNote && <p className="rounded-2xl border border-white/10 bg-[#102820]/80 px-3 py-2 text-[0.95rem] text-[#d9eeea] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">{transcriptNote}</p>}
 
       {degreeTypes.length > 1 && !resolvedDegreeType && (
-        <div className="rounded-xl border border-[#1f5c43]/80 bg-[#0d1b18] p-4">
-          <p className="m-0 mb-3 text-[0.85rem] font-semibold uppercase tracking-[0.08em] text-[#8a8d8f]">Which degree track?</p>
+        <div className="rounded-2xl border border-white/10 bg-[#0d1b18] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+          <p className="m-0 mb-3 text-[0.8rem] font-semibold uppercase tracking-[0.1em] text-[#9ca8a3]">Which degree track?</p>
           <div className="flex flex-wrap gap-2">
             {degreeTypes.map((type) => (
               <button
                 key={type}
                 type="button"
-                className="rounded-full border border-[#5fe0b7]/60 bg-transparent px-4 py-2 text-[0.95rem] text-[#f2f5f3] transition-colors hover:bg-[#5fe0b7]/15"
+                className="rounded-full border border-[#72f0c7]/50 bg-transparent px-4 py-2 text-[0.95rem] text-[#edf7f4] transition-all hover:border-[#72f0c7] hover:bg-[#72f0c7]/10"
                 onClick={() => setSelectedDegreeType(type)}
               >
                 {major} ({type})
@@ -963,24 +968,24 @@ export default function Step3AcademicHistory({
         </div>
       )}
 
-      {loadError && <p className="text-[1rem] text-[#ff9d8a]">{loadError}</p>}
+      {loadError && <p className="text-[1rem] text-[#ffb4a7]">{loadError}</p>}
 
       {catalog && (
         <>
-          <div className="flex items-center justify-between gap-4 border-b border-[#1f5c43]/80 pb-4">
+          <div className="flex items-center justify-between gap-4 border-b border-white/10 pb-4">
             <input
               type="text"
-              className="flex-1 border-0 border-b border-[#8a8d8f]/60 bg-transparent px-1 py-2 text-[1.05rem] text-[#f2f5f3] placeholder:text-[#8a8d8f] focus:border-[#5fe0b7] focus:outline-none"
+              className="flex-1 border-0 border-b border-[#61716d]/80 bg-transparent px-1 py-2 text-[1.02rem] text-[#f2f5f3] placeholder:text-[#8b9a96] focus:border-[#72f0c7] focus:outline-none"
               placeholder="Search courses (e.g. CS 3345 or Data Structures)"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
-            <span className="whitespace-nowrap text-[0.8rem] uppercase tracking-[0.06em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
+            <span className="whitespace-nowrap text-[0.75rem] uppercase tracking-[0.08em] text-[#9ca8a3]" style={{ fontFamily: "var(--font-mono)" }}>
               {doneCount} of {allCodes.size} listed courses checked
             </span>
           </div>
 
-          <div className="space-y-4">
+          <div className="grid auto-rows-fr gap-4 grid-cols-[repeat(auto-fit,minmax(290px,1fr))] items-stretch">
             {catalog.sections.map((section, i) => (
               <RequirementSection
                 key={`${section.title}-${i}`}
@@ -1001,14 +1006,16 @@ export default function Step3AcademicHistory({
         </>
       )}
 
-      {!catalog && !loadError && <p className="text-[1rem] text-[#8a8d8f]">Loading degree requirements…</p>}
+      {!catalog && !loadError && <p className="text-[1rem] text-[#9ca8a3]">Loading degree requirements…</p>}
 
-      <div className="mt-2 flex justify-end gap-3 border-t border-[#1f5c43]/80 pt-4">
-        <button className="rounded-full border border-[#1f5c43] bg-transparent px-8 py-4 text-[1.05rem] text-[#f2f5f3] transition-colors duration-200 hover:border-[#8a8d8f]" type="button" onClick={onBack}>
+      <div className="mt-2 flex justify-end gap-3 border-t border-white/10 pt-4">
+        <button className="rounded-full border border-white/10 bg-transparent px-8 py-3.5 text-[1rem] text-[#ebf5f2] transition-colors duration-200 hover:border-[#9ca8a3] hover:bg-white/5" type="button" onClick={onBack}>
           Back
         </button>
-        <button
-          className="rounded-full border border-transparent bg-[#e87500] px-8 py-4 text-[1.05rem] font-medium text-[#f2f5f3] transition-transform duration-150 enabled:hover:translate-y-[-1px] disabled:cursor-not-allowed disabled:opacity-40"
+        <Button
+          variant="custom"
+          size="lg"
+          className="rounded-full border border-[#ff9d5c] bg-[#e87500] px-8 text-[1rem] font-medium text-[#fff8f3] shadow-[0_10px_25px_rgba(232,117,0,0.28)] hover:translate-y-[-1px] disabled:cursor-not-allowed disabled:opacity-40"
           type="button"
           disabled={!catalog}
           onClick={() =>
@@ -1016,7 +1023,7 @@ export default function Step3AcademicHistory({
           }
         >
           Continue
-        </button>
+        </Button>
       </div>
     </div>
   );

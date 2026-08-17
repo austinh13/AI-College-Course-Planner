@@ -1,4 +1,7 @@
 import React, { useMemo, useCallback } from "react";
+import { Badge } from "../components/lightswind/badge";
+import { Button } from "../components/lightswind/button";
+import { Input } from "../components/lightswind/input";
 
 // Days and labeled time blocks for the UI. Kept as constants to avoid
 // recreating these arrays on every render.
@@ -50,181 +53,203 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
 
   return (
     <form className="mx-auto flex w-full max-w-[640px] flex-col gap-7" onSubmit={handleSubmit}>
-      <p className="m-0 text-[0.8rem] font-medium uppercase tracking-[0.08em] text-[#e87500]" style={{ fontFamily: "var(--font-mono)" }}>
-        Step 02
-      </p>
-      <h1 className="m-0 text-[clamp(2.5rem,5.5vw,3.5rem)] font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
-        Now, block off
-        <br />
-        your week.
-      </h1>
-      <p className="-mt-2 mb-0 max-w-[40ch] text-[#8a8d8f]">We'll only place classes inside the space you leave open.</p>
+      <div className="space-y-3">
+        <Badge variant="warning" className="inline-flex w-fit border border-[#e87500]/30 bg-[#e87500]/10 px-2.5 py-1 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-[#f5d5b2]" style={{ fontFamily: "var(--font-mono)" }}>
+          Step 02
+        </Badge>
+        <h1 className="m-0 text-[clamp(2.5rem,5.5vw,3.5rem)] font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
+          Now, block off
+          <br />
+          your week.
+        </h1>
+        <p className="-mt-1 mb-0 max-w-[38ch] text-[0.98rem] text-[#9aa8a2]">We'll only place classes inside the space you leave open.</p>
+      </div>
 
-      <fieldset className="m-0 border-0 p-0">
-        <legend className="mb-2.5 block text-[0.8rem] font-medium uppercase tracking-[0.06em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
-          Days you want off
-        </legend>
-        <div className="flex flex-wrap gap-x-5 gap-y-2">
-          {DAYS.map((day) => (
-            <button
-              type="button"
-              key={day}
-              className={`border-0 border-b-2 bg-transparent px-1 pb-2.5 text-base text-[#f2f5f3] transition-colors duration-200 ${
-                data.daysOff.includes(day) ? "border-[#e87500] font-semibold text-[#e87500]" : "border-[#1f5c43] hover:border-[#8a8d8f]"
-              }`}
-              aria-pressed={data.daysOff.includes(day)}
-              onClick={() => toggleDay(day)}
-            >
-              {day}
-            </button>
-          ))}
+      <div className="space-y-7 rounded-[24px] border border-white/10 bg-[#0d1b18]/70 p-4 sm:p-5">
+        <fieldset className="m-0 border-0 p-0">
+          <legend className="mb-3 block text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+            Days you want off
+          </legend>
+          <div className="flex flex-wrap gap-3">
+            {DAYS.map((day) => (
+              <button
+                type="button"
+                key={day}
+                className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
+                  data.daysOff.includes(day)
+                    ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f5d5b2] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"
+                    : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
+                }`}
+                aria-pressed={data.daysOff.includes(day)}
+                onClick={() => toggleDay(day)}
+              >
+                {day}
+              </button>
+            ))}
+          </div>
+        </fieldset>
+
+        <fieldset className="m-0 border-0 p-0">
+          <legend className="mb-3 block text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+            Preferred time blocks
+          </legend>
+          <div className="flex flex-wrap gap-3">
+            {TIME_BLOCKS.map((block) => (
+              <button
+                type="button"
+                key={block.id}
+                className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
+                  data.timeBlocks.includes(block.id)
+                    ? "border-[#5fe0b7]/40 bg-[#5fe0b7]/10 text-[#dffcf5] shadow-[0_0_0_1px_rgba(95,224,183,0.15)]"
+                    : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
+                }`}
+                aria-pressed={data.timeBlocks.includes(block.id)}
+                onClick={() => toggleBlock(block.id)}
+              >
+                {block.label}
+              </button>
+            ))}
+          </div>
+        </fieldset>
+
+        <fieldset className="m-0 border-0 p-0">
+          <legend className="mb-3 block text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+            How much do past grades matter?
+          </legend>
+          <div className="flex flex-wrap gap-3">
+            {IMPORTANCE_LEVELS.map((level) => (
+              <button
+                type="button"
+                key={level.id}
+                className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
+                  data.gradeImportance === level.id
+                    ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f5d5b2] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"
+                    : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
+                }`}
+                aria-pressed={data.gradeImportance === level.id}
+                onClick={() => onChange({ ...data, gradeImportance: level.id })}
+              >
+                {level.label}
+              </button>
+            ))}
+          </div>
+        </fieldset>
+
+        <fieldset className="m-0 border-0 p-0">
+          <legend className="mb-3 block text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+            How much do RateMyProfessors ratings matter?
+          </legend>
+          <div className="flex flex-wrap gap-3">
+            {IMPORTANCE_LEVELS.map((level) => (
+              <button
+                type="button"
+                key={level.id}
+                className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
+                  data.rmpImportance === level.id
+                    ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f5d5b2] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"
+                    : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
+                }`}
+                aria-pressed={data.rmpImportance === level.id}
+                onClick={() => onChange({ ...data, rmpImportance: level.id })}
+              >
+                {level.label}
+              </button>
+            ))}
+          </div>
+        </fieldset>
+
+        <fieldset className="m-0 border-0 p-0">
+          <label className="inline-flex items-center gap-2.5 text-[0.95rem] text-[#f2f5f3]">
+            <input
+              type="checkbox"
+              className="h-[18px] w-[18px] accent-[#5fe0b7]"
+              checked={data.wantsLunch}
+              onChange={(e) => onChange({ ...data, wantsLunch: e.target.checked })}
+            />
+            <span>Keep a lunch period free</span>
+          </label>
+
+          {data.wantsLunch && (
+            <div className="mt-4 flex items-center gap-3 rounded-2xl border border-white/10 bg-[#081712]/80 p-3">
+              <Input
+                type="time"
+                className="w-[clamp(90px,30vw,120px)] border-white/10 bg-[#081712] px-2.5 py-2 text-[1rem] text-[#f2f5f3]"
+                value={data.lunchStart}
+                onChange={(e) => onChange({ ...data, lunchStart: e.target.value })}
+              />
+              <span className="text-[#8a8d8f]">–</span>
+              <Input
+                type="time"
+                className="w-[clamp(90px,30vw,120px)] border-white/10 bg-[#081712] px-2.5 py-2 text-[1rem] text-[#f2f5f3]"
+                value={data.lunchEnd}
+                onChange={(e) => onChange({ ...data, lunchEnd: e.target.value })}
+              />
+            </div>
+          )}
+        </fieldset>
+
+        <div className="grid gap-5 md:grid-cols-2">
+          <label className="flex flex-col gap-2.5">
+            <span className="text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+              Target course hours / week
+            </span>
+            <Input
+              type="number"
+              min="1"
+              max="40"
+              className="w-full border-white/10 bg-[#081712] px-4 py-3.5 text-[1.05rem] text-[#f2f5f3]"
+              placeholder="e.g. 15"
+              value={data.targetHours}
+              onChange={(e) => onChange({ ...data, targetHours: e.target.value })}
+              required
+            />
+          </label>
+
+          <label className="flex flex-col gap-2.5">
+            <span className="text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+              Max hours / day
+            </span>
+            <Input
+              type="number"
+              min="1"
+              max="12"
+              className="w-full border-white/10 bg-[#081712] px-4 py-3.5 text-[1.05rem] text-[#f2f5f3] disabled:cursor-not-allowed disabled:opacity-60"
+              placeholder="e.g. 6"
+              disabled={data.unlimitedDailyHours}
+              value={data.maxHoursPerDay}
+              onChange={(e) => onChange({ ...data, maxHoursPerDay: e.target.value })}
+            />
+          </label>
         </div>
-      </fieldset>
 
-      <fieldset className="m-0 border-0 p-0">
-        <legend className="mb-2.5 block text-[0.8rem] font-medium uppercase tracking-[0.06em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
-          Preferred time blocks
-        </legend>
-        <div className="flex flex-wrap gap-x-5 gap-y-2">
-          {TIME_BLOCKS.map((block) => (
-            <button
-              type="button"
-              key={block.id}
-              className={`border-0 border-b-2 bg-transparent px-1 pb-2.5 text-base text-[#f2f5f3] transition-colors duration-200 ${
-                data.timeBlocks.includes(block.id) ? "border-[#e87500] font-semibold text-[#e87500]" : "border-[#1f5c43] hover:border-[#8a8d8f]"
-              }`}
-              aria-pressed={data.timeBlocks.includes(block.id)}
-              onClick={() => toggleBlock(block.id)}
-            >
-              {block.label}
-            </button>
-          ))}
-        </div>
-      </fieldset>
-
-      <fieldset className="m-0 border-0 p-0">
-        <legend className="mb-2.5 block text-[0.8rem] font-medium uppercase tracking-[0.06em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
-          How much do past grades matter when picking a professor?
-        </legend>
-        <div className="flex flex-wrap gap-x-5 gap-y-2">
-          {IMPORTANCE_LEVELS.map((level) => (
-            <button
-              type="button"
-              key={level.id}
-              className={`border-0 border-b-2 bg-transparent px-1 pb-2.5 text-base text-[#f2f5f3] transition-colors duration-200 ${
-                data.gradeImportance === level.id ? "border-[#e87500] font-semibold text-[#e87500]" : "border-[#1f5c43] hover:border-[#8a8d8f]"
-              }`}
-              aria-pressed={data.gradeImportance === level.id}
-              onClick={() => onChange({ ...data, gradeImportance: level.id })}
-            >
-              {level.label}
-            </button>
-          ))}
-        </div>
-      </fieldset>
-
-      <fieldset className="m-0 border-0 p-0">
-        <legend className="mb-2.5 block text-[0.8rem] font-medium uppercase tracking-[0.06em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
-          How much do RateMyProfessors ratings matter?
-        </legend>
-        <div className="flex flex-wrap gap-x-5 gap-y-2">
-          {IMPORTANCE_LEVELS.map((level) => (
-            <button
-              type="button"
-              key={level.id}
-              className={`border-0 border-b-2 bg-transparent px-1 pb-2.5 text-base text-[#f2f5f3] transition-colors duration-200 ${
-                data.rmpImportance === level.id ? "border-[#e87500] font-semibold text-[#e87500]" : "border-[#1f5c43] hover:border-[#8a8d8f]"
-              }`}
-              aria-pressed={data.rmpImportance === level.id}
-              onClick={() => onChange({ ...data, rmpImportance: level.id })}
-            >
-              {level.label}
-            </button>
-          ))}
-        </div>
-      </fieldset>
-
-      <fieldset className="m-0 border-0 p-0">
         <label className="inline-flex items-center gap-2.5 text-[0.95rem] text-[#f2f5f3]">
           <input
             type="checkbox"
             className="h-[18px] w-[18px] accent-[#5fe0b7]"
-            checked={data.wantsLunch}
-            onChange={(e) => onChange({ ...data, wantsLunch: e.target.checked })}
+            checked={data.unlimitedDailyHours}
+            onChange={(e) => onChange({ ...data, unlimitedDailyHours: e.target.checked, maxHoursPerDay: "" })}
           />
-          <span>Keep a lunch period free</span>
-        </label>
-
-        {data.wantsLunch && (
-          <div className="mt-3 flex items-center gap-2">
-            <input
-              type="time"
-              className="w-[clamp(90px,30vw,120px)] rounded-lg border border-[#8a8d8f] bg-[#154734] px-2.5 py-2 text-[1rem] text-[#f2f5f3] shadow-[inset_0_1px_3px_rgba(0,0,0,0.35)] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
-              value={data.lunchStart}
-              onChange={(e) => onChange({ ...data, lunchStart: e.target.value })}
-            />
-            <span className="text-[#8a8d8f]">–</span>
-            <input
-              type="time"
-              className="w-[clamp(90px,30vw,120px)] rounded-lg border border-[#8a8d8f] bg-[#154734] px-2.5 py-2 text-[1rem] text-[#f2f5f3] shadow-[inset_0_1px_3px_rgba(0,0,0,0.35)] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
-              value={data.lunchEnd}
-              onChange={(e) => onChange({ ...data, lunchEnd: e.target.value })}
-            />
-          </div>
-        )}
-      </fieldset>
-
-      <div className="grid gap-5 md:grid-cols-2">
-        <label className="flex flex-col gap-2.5">
-          <span className="text-[0.8rem] font-medium uppercase tracking-[0.06em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
-            Target course hours / week
-          </span>
-          <input
-            type="number"
-            min="1"
-            max="40"
-            className="w-full rounded-lg border border-[#8a8d8f] bg-[#154734] px-4 py-3.5 text-[1.05rem] text-[#f2f5f3] shadow-[inset_0_1px_3px_rgba(0,0,0,0.35)] transition-colors duration-200 placeholder:text-[#8a8d8f] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
-            placeholder="e.g. 15"
-            value={data.targetHours}
-            onChange={(e) => onChange({ ...data, targetHours: e.target.value })}
-            required
-          />
-        </label>
-
-        <label className="flex flex-col gap-2.5">
-          <span className="text-[0.8rem] font-medium uppercase tracking-[0.06em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
-            Max hours / day
-          </span>
-          <input
-            type="number"
-            min="1"
-            max="12"
-            className="w-full rounded-lg border border-[#8a8d8f] bg-[#154734] px-4 py-3.5 text-[1.05rem] text-[#f2f5f3] shadow-[inset_0_1px_3px_rgba(0,0,0,0.35)] transition-colors duration-200 placeholder:text-[#8a8d8f] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7] disabled:cursor-not-allowed disabled:opacity-60"
-            placeholder="e.g. 6"
-            disabled={data.unlimitedDailyHours}
-            value={data.maxHoursPerDay}
-            onChange={(e) => onChange({ ...data, maxHoursPerDay: e.target.value })}
-          />
+          <span>No daily limit</span>
         </label>
       </div>
 
-      <label className="inline-flex items-center gap-2.5 text-[0.95rem] text-[#f2f5f3]">
-        <input
-          type="checkbox"
-          className="h-[18px] w-[18px] accent-[#5fe0b7]"
-          checked={data.unlimitedDailyHours}
-          onChange={(e) => onChange({ ...data, unlimitedDailyHours: e.target.checked, maxHoursPerDay: "" })}
-        />
-        <span>No daily limit</span>
-      </label>
-
-      <div className="mt-1 flex gap-3">
-        <button type="button" className="rounded-full border border-[#1f5c43] bg-transparent px-8 py-4 text-[1.05rem] text-[#f2f5f3] transition-colors duration-200 hover:border-[#8a8d8f]" onClick={onBack}>
+      <div className="flex items-center justify-between gap-3 pt-1">
+        <Button
+          type="button"
+          variant="outline"
+          className="rounded-full border border-white/10 bg-transparent px-6 py-3 text-[0.95rem] text-[#f2f5f3] transition-colors hover:border-white/20 hover:bg-white/5"
+          onClick={onBack}
+        >
           Back
-        </button>
-        <button type="submit" className="rounded-full border border-transparent bg-[#e87500] px-8 py-4 text-[1.05rem] font-medium text-[#f2f5f3] transition-transform duration-150 enabled:hover:translate-y-[-1px] disabled:cursor-not-allowed disabled:opacity-40" disabled={!canSubmit}>
+        </Button>
+        <Button
+          type="submit"
+          size="lg"
+          className="rounded-full border border-transparent bg-[#e87500] px-8 py-4 text-[1.05rem] font-medium text-[#f2f5f3] shadow-[0_12px_30px_rgba(232,117,0,0.28)] transition-all duration-150 enabled:hover:-translate-y-0.5 enabled:hover:shadow-[0_18px_38px_rgba(232,117,0,0.35)] disabled:cursor-not-allowed disabled:opacity-40"
+          disabled={!canSubmit}
+        >
           Continue
-        </button>
+        </Button>
       </div>
     </form>
   );

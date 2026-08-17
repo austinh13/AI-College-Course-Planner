@@ -1,4 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
+import { Badge } from "../components/lightswind/badge";
+import { Button } from "../components/lightswind/button";
+import { Input } from "../components/lightswind/input";
 import { catalogBaseUrl, resolveMajorKey, undergradDegreeTypes, slugify, buildOpenGroupCourseOptions, buildMajorElectiveOptions } from "../lib/catalog";
 import { loadCoreCurriculum, coreCurriculumUrl } from "../lib/parseTranscript";
 import { loadClasses, recommend, prereqSatisfied } from "../lib/recommendCourses";
@@ -200,9 +203,9 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
 
   return (
     <div className="mx-auto flex w-full max-w-[640px] flex-col gap-7">
-      <p className="m-0 text-[0.8rem] font-medium uppercase tracking-[0.08em] text-[#e87500]" style={{ fontFamily: "var(--font-mono)" }}>
+      <Badge variant="warning" className="inline-flex w-fit border border-[#e87500]/30 bg-[#e87500]/10 px-2.5 py-1 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-[#f5d5b2]" style={{ fontFamily: "var(--font-mono)" }}>
         Recommended for next term
-      </p>
+      </Badge>
       <h1 className="m-0 text-[clamp(2.5rem,5.5vw,3.5rem)] font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
         Here's what we'd
         <br />
@@ -213,7 +216,7 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
         {constraints.targetHours || 15}-hour target ({totalHours} SCH picked). Swap or add anything below.
       </p>
       {shortfallHours > 0 && (
-        <p className="rounded-lg border border-[#1f5c43] bg-[#154734]/80 px-4 py-3 text-[0.95rem] text-[#f2f5f3]">
+        <p className="rounded-2xl border border-[#e87500]/25 bg-[#e87500]/10 px-4 py-3 text-[0.95rem] text-[#f5d5b2]">
           Can't quite reach {constraints.targetHours || 15} hours right now — only about {totalHours - shortfallHours} SCH
           of this is currently eligible (the rest is likely blocked on prerequisites you haven't finished yet).
         </p>
@@ -225,8 +228,8 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
           const filledHours = codes.reduce((sum, code) => sum + courseFromPool(slot, code).hours, 0);
           const canAddMore = codes.length < slot.options.length;
           return (
-            <div className="flex flex-col gap-2 rounded-xl border border-[#1f5c43] bg-[#154734] p-4" key={slot.groupKey}>
-              <span className="text-[0.75rem] font-medium uppercase tracking-[0.06em] text-[#5fe0b7]" style={{ fontFamily: "var(--font-mono)" }}>
+            <div className="flex flex-col gap-2 rounded-[22px] border border-white/10 bg-[#0d1b18]/80 p-4 shadow-[0_18px_36px_rgba(0,0,0,0.18)]" key={slot.groupKey}>
+              <span className="text-[0.75rem] font-medium uppercase tracking-[0.08em] text-[#5fe0b7]" style={{ fontFamily: "var(--font-mono)" }}>
                 {slot.label} · {filledHours} SCH
               </span>
               {codes.map((code, i) => {
@@ -236,7 +239,7 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
                 return (
                   <div className="flex flex-wrap items-center gap-2.5" key={i}>
                     <select
-                      className="min-w-0 flex-1 rounded-md border border-[#1f5c43] bg-[#081712] px-3 py-2 text-[1rem] text-[#f2f5f3] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
+                      className="min-w-0 flex-1 rounded-2xl border border-white/10 bg-[#081712] px-3 py-2.5 text-[1rem] text-[#f2f5f3] transition-all focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]/30"
                       value={code}
                       onChange={(e) => updateSlotPick(slot, i, e.target.value)}
                     >
@@ -252,7 +255,7 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
                     {codes.length > 1 && (
                       <button
                         type="button"
-                        className="h-8 w-8 rounded-md border border-[#1f5c43] bg-transparent text-[1.1rem] leading-none text-[#8a8d8f] transition-colors hover:text-[#f2f5f3]"
+                        className="h-9 w-9 rounded-full border border-white/10 bg-[#0c1715] text-[1.1rem] leading-none text-[#8a8d8f] transition-colors hover:border-white/20 hover:text-[#f2f5f3]"
                         onClick={() => removeSlotPick(slot, i)}
                         aria-label="Remove this class"
                       >
@@ -268,7 +271,7 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
                 );
               })}
               {canAddMore && (
-                <button type="button" className="self-start bg-transparent p-0 text-[0.85rem] text-[#5fe0b7] hover:underline" onClick={() => addSlotPick(slot)}>
+                <button type="button" className="self-start bg-transparent p-0 text-[0.85rem] font-medium text-[#5fe0b7] hover:underline" onClick={() => addSlotPick(slot)}>
                   + Add another class
                 </button>
               )}
@@ -282,13 +285,13 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
           const ok = !selectedCode || prereqStatus(selectedCode);
           const isManual = !options || manualElectiveEntry[group.groupKey];
           return (
-            <div className="flex flex-col gap-2 rounded-xl border border-[#1f5c43] bg-[#154734] p-4" key={group.groupKey}>
-              <span className="text-[0.75rem] font-medium uppercase tracking-[0.06em] text-[#5fe0b7]" style={{ fontFamily: "var(--font-mono)" }}>
+            <div className="flex flex-col gap-2 rounded-[22px] border border-white/10 bg-[#0d1b18]/80 p-4 shadow-[0_18px_36px_rgba(0,0,0,0.18)]" key={group.groupKey}>
+              <span className="text-[0.75rem] font-medium uppercase tracking-[0.08em] text-[#5fe0b7]" style={{ fontFamily: "var(--font-mono)" }}>
                 {group.sectionTitle === "Core Curriculum Requirements" ? "Core elective" : "Elective"} · {group.label}
               </span>
               {isManual ? (
-                <input
-                  className="rounded-md border border-[#1f5c43] bg-[#081712] px-3 py-2 text-[1rem] text-[#f2f5f3] placeholder:text-[#8a8d8f] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
+                <Input
+                  className="border-white/10 bg-[#081712] px-3 py-2.5 text-[1rem] text-[#f2f5f3] placeholder:text-[#8a8d8f]"
                   type="text"
                   placeholder="Course code (e.g. CS 4485)"
                   value={selectedCode}
@@ -298,7 +301,7 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
                 />
               ) : (
                 <select
-                  className="rounded-md border border-[#1f5c43] bg-[#081712] px-3 py-2 text-[1rem] text-[#f2f5f3] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
+                  className="rounded-2xl border border-white/10 bg-[#081712] px-3 py-2.5 text-[1rem] text-[#f2f5f3] transition-all focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]/30"
                   value={selectedCode}
                   onChange={(e) => setOverrides((prev) => ({ ...prev, [group.groupKey]: e.target.value }))}
                 >
@@ -346,17 +349,18 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
       )}
 
       <div className="mt-1 flex flex-wrap gap-3">
-        <button type="button" className="rounded-full border border-[#1f5c43] bg-transparent px-8 py-4 text-[1.05rem] text-[#f2f5f3] transition-colors duration-200 hover:border-[#8a8d8f]" onClick={onEdit}>
+        <Button type="button" variant="outline" className="rounded-full border border-white/10 bg-transparent px-8 py-4 text-[1.05rem] text-[#f2f5f3] transition-colors duration-200 hover:border-white/20 hover:bg-white/5" onClick={onEdit}>
           Edit academic history
-        </button>
-        <button
+        </Button>
+        <Button
           type="button"
+          size="lg"
           className="rounded-full border border-transparent bg-[#e87500] px-8 py-4 text-[1.05rem] font-medium text-[#f2f5f3] transition-transform duration-150 enabled:hover:translate-y-[-1px] disabled:cursor-not-allowed disabled:opacity-40"
           disabled={!finalCourseCodes.length}
           onClick={() => onContinue(finalCourseCodes)}
         >
           Build my schedule
-        </button>
+        </Button>
       </div>
     </div>
   );
