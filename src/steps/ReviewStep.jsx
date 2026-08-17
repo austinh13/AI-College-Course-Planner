@@ -3,7 +3,6 @@ import { catalogBaseUrl, resolveMajorKey, undergradDegreeTypes, slugify, buildOp
 import { loadCoreCurriculum, coreCurriculumUrl } from "../lib/parseTranscript";
 import { loadClasses, recommend, prereqSatisfied } from "../lib/recommendCourses";
 import Skeleton from "../components/Skeleton";
-import "./ReviewStep.css";
 
 export default function ReviewStep({ profile, constraints, academicHistory, onEdit, onContinue }) {
   const { major, year: startYear } = profile;
@@ -154,11 +153,15 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
 
   if (loadError) {
     return (
-      <div className="step-panel">
-        <p className="step-panel__eyebrow">Recommended courses</p>
-        <h1 className="step-panel__title">Couldn't load your requirements</h1>
-        <p className="step-panel__hint">{loadError}</p>
-        <button type="button" className="btn btn--ghost" onClick={onEdit}>
+      <div className="mx-auto flex w-full max-w-[640px] flex-col gap-7">
+        <p className="m-0 text-[0.8rem] font-medium uppercase tracking-[0.08em] text-[#e87500]" style={{ fontFamily: "var(--font-mono)" }}>
+          Recommended courses
+        </p>
+        <h1 className="m-0 text-[clamp(2.5rem,5.5vw,3.5rem)] font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
+          Couldn't load your requirements
+        </h1>
+        <p className="-mt-2 mb-0 max-w-[40ch] text-[#8a8d8f]">{loadError}</p>
+        <button type="button" className="mt-1 inline-flex w-fit items-center justify-center rounded-full border border-[#1f5c43] bg-transparent px-8 py-4 text-[1.05rem] text-[#f2f5f3] transition-colors duration-200 hover:border-[#8a8d8f]" onClick={onEdit}>
           Back to academic history
         </button>
       </div>
@@ -167,12 +170,16 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
 
   if (!result) {
     return (
-      <div className="step-panel s4-panel">
-        <p className="step-panel__eyebrow">Recommended courses</p>
-        <h1 className="step-panel__title">Building your next term…</h1>
-        <div className="s4-cards">
+      <div className="mx-auto flex w-full max-w-[640px] flex-col gap-7">
+        <p className="m-0 text-[0.8rem] font-medium uppercase tracking-[0.08em] text-[#e87500]" style={{ fontFamily: "var(--font-mono)" }}>
+          Recommended courses
+        </p>
+        <h1 className="m-0 text-[clamp(2.5rem,5.5vw,3.5rem)] font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
+          Building your next term…
+        </h1>
+        <div className="flex flex-col gap-3.5">
           {[0, 1, 2].map((i) => (
-            <div className="s4-card" key={i}>
+            <div className="flex flex-col gap-2 rounded-xl border border-[#1f5c43] bg-[#154734] p-4" key={i}>
               <Skeleton width="40%" height="0.75rem" />
               <Skeleton width="90%" height="2.25rem" />
             </div>
@@ -192,32 +199,34 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
   ];
 
   return (
-    <div className="step-panel s4-panel">
-      <p className="step-panel__eyebrow">Recommended for next term</p>
-      <h1 className="step-panel__title">
+    <div className="mx-auto flex w-full max-w-[640px] flex-col gap-7">
+      <p className="m-0 text-[0.8rem] font-medium uppercase tracking-[0.08em] text-[#e87500]" style={{ fontFamily: "var(--font-mono)" }}>
+        Recommended for next term
+      </p>
+      <h1 className="m-0 text-[clamp(2.5rem,5.5vw,3.5rem)] font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
         Here's what we'd
         <br />
         take next.
       </h1>
-      <p className="step-panel__hint">
+      <p className="-mt-2 mb-0 max-w-[40ch] text-[#8a8d8f]">
         Prioritized by lower-level courses and satisfied prerequisites, aimed at your{" "}
         {constraints.targetHours || 15}-hour target ({totalHours} SCH picked). Swap or add anything below.
       </p>
       {shortfallHours > 0 && (
-        <p className="s4-shortfall">
+        <p className="rounded-lg border border-[#1f5c43] bg-[#154734]/80 px-4 py-3 text-[0.95rem] text-[#f2f5f3]">
           Can't quite reach {constraints.targetHours || 15} hours right now — only about {totalHours - shortfallHours} SCH
           of this is currently eligible (the rest is likely blocked on prerequisites you haven't finished yet).
         </p>
       )}
 
-      <div className="s4-cards">
+      <div className="flex flex-col gap-3.5">
         {slotPicks.map((slot) => {
           const codes = codesForSlot(slot);
           const filledHours = codes.reduce((sum, code) => sum + courseFromPool(slot, code).hours, 0);
           const canAddMore = codes.length < slot.options.length;
           return (
-            <div className="s4-card" key={slot.groupKey}>
-              <span className="s4-card__tag">
+            <div className="flex flex-col gap-2 rounded-xl border border-[#1f5c43] bg-[#154734] p-4" key={slot.groupKey}>
+              <span className="text-[0.75rem] font-medium uppercase tracking-[0.06em] text-[#5fe0b7]" style={{ fontFamily: "var(--font-mono)" }}>
                 {slot.label} · {filledHours} SCH
               </span>
               {codes.map((code, i) => {
@@ -225,9 +234,9 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
                 const ok = prereqStatus(code);
                 const otherCodes = codes.filter((_, j) => j !== i);
                 return (
-                  <div className="s4-card__row" key={i}>
+                  <div className="flex flex-wrap items-center gap-2.5" key={i}>
                     <select
-                      className="s4-card__select"
+                      className="min-w-0 flex-1 rounded-md border border-[#1f5c43] bg-[#081712] px-3 py-2 text-[1rem] text-[#f2f5f3] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
                       value={code}
                       onChange={(e) => updateSlotPick(slot, i, e.target.value)}
                     >
@@ -239,11 +248,11 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
                           </option>
                         ))}
                     </select>
-                    <span className="s4-card__hours">{course.hours} SCH</span>
+                    <span className="text-[0.8rem] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>{course.hours} SCH</span>
                     {codes.length > 1 && (
                       <button
                         type="button"
-                        className="s4-card__remove"
+                        className="h-8 w-8 rounded-md border border-[#1f5c43] bg-transparent text-[1.1rem] leading-none text-[#8a8d8f] transition-colors hover:text-[#f2f5f3]"
                         onClick={() => removeSlotPick(slot, i)}
                         aria-label="Remove this class"
                       >
@@ -251,7 +260,7 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
                       </button>
                     )}
                     {!ok && (
-                      <p className="s4-card__warning">
+                      <p className="mt-1 basis-full text-[0.85rem] text-[#e87500]">
                         Prerequisite not yet satisfied{course.prereqText ? `: ${course.prereqText}` : ""}
                       </p>
                     )}
@@ -259,7 +268,7 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
                 );
               })}
               {canAddMore && (
-                <button type="button" className="s4-card__add" onClick={() => addSlotPick(slot)}>
+                <button type="button" className="self-start bg-transparent p-0 text-[0.85rem] text-[#5fe0b7] hover:underline" onClick={() => addSlotPick(slot)}>
                   + Add another class
                 </button>
               )}
@@ -271,17 +280,15 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
           const options = openGroupOptions[group.groupKey];
           const selectedCode = overrides[group.groupKey] || "";
           const ok = !selectedCode || prereqStatus(selectedCode);
-          // Only groups with a resolved pool ever get a dropdown; groups
-          // with none always use free text, same as before.
           const isManual = !options || manualElectiveEntry[group.groupKey];
           return (
-            <div className="s4-card" key={group.groupKey}>
-              <span className="s4-card__tag">
+            <div className="flex flex-col gap-2 rounded-xl border border-[#1f5c43] bg-[#154734] p-4" key={group.groupKey}>
+              <span className="text-[0.75rem] font-medium uppercase tracking-[0.06em] text-[#5fe0b7]" style={{ fontFamily: "var(--font-mono)" }}>
                 {group.sectionTitle === "Core Curriculum Requirements" ? "Core elective" : "Elective"} · {group.label}
               </span>
               {isManual ? (
                 <input
-                  className="s4-card__input"
+                  className="rounded-md border border-[#1f5c43] bg-[#081712] px-3 py-2 text-[1rem] text-[#f2f5f3] placeholder:text-[#8a8d8f] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
                   type="text"
                   placeholder="Course code (e.g. CS 4485)"
                   value={selectedCode}
@@ -291,7 +298,7 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
                 />
               ) : (
                 <select
-                  className="s4-card__select"
+                  className="rounded-md border border-[#1f5c43] bg-[#081712] px-3 py-2 text-[1rem] text-[#f2f5f3] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
                   value={selectedCode}
                   onChange={(e) => setOverrides((prev) => ({ ...prev, [group.groupKey]: e.target.value }))}
                 >
@@ -306,7 +313,7 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
               {options && (
                 <button
                   type="button"
-                  className="s4-card__add"
+                  className="self-start bg-transparent p-0 text-[0.85rem] text-[#5fe0b7] hover:underline"
                   onClick={() =>
                     setManualElectiveEntry((prev) => ({ ...prev, [group.groupKey]: !isManual }))
                   }
@@ -314,16 +321,16 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
                   {isManual ? "Choose from list instead" : "+ Enter a course manually"}
                 </button>
               )}
-              {!ok && <p className="s4-card__warning">Prerequisite not yet satisfied for {selectedCode}.</p>}
+              {!ok && <p className="text-[0.85rem] text-[#e87500]">Prerequisite not yet satisfied for {selectedCode}.</p>}
             </div>
           );
         })}
       </div>
 
       {(remainingSlots.length > slotPicks.length || remainingElectiveGroups.length > electivePicks.length) && (
-        <details className="s4-remaining">
-          <summary>Everything else still left ({remainingSlots.length + remainingElectiveGroups.length} areas)</summary>
-          <ul>
+        <details className="text-[0.9rem] text-[#8a8d8f]">
+          <summary className="cursor-pointer text-[#f2f5f3]">Everything else still left ({remainingSlots.length + remainingElectiveGroups.length} areas)</summary>
+          <ul className="mt-2 ml-5 list-disc space-y-1">
             {remainingSlots.map((slot) => (
               <li key={slot.groupKey}>
                 {slot.sectionTitle} · {slot.label} — needs {slot.remainingHours} SCH
@@ -338,13 +345,13 @@ export default function ReviewStep({ profile, constraints, academicHistory, onEd
         </details>
       )}
 
-      <div className="step-panel__actions">
-        <button type="button" className="btn btn--ghost" onClick={onEdit}>
+      <div className="mt-1 flex flex-wrap gap-3">
+        <button type="button" className="rounded-full border border-[#1f5c43] bg-transparent px-8 py-4 text-[1.05rem] text-[#f2f5f3] transition-colors duration-200 hover:border-[#8a8d8f]" onClick={onEdit}>
           Edit academic history
         </button>
         <button
           type="button"
-          className="btn btn--primary"
+          className="rounded-full border border-transparent bg-[#e87500] px-8 py-4 text-[1.05rem] font-medium text-[#f2f5f3] transition-transform duration-150 enabled:hover:translate-y-[-1px] disabled:cursor-not-allowed disabled:opacity-40"
           disabled={!finalCourseCodes.length}
           onClick={() => onContinue(finalCourseCodes)}
         >

@@ -68,20 +68,25 @@ export default function App() {
   }
 
   return (
-    <div className="app-shell">
+    <div className="relative flex min-h-screen flex-col overflow-hidden bg-[#081712] text-[#f2f5f3]">
       {stage <= STAGE.CONSTRAINTS && <ScheduleGridBackdrop />}
       {stage === STAGE.PROFILE && <CometFlyby />}
 
-      <header className="app-shell__header">
-        <span className="app-shell__mark">Comet Planner</span>
+      <header className="relative z-10 flex items-center justify-between gap-6 px-[clamp(20px,5vw,64px)] pt-7">
+        <span
+          className="text-[1.1rem] font-bold tracking-[-0.01em] text-[#f2f5f3]"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          Comet Planner
+        </span>
         <StepIndicator current={stage} furthest={furthestStage} onNavigate={handleNavigate} />
       </header>
 
-      <main className="app-shell__main">
+      <main className="relative z-10 flex flex-1 min-h-0 items-center justify-center px-[clamp(20px,5vw,64px)] pb-[clamp(32px,8vw,64px)] pt-[clamp(24px,6vw,40px)]">
         <AnimatePresence mode="wait">
           <motion.div
             key={stage}
-            className={stage === STAGE.ACADEMIC_HISTORY ? "app-shell__stage--fill" : undefined}
+            className={stage === STAGE.ACADEMIC_HISTORY ? "h-full min-h-0 w-full" : undefined}
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -16 }}

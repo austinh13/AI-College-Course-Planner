@@ -17,7 +17,6 @@ import {
   buildOpenGroupCourseOptions,
   loadClasses,
 } from "../lib/catalog";
-import "./AcademicHistory.css";
 
 // Partial credit for an explicit-course, choice:false group, weighted by
 // each course's real SCH instead of treating every course slot equally.
@@ -275,30 +274,33 @@ function matchesSearch(option, query) {
 function CourseOption({ option, completed, onToggle, isAlternative }) {
   const satisfied = optionSatisfied(option, completed);
   return (
-    <div className="s3-option">
-      {isAlternative && <span className="s3-connector s3-connector--or">or</span>}
-      <label className={`s3-row${satisfied ? " s3-row--done" : ""}`}>
+    <div className="ml-0.5">
+      {isAlternative && <span className="my-1 ml-1 block text-[0.85rem] font-bold uppercase tracking-[0.06em] text-[#8a8d8f]">or</span>}
+      <label className={[
+        "flex items-center gap-2.5 border-b border-white/10 px-1 py-1.5 text-[#f2f5f3]",
+        satisfied ? "opacity-60 line-through" : "",
+      ].join(" ")}>
         <input
           type="checkbox"
+          className="h-[18px] w-[18px] accent-[#5fe0b7]"
           checked={completed.has(option.code)}
           onChange={() => onToggle(option.code)}
         />
-        <span className="s3-check" aria-hidden="true" />
-        <span className="s3-code">{option.code}</span>
-        <span className="s3-title">{option.title}</span>
+        <span className="w-[96px] shrink-0 font-semibold text-[#e87500]" style={{ fontFamily: "var(--font-display)" }}>{option.code}</span>
+        <span className="text-[0.98rem] text-[#f2f5f3]">{option.title}</span>
       </label>
 
       {option.with.map((w) => (
-        <label key={w.code} className="s3-row s3-row--with">
-          <span className="s3-connector s3-connector--and">+</span>
+        <label key={w.code} className="ml-5 flex items-center gap-2.5 border-b border-white/10 px-1 py-1.5 text-[#f2f5f3]">
+          <span className="w-4 shrink-0 text-center text-[0.85rem] font-bold text-[#5fe0b7]">+</span>
           <input
             type="checkbox"
+            className="h-[18px] w-[18px] accent-[#5fe0b7]"
             checked={completed.has(w.code)}
             onChange={() => onToggle(w.code)}
           />
-          <span className="s3-check" aria-hidden="true" />
-          <span className="s3-code">{w.code}</span>
-          <span className="s3-title">{w.title}</span>
+          <span className="w-[96px] shrink-0 font-semibold text-[#e87500]" style={{ fontFamily: "var(--font-display)" }}>{w.code}</span>
+          <span className="text-[0.98rem] text-[#f2f5f3]">{w.title}</span>
         </label>
       ))}
 
@@ -344,13 +346,13 @@ function RequirementGroup({
       : groupSatisfied(group, completed);
 
   return (
-    <div className="s3-group">
-      <div className="s3-group-header">
-        <span className={`s3-group-dot${satisfied ? " s3-group-dot--done" : ""}`} />
-        <span className="s3-group-label">{group.label || "Requirement"}</span>
-        {group.credit_hours && <span className="s3-group-hours">{group.credit_hours} SCH</span>}
+    <div className="my-3.5">
+      <div className="mb-1 flex items-baseline gap-2">
+        <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${satisfied ? "bg-[#5fe0b7]" : "bg-white/25"}`} />
+        <span className="text-base font-semibold text-[#f2f5f3]">{group.label || "Requirement"}</span>
+        {group.credit_hours && <span className="text-[0.84rem] text-[#8a8d8f]">{group.credit_hours} SCH</span>}
       </div>
-      {group.description && <p className="s3-group-desc">{group.description}</p>}
+      {group.description && <p className="mb-1.5 m-0 text-[0.9rem] text-[#8a8d8f]/80">{group.description}</p>}
       {visibleCourses.map((opt) => (
         <CourseOption key={opt.code} option={opt} completed={completed} onToggle={onToggle} />
       ))}
@@ -401,14 +403,14 @@ function ComponentAreaExtras({ group, completed, extraEntries, onAdd, onRemove, 
   return (
     <>
       {extraEntries.length > 0 && (
-        <ul className="s3-manual-list">
+        <ul className="m-0 list-none p-0">
           {extraEntries.map((entry) => (
-            <li key={entry.id} className="s3-manual-row">
-              <span className="s3-code">{entry.code}</span>
-              <span className="s3-manual-hours">{entry.hours} SCH</span>
+            <li key={entry.id} className="flex items-center gap-2.5 border-b border-white/10 px-1 py-1.5">
+              <span className="w-[96px] shrink-0 font-semibold text-[#e87500]" style={{ fontFamily: "var(--font-display)" }}>{entry.code}</span>
+              <span className="flex-1 text-[0.9rem] text-[#8a8d8f]">{entry.hours} SCH</span>
               <button
                 type="button"
-                className="s3-manual-remove"
+                className="border-0 bg-transparent p-0 text-[1.2rem] leading-none text-[#8a8d8f] hover:text-[#ff9d8a]"
                 onClick={() => onRemove(entry.id)}
                 aria-label={`Remove ${entry.code}`}
               >
@@ -419,9 +421,9 @@ function ComponentAreaExtras({ group, completed, extraEntries, onAdd, onRemove, 
         </ul>
       )}
       {available.length > 0 ? (
-        <form className="s3-manual-form" onSubmit={handleAdd}>
+        <form className="mt-2 flex flex-wrap gap-2" onSubmit={handleAdd}>
           <select
-            className="s3-manual-input s3-manual-input--code"
+            className="min-w-0 flex-1 rounded-md border border-[#1f5c43] bg-[#081712] px-3 py-2 text-[0.95rem] text-[#f2f5f3] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
             value={selected}
             onChange={(e) => setSelected(e.target.value)}
           >
@@ -432,12 +434,12 @@ function ComponentAreaExtras({ group, completed, extraEntries, onAdd, onRemove, 
               </option>
             ))}
           </select>
-          <button type="submit" className="s3-manual-add" disabled={!selected}>
+          <button type="submit" className="shrink-0 rounded-md border border-[#5fe0b7] bg-transparent px-3 py-2 text-[0.85rem] font-semibold uppercase tracking-[0.04em] text-[#5fe0b7] transition-colors hover:bg-[#5fe0b7] hover:text-[#06110d] disabled:cursor-not-allowed disabled:opacity-40" disabled={!selected}>
             Add
           </button>
         </form>
       ) : (
-        <p className="s3-manual-progress s3-manual-progress--unknown">
+        <p className="m-0 mt-2 text-[0.85rem] italic text-[#8a8d8f]/70">
           No other completed courses available to add here yet.
         </p>
       )}
@@ -475,23 +477,23 @@ function ManualEntryGroup({ group, entries, onAdd, onRemove, courseOptions }) {
   }
 
   return (
-    <div className="s3-group">
-      <div className="s3-group-header">
-        <span className={`s3-group-dot${satisfied ? " s3-group-dot--done" : ""}`} />
-        <span className="s3-group-label">{group.label || "Requirement"}</span>
-        {group.credit_hours && <span className="s3-group-hours">{group.credit_hours} SCH</span>}
+    <div className="my-3.5">
+      <div className="mb-1 flex items-baseline gap-2">
+        <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${satisfied ? "bg-[#5fe0b7]" : "bg-white/25"}`} />
+        <span className="text-base font-semibold text-[#f2f5f3]">{group.label || "Requirement"}</span>
+        {group.credit_hours && <span className="text-[0.84rem] text-[#8a8d8f]">{group.credit_hours} SCH</span>}
       </div>
-      {group.description && <p className="s3-group-desc">{group.description}</p>}
+      {group.description && <p className="mb-1.5 m-0 text-[0.9rem] text-[#8a8d8f]/80">{group.description}</p>}
 
       {entries.length > 0 && (
-        <ul className="s3-manual-list">
+        <ul className="m-0 list-none p-0">
           {entries.map((entry) => (
-            <li key={entry.id} className="s3-manual-row">
-              <span className="s3-code">{entry.code}</span>
-              <span className="s3-manual-hours">{entry.hours} SCH</span>
+            <li key={entry.id} className="flex items-center gap-2.5 border-b border-white/10 px-1 py-1.5">
+              <span className="w-[96px] shrink-0 font-semibold text-[#e87500]" style={{ fontFamily: "var(--font-display)" }}>{entry.code}</span>
+              <span className="flex-1 text-[0.9rem] text-[#8a8d8f]">{entry.hours} SCH</span>
               <button
                 type="button"
-                className="s3-manual-remove"
+                className="border-0 bg-transparent p-0 text-[1.2rem] leading-none text-[#8a8d8f] hover:text-[#ff9d8a]"
                 onClick={() => onRemove(entry.id)}
                 aria-label={`Remove ${entry.code}`}
               >
@@ -503,15 +505,15 @@ function ManualEntryGroup({ group, entries, onAdd, onRemove, courseOptions }) {
       )}
 
       {satisfied ? (
-        <p className="s3-manual-progress s3-manual-progress--done">
+        <p className="m-0 mt-1 text-[0.85rem] text-[#8a8d8f]">
           {total} of {target} SCH logged — requirement met, remove an entry above to log a different course.
         </p>
       ) : (
         <>
-          <form className="s3-manual-form" onSubmit={handleAdd}>
+          <form className="mt-2 flex flex-wrap gap-2" onSubmit={handleAdd}>
             {hasDropdown ? (
               <select
-                className="s3-manual-input s3-manual-input--code"
+                className="min-w-0 flex-1 rounded-md border border-[#1f5c43] bg-[#081712] px-3 py-2 text-[0.95rem] text-[#f2f5f3] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
                 value={selectedOption}
                 onChange={handleSelectChange}
               >
@@ -525,7 +527,7 @@ function ManualEntryGroup({ group, entries, onAdd, onRemove, courseOptions }) {
             ) : (
               <input
                 type="text"
-                className="s3-manual-input s3-manual-input--code"
+                className="min-w-0 flex-1 rounded-md border border-[#1f5c43] bg-[#081712] px-3 py-2 text-[0.95rem] text-[#f2f5f3] placeholder:text-[#8a8d8f] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
                 placeholder="e.g. CS 4348"
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
@@ -533,19 +535,19 @@ function ManualEntryGroup({ group, entries, onAdd, onRemove, courseOptions }) {
             )}
             <input
               type="number"
-              className="s3-manual-input s3-manual-input--hours"
+              className="w-[56px] rounded-md border border-[#1f5c43] bg-[#081712] px-2 py-2 text-[0.95rem] text-[#f2f5f3] focus:outline-none focus:ring-2 focus:ring-[#5fe0b7]"
               min="1"
               max="12"
               value={hours}
               onChange={(e) => setHours(e.target.value)}
             />
-            <button type="submit" className="s3-manual-add" disabled={hasDropdown && !selectedOption}>
+            <button type="submit" className="shrink-0 rounded-md border border-[#5fe0b7] bg-transparent px-3 py-2 text-[0.85rem] font-semibold uppercase tracking-[0.04em] text-[#5fe0b7] transition-colors hover:bg-[#5fe0b7] hover:text-[#06110d] disabled:cursor-not-allowed disabled:opacity-40" disabled={hasDropdown && !selectedOption}>
               Add
             </button>
           </form>
 
           {target != null && (
-            <p className="s3-manual-progress">
+            <p className="m-0 mt-1 text-[0.85rem] text-[#8a8d8f]">
               {total} of {target} SCH logged
             </p>
           )}
@@ -553,7 +555,7 @@ function ManualEntryGroup({ group, entries, onAdd, onRemove, courseOptions }) {
       )}
 
       {target == null && (
-        <p className="s3-manual-progress s3-manual-progress--unknown">
+        <p className="m-0 mt-1 text-[0.85rem] italic text-[#8a8d8f]/70">
           {total} SCH logged (not counted toward hours left — this requirement's exact
           SCH isn't in the catalog data)
         </p>
@@ -583,14 +585,16 @@ function RequirementSection({
   if (query && visibleGroups.length === 0) return null;
 
   return (
-    <section className="s3-section">
-      <button className="s3-section-header" onClick={() => setOpen((o) => !o)} type="button">
-        <span className="s3-section-title">{section.title}</span>
-        <span className="s3-section-hours">{section.credit_hours} SCH</span>
-        <span className={`s3-caret${open ? " s3-caret--open" : ""}`} aria-hidden="true" />
+    <section className="overflow-hidden rounded-xl border border-[#1f5c43]/80 bg-[#0b1c17]/80">
+      <button className="flex w-full items-center justify-between gap-4 bg-transparent px-4 py-3 text-left text-[#f2f5f3]" onClick={() => setOpen((o) => !o)} type="button">
+        <span className="text-base font-semibold text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>{section.title}</span>
+        <span className="flex items-center gap-3 text-[0.8rem] uppercase tracking-[0.08em] text-[#8a8d8f]">
+          {section.credit_hours} SCH
+          <span className={`inline-block h-0 w-0 border-l-[6px] border-r-[6px] border-b-[7px] border-l-transparent border-r-transparent border-b-[#8a8d8f] transition-transform ${open ? "rotate-180" : ""}`} aria-hidden="true" />
+        </span>
       </button>
       {open && (
-        <div className="s3-section-body">
+        <div className="border-t border-[#1f5c43]/80 px-3 py-2 md:px-4">
           {visibleGroups.map(({ g, gi }) => {
             const key = `${sectionIndex}-${gi}`;
             if (g.courses.length === 0) {
@@ -883,30 +887,32 @@ export default function Step3AcademicHistory({
   const doneCount = [...allCodes].filter((c) => completed.has(c)).length;
 
   return (
-    <div className="s3-screen">
-      <header className="s3-header">
-        <div className="s3-header-intro">
-          <h1 className="s3-heading">Your academic history</h1>
-          <p className="s3-subheading">
-            Upload a transcript or check off completed courses for <strong>{major}</strong>.
+    <div className="relative z-10 flex w-full min-h-0 flex-col gap-5 rounded-[18px] border border-[#1f5c43] bg-[#081712]/90 p-4 shadow-[0_18px_40px_rgba(0,0,0,0.25)] md:p-6">
+      <header className="flex flex-wrap items-start justify-between gap-4 border-b border-[#1f5c43]/80 pb-4">
+        <div className="space-y-2">
+          <h1 className="m-0 text-[clamp(2.4rem,4vw,3rem)] font-bold leading-none tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
+            Your academic history
+          </h1>
+          <p className="m-0 text-[1.05rem] text-[#8a8d8f]">
+            Upload a transcript or check off completed courses for <strong className="font-semibold text-[#5fe0b7]">{major}</strong>.
           </p>
         </div>
 
-        <div className="s3-header-actions">
+        <div className="flex flex-wrap items-center gap-4">
           {catalog && totalHours != null && (
-            <div className="s3-hours-banner">
-              <span className="s3-hours-banner__value">{hoursLeft}</span>
-              <span className="s3-hours-banner__label">
+            <div className="flex items-baseline gap-3 rounded-lg border border-[#5fe0b7]/30 bg-[#154734]/50 px-4 py-3">
+              <span className="text-[2.6rem] font-bold leading-none text-[#5fe0b7]" style={{ fontFamily: "var(--font-display)" }}>{hoursLeft}</span>
+              <span className="flex flex-col text-[0.82rem] uppercase tracking-[0.03em] text-[#8a8d8f]">
                 SCH left to graduate
-                <span className="s3-hours-banner__sub">
+                <span className="normal-case tracking-normal text-[#8a8d8f]">
                   {hoursEarned} of {totalHours} satisfied
                 </span>
               </span>
             </div>
           )}
 
-          <div className="s3-upload">
-            <label className={`s3-upload-button${transcriptParsing ? " s3-upload-button--busy" : ""}`}>
+          <div className="flex items-center gap-3">
+            <label className={`inline-flex cursor-pointer items-center justify-center rounded-md border border-[#5fe0b7] bg-transparent px-4 py-2.5 text-[0.88rem] font-semibold uppercase tracking-[0.04em] text-[#5fe0b7] transition-colors duration-150 hover:bg-[#5fe0b7] hover:text-[#06110d] ${transcriptParsing ? "cursor-default opacity-60" : ""}`}>
               {transcriptParsing ? "Reading…" : "Upload transcript"}
               <input
                 type="file"
@@ -916,22 +922,22 @@ export default function Step3AcademicHistory({
                 hidden
               />
             </label>
-            {transcriptFile && <span className="s3-upload-filename">{transcriptFile.name}</span>}
+            {transcriptFile && <span className="max-w-[140px] truncate text-[0.88rem] text-[#8a8d8f]">{transcriptFile.name}</span>}
           </div>
         </div>
       </header>
 
-      {transcriptNote && <p className="s3-upload-note">{transcriptNote}</p>}
+      {transcriptNote && <p className="rounded-lg border border-[#1f5c43]/80 bg-[#113125]/60 px-3 py-2 text-[0.95rem] text-[#cfe3db]">{transcriptNote}</p>}
 
       {degreeTypes.length > 1 && !resolvedDegreeType && (
-        <div className="s3-degree-picker">
-          <p className="s3-degree-picker__label">Which degree track?</p>
-          <div className="s3-degree-picker__options">
+        <div className="rounded-xl border border-[#1f5c43]/80 bg-[#0d1b18] p-4">
+          <p className="m-0 mb-3 text-[0.85rem] font-semibold uppercase tracking-[0.08em] text-[#8a8d8f]">Which degree track?</p>
+          <div className="flex flex-wrap gap-2">
             {degreeTypes.map((type) => (
               <button
                 key={type}
                 type="button"
-                className="s3-degree-picker__btn"
+                className="rounded-full border border-[#5fe0b7]/60 bg-transparent px-4 py-2 text-[0.95rem] text-[#f2f5f3] transition-colors hover:bg-[#5fe0b7]/15"
                 onClick={() => setSelectedDegreeType(type)}
               >
                 {major} ({type})
@@ -941,24 +947,24 @@ export default function Step3AcademicHistory({
         </div>
       )}
 
-      {loadError && <p className="s3-error">{loadError}</p>}
+      {loadError && <p className="text-[1rem] text-[#ff9d8a]">{loadError}</p>}
 
       {catalog && (
         <>
-          <div className="s3-toolbar">
+          <div className="flex items-center justify-between gap-4 border-b border-[#1f5c43]/80 pb-4">
             <input
               type="text"
-              className="s3-search"
+              className="flex-1 border-0 border-b border-[#8a8d8f]/60 bg-transparent px-1 py-2 text-[1.05rem] text-[#f2f5f3] placeholder:text-[#8a8d8f] focus:border-[#5fe0b7] focus:outline-none"
               placeholder="Search courses (e.g. CS 3345 or Data Structures)"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
-            <span className="s3-progress">
+            <span className="whitespace-nowrap text-[0.8rem] uppercase tracking-[0.06em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
               {doneCount} of {allCodes.size} listed courses checked
             </span>
           </div>
 
-          <div className="s3-requirements">
+          <div className="space-y-4">
             {catalog.sections.map((section, i) => (
               <RequirementSection
                 key={`${section.title}-${i}`}
@@ -979,14 +985,14 @@ export default function Step3AcademicHistory({
         </>
       )}
 
-      {!catalog && !loadError && <p className="s3-loading">Loading degree requirements…</p>}
+      {!catalog && !loadError && <p className="text-[1rem] text-[#8a8d8f]">Loading degree requirements…</p>}
 
-      <div className="s3-footer">
-        <button className="s3-btn s3-btn--ghost" type="button" onClick={onBack}>
+      <div className="mt-2 flex justify-end gap-3 border-t border-[#1f5c43]/80 pt-4">
+        <button className="rounded-full border border-[#1f5c43] bg-transparent px-8 py-4 text-[1.05rem] text-[#f2f5f3] transition-colors duration-200 hover:border-[#8a8d8f]" type="button" onClick={onBack}>
           Back
         </button>
         <button
-          className="s3-btn s3-btn--primary"
+          className="rounded-full border border-transparent bg-[#e87500] px-8 py-4 text-[1.05rem] font-medium text-[#f2f5f3] transition-transform duration-150 enabled:hover:translate-y-[-1px] disabled:cursor-not-allowed disabled:opacity-40"
           type="button"
           disabled={!catalog}
           onClick={() =>

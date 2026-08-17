@@ -23,7 +23,7 @@ const GRID_STARS = [
 export function ScheduleGridBackdrop() {
   return (
     <svg
-      className="grid-backdrop"
+      className="pointer-events-none absolute inset-0 opacity-90"
       viewBox="0 0 800 500"
       preserveAspectRatio="xMidYMid slice"
       aria-hidden="true"
@@ -58,27 +58,28 @@ export function CometFlyby() {
 // clickable; anything past it is shown but inert (not yet reachable).
 export function StepIndicator({ current, furthest = current, onNavigate }) {
   return (
-    <ol className="step-indicator">
+    <ol className="m-0 flex list-none gap-7 p-0 text-[0.8rem]">
       {STEP_ITEMS.map((step, i) => {
         const unlocked = i <= furthest;
+        const isActive = i === current;
+        const isDone = i < current;
         return (
-          <li
-            key={step.n}
-            className={[
-              i === current ? "is-active" : i < current ? "is-done" : "",
-              unlocked ? "is-clickable" : "",
-            ]
-              .filter(Boolean)
-              .join(" ")}
-          >
+          <li key={step.n} className="flex items-baseline">
             <button
               type="button"
-              className="step-indicator__button"
+              className={[
+                "flex items-baseline gap-2 border-0 bg-transparent p-0 font-mono text-sm transition-colors duration-200",
+                unlocked ? "cursor-pointer" : "cursor-default",
+                isActive ? "text-[#e87500]" : isDone ? "text-[#f2f5f3]" : "text-[#8a8d8f]",
+                unlocked && !isActive ? "hover:text-[#f2f5f3]" : "",
+              ]
+                .filter(Boolean)
+                .join(" ")}
               disabled={!unlocked}
               onClick={() => onNavigate && onNavigate(i)}
             >
-              <span className="step-indicator__num">{step.n}</span>
-              <span className="step-indicator__label">{step.label}</span>
+              <span className="font-medium tracking-[0.06em]" style={{ fontFamily: "var(--font-mono)" }}>{step.n}</span>
+              <span className="hidden sm:inline" style={{ fontFamily: "var(--font-mono)" }}>{step.label}</span>
             </button>
           </li>
         );
