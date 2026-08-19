@@ -34,7 +34,7 @@ type Section = {
   term: string;
   isHonors: boolean;
   score?: number;
-  instructorRatings?: Array<{ name: string; rating?: number; total?: number; count?: number }>;
+  instructorRatings?: Array<{ name: string; gradeRating: number | null; gradeIsCourseSpecific: boolean; rmpQuality: number | null }>;
 };
 
 type CourseSectionList = {

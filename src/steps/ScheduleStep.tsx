@@ -6,6 +6,7 @@ import { rmpProfileUrl } from "../lib/professorRatings";
 import ScheduleCalendar from "../components/ScheduleCalendar";
 import Skeleton from "../components/Skeleton";
 import CountUp from "../components/CountUp";
+import { HoverCard } from "../components/lightswind/hover-card";
 
 export default function ScheduleStep({ courses, constraints, isHonors, onBack }) {
   const [result, setResult] = useState(null);
@@ -186,21 +187,44 @@ export default function ScheduleStep({ courses, constraints, isHonors, onBack })
                   <p className="mt-1 mb-0 text-[0.95rem] text-[#f2f5f3]">{section.label}</p>
                   {instructorRatings.length > 0 && (
                     <ul className="mt-1.5 list-none space-y-1 p-0">
-                      {instructorRatings.map(({ name, gradeRating, gradeIsCourseSpecific }) => (
+                      {instructorRatings.map(({ name, gradeRating, gradeIsCourseSpecific, rmpQuality }) => (
                         <li key={name} className="flex flex-wrap items-baseline gap-2.5">
                           <span className="text-[0.8rem] text-[#f2f5f3]">
                             {gradeRating != null
                               ? `${gradeRating.toFixed(2)} GPA ${gradeIsCourseSpecific ? `in ${code}` : "(overall)"}`
                               : "No grade data"}
                           </span>
-                          <a
-                            className="text-[0.8rem] text-[#5fe0b7] no-underline hover:underline"
-                            href={rmpProfileUrl(name, section.term)}
-                            target="_blank"
-                            rel="noreferrer"
+                          <HoverCard
+                            trigger={
+                              <a
+                                className="text-[0.8rem] text-[#5fe0b7] no-underline hover:underline"
+                                href={rmpProfileUrl(name, section.term)}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {name} ratings ↗
+                              </a>
+                            }
                           >
-                            {name} ratings ↗
-                          </a>
+                            <p className="m-0 text-[0.85rem] font-semibold text-[#f2f5f3]">{name}</p>
+                            <dl className="mt-2 mb-0 space-y-1.5 text-[0.78rem] text-[#b0b8b5]">
+                              <div className="flex items-center justify-between gap-3">
+                                <dt>GPA{gradeIsCourseSpecific ? ` in ${code}` : " (overall)"}</dt>
+                                <dd className="m-0 font-medium text-[#f2f5f3]">
+                                  {gradeRating != null ? gradeRating.toFixed(2) : "—"}
+                                </dd>
+                              </div>
+                              <div className="flex items-center justify-between gap-3">
+                                <dt>RateMyProfessors</dt>
+                                <dd className="m-0 font-medium text-[#f2f5f3]">
+                                  {rmpQuality != null ? `${rmpQuality.toFixed(1)} / 5` : "—"}
+                                </dd>
+                              </div>
+                            </dl>
+                            <p className="mt-2 mb-0 text-[0.72rem] text-[#8a8d8f]">
+                              Click to open the full profile on trends.utdnebula.com.
+                            </p>
+                          </HoverCard>
                         </li>
                       ))}
                     </ul>

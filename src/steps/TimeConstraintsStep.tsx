@@ -2,6 +2,8 @@ import React, { useMemo, useCallback } from "react";
 import { Badge } from "../components/lightswind/badge";
 import { Button } from "../components/lightswind/button";
 import { Input } from "../components/lightswind/input";
+import { Tooltip } from "../components/lightswind/tooltip";
+import { GRADE_HARD_FILTER_THRESHOLDS, RMP_HARD_FILTER_THRESHOLDS } from "../lib/professorRatings";
 
 // Days and labeled time blocks for the UI. Kept as constants to avoid
 // recreating these arrays on every render.
@@ -18,6 +20,16 @@ const IMPORTANCE_LEVELS = [
   { id: 2, label: "2 · Somewhat" },
   { id: 3, label: "3 · Very important" },
 ];
+
+// Describes what a given importance level actually filters out, using
+// the same thresholds the scheduling engine enforces (professorRatings.js)
+// — so this can't drift out of sync with what the level really does.
+function describeLevel(levelId, thresholds, metricLabel) {
+  const threshold = thresholds[levelId];
+  return threshold == null
+    ? "No filter — every section stays eligible."
+    : `Excludes sections where the professor's ${metricLabel} is below ${threshold}.`;
+}
 
 // Toggle helper implemented with a Set to make intent clear and avoid
 // an extra iteration when adding/removing items (small constant overhead
@@ -118,19 +130,20 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
           </legend>
           <div className="flex flex-wrap gap-3">
             {IMPORTANCE_LEVELS.map((level) => (
-              <button
-                type="button"
-                key={level.id}
-                className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
-                  data.gradeImportance === level.id
-                    ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f5d5b2] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"
-                    : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
-                }`}
-                aria-pressed={data.gradeImportance === level.id}
-                onClick={() => onChange({ ...data, gradeImportance: level.id })}
-              >
-                {level.label}
-              </button>
+              <Tooltip key={level.id} content={describeLevel(level.id, GRADE_HARD_FILTER_THRESHOLDS, "GPA average")}>
+                <button
+                  type="button"
+                  className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
+                    data.gradeImportance === level.id
+                      ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f5d5b2] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"
+                      : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
+                  }`}
+                  aria-pressed={data.gradeImportance === level.id}
+                  onClick={() => onChange({ ...data, gradeImportance: level.id })}
+                >
+                  {level.label}
+                </button>
+              </Tooltip>
             ))}
           </div>
         </fieldset>
@@ -141,19 +154,20 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
           </legend>
           <div className="flex flex-wrap gap-3">
             {IMPORTANCE_LEVELS.map((level) => (
-              <button
-                type="button"
-                key={level.id}
-                className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
-                  data.rmpImportance === level.id
-                    ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f5d5b2] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"
-                    : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
-                }`}
-                aria-pressed={data.rmpImportance === level.id}
-                onClick={() => onChange({ ...data, rmpImportance: level.id })}
-              >
-                {level.label}
-              </button>
+              <Tooltip key={level.id} content={describeLevel(level.id, RMP_HARD_FILTER_THRESHOLDS, "RateMyProfessors rating")}>
+                <button
+                  type="button"
+                  className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
+                    data.rmpImportance === level.id
+                      ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f5d5b2] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"
+                      : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
+                  }`}
+                  aria-pressed={data.rmpImportance === level.id}
+                  onClick={() => onChange({ ...data, rmpImportance: level.id })}
+                >
+                  {level.label}
+                </button>
+              </Tooltip>
             ))}
           </div>
         </fieldset>

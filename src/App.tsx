@@ -6,6 +6,7 @@ import {
   StepIndicator,
 } from "./components/AppShellDecorations";
 import { Card } from "./components/lightswind/card";
+import { Toaster } from "./components/lightswind/toast";
 import QuestionnaireStep from "./steps/QuestionnaireStep";
 import TimeConstraintsStep from "./steps/TimeConstraintsStep";
 import AcademicHistory from "./components/AcademicHistory";
@@ -62,7 +63,7 @@ export default function App() {
 
   return (
     <div className="relative flex min-h-screen flex-col overflow-hidden bg-[#06120f] text-[#f2f5f3]">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(95,224,183,0.12),transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(232,117,0,0.12),transparent_24%)]" />
+      <Toaster />
       <ScheduleGridBackdrop />
       {stage === STAGE.PROFILE && <CometFlyby />}
 

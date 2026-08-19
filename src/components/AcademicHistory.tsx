@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { Badge } from "./lightswind/badge";
 import { Button } from "./lightswind/button";
+import { Alert } from "./lightswind/alert";
+import { toast } from "./lightswind/toast";
 import { extractCompletedCourses, loadCoreCurriculum, coreCurriculumUrl, assignCoreCategories } from "../lib/parseTranscript";
 import {
   catalogBaseUrl,
@@ -825,7 +827,8 @@ export default function Step3AcademicHistory({
     }
 
     setTranscriptParsing(true);
-    setTranscriptNote("Reading transcript…");
+    setTranscriptNote("");
+    toast("Reading transcript…");
     try {
       const extracted = await extractCompletedCourses(file);
       const foundCodes = [...extracted.values()].filter((c) => c.completed).map((c) => c.code);
@@ -968,7 +971,7 @@ export default function Step3AcademicHistory({
         </div>
       )}
 
-      {loadError && <p className="text-[1rem] text-[#ffb4a7]">{loadError}</p>}
+      {loadError && <Alert>{loadError}</Alert>}
 
       {catalog && (
         <>
