@@ -56,6 +56,22 @@ export function slugify(majorName) {
   return majorName.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
 }
 
+// Screen 3 tracks "done" two ways: `completed` (checkboxes against a
+// group's own explicit course list) and `manualEntries` (free-form logs
+// against groups with no explicit list, e.g. Government/Political
+// Science on majors where the catalog doesn't spell out GOVT 2305/2306,
+// or Component Area Option's extras). Anything that needs to know "has
+// the student already taken this course" — not just "is this specific
+// requirement group's checklist satisfied" — needs the union of both,
+// or a manually-logged course keeps showing back up as pickable.
+export function takenCourseCodes(completed, manualEntries) {
+  const codes = new Set(completed);
+  Object.values(manualEntries || {}).forEach((entries) => {
+    (entries as Array<{ code: string }>).forEach((e) => codes.add(e.code));
+  });
+  return codes;
+}
+
 export function optionSatisfied(option, completed) {
   if (!completed.has(option.code)) return false;
   return option.with.every((w) => completed.has(w.code));
@@ -149,12 +165,13 @@ export function findGroupByLabel(catalog, label) {
 // History, Creative Arts, etc.), looks up the matching category in
 // core_curriculum.json and returns its course list, so a manual-entry
 // or recommendation form can offer a dropdown instead of free text.
-export function buildOpenGroupCourseOptions(catalog, coreCurriculum) {
+export function buildOpenGroupCourseOptions(catalog, coreCurriculum, completed = new Set()) {
   const options = {};
   for (const { si, gi, group } of findOpenCoreGroups(catalog)) {
     const category = coreCurriculum.find((c) => normalizeLabel(c.name) === normalizeLabel(group.label));
     if (!category) continue;
     options[`${si}-${gi}`] = category.courses
+      .filter((c) => !completed.has(c.code))
       .map((c) => ({ code: c.code, name: c.name }))
       .sort((a, b) => a.code.localeCompare(b.code));
   }
@@ -176,7 +193,7 @@ export function buildOpenGroupCourseOptions(catalog, coreCurriculum) {
 // nothing for a group with no such sibling — free text stays the
 // fallback, same as today.
 const ELECTIVE_RE = /elective/i;
-export function buildMajorElectiveOptions(catalog) {
+export function buildMajorElectiveOptions(catalog, completed) {
   const options = {};
   catalog.sections.forEach((section, si) => {
     if (section.title === "Core Curriculum Requirements") return; // handled above, via core_curriculum.json
@@ -209,6 +226,7 @@ export function buildMajorElectiveOptions(catalog) {
       if (!pool.size) return;
 
       options[`${si}-${gi}`] = [...pool.values()]
+        .filter((c) => !completed.has(c.code))
         .map((c) => ({ code: c.code, name: c.title || c.code }))
         .sort((a, b) => a.code.localeCompare(b.code));
     });

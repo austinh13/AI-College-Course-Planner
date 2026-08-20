@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import Eyebrow from "../components/Eyebrow";
 import { Button } from "../components/lightswind/button";
 import { Input } from "../components/lightswind/input";
-import { catalogBaseUrl, resolveMajorKey, undergradDegreeTypes, slugify, buildOpenGroupCourseOptions, buildMajorElectiveOptions } from "../lib/catalog";
+import { catalogBaseUrl, resolveMajorKey, undergradDegreeTypes, slugify, buildOpenGroupCourseOptions, buildMajorElectiveOptions, takenCourseCodes } from "../lib/catalog";
 import { loadCoreCurriculum, coreCurriculumUrl } from "../lib/parseTranscript";
 import { loadClasses, recommend, prereqSatisfied } from "../lib/recommendCourses";
 import Skeleton from "../components/Skeleton";
@@ -10,6 +10,12 @@ import Skeleton from "../components/Skeleton";
 export default function ReviewStep({ profile, constraints, academicHistory, overrides, onOverridesChange, manualElectiveEntry, onManualElectiveEntryChange, onEdit, onContinue }) {
   const { major, year: startYear } = profile;
   const { completed, manualEntries } = academicHistory;
+  // `completed` only covers checkbox-driven explicit-list groups; a course
+  // logged via Screen 3's manual-entry dropdown for an open group (e.g.
+  // Government/Political Science when the catalog doesn't list GOVT
+  // 2305/2306 explicitly) never sets a checkbox, so anywhere this screen
+  // decides "has the student already taken X" needs the union of both.
+  const taken = useMemo(() => takenCourseCodes(completed, manualEntries), [completed, manualEntries]);
   // academicHistory.degreeType is set once Screen 3 has resolved it; if a
   // major only has a single BA/BS option that's determined without ever
   // needing user input, so fall back to computing it the same way Screen
@@ -102,10 +108,10 @@ export default function ReviewStep({ profile, constraints, academicHistory, over
   const openGroupOptions = useMemo(() => {
     if (!catalog) return {};
     return {
-      ...buildMajorElectiveOptions(catalog),
-      ...(coreCurriculum ? buildOpenGroupCourseOptions(catalog, coreCurriculum) : {}),
+      ...buildMajorElectiveOptions(catalog, taken),
+      ...(coreCurriculum ? buildOpenGroupCourseOptions(catalog, coreCurriculum, taken) : {}),
     };
-  }, [catalog, coreCurriculum]);
+  }, [catalog, coreCurriculum, taken]);
 
   const result = useMemo(() => {
     if (!catalog || !classesMap) {
@@ -124,7 +130,7 @@ export default function ReviewStep({ profile, constraints, academicHistory, over
   const setManualElectiveEntry = (updater) =>
     onManualElectiveEntryChange(typeof updater === "function" ? updater(manualElectiveEntry) : updater);
 
-  const prereqStatus = (code) => prereqSatisfied(classesMap?.[code]?.prereq, completed);
+  const prereqStatus = (code) => prereqSatisfied(classesMap?.[code]?.prereq, taken);
 
   const codesForSlot = (slot) => overrides[slot.groupKey] || slot.picks.map((p) => p.code);
   const courseFromPool = (slot, code) => slot.options.find((o) => o.code === code) || { code, name: code, hours: 3, prereqText: "" };

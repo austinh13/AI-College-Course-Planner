@@ -9,7 +9,7 @@
  * mandatory courses + 1-2 core electives that sum close to the
  * student's target weekly hours.
  */
-import { optionSatisfied, groupSatisfied, creditHoursFromCode, parseHours, explicitGroupHoursEarned, loadClasses } from "./catalog";
+import { optionSatisfied, groupSatisfied, creditHoursFromCode, parseHours, explicitGroupHoursEarned, loadClasses, takenCourseCodes } from "./catalog";
 
 export { loadClasses };
 
@@ -166,6 +166,12 @@ const ELECTIVE_DEFAULT_HOURS = 3;
 // Groups already satisfied by hours (not just by every course checked
 // off) are excluded entirely, whichever kind they are.
 function buildCandidates(catalog, completed, manualEntries, classesMap) {
+  // `completed` is checkbox-only (explicit-list groups); a course logged
+  // via manual entry against an open group (e.g. GOVT 2305 under
+  // Government/Political Science on majors where that group has no
+  // explicit list) never sets a checkbox anywhere, so option pools need
+  // the union of both to avoid re-offering it.
+  const taken = takenCourseCodes(completed, manualEntries);
   const slots = [];
   const openGroups = [];
 
@@ -193,9 +199,9 @@ function buildCandidates(catalog, completed, manualEntries, classesMap) {
 
       const options = sortByPriority(
         group.courses
-          .filter((opt) => !optionSatisfied(opt, completed))
-          .flatMap((opt) => [opt, ...opt.alternatives])
-          .map((o) => enrichOption(o, classesMap, completed))
+          .filter((opt) => !optionSatisfied(opt, taken))
+          .flatMap((opt) => [opt, ...opt.alternatives.filter((alt) => !optionSatisfied(alt, taken))])
+          .map((o) => enrichOption(o, classesMap, taken))
       );
       if (!options.length) return;
       slots.push({
