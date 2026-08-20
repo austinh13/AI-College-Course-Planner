@@ -225,69 +225,92 @@ function buildCandidates(catalog, completed, manualEntries, classesMap) {
 const ELECTIVE_LABEL_RE = /elective/i;
 const isElectiveSlot = (slot) => ELECTIVE_LABEL_RE.test(slot.sectionTitle) || ELECTIVE_LABEL_RE.test(slot.label);
 const isElectiveGroup = (group) => ELECTIVE_LABEL_RE.test(group.sectionTitle) || ELECTIVE_LABEL_RE.test(group.label);
-const MAX_GUARANTEED_ELECTIVES = 2;
+const isCoreCurriculum = (item) => item.sectionTitle === "Core Curriculum Requirements";
 
-// Fills each slot's own remaining SCH need from its priority-sorted
-// pool (prereqs-satisfied and lower-level courses first), then flags
-// open elective categories still needed, until the term's target hours
-// is reached or nothing eligible is left to add. No hard cap on how
-// many slots/electives get picked — "2-3 mandatory + 1-2 electives" is
-// the typical shape that falls out of this, not an enforced limit that
-// would stop early while eligible courses are still on the table.
+// Ranks every slot that has real course options — Core Curriculum's
+// fixed-list groups, Major Preparatory/Core Courses, and Major Technical
+// Elective lists — together by prereqs-satisfied first, then course level
+// ascending, so a brand-new student's many eligible 1000/2000-level
+// requirements always sort ahead of a 3000/4000-level major-technical
+// elective. On an exact level tie between a Core Curriculum course and a
+// major-technical elective, Core Curriculum wins (lower-level core
+// requirements trump major technical); Major Prep/Core courses get no
+// such boost over major-technical beyond whatever their actual level gives
+// them.
+function rankLeveled(slots) {
+  return [...slots].sort((a, b) => {
+    const aOk = a.options[0].prereqOk;
+    const bOk = b.options[0].prereqOk;
+    if (aOk !== bOk) return aOk ? -1 : 1;
+    const aLevel = a.options[0].level;
+    const bLevel = b.options[0].level;
+    if (aLevel !== bLevel) return aLevel - bLevel;
+    if (isCoreCurriculum(a) && isElectiveSlot(b)) return -1;
+    if (isCoreCurriculum(b) && isElectiveSlot(a)) return 1;
+    return 0;
+  });
+}
+
+// Ranks open/no-fixed-course groups (Free Electives, empty elective
+// categories, open Core Curriculum categories like Creative Arts) in the
+// order "core requirements, general electives, or major technical
+// electives" — Core Curriculum's open categories first, then general
+// electives, then major-technical-labeled open groups.
+function rankFlexible(openGroups) {
+  const tier = (group) =>
+    isCoreCurriculum(group) ? 0 : isElectiveGroup(group) ? (group.sectionTitle === "Elective Requirements" ? 1 : 2) : 3;
+  return [...openGroups].sort((a, b) => tier(a) - tier(b));
+}
+
+// Fills the level-ranked pool and the flexible (no-fixed-course) pool
+// against the term's target hours, until the target is reached or nothing
+// eligible is left to add. The flexible pool gets a target-hours-scaled
+// reservation so it can't be crowded out by an always-available lower-level
+// backbone requirement — 1 guaranteed pick per ~9 hours (3 mandatory
+// courses), growing with the load. No hard cap otherwise: whichever pool
+// still has eligible items keeps filling once the other runs dry.
 export function recommend({ catalog, completed, manualEntries, classesMap, targetHours }) {
   const { slots, openGroups } = buildCandidates(catalog, completed, manualEntries || {}, classesMap);
   const target = Number(targetHours) || 15;
+
+  const leveled = rankLeveled(slots);
+  const flexible = rankFlexible(openGroups);
+
+  const electiveQuota = Math.max(1, Math.floor(target / 9));
+  const reservedHours = Math.min(target, electiveQuota * ELECTIVE_DEFAULT_HOURS);
 
   const slotPicks = [];
   const electivePicks = [];
   let hours = 0;
 
-  // Guaranteed-elective pass: up to 2 picks, one representative course
-  // each — not the slot's full remaining SCH — so a catalog quirk (a
-  // group with no declared credit_hours falls back to summing every
-  // option in its list, which can be much larger than a real term's
-  // worth) can't eat the whole term's budget on its own.
-  const electiveCandidates = [
-    ...slots.filter(isElectiveSlot).map((slot) => ({ kind: "slot", item: slot })),
-    ...openGroups.filter(isElectiveGroup).map((group) => ({ kind: "group", item: group })),
-  ];
-  let guaranteed = 0;
-  for (const { kind, item } of electiveCandidates) {
-    if (guaranteed >= MAX_GUARANTEED_ELECTIVES) break;
-    if (kind === "slot") {
-      const firstOption = item.options[0];
-      slotPicks.push({ ...item, picks: [firstOption] });
-      hours += firstOption.hours;
-    } else {
-      electivePicks.push(item);
-      hours += Math.min(item.remainingHours, ELECTIVE_DEFAULT_HOURS);
+  const fillLeveled = (budget) => {
+    for (const slot of leveled) {
+      if (slotPicks.some((s) => s.groupKey === slot.groupKey)) continue;
+      if (hours >= budget) break;
+      const picks = [];
+      let filled = 0;
+      for (const opt of slot.options) {
+        if (filled >= slot.remainingHours || hours >= budget) break;
+        picks.push(opt);
+        filled += opt.hours;
+        hours += opt.hours;
+      }
+      if (picks.length) slotPicks.push({ ...slot, picks });
     }
-    guaranteed++;
-  }
+  };
 
-  const pickedSlotKeys = new Set(slotPicks.map((s) => s.groupKey));
-  const pickedGroupKeys = new Set(electivePicks.map((g) => g.groupKey));
-
-  for (const slot of slots) {
-    if (pickedSlotKeys.has(slot.groupKey)) continue;
-    if (hours >= target) break;
-    const picks = [];
-    let filled = 0;
-    for (const opt of slot.options) {
-      if (filled >= slot.remainingHours || hours >= target) break;
-      picks.push(opt);
-      filled += opt.hours;
-      hours += opt.hours;
+  const fillFlexible = (budget) => {
+    for (const group of flexible) {
+      if (electivePicks.some((g) => g.groupKey === group.groupKey)) continue;
+      if (hours >= budget) break;
+      electivePicks.push(group);
+      hours += Math.min(group.remainingHours, ELECTIVE_DEFAULT_HOURS);
     }
-    if (picks.length) slotPicks.push({ ...slot, picks });
-  }
+  };
 
-  for (const group of openGroups) {
-    if (pickedGroupKeys.has(group.groupKey)) continue;
-    if (hours >= target) break;
-    electivePicks.push(group);
-    hours += Math.min(group.remainingHours, ELECTIVE_DEFAULT_HOURS);
-  }
+  fillLeveled(target - reservedHours);
+  fillFlexible(target);
+  fillLeveled(target);
 
   // Best case if we ignored the target entirely and used every eligible
   // (prereq-satisfied) course left: tells us whether falling short is a
