@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 // "error" matches the red tone already used for AcademicHistory's load
 // errors; "warning" matches the amber box style already used for
 // ReviewStep's shortfall-hours message.
-const alertVariants = cva("rounded-2xl border px-4 py-3 text-[0.95rem]", {
+const alertVariants = cva("rounded-2xl border px-4 py-3 text-base", {
   variants: {
     variant: {
       error: "border-[#ff6b57]/30 bg-[#ff6b57]/10 text-[#ffb4a7]",

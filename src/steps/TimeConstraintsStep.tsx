@@ -1,9 +1,7 @@
 import React, { useMemo, useCallback } from "react";
-import { Badge } from "../components/lightswind/badge";
+import Eyebrow from "../components/Eyebrow";
 import { Button } from "../components/lightswind/button";
 import { Input } from "../components/lightswind/input";
-import { Tooltip } from "../components/lightswind/tooltip";
-import { GRADE_HARD_FILTER_THRESHOLDS, RMP_HARD_FILTER_THRESHOLDS } from "../lib/professorRatings";
 
 // Days and labeled time blocks for the UI. Kept as constants to avoid
 // recreating these arrays on every render.
@@ -14,22 +12,6 @@ const TIME_BLOCKS = [
   { id: "afternoon", label: "Afternoon (12–4pm)" },
   { id: "evening", label: "Evening (4pm+)" },
 ];
-
-const IMPORTANCE_LEVELS = [
-  { id: 1, label: "1 · None" },
-  { id: 2, label: "2 · Somewhat" },
-  { id: 3, label: "3 · Very important" },
-];
-
-// Describes what a given importance level actually filters out, using
-// the same thresholds the scheduling engine enforces (professorRatings.js)
-// — so this can't drift out of sync with what the level really does.
-function describeLevel(levelId, thresholds, metricLabel) {
-  const threshold = thresholds[levelId];
-  return threshold == null
-    ? "No filter — every section stays eligible."
-    : `Excludes sections where the professor's ${metricLabel} is below ${threshold}.`;
-}
 
 // Toggle helper implemented with a Set to make intent clear and avoid
 // an extra iteration when adding/removing items (small constant overhead
@@ -66,28 +48,26 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
   return (
     <form className="mx-auto flex w-full max-w-[640px] flex-col gap-7" onSubmit={handleSubmit}>
       <div className="space-y-3">
-        <Badge variant="warning" className="inline-flex w-fit border border-[#e87500]/30 bg-[#e87500]/10 px-2.5 py-1 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-[#f5d5b2]" style={{ fontFamily: "var(--font-mono)" }}>
-          Step 02
-        </Badge>
-        <h1 className="m-0 text-[clamp(2.5rem,5.5vw,3.5rem)] font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
+        <Eyebrow>Step 02</Eyebrow>
+        <h1 className="m-0 text-display font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
           Now, block off
           <br />
           your week.
         </h1>
-        <p className="-mt-1 mb-0 max-w-[38ch] text-[0.98rem] text-[#9aa8a2]">We'll only place classes inside the space you leave open.</p>
+        <p className="-mt-1 mb-0 max-w-[38ch] text-base text-[#9aa8a2]">We'll only place classes inside the space you leave open.</p>
       </div>
 
-      <div className="space-y-7 rounded-[24px] border border-white/10 bg-[#0d1b18]/70 p-4 sm:p-5">
+      <div className="space-y-9 rounded-panel border border-white/10 bg-[#0d1b18]/70 p-5 sm:p-6">
         <fieldset className="m-0 border-0 p-0">
-          <legend className="mb-3 block text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+          <legend className="mb-4 block text-xs font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
             Days you want off
           </legend>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3.5">
             {DAYS.map((day) => (
               <button
                 type="button"
                 key={day}
-                className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
+                className={`rounded-full border px-5 py-3 text-base transition-all duration-200 ${
                   data.daysOff.includes(day)
                     ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f5d5b2] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"
                     : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
@@ -102,15 +82,15 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
         </fieldset>
 
         <fieldset className="m-0 border-0 p-0">
-          <legend className="mb-3 block text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+          <legend className="mb-4 block text-xs font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
             Preferred time blocks
           </legend>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3.5">
             {TIME_BLOCKS.map((block) => (
               <button
                 type="button"
                 key={block.id}
-                className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
+                className={`rounded-full border px-5 py-3 text-base transition-all duration-200 ${
                   data.timeBlocks.includes(block.id)
                     ? "border-[#5fe0b7]/40 bg-[#5fe0b7]/10 text-[#dffcf5] shadow-[0_0_0_1px_rgba(95,224,183,0.15)]"
                     : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
@@ -124,56 +104,50 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
           </div>
         </fieldset>
 
-        <fieldset className="m-0 border-0 p-0">
-          <legend className="mb-3 block text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
-            How much do past grades matter?
-          </legend>
-          <div className="flex flex-wrap gap-3">
-            {IMPORTANCE_LEVELS.map((level) => (
-              <Tooltip key={level.id} content={describeLevel(level.id, GRADE_HARD_FILTER_THRESHOLDS, "GPA average")}>
-                <button
-                  type="button"
-                  className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
-                    data.gradeImportance === level.id
-                      ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f5d5b2] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"
-                      : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
-                  }`}
-                  aria-pressed={data.gradeImportance === level.id}
-                  onClick={() => onChange({ ...data, gradeImportance: level.id })}
-                >
-                  {level.label}
-                </button>
-              </Tooltip>
-            ))}
-          </div>
-        </fieldset>
+        <div className="grid gap-6 md:grid-cols-2">
+          <label className="flex flex-col gap-2.5">
+            <span className="text-xs font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+              Minimum GPA
+            </span>
+            <Input
+              type="number"
+              min="0"
+              max="4.0"
+              step="0.1"
+              className="w-full border-white/10 bg-[#081712] px-4 py-3.5 text-md text-[#f2f5f3]"
+              placeholder="e.g. 3.2 (out of 4.0)"
+              value={data.minGpa}
+              onChange={(e) => onChange({ ...data, minGpa: e.target.value === "" ? "" : Number(e.target.value) })}
+            />
+            <p className="m-0 text-sm leading-snug text-[#9aa8a2]">
+              The average GPA students have earned in a course, on UTD's 0–4.0 scale. Sections taught by a professor whose average
+              falls below this number are excluded. Leave blank to skip this filter.
+            </p>
+          </label>
+
+          <label className="flex flex-col gap-2.5">
+            <span className="text-xs font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+              Minimum RateMyProfessors rating
+            </span>
+            <Input
+              type="number"
+              min="0"
+              max="5.0"
+              step="0.1"
+              className="w-full border-white/10 bg-[#081712] px-4 py-3.5 text-md text-[#f2f5f3]"
+              placeholder="e.g. 3.5 (out of 5.0)"
+              value={data.minRmp}
+              onChange={(e) => onChange({ ...data, minRmp: e.target.value === "" ? "" : Number(e.target.value) })}
+            />
+            <p className="m-0 text-sm leading-snug text-[#9aa8a2]">
+              A professor's overall quality rating on RateMyProfessors, on a 0–5.0 scale. Sections taught by a professor rated below
+              this number are excluded. Leave blank to skip this filter.
+            </p>
+          </label>
+        </div>
 
         <fieldset className="m-0 border-0 p-0">
-          <legend className="mb-3 block text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
-            How much do RateMyProfessors ratings matter?
-          </legend>
-          <div className="flex flex-wrap gap-3">
-            {IMPORTANCE_LEVELS.map((level) => (
-              <Tooltip key={level.id} content={describeLevel(level.id, RMP_HARD_FILTER_THRESHOLDS, "RateMyProfessors rating")}>
-                <button
-                  type="button"
-                  className={`rounded-full border px-4 py-2.75 text-base transition-all duration-200 ${
-                    data.rmpImportance === level.id
-                      ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f5d5b2] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"
-                      : "border-white/10 bg-[#0c1715] text-[#f2f5f3] hover:border-white/20 hover:bg-white/5"
-                  }`}
-                  aria-pressed={data.rmpImportance === level.id}
-                  onClick={() => onChange({ ...data, rmpImportance: level.id })}
-                >
-                  {level.label}
-                </button>
-              </Tooltip>
-            ))}
-          </div>
-        </fieldset>
-
-        <fieldset className="m-0 border-0 p-0">
-          <label className="inline-flex items-center gap-2.5 text-[0.95rem] text-[#f2f5f3]">
+          <label className="inline-flex items-center gap-2.5 text-base text-[#f2f5f3]">
             <input
               type="checkbox"
               className="h-[18px] w-[18px] accent-[#5fe0b7]"
@@ -187,14 +161,14 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
             <div className="mt-4 flex items-center gap-3 rounded-2xl border border-white/10 bg-[#081712]/80 p-3">
               <Input
                 type="time"
-                className="w-[clamp(90px,30vw,120px)] border-white/10 bg-[#081712] px-2.5 py-2 text-[1rem] text-[#f2f5f3]"
+                className="w-[clamp(90px,30vw,120px)] border-white/10 bg-[#081712] px-2.5 py-2 text-base text-[#f2f5f3]"
                 value={data.lunchStart}
                 onChange={(e) => onChange({ ...data, lunchStart: e.target.value })}
               />
               <span className="text-[#8a8d8f]">–</span>
               <Input
                 type="time"
-                className="w-[clamp(90px,30vw,120px)] border-white/10 bg-[#081712] px-2.5 py-2 text-[1rem] text-[#f2f5f3]"
+                className="w-[clamp(90px,30vw,120px)] border-white/10 bg-[#081712] px-2.5 py-2 text-base text-[#f2f5f3]"
                 value={data.lunchEnd}
                 onChange={(e) => onChange({ ...data, lunchEnd: e.target.value })}
               />
@@ -202,16 +176,16 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
           )}
         </fieldset>
 
-        <div className="grid gap-5 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2">
           <label className="flex flex-col gap-2.5">
-            <span className="text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+            <span className="text-xs font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
               Target course hours / week
             </span>
             <Input
               type="number"
               min="1"
               max="40"
-              className="w-full border-white/10 bg-[#081712] px-4 py-3.5 text-[1.05rem] text-[#f2f5f3]"
+              className="w-full border-white/10 bg-[#081712] px-4 py-3.5 text-md text-[#f2f5f3]"
               placeholder="e.g. 15"
               value={data.targetHours}
               onChange={(e) => onChange({ ...data, targetHours: e.target.value })}
@@ -220,14 +194,14 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
           </label>
 
           <label className="flex flex-col gap-2.5">
-            <span className="text-[0.78rem] font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
+            <span className="text-xs font-medium uppercase tracking-[0.1em] text-[#b0b8b5]" style={{ fontFamily: "var(--font-mono)" }}>
               Max hours / day
             </span>
             <Input
               type="number"
               min="1"
               max="12"
-              className="w-full border-white/10 bg-[#081712] px-4 py-3.5 text-[1.05rem] text-[#f2f5f3] disabled:cursor-not-allowed disabled:opacity-60"
+              className="w-full border-white/10 bg-[#081712] px-4 py-3.5 text-md text-[#f2f5f3] disabled:cursor-not-allowed disabled:opacity-60"
               placeholder="e.g. 6"
               disabled={data.unlimitedDailyHours}
               value={data.maxHoursPerDay}
@@ -236,7 +210,7 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
           </label>
         </div>
 
-        <label className="inline-flex items-center gap-2.5 text-[0.95rem] text-[#f2f5f3]">
+        <label className="inline-flex items-center gap-2.5 text-base text-[#f2f5f3]">
           <input
             type="checkbox"
             className="h-[18px] w-[18px] accent-[#5fe0b7]"
@@ -251,7 +225,7 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
         <Button
           type="button"
           variant="outline"
-          className="rounded-full border border-white/10 bg-transparent px-6 py-3 text-[0.95rem] text-[#f2f5f3] transition-colors hover:border-white/20 hover:bg-white/5"
+          className="rounded-full border border-white/10 bg-transparent px-6 py-3 text-base text-[#f2f5f3] transition-colors hover:border-white/20 hover:bg-white/5"
           onClick={onBack}
         >
           Back
@@ -259,7 +233,7 @@ export default function TimeConstraintsStep({ data, onChange, onBack, onSubmit }
         <Button
           type="submit"
           size="lg"
-          className="rounded-full border border-transparent bg-[#e87500] px-8 py-4 text-[1.05rem] font-medium text-[#f2f5f3] shadow-[0_12px_30px_rgba(232,117,0,0.28)] transition-all duration-150 enabled:hover:-translate-y-0.5 enabled:hover:shadow-[0_18px_38px_rgba(232,117,0,0.35)] disabled:cursor-not-allowed disabled:opacity-40"
+          className="rounded-full border border-transparent bg-[#e87500] px-8 py-4 text-md font-semibold text-[#081712] shadow-[0_12px_30px_rgba(232,117,0,0.28)] transition-all duration-150 enabled:hover:-translate-y-0.5 enabled:hover:shadow-[0_18px_38px_rgba(232,117,0,0.35)] disabled:cursor-not-allowed disabled:opacity-40"
           disabled={!canSubmit}
         >
           Continue

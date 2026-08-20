@@ -11,10 +11,10 @@ import QuestionnaireStep from "./steps/QuestionnaireStep";
 import TimeConstraintsStep from "./steps/TimeConstraintsStep";
 import AcademicHistory from "./components/AcademicHistory";
 import ReviewStep from "./steps/ReviewStep";
-import ScheduleStep from "./steps/ScheduleStep";
+import ScheduleStep, { initialScheduleStepState } from "./steps/ScheduleStep";
 import { wakeBackend } from "./lib/api";
 import "./App.css";
-import type { AcademicHistory as AcademicHistoryState, Constraints, Profile, ScheduleCourse, Stage } from "./types";
+import type { AcademicHistory as AcademicHistoryState, Constraints, Profile, Stage } from "./types";
 
 const STAGE = { PROFILE: 0, CONSTRAINTS: 1, ACADEMIC_HISTORY: 2, REVIEW: 3, SCHEDULE: 4 } as const;
 
@@ -28,8 +28,8 @@ const initialConstraints: Constraints = {
   targetHours: "",
   maxHoursPerDay: "",
   unlimitedDailyHours: false,
-  gradeImportance: 1,
-  rmpImportance: 1,
+  minGpa: "",
+  minRmp: "",
 };
 const initialAcademicHistory: AcademicHistoryState = {
   completed: new Set<string>(),
@@ -46,7 +46,10 @@ export default function App() {
   const [profile, setProfile] = useState(initialProfile);
   const [constraints, setConstraints] = useState(initialConstraints);
   const [academicHistory, setAcademicHistory] = useState(initialAcademicHistory);
-  const [scheduleCourses, setScheduleCourses] = useState<ScheduleCourse[]>([]);
+  const [scheduleCourses, setScheduleCourses] = useState<string[]>([]);
+  const [scheduleState, setScheduleState] = useState(initialScheduleStepState);
+  const [reviewOverrides, setReviewOverrides] = useState<Record<string, any>>({});
+  const [reviewManualElectiveEntry, setReviewManualElectiveEntry] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     wakeBackend();
@@ -94,8 +97,8 @@ export default function App() {
               <Card
                 className={
                   stage === STAGE.ACADEMIC_HISTORY
-                    ? "min-h-[calc(100vh-180px)] w-full rounded-[30px] border border-white/10 bg-[#0b1715]/80 p-[clamp(20px,2vw,28px)] shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-sm"
-                    : "rounded-[30px] border border-white/10 bg-[#0b1715]/80 p-[clamp(20px,3vw,32px)] shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-sm"
+                    ? "min-h-[calc(100vh-180px)] w-full rounded-[var(--radius-card)] border border-white/10 bg-[#0b1715]/80 p-[clamp(20px,2vw,28px)] shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-sm"
+                    : "rounded-[var(--radius-card)] border border-white/10 bg-[#0b1715]/80 p-[clamp(20px,3vw,32px)] shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-sm"
                 }
               >
                 {stage === STAGE.PROFILE && (
@@ -135,6 +138,10 @@ export default function App() {
                     profile={profile}
                     constraints={constraints}
                     academicHistory={academicHistory}
+                    overrides={reviewOverrides}
+                    onOverridesChange={setReviewOverrides}
+                    manualElectiveEntry={reviewManualElectiveEntry}
+                    onManualElectiveEntryChange={setReviewManualElectiveEntry}
                     onEdit={() => setStage(STAGE.ACADEMIC_HISTORY)}
                     onContinue={(courses) => {
                       setScheduleCourses(courses);
@@ -148,6 +155,8 @@ export default function App() {
                     courses={scheduleCourses}
                     constraints={constraints}
                     isHonors={!!profile.isHonors}
+                    state={scheduleState}
+                    onChange={(patch) => setScheduleState((prev) => ({ ...prev, ...patch }))}
                     onBack={() => setStage(STAGE.REVIEW)}
                   />
                 )}

@@ -24,6 +24,20 @@
   --font-display: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Public Sans", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Type scale. text-xs/sm/base/lg/xl come from Tailwind's defaults;
+     these two fill the gaps the app actually uses: 2xs for eyebrows and
+     tiny meta labels, md for buttons/inputs/primary CTA text, display
+     for the repeated step-headline clamp. */
+  --text-2xs: 0.7rem;
+  --text-md: 1.05rem;
+  --text-display: clamp(2.5rem, 5.5vw, 3.5rem);
+
+  /* Corner-radius scale: pill (buttons/badges, via rounded-full) is the
+     interactive tier; card is the outer step panel; panel is nested
+     cards/alerts inside it. */
+  --radius-card: 30px;
+  --radius-panel: 22px;
 }
 
 * {

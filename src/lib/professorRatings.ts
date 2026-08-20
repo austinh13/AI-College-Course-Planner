@@ -20,13 +20,11 @@
 const GRADE_SCALE_MAX = 4.0;
 const RMP_SCALE_MAX = 5;
 
-// Hard-filter cutoffs, applied at levels 2 ("Somewhat") and 3 ("Very
-// Important") — level 1 ("None") never excludes anything. Level 3 is
-// strictly tighter than level 2 on both scales. Sections taught by an
-// instructor with no data on record are never excluded, since absence
-// of data isn't evidence of a bad grade/rating.
-export const GRADE_HARD_FILTER_THRESHOLDS = { 2: 3.2, 3: 3.49 };
-export const RMP_HARD_FILTER_THRESHOLDS = { 2: 3.0, 3: 3.5 };
+// User-supplied minimum GPA/RMP cutoffs (Step 2's numeric inputs) rather
+// than a fixed preset — they type the actual threshold on the same scale
+// the data uses. Sections taught by an instructor with no data on record
+// are never excluded, since absence of data isn't evidence of a bad
+// grade/rating.
 
 let _cache = null;
 
@@ -54,14 +52,19 @@ function normalizeName(name) {
 // to this course.
 export function getInstructorRating(name, courseCode, ratingsMap) {
   const entries = ratingsMap[normalizeName(name)];
-  if (!entries) return { gradeRating: null, gradeIsCourseSpecific: false, rmpQuality: null };
+  if (!entries) return { gradeRating: null, gradeIsCourseSpecific: false, gradeSemesterCount: null, rmpQuality: null };
 
   let gradeRating = null;
   let gradeIsCourseSpecific = false;
+  let gradeSemesterCount = null;
   for (const e of entries) {
     if (e.course_ratings && courseCode in e.course_ratings) {
       gradeRating = e.course_ratings[courseCode];
       gradeIsCourseSpecific = true;
+      // How many semesters (2019-2025, the CSVs this app has on record) this
+      // course-specific GPA is actually built from — a 4.0 from one semester
+      // reads very differently than a 4.0 from ten (Screen 5's display).
+      gradeSemesterCount = e.course_semester_counts?.[courseCode] ?? null;
       break;
     }
   }
@@ -73,26 +76,25 @@ export function getInstructorRating(name, courseCode, ratingsMap) {
   const withRmp = entries.find((e) => typeof e.quality_rating === "number");
   const rmpQuality = withRmp ? withRmp.quality_rating : null;
 
-  return { gradeRating, gradeIsCourseSpecific, rmpQuality };
+  return { gradeRating, gradeIsCourseSpecific, gradeSemesterCount, rmpQuality };
 }
 
-// True if this section should be excluded outright under the current
-// grade/RMP preference. Level 1 never excludes; levels 2 and 3 each
-// have their own (increasingly strict) cutoff — see the thresholds
-// above. Only known-bad data disqualifies a section — unmatched/no-data
+// True if this section should be excluded outright under the user's
+// minimum GPA/RMP cutoffs. A blank ("") cutoff never excludes anything.
+// Only known-bad data disqualifies a section — unmatched/no-data
 // instructors (new hires, Staff, etc.) always pass.
 export function sectionFailsHardFilter(section, courseCode, constraints, ratingsMap) {
   const names = section.instructors || [];
   if (!names.length) return false;
 
-  const gradeThreshold = GRADE_HARD_FILTER_THRESHOLDS[Number(constraints.gradeImportance)];
+  const gradeThreshold = constraints.minGpa === "" || constraints.minGpa == null ? null : Number(constraints.minGpa);
   if (gradeThreshold != null) {
     for (const name of names) {
       const { gradeRating } = getInstructorRating(name, courseCode, ratingsMap);
       if (gradeRating != null && gradeRating < gradeThreshold) return true;
     }
   }
-  const rmpThreshold = RMP_HARD_FILTER_THRESHOLDS[Number(constraints.rmpImportance)];
+  const rmpThreshold = constraints.minRmp === "" || constraints.minRmp == null ? null : Number(constraints.minRmp);
   if (rmpThreshold != null) {
     for (const name of names) {
       const { rmpQuality } = getInstructorRating(name, courseCode, ratingsMap);
@@ -105,13 +107,13 @@ export function sectionFailsHardFilter(section, courseCode, constraints, ratings
 const clamp01 = (n) => Math.min(1, Math.max(0, n));
 
 // Ranking score used to pick the best-scoring valid schedule out of
-// every conflict-free combination (see scheduleCourses.js). Levels 1/2/3
-// map to weights 0/0.5/1; if both preferences are left at "Doesn't
-// matter" this always returns 0, so the search falls back to its old
-// first-found behavior untouched.
+// every conflict-free combination (see scheduleCourses.js). Entering a
+// cutoff also puts weight on ranking sections higher above that bar;
+// leaving both cutoffs blank returns 0, so the search falls back to its
+// old first-found behavior untouched.
 export function sectionPreferenceScore(section, courseCode, constraints, ratingsMap) {
-  const gradeWeight = (Number(constraints.gradeImportance || 1) - 1) / 2;
-  const rmpWeight = (Number(constraints.rmpImportance || 1) - 1) / 2;
+  const gradeWeight = constraints.minGpa === "" || constraints.minGpa == null ? 0 : 1;
+  const rmpWeight = constraints.minRmp === "" || constraints.minRmp == null ? 0 : 1;
   if (!gradeWeight && !rmpWeight) return 0;
 
   const names = section.instructors || [];

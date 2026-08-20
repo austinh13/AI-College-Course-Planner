@@ -15,8 +15,8 @@ export interface Constraints {
   targetHours: string;
   maxHoursPerDay: string;
   unlimitedDailyHours: boolean;
-  gradeImportance: number;
-  rmpImportance: number;
+  minGpa: number | "";
+  minRmp: number | "";
 }
 
 export interface AcademicHistory {

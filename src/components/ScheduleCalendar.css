@@ -50,6 +50,7 @@
 }
 
 .cal__event {
+  position: relative;
   margin: 1px 3px;
   padding: 4px 8px;
   border-radius: 6px;
@@ -59,6 +60,24 @@
   flex-direction: column;
   gap: 2px;
   overflow: hidden;
+}
+
+.cal__event-pin {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  font-size: 0.65rem;
+  line-height: 1;
+  opacity: 0.35;
+  transition: opacity 0.15s;
+}
+
+.cal__event--pinnable:hover .cal__event-pin {
+  opacity: 0.75;
+}
+
+.cal__event--pinned .cal__event-pin {
+  opacity: 1;
 }
 
 .cal__event-code {
@@ -75,4 +94,19 @@
   font-size: 0.65rem;
   color: var(--steel-400);
   white-space: nowrap;
+}
+
+.cal__event--pinnable {
+  cursor: pointer;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.cal__event--pinnable:hover {
+  box-shadow: 0 0 0 1px var(--event-color);
+}
+
+.cal__event--pinned {
+  border-left-width: 3px;
+  box-shadow: 0 0 0 1.5px var(--event-color);
+  background: color-mix(in srgb, var(--event-color) 38%, var(--panel-700));
 }

@@ -14,10 +14,6 @@
 import { creditHoursFromCode } from "./catalog";
 import { loadProfessorRatings, sectionFailsHardFilter, sectionPreferenceScore, getInstructorRating } from "./professorRatings";
 
-// How many top-scoring schedules to keep around for the user to cycle
-// through (Screen 5). Kept small since these are held in memory across
-// the whole backtracking search.
-const MAX_SCHEDULES = 10;
 
 type Meeting = {
   day: string;
@@ -34,7 +30,7 @@ type Section = {
   term: string;
   isHonors: boolean;
   score?: number;
-  instructorRatings?: Array<{ name: string; gradeRating: number | null; gradeIsCourseSpecific: boolean; rmpQuality: number | null }>;
+  instructorRatings?: Array<{ name: string; gradeRating: number | null; gradeIsCourseSpecific: boolean; gradeSemesterCount: number | null; rmpQuality: number | null }>;
 };
 
 type CourseSectionList = {
@@ -168,12 +164,33 @@ export function classifyCourse(rows) {
   return { status: "ok", sections };
 }
 
+// Selected blocks merge into contiguous ranges before a meeting is
+// checked against them, so back-to-back selections (e.g. morning +
+// afternoon) behave as one open window with no seam at the boundary
+// between them — a class that straddles noon shouldn't fail just
+// because "morning" and "afternoon" are tracked as two separate options.
+// Non-adjacent selections (e.g. early + evening, skipping the middle)
+// still correctly reject anything spanning the gap.
+function mergeWindows(blockIds) {
+  const windows = blockIds
+    .map((id) => TIME_BLOCK_WINDOWS[id])
+    .filter(Boolean)
+    .sort((a, b) => a[0] - b[0]);
+  const merged: number[][] = [];
+  for (const [start, end] of windows) {
+    const last = merged[merged.length - 1];
+    if (last && start <= last[1]) {
+      last[1] = Math.max(last[1], end);
+    } else {
+      merged.push([start, end]);
+    }
+  }
+  return merged;
+}
+
 function withinSelectedBlocks(meeting, blockIds) {
   if (!blockIds.length) return true;
-  return blockIds.some((id) => {
-    const window = TIME_BLOCK_WINDOWS[id];
-    return window && meeting.start >= window[0] && meeting.end <= window[1];
-  });
+  return mergeWindows(blockIds).some(([start, end]) => meeting.start >= start && meeting.end <= end);
 }
 
 function overlapsLunch(meeting, constraints) {
@@ -203,7 +220,7 @@ function meetingsOverlap(a, b) {
 // early as possible. maxHoursPerDay (SCH, not clock time) is enforced
 // per calendar day as sections get chosen, since it depends on which
 // days the *specific* picked section actually meets.
-const MAX_VISITS = 3_000_000;
+const MAX_VISITS = 2_000_000;
 
 function backtrackCount(courseSectionLists: CourseSectionList[], constraints: any) {
   const maxHoursPerDay = constraints.unlimitedDailyHours || !constraints.maxHoursPerDay ? null : Number(constraints.maxHoursPerDay);
@@ -214,12 +231,10 @@ function backtrackCount(courseSectionLists: CourseSectionList[], constraints: an
   let currentScore = 0;
   let visits = 0;
   let truncated = false;
-  // Kept sorted descending by score, capped at MAX_SCHEDULES — these are
-  // the schedules the user cycles through on Screen 5. When every
-  // section scores 0 (no grade/RMP preference set), this just keeps the
-  // first MAX_SCHEDULES valid combinations found, same as the old
-  // single-best behavior did for its one result.
-  const topSchedules: Array<{ score: number; schedule: Array<{ code: string; section: Section }> }> = [];
+  // Every valid combination found, sorted by score once the search
+  // finishes — these are the schedules the user cycles through on
+  // Screen 5. MAX_VISITS is what actually bounds the work done here.
+  const allSchedules: Array<{ score: number; schedule: Array<{ code: string; section: Section }> }> = [];
 
   function recurse(i) {
     if (truncated) return;
@@ -229,16 +244,11 @@ function backtrackCount(courseSectionLists: CourseSectionList[], constraints: an
     }
     if (i === courseSectionLists.length) {
       count++;
-      const worstKept = topSchedules.length ? topSchedules[topSchedules.length - 1].score : -Infinity;
-      if (topSchedules.length < MAX_SCHEDULES || currentScore > worstKept) {
-        const schedule = chosenSections.map((section, idx) => ({
-          code: courseSectionLists[idx].code,
-          section,
-        }));
-        topSchedules.push({ score: currentScore, schedule });
-        topSchedules.sort((a, b) => b.score - a.score);
-        if (topSchedules.length > MAX_SCHEDULES) topSchedules.length = MAX_SCHEDULES;
-      }
+      const schedule = chosenSections.map((section, idx) => ({
+        code: courseSectionLists[idx].code,
+        section,
+      }));
+      allSchedules.push({ score: currentScore, schedule });
       return;
     }
 
@@ -273,7 +283,8 @@ function backtrackCount(courseSectionLists: CourseSectionList[], constraints: an
   }
 
   recurse(0);
-  return { count, schedules: topSchedules.map((s) => s.schedule), truncated };
+  allSchedules.sort((a, b) => b.score - a.score);
+  return { count, schedules: allSchedules.map((s) => s.schedule), truncated };
 }
 
 // Main entry point. courses: array of course codes from Screen 4's

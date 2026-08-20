@@ -1,5 +1,5 @@
 import React, { useMemo, useState, useCallback } from "react";
-import { Badge } from "../components/lightswind/badge";
+import Eyebrow from "../components/Eyebrow";
 import { Button } from "../components/lightswind/button";
 import { Input } from "../components/lightswind/input";
 import utdDegrees from "../data/utd_degrees.json";
@@ -75,25 +75,23 @@ export default function QuestionnaireStep({ data, onChange, onNext }) {
   return (
     <form className="mx-auto flex w-full max-w-[640px] flex-col gap-7" onSubmit={handleSubmit}>
       <div className="space-y-3">
-        <Badge variant="warning" className="inline-flex w-fit border border-[#e87500]/30 bg-[#e87500]/10 px-2.5 py-1 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-[#f5d5b2]" style={{ fontFamily: "var(--font-mono)" }}>
-          Step 01
-        </Badge>
-        <h1 className="m-0 text-[clamp(2.5rem,5.5vw,3.5rem)] font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
+        <Eyebrow>Step 01</Eyebrow>
+        <h1 className="m-0 text-display font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
           First, tell us who
           <br />
           we're planning for.
         </h1>
-        <p className="-mt-1 mb-0 max-w-[38ch] text-[0.98rem] text-[#9aa8a2]">Your major and year decide which requirements we check against.</p>
+        <p className="-mt-1 mb-0 max-w-[38ch] text-base text-[#9aa8a2]">Your major and year decide which requirements we check against.</p>
       </div>
 
-      <div className="space-y-5 rounded-[24px] border border-white/10 bg-[#0d1b18]/70 p-4 sm:p-5">
+      <div className="space-y-5 rounded-panel border border-white/10 bg-[#0d1b18]/70 p-4 sm:p-5">
         <label className="relative flex flex-col gap-2.5">
-          <span className="text-[0.8rem] font-medium uppercase tracking-[0.08em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
+          <span className="text-sm font-medium uppercase tracking-[0.08em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
             Major
           </span>
           <Input
             type="text"
-            className="bg-[#081712] px-4 py-3.5 text-[1.05rem] text-[#f2f5f3] placeholder:text-[#7e8b86]"
+            className="bg-[#081712] px-4 py-3.5 text-md text-[#f2f5f3] placeholder:text-[#7e8b86]"
             placeholder="e.g. Computer Science"
             value={data.major}
             onChange={(e) => handleMajorChange(e.target.value)}
@@ -110,7 +108,7 @@ export default function QuestionnaireStep({ data, onChange, onNext }) {
                 <li key={name}>
                   <button
                     type="button"
-                    className="block w-full rounded-xl bg-transparent px-3 py-2 text-left text-[0.95rem] text-[#f2f5f3] transition-colors duration-150 hover:bg-[#1f5c43] hover:text-[#f2f5f3] focus:bg-[#1f5c43] focus:text-[#f2f5f3] focus:outline-none"
+                    className="block w-full rounded-xl bg-transparent px-3 py-2 text-left text-base text-[#f2f5f3] transition-colors duration-150 hover:bg-[#1f5c43] hover:text-[#f2f5f3] focus:bg-[#1f5c43] focus:text-[#f2f5f3] focus:outline-none"
                     onMouseDown={() => selectMajor(name)}
                   >
                     {name}
@@ -122,7 +120,7 @@ export default function QuestionnaireStep({ data, onChange, onNext }) {
         </label>
 
         <fieldset className="m-0 border-0 p-0">
-          <legend className="mb-2.5 block text-[0.8rem] font-medium uppercase tracking-[0.08em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
+          <legend className="mb-2.5 block text-sm font-medium uppercase tracking-[0.08em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
             Start year
           </legend>
           <div className="flex flex-wrap gap-2.5">
@@ -145,7 +143,7 @@ export default function QuestionnaireStep({ data, onChange, onNext }) {
         </fieldset>
 
         <fieldset className="m-0 border-0 p-0">
-          <legend className="mb-2.5 block text-[0.8rem] font-medium uppercase tracking-[0.08em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
+          <legend className="mb-2.5 block text-sm font-medium uppercase tracking-[0.08em] text-[#8a8d8f]" style={{ fontFamily: "var(--font-mono)" }}>
             Honors student?
           </legend>
           <div className="flex flex-wrap gap-2.5">
@@ -180,7 +178,7 @@ export default function QuestionnaireStep({ data, onChange, onNext }) {
       <Button
         type="submit"
         size="lg"
-        className="mt-1 inline-flex w-fit items-center justify-center rounded-full border border-transparent bg-[#e87500] px-8 py-4 text-[1.05rem] font-medium text-[#f2f5f3] shadow-[0_12px_30px_rgba(232,117,0,0.28)] transition-all duration-150 enabled:hover:-translate-y-0.5 enabled:hover:shadow-[0_18px_38px_rgba(232,117,0,0.35)] disabled:cursor-not-allowed disabled:opacity-40"
+        className="mt-1 inline-flex w-fit items-center justify-center rounded-full border border-transparent bg-[#e87500] px-8 py-4 text-md font-semibold text-[#081712] shadow-[0_12px_30px_rgba(232,117,0,0.28)] transition-all duration-150 enabled:hover:-translate-y-0.5 enabled:hover:shadow-[0_18px_38px_rgba(232,117,0,0.35)] disabled:cursor-not-allowed disabled:opacity-40"
         disabled={!canContinue}
       >
         Continue

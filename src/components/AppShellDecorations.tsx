@@ -55,7 +55,7 @@ export function CometFlyby() {
 
 export function StepIndicator({ current, furthest = current, onNavigate }: { current: number; furthest?: number; onNavigate?: (index: number) => void }) {
   return (
-    <ol className="m-0 flex list-none items-center gap-2 p-0 text-[0.8rem] sm:gap-3">
+    <ol className="m-0 flex list-none items-center gap-2 p-0 text-sm sm:gap-3">
       {STEP_ITEMS.map((step, i) => {
         const unlocked = i <= furthest;
         const isActive = i === current;
@@ -65,7 +65,7 @@ export function StepIndicator({ current, furthest = current, onNavigate }: { cur
             <button
               type="button"
               className={[
-                "flex items-center gap-2 rounded-full border px-2.5 py-1.5 font-mono text-[0.7rem] uppercase tracking-[0.08em] transition-all duration-200",
+                "flex items-center gap-2 rounded-full border px-2.5 py-1.5 font-mono text-2xs uppercase tracking-[0.08em] transition-all duration-200",
                 unlocked ? "cursor-pointer" : "cursor-default",
                 isActive
                   ? "border-[#e87500]/40 bg-[#e87500]/10 text-[#f4d2b1] shadow-[0_0_0_1px_rgba(232,117,0,0.15)]"

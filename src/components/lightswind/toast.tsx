@@ -49,7 +49,7 @@ export function Toaster() {
           key={t.id}
           role="status"
           className={cn(
-            "pointer-events-auto rounded-full border border-white/10 bg-[#0c1715]/95 px-4 py-2 text-[0.85rem] text-[#f2f5f3] shadow-[0_12px_24px_rgba(0,0,0,0.35)] backdrop-blur-sm"
+            "pointer-events-auto rounded-full border border-white/10 bg-[#0c1715]/95 px-4 py-2 text-sm text-[#f2f5f3] shadow-[0_12px_24px_rgba(0,0,0,0.35)] backdrop-blur-sm"
           )}
         >
           {t.message}
