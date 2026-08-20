@@ -29,11 +29,14 @@ type ScheduleEntry = { code: string; section: Section };
 
 type ScheduleResult = {
   total: number;
+  /** Whether `total` is the real number of combinations or a floor. */
+  countExact: boolean;
   blockedBy: string | null;
   blockedReason: "preferences" | "honors" | "time" | null;
   excluded: Array<{ code: string; reason: string }>;
   schedules: ScheduleEntry[][];
-  truncated: boolean;
+  /** Whether `schedules` is a selection rather than all `total` of them. */
+  schedulesCapped: boolean;
 };
 
 export type ScheduleStepState = {
@@ -143,7 +146,7 @@ export default function ScheduleStep({
     );
   }
 
-  const { total, blockedBy, blockedReason, excluded, schedules, truncated } = result;
+  const { total, countExact, blockedBy, blockedReason, excluded, schedules, schedulesCapped } = result;
   const pinnedEntries = Object.entries(pinned);
   const visibleSchedules =
     schedules && pinnedEntries.length
@@ -175,6 +178,7 @@ export default function ScheduleStep({
     <div className="mx-auto flex w-full max-w-[640px] flex-col gap-7">
       <Eyebrow>Possible schedules</Eyebrow>
       <h1 className="m-0 text-display font-bold leading-[1.08] tracking-[-0.02em] text-[#f2f5f3]" style={{ fontFamily: "var(--font-display)" }}>
+        {countExact ? "" : "At least "}
         <CountUp value={total} /> possible
         <br />
         schedule{total === 1 ? "" : "s"}.
@@ -208,10 +212,12 @@ export default function ScheduleStep({
         </p>
       )}
 
-      {truncated && (
+      {schedulesCapped && (
         <p className="-mt-2 max-w-[40ch] text-[#8a8d8f]">
-          That's a lot of combinations — the count above stopped at a safety limit and may be a slight
-          undercount.
+          {countExact ? "That count is exact, but it's" : "That's"} far too many to flip through, so you're
+          browsing {schedules.length.toLocaleString()} of them below — the best-scoring ones, plus at least
+          one schedule for every section that fits. Narrow your days, time blocks, or professor cutoffs to
+          bring the number down.
         </p>
       )}
 

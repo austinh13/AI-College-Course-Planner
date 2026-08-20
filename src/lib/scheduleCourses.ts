@@ -86,18 +86,6 @@ function minutesFromHHMM(hhmm) {
   return h * 60 + m;
 }
 
-// "08:30 - 09:45" -> {start: 510, end: 585}. Returns null for "tbd -
-// tbd" or an empty string — those sections carry no real meeting time,
-// so they can't conflict with anything and pass every time constraint
-// automatically (this is also how independent-study/research/
-// dissertation-style rows with no fixed meeting end up handled, without
-// needing to special-case their activity_type by name).
-function parseTimeRange(timesStr) {
-  const parts = (timesStr || "").split(" - ").map((s) => s.trim());
-  if (parts.length !== 2 || !/^\d{1,2}:\d{2}$/.test(parts[0]) || !/^\d{1,2}:\d{2}$/.test(parts[1])) return null;
-  return { start: minutesFromHHMM(parts[0]), end: minutesFromHHMM(parts[1]) };
-}
-
 function parseDays(daysStr) {
   return (daysStr || "")
     .split(",")
@@ -105,15 +93,66 @@ function parseDays(daysStr) {
     .filter(Boolean);
 }
 
+// "1:00 PM" -> 780. Returns null for anything that isn't a 12-hour clock
+// time, which is how a malformed block gets skipped below.
+function minutesFrom12h(label) {
+  const match = String(label || "")
+    .trim()
+    .match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+  if (!match) return null;
+  const hour = Number(match[1]) % 12;
+  return (/pm/i.test(match[3]) ? hour + 12 : hour) * 60 + Number(match[2]);
+}
+
 // One CourseBook row -> its meeting slots ({day, start, end, kind}), or
-// [] if it has no real fixed time. `kind` distinguishes a normal class
-// meeting from a shared Common Exam block, since both end up in the
-// same section's `meetings` array but shouldn't be labeled the same way.
+// [] if it has no fixed meeting time at all ("tbd - tbd" — independent
+// study, research, online-anytime). `kind` distinguishes a normal class
+// meeting from a shared Common Exam block, since both end up in the same
+// section's `meetings` array but are treated very differently by the
+// search below.
+//
+// Times come from `schedule_combined`, not from `days` + `times`. That
+// pair can't express a section meeting at different times on different
+// days: it flattens to "Monday, Wednesday" + "11:30 - 12:45; 12:45 -
+// 15:15", which gives no way to tell a cross product (CHEM 2401 — both
+// times on both days) from a 1:1 pairing (CS 4485 — Friday 1:00-3:15
+// and Tuesday 1:00-2:15). `schedule_combined` spells every meeting out
+// as its own day/time/location block, so there's nothing left to guess.
+// Checked against the whole Fall 2026 export: it reproduces `days` +
+// `times` exactly on all 1,581 rows those two can parse, and covers the
+// 15 rows they can't.
+//
+// Identical blocks collapse to one — a meeting listed twice because it
+// spans two rooms is still a single meeting.
 function rowMeetings(row, kind = "class") {
-  const range = parseTimeRange(row.times);
-  const days = parseDays(row.days);
-  if (!range || !days.length) return [];
-  return days.map((day) => ({ day, start: range.start, end: range.end, kind }));
+  const meetings: Meeting[] = [];
+  const seen = new Set<string>();
+  for (const block of String(row.schedule_combined || "").split(/\n\s*\n/)) {
+    const lines = block.split("\n").map((line) => line.trim()).filter(Boolean);
+    if (lines.length < 2) continue;
+    const day = DAY_ABBR[lines[0]];
+    const [from, to] = lines[1].split(" - ");
+    const start = minutesFrom12h(from);
+    const end = minutesFrom12h(to);
+    if (!day || start == null || end == null) continue;
+    const key = `${day}:${start}-${end}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    meetings.push({ day, start, end, kind });
+  }
+  return meetings;
+}
+
+// Whether a row claims to meet at a fixed time. An empty `meetings` array
+// is only legitimate when CourseBook itself says there's no fixed time;
+// if a row lists real days and a real time range but yields no meetings,
+// that's a parse failure and it must not be waved through. A section with
+// no meetings conflicts with nothing and satisfies every one of Screen
+// 2's constraints, so a silent failure here doesn't read as "unknown", it
+// reads as "this class is free every hour of the week".
+function rowStatesMeetingTime(row) {
+  const times = (row.times || "").trim();
+  return parseDays(row.days).length > 0 && times !== "" && !/^tbd\s*-\s*tbd$/i.test(times);
 }
 
 // Groups a course's raw CourseBook rows into pickable "sections".
@@ -141,6 +180,14 @@ export function classifyCourse(rows) {
   const restTypes = new Set(rest.map((r) => r.activity_type));
   if (restTypes.size > 1 || commonExam.length > 1) {
     return { status: "ambiguous" };
+  }
+
+  // Same reasoning as the ambiguous case: a course whose stated meeting
+  // times we can't read is reported, not guessed at. Nothing in the Fall
+  // 2026 export hits this — it's the guard that keeps a future parse
+  // failure from turning a section into a phantom that fits any week.
+  if (rows.some((row) => rowStatesMeetingTime(row) && rowMeetings(row).length === 0)) {
+    return { status: "unreadable" };
   }
 
   const fixedExtra = commonExam.length === 1 ? rowMeetings(commonExam[0], "exam") : [];
@@ -207,84 +254,289 @@ function meetingPasses(meeting, constraints) {
   return true;
 }
 
+// A Common Exam is a one-off block, not a weekly commitment, so it takes
+// no part in scheduling: it never rules a section out under Screen 2's
+// constraints and never counts as a conflict. It stays on the section so
+// Screen 5 can still show it. Leaving it in the search rejected sections
+// for the wrong reason — every CE 1337 lecture is Mon/Wed or Tue/Thu, but
+// its Friday exam block meant "Fridays off" killed the whole course, and
+// CS 2336's Friday 4:15pm exam block knocked out all eleven of its
+// lectures for anyone who picked a time block other than "evening".
+const isWeeklyMeeting = (m: Meeting) => m.kind !== "exam";
+
 function sectionPasses(section, constraints) {
-  return section.meetings.every((m) => meetingPasses(m, constraints));
+  return section.meetings.filter(isWeeklyMeeting).every((m) => meetingPasses(m, constraints));
 }
 
 function meetingsOverlap(a, b) {
   return a.day === b.day && a.start < b.end && b.start < a.end;
 }
 
-// Depth-first search over one section choice per course. Courses are
-// searched smallest-pool-first so conflicting branches get pruned as
-// early as possible. maxHoursPerDay (SCH, not clock time) is enforced
-// per calendar day as sections get chosen, since it depends on which
-// days the *specific* picked section actually meets.
-const MAX_VISITS = 2_000_000;
+// Counting the combinations and listing them are two different jobs, and
+// trying to do both in one walk was what broke each of them.
+//
+// There can be a great many combinations: a real six-course load out of
+// the Fall 2026 data has 51,209,280 conflict-free ones. Walking those one
+// section at a time takes about ten seconds, and keeping each one as it
+// was found put ~750MB on the heap of a browser tab. The old search gave
+// up partway through and reported whatever it had counted so far — 26x
+// short of the real answer, under a note calling it a slight undercount.
+//
+// So the two are split. The count runs over distinct *meeting patterns*:
+// sections that meet at identical times are interchangeable for conflicts
+// and for the daily-hours cap, differing only in who teaches them, so a
+// leaf contributes the product of how many sections share each pattern it
+// picked. That's exact, not a sample, and about 17x faster — 0.6s for
+// that same 51 million.
+//
+// The browsable list is capped instead, since nobody pages through 51
+// million schedules. Only the best MAX_BROWSABLE are kept, followed by a
+// pass that makes sure no section a student could actually take is left
+// out of the list entirely.
+const COUNT_VISIT_LIMIT = 5_000_000;
+const ENUMERATION_VISIT_LIMIT = 250_000;
+const COVERAGE_VISIT_LIMIT = 20_000;
+const MAX_BROWSABLE = 2_000;
 
-function backtrackCount(courseSectionLists: CourseSectionList[], constraints: any) {
-  const maxHoursPerDay = constraints.unlimitedDailyHours || !constraints.maxHoursPerDay ? null : Number(constraints.maxHoursPerDay);
+type Option = { section: Section; meetings: Meeting[]; days: string[]; hours: number };
+type Pattern = { meetings: Meeting[]; days: string[]; hours: number; size: number };
+type ScheduleEntry = { code: string; section: Section };
+
+// maxHoursPerDay is SCH, not clock time, and is enforced per calendar day
+// as sections get picked, since it depends on which days the *specific*
+// section meets.
+function optionFits(
+  option: { meetings: Meeting[]; days: string[]; hours: number },
+  chosenMeetings: Meeting[],
+  dayHours: Record<string, number>,
+  maxHoursPerDay: number | null
+) {
+  if (option.meetings.some((m) => chosenMeetings.some((cm) => meetingsOverlap(cm, m)))) return false;
+  if (maxHoursPerDay != null && option.days.some((d) => (dayHours[d] || 0) + option.hours > maxHoursPerDay)) return false;
+  return true;
+}
+
+// Each section's schedulable meetings and the days it touches, worked out
+// once rather than on every visit during the search.
+function buildOptions(courseSectionLists: CourseSectionList[]): Option[][] {
+  return courseSectionLists.map(({ sections, hours }) =>
+    sections.map((section) => {
+      const meetings = section.meetings.filter(isWeeklyMeeting);
+      return { section, meetings, days: [...new Set(meetings.map((m) => m.day))], hours };
+    })
+  );
+}
+
+function buildPatterns(options: Option[][]): Pattern[][] {
+  return options.map((courseOptions) => {
+    const byShape = new Map<string, Pattern>();
+    for (const option of courseOptions) {
+      const key = option.meetings.map((m) => `${m.day}${m.start}-${m.end}`).sort().join(",");
+      const seen = byShape.get(key);
+      if (seen) seen.size++;
+      else byShape.set(key, { meetings: option.meetings, days: option.days, hours: option.hours, size: 1 });
+    }
+    return [...byShape.values()];
+  });
+}
+
+// Exact number of conflict-free combinations. `exact` only goes false if
+// even the pattern-level walk runs past its limit, which no real course
+// load in the current data comes close to.
+function countCombinations(patterns: Pattern[][], maxHoursPerDay: number | null) {
+  const order = [...patterns].sort((a, b) => a.length - b.length);
   const chosenMeetings: Meeting[] = [];
-  const chosenSections: Section[] = [];
   const dayHours: Record<string, number> = {};
-  let count = 0;
+  let total = 0;
+  let visits = 0;
+  let exact = true;
+
+  function recurse(i: number, sectionsPerLeaf: number) {
+    if (!exact) return;
+    if (visits++ > COUNT_VISIT_LIMIT) {
+      exact = false;
+      return;
+    }
+    if (i === order.length) {
+      total += sectionsPerLeaf;
+      return;
+    }
+    for (const pattern of order[i]) {
+      if (!exact) return;
+      if (!optionFits(pattern, chosenMeetings, dayHours, maxHoursPerDay)) continue;
+      chosenMeetings.push(...pattern.meetings);
+      pattern.days.forEach((d) => {
+        dayHours[d] = (dayHours[d] || 0) + pattern.hours;
+      });
+      recurse(i + 1, sectionsPerLeaf * pattern.size);
+      chosenMeetings.length -= pattern.meetings.length;
+      pattern.days.forEach((d) => {
+        dayHours[d] -= pattern.hours;
+      });
+    }
+  }
+
+  recurse(0, 1);
+  return { total, exact };
+}
+
+// The highest-scoring schedules, bounded. Retention is capped rather than
+// unbounded, so the heap holds MAX_BROWSABLE entries instead of every
+// combination the walk happens to reach.
+function collectBestSchedules(options: Option[][], codes: string[], maxHoursPerDay: number | null) {
+  const chosen: Option[] = [];
+  const chosenMeetings: Meeting[] = [];
+  const dayHours: Record<string, number> = {};
+  const kept: Array<{ score: number; schedule: ScheduleEntry[] }> = [];
   let currentScore = 0;
   let visits = 0;
-  let truncated = false;
-  // Every valid combination found, sorted by score once the search
-  // finishes — these are the schedules the user cycles through on
-  // Screen 5. MAX_VISITS is what actually bounds the work done here.
-  const allSchedules: Array<{ score: number; schedule: Array<{ code: string; section: Section }> }> = [];
+  let capped = false;
+  let cutoff = -Infinity;
 
-  function recurse(i) {
-    if (truncated) return;
-    if (visits++ > MAX_VISITS) {
-      truncated = true;
+  const snapshot = () => chosen.map((option, idx) => ({ code: codes[idx], section: option.section }));
+
+  function compact() {
+    kept.sort((a, b) => b.score - a.score);
+    kept.length = Math.min(kept.length, MAX_BROWSABLE);
+    cutoff = kept.length === MAX_BROWSABLE ? kept[kept.length - 1].score : -Infinity;
+  }
+
+  function recurse(i: number) {
+    if (capped) return;
+    if (visits++ > ENUMERATION_VISIT_LIMIT) {
+      capped = true;
       return;
     }
-    if (i === courseSectionLists.length) {
-      count++;
-      const schedule = chosenSections.map((section, idx) => ({
-        code: courseSectionLists[idx].code,
-        section,
-      }));
-      allSchedules.push({ score: currentScore, schedule });
+    if (i === options.length) {
+      // Once the list is full, only a strictly better score earns a slot.
+      if (kept.length >= MAX_BROWSABLE && currentScore <= cutoff) return;
+      kept.push({ score: currentScore, schedule: snapshot() });
+      if (kept.length >= MAX_BROWSABLE * 2) compact();
       return;
     }
+    for (const option of options[i]) {
+      if (capped) return;
+      if (!optionFits(option, chosenMeetings, dayHours, maxHoursPerDay)) continue;
 
-    const { sections, hours } = courseSectionLists[i];
-    for (const section of sections) {
-      if (truncated) return;
-      const conflict = section.meetings.some((m) => chosenMeetings.some((cm) => meetingsOverlap(cm, m)));
-      if (conflict) continue;
-
-      const touchedDays = [...new Set(section.meetings.map((m) => m.day))];
-      if (maxHoursPerDay != null) {
-        const overCap = touchedDays.some((d) => (dayHours[d] || 0) + hours > maxHoursPerDay);
-        if (overCap) continue;
-      }
-
-      chosenSections.push(section);
-      chosenMeetings.push(...section.meetings);
-      currentScore += section.score || 0;
-      touchedDays.forEach((d) => {
-        dayHours[d] = (dayHours[d] || 0) + hours;
+      chosen.push(option);
+      chosenMeetings.push(...option.meetings);
+      currentScore += option.section.score || 0;
+      option.days.forEach((d) => {
+        dayHours[d] = (dayHours[d] || 0) + option.hours;
       });
 
       recurse(i + 1);
 
-      chosenSections.pop();
-      chosenMeetings.length -= section.meetings.length;
-      currentScore -= section.score || 0;
-      touchedDays.forEach((d) => {
-        dayHours[d] -= hours;
+      chosen.pop();
+      chosenMeetings.length -= option.meetings.length;
+      currentScore -= option.section.score || 0;
+      option.days.forEach((d) => {
+        dayHours[d] -= option.hours;
       });
     }
   }
 
   recurse(0);
-  allSchedules.sort((a, b) => b.score - a.score);
-  return { count, schedules: allSchedules.map((s) => s.schedule), truncated };
+  compact();
+  return { schedules: kept.map((k) => k.schedule), capped };
+}
+
+// One schedule that uses a specific section, or null if there isn't one.
+function firstScheduleUsing(
+  options: Option[][],
+  codes: string[],
+  maxHoursPerDay: number | null,
+  courseIndex: number,
+  required: Option
+) {
+  const chosen: Option[] = [];
+  const chosenMeetings: Meeting[] = [];
+  const dayHours: Record<string, number> = {};
+  let visits = 0;
+  let found: ScheduleEntry[] | null = null;
+
+  function recurse(i: number) {
+    if (found || visits++ > COVERAGE_VISIT_LIMIT) return;
+    if (i === options.length) {
+      found = chosen.map((option, idx) => ({ code: codes[idx], section: option.section }));
+      return;
+    }
+    for (const option of i === courseIndex ? [required] : options[i]) {
+      if (found) return;
+      if (!optionFits(option, chosenMeetings, dayHours, maxHoursPerDay)) continue;
+
+      chosen.push(option);
+      chosenMeetings.push(...option.meetings);
+      option.days.forEach((d) => {
+        dayHours[d] = (dayHours[d] || 0) + option.hours;
+      });
+
+      recurse(i + 1);
+
+      chosen.pop();
+      chosenMeetings.length -= option.meetings.length;
+      option.days.forEach((d) => {
+        dayHours[d] -= option.hours;
+      });
+    }
+  }
+
+  recurse(0);
+  return found;
+}
+
+// Nothing about "keep the best MAX_BROWSABLE" guarantees that a section a
+// student could actually take shows up anywhere in the list — and since
+// the walk stops partway, the courses searched first are the ones cut off
+// soonest. That's how a browsable list ended up holding only 8 of BLAW
+// 2301's 17 sections, hiding nine perfectly takeable options. Sections
+// still missing get one schedule each; because that schedule covers its
+// other courses' sections too, this settles quickly.
+function coverMissingSections(
+  options: Option[][],
+  codes: string[],
+  maxHoursPerDay: number | null,
+  schedules: ScheduleEntry[][]
+) {
+  const seen = new Set<string>();
+  for (const schedule of schedules) {
+    schedule.forEach((entry, idx) => seen.add(`${idx}:${entry.section.sectionId}`));
+  }
+
+  const extra: ScheduleEntry[][] = [];
+  for (let i = 0; i < options.length; i++) {
+    for (const option of options[i]) {
+      if (seen.has(`${i}:${option.section.sectionId}`)) continue;
+      const schedule = firstScheduleUsing(options, codes, maxHoursPerDay, i, option);
+      if (!schedule) continue;
+      schedule.forEach((entry, idx) => seen.add(`${idx}:${entry.section.sectionId}`));
+      extra.push(schedule);
+    }
+  }
+  return extra;
+}
+
+function searchSchedules(courseSectionLists: CourseSectionList[], constraints: any) {
+  const maxHoursPerDay = constraints.unlimitedDailyHours || !constraints.maxHoursPerDay ? null : Number(constraints.maxHoursPerDay);
+  const codes = courseSectionLists.map((c) => c.code);
+  const options = buildOptions(courseSectionLists);
+
+  const { total, exact } = countCombinations(buildPatterns(options), maxHoursPerDay);
+  const { schedules, capped } = collectBestSchedules(options, codes, maxHoursPerDay);
+  // The list falls short of the full set two different ways — the walk
+  // stopping early, and MAX_BROWSABLE trimming what it did find. Either
+  // one can hide a section, so both have to trigger the coverage pass.
+  const isSubset = capped || schedules.length < total;
+  const extra = isSubset ? coverMissingSections(options, codes, maxHoursPerDay, schedules) : [];
+
+  return {
+    total,
+    countExact: exact,
+    // Best-scoring first, with the coverage schedules after them: they're
+    // there so every option stays reachable, not because they rank.
+    schedules: [...schedules, ...extra],
+    schedulesCapped: isSubset,
+  };
 }
 
 // Main entry point. courses: array of course codes from Screen 4's
@@ -355,26 +607,30 @@ export async function generateSchedules({
       excluded.push({ code, reason: "Has multiple linked components (e.g. lecture + lab) that can't be safely auto-paired from the data." });
       continue;
     }
+    if (classified.status === "unreadable") {
+      excluded.push({ code, reason: "Its Fall 2026 meeting times couldn't be read from the section data." });
+      continue;
+    }
 
     // Non-Honors students never see Honors sections at all. Honors
     // students keep both — Honors is an extra option, not a replacement.
     const honorsEligibleSections = isHonors ? classified.sections : classified.sections.filter((s) => !s.isHonors);
     if (!honorsEligibleSections.length) {
       console.log(`[scheduleCourses] ${code} only has Honors sections and student isn't an Honors student`);
-      return { total: 0, blockedBy: code, blockedReason: "honors", excluded, example: null, schedules: [], truncated: false };
+      return { total: 0, blockedBy: code, blockedReason: "honors", excluded, example: null, schedules: [], countExact: true, schedulesCapped: false };
     }
 
     const timeValidSections = honorsEligibleSections.filter((s) => sectionPasses(s, constraints));
     if (!timeValidSections.length) {
       console.log(`[scheduleCourses] ${code} has no section that fits the time constraints`);
-      return { total: 0, blockedBy: code, blockedReason: "time", excluded, example: null, schedules: [], truncated: false };
+      return { total: 0, blockedBy: code, blockedReason: "time", excluded, example: null, schedules: [], countExact: true, schedulesCapped: false };
     }
 
     const codeNoSpace = `${parsed.prefix}${parsed.number}`;
     const validSections = timeValidSections.filter((s) => !sectionFailsHardFilter(s, codeNoSpace, constraints, ratingsMap));
     if (!validSections.length) {
       console.log(`[scheduleCourses] ${code} has no section meeting the grade/RMP preference`);
-      return { total: 0, blockedBy: code, blockedReason: "preferences", excluded, example: null, schedules: [], truncated: false };
+      return { total: 0, blockedBy: code, blockedReason: "preferences", excluded, example: null, schedules: [], countExact: true, schedulesCapped: false };
     }
     validSections.forEach((s) => {
       s.score = sectionPreferenceScore(s, codeNoSpace, constraints, ratingsMap);
@@ -389,19 +645,20 @@ export async function generateSchedules({
   }
 
   if (!resolved.length) {
-    return { total: 0, blockedBy: null, blockedReason: null, excluded, example: null, schedules: [], truncated: false };
+    return { total: 0, blockedBy: null, blockedReason: null, excluded, example: null, schedules: [], countExact: true, schedulesCapped: false };
   }
 
   resolved.sort((a, b) => a.sections.length - b.sections.length);
-  const { count, schedules, truncated } = backtrackCount(resolved, constraints);
+  const { total, countExact, schedules, schedulesCapped } = searchSchedules(resolved, constraints);
 
   return {
-    total: count,
+    total,
+    countExact,
     blockedBy: null,
     blockedReason: null,
     excluded,
     example: schedules[0] || null,
     schedules,
-    truncated,
+    schedulesCapped,
   };
 }

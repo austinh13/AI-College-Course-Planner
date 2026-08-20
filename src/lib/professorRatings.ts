@@ -10,7 +10,8 @@
  * Matching: CourseBook's `instructors` field is already "First [Middle]
  * Last" (comma-separated for team-taught sections), which is the same
  * order matched_professor_data.json's keys use — so a plain
- * lowercase/trim is enough, no fuzzy matching.
+ * lowercase/trim is enough, no fuzzy matching. Filtering and scoring read
+ * only the first name in that list; see primaryInstructor below.
  */
 
 // Grade ratings in the data run on UTD's grade-point scale, 0-4.0 (no
@@ -79,28 +80,34 @@ export function getInstructorRating(name, courseCode, ratingsMap) {
   return { gradeRating, gradeIsCourseSpecific, gradeSemesterCount, rmpQuality };
 }
 
+// Only the primary instructor (Instructor 1, the first name CourseBook
+// lists) is judged, matching the rule the grade distributions themselves
+// are built under. The rest of that field is co-instructors, section
+// leads and lab staff, and a distribution doesn't belong to them. Letting
+// any name on the roster veto a section threw away real options: CS
+// 4485's only Fall 2026 section lists six people, and one of them at a
+// 2.17 blocked the course outright even though its primary instructor
+// sits at 3.79 in that very course.
+export function primaryInstructor(section) {
+  return (section.instructors || [])[0] || null;
+}
+
 // True if this section should be excluded outright under the user's
 // minimum GPA/RMP cutoffs. A blank ("") cutoff never excludes anything.
-// Only known-bad data disqualifies a section — unmatched/no-data
-// instructors (new hires, Staff, etc.) always pass.
+// Only known-bad data disqualifies a section — an unmatched/no-data
+// instructor (new hire, Staff, etc.) always passes.
 export function sectionFailsHardFilter(section, courseCode, constraints, ratingsMap) {
-  const names = section.instructors || [];
-  if (!names.length) return false;
+  const primary = primaryInstructor(section);
+  if (!primary) return false;
+
+  const { gradeRating, rmpQuality } = getInstructorRating(primary, courseCode, ratingsMap);
 
   const gradeThreshold = constraints.minGpa === "" || constraints.minGpa == null ? null : Number(constraints.minGpa);
-  if (gradeThreshold != null) {
-    for (const name of names) {
-      const { gradeRating } = getInstructorRating(name, courseCode, ratingsMap);
-      if (gradeRating != null && gradeRating < gradeThreshold) return true;
-    }
-  }
+  if (gradeThreshold != null && gradeRating != null && gradeRating < gradeThreshold) return true;
+
   const rmpThreshold = constraints.minRmp === "" || constraints.minRmp == null ? null : Number(constraints.minRmp);
-  if (rmpThreshold != null) {
-    for (const name of names) {
-      const { rmpQuality } = getInstructorRating(name, courseCode, ratingsMap);
-      if (rmpQuality != null && rmpQuality < rmpThreshold) return true;
-    }
-  }
+  if (rmpThreshold != null && rmpQuality != null && rmpQuality < rmpThreshold) return true;
+
   return false;
 }
 
@@ -111,24 +118,23 @@ const clamp01 = (n) => Math.min(1, Math.max(0, n));
 // cutoff also puts weight on ranking sections higher above that bar;
 // leaving both cutoffs blank returns 0, so the search falls back to its
 // old first-found behavior untouched.
+//
+// Scored on the primary instructor alone, for the same reason
+// sectionFailsHardFilter filters on it — averaging a roster dragged every
+// team-taught section toward the 0.5 no-data default no matter who
+// actually teaches it.
 export function sectionPreferenceScore(section, courseCode, constraints, ratingsMap) {
   const gradeWeight = constraints.minGpa === "" || constraints.minGpa == null ? 0 : 1;
   const rmpWeight = constraints.minRmp === "" || constraints.minRmp == null ? 0 : 1;
   if (!gradeWeight && !rmpWeight) return 0;
 
-  const names = section.instructors || [];
-  if (!names.length) return gradeWeight * 0.5 + rmpWeight * 0.5;
+  const primary = primaryInstructor(section);
+  if (!primary) return gradeWeight * 0.5 + rmpWeight * 0.5;
 
-  let gradeSum = 0;
-  let rmpSum = 0;
-  for (const name of names) {
-    const { gradeRating, rmpQuality } = getInstructorRating(name, courseCode, ratingsMap);
-    gradeSum += gradeRating != null ? clamp01(gradeRating / GRADE_SCALE_MAX) : 0.5;
-    rmpSum += rmpQuality != null ? clamp01(rmpQuality / RMP_SCALE_MAX) : 0.5;
-  }
-  const gradeAvg = gradeSum / names.length;
-  const rmpAvg = rmpSum / names.length;
-  return gradeWeight * gradeAvg + rmpWeight * rmpAvg;
+  const { gradeRating, rmpQuality } = getInstructorRating(primary, courseCode, ratingsMap);
+  const gradeScore = gradeRating != null ? clamp01(gradeRating / GRADE_SCALE_MAX) : 0.5;
+  const rmpScore = rmpQuality != null ? clamp01(rmpQuality / RMP_SCALE_MAX) : 0.5;
+  return gradeWeight * gradeScore + rmpWeight * rmpScore;
 }
 
 // https://trends.utdnebula.com/dashboard?searchTerms=John+Cole&availability=26F
